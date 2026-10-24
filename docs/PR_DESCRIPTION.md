@@ -17,5 +17,5 @@ ordering defect was corrected. Stage-boundary text changes are documented as int
 
 Limitations: direct file-URL opening is blocked by managed Chromium; HTTP operation without external
 assets passes. Live-reference and GitHub API requests are proxy-blocked. No tablet hardware benchmark,
-video/audio export or public deployment is claimed. Vercel configuration is prepared for account
-connection and a protected preview after authorization. Do not merge or publish automatically.
+video/audio export or public deployment is claimed. GitHub Pages configuration builds/tests on PRs and deploys only from `main`.
+Enable Settings → Pages → GitHub Actions before merging. Do not merge automatically.

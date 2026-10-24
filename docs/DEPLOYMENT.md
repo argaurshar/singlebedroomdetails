@@ -27,27 +27,37 @@ Use Node 24 (minimum 22). Browser tests use Python Playwright and `/usr/bin/chro
 `src/spec.mjs`, `model.mjs`, `scene.mjs` and `controller.mjs` keep physical data, calculation,
 geometry and interaction separate. The bundler inlines them and the pinned Anatomy core.
 
-## Vercel preparation
+## GitHub Pages
 
-No existing hosting provider was configured. `vercel.json` sets:
+The user selected GitHub-only hosting. `.github/workflows/pages.yml` builds and deploys the site
+with GitHub Actions. No external hosting account, custom domain or application secret is required.
+The previous Vercel configuration has been removed.
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- Framework: Other/static
-- Security response headers; no secret requirements
+One-time activation:
 
-No deployment has been created. Codex Cloud is a development environment, not permanent app hosting.
-To deploy after review, connect this repository in your Vercel account, choose the feature branch
-for a preview, and select Node 24. Enable Deployment Protection before starting any preview that
-must stay private. Confirm the account/plan supports that protection before deploying. Public
-production deployment and merging into `main` require the user's authorization in this conversation.
+1. Open repository **Settings → Pages**.
+2. Under **Build and deployment**, set **Source → GitHub Actions**.
+3. Review [PR #1](https://github.com/argaurshar/singlebedroomdetails/pull/1), wait for its build check
+   to pass, and merge it into `main` when satisfied.
+4. Open **Actions → GitHub Pages** and wait for the build and deploy jobs to succeed.
+   If the initial deploy ran before Pages was enabled, rerun the failed job or use **Run workflow**
+   on `main` after enabling it.
+5. Open the deployment URL shown by GitHub. The expected default project address is
+   **https://argaurshar.github.io/singlebedroomdetails/**. It is not claimed live until deployment succeeds.
 
-## GitHub review
+The workflow runs model/scene tests and builds on pull requests. Only `main` can upload the Pages
+artifact and deploy; pull requests do not publish. The deploy job alone receives `pages: write`
+and `id-token: write`. Only `dist/` is uploaded, so project source and vendored skills are not included
+in the deployed site. Future pushes to `main` automatically rebuild and redeploy.
 
-Work is on `feat/room-anatomy`. The default branch remains unchanged. The exact PR text is in
-`docs/PR_DESCRIPTION.md`. The cloud proxy rejects requests to `api.github.com` with HTTP 403,
-so authenticated GitHub API operations cannot currently create a PR here. Use the repository's
-compare page to open a PR from this branch once pushed; no additional code work is required for that.
+The standalone document uses inline scripts/styles and no root-relative asset URLs, so it works
+under the `/singlebedroomdetails/` project prefix without a base-path rewrite. The source build
+is served directly; no Jekyll processing is involved.
+
+The cloud proxy rejects the GitHub Pages API with HTTP 403, so this agent cannot enable repository
+Pages settings or inspect deployment runs here. The workflow is locally validated; actual GitHub
+Actions execution and the live URL remain pending the activation and merge above. If GitHub shows
+Pages is unavailable for the repository's visibility/plan, follow its indicated eligibility requirement.
 
 ## Reusable cloud configuration
 

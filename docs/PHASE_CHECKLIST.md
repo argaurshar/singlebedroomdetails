@@ -119,7 +119,8 @@ belong to the previous research environment; this checkout has separate verified
 ### Phase 10 — Review and delivery
 
 - [x] Prepare standalone app, source, QA evidence and delivery limitations for review.
-- [ ] Hosted preview only within requested scope; public/domain publication requires actual authorization.
+- [x] GitHub Pages hosting selected by the user; test/build/deploy workflow prepared.
+- [ ] Enable Pages with GitHub Actions, merge reviewed PR, and verify the live deployment.
 - Gate: complete room, seven reliable actions, coherent drawer demonstration, provenance and QA evidence.
 
 ## Delivery limitations
@@ -127,6 +128,6 @@ belong to the previous research environment; this checkout has separate verified
 - The app runs over local HTTP with no external asset requests. Managed Chromium blocks file URLs;
   direct offline file-opening acceptance remains unrun.
 - GitHub API access is rejected by the proxy; a PR description and compare link are prepared.
-- Vercel configuration is ready; no public deployment or default-branch merge is authorized/performed.
+- GitHub Pages workflow is ready. Repository activation and reviewed merge are pending; no live deployment is claimed.
 - Original video/article frames are absent; the complete handoff is the reference evidence available here.
 - No 60 fps video, audio export, physical-services simulation or tablet-hardware benchmark is claimed.

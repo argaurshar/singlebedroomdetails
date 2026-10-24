@@ -88,4 +88,15 @@ Run `python3 tests/performance.py` against the port-4173 server to repeat the sa
   transport is separately verified; a feature branch and PR description are prepared.
 - Native REA runtime/engines are not installed, needed or claimed. The skill and references are installed.
 - No screen-reader hardware/session audit, tablet hardware benchmark or engineering simulation was run.
-- Video/audio and public hosting remain outside this completed core-app delivery.
+- Video/audio remain deferred. GitHub Pages hosting was subsequently authorized; workflow preparation
+  is complete, while repository activation and live deployment verification remain pending.
+
+## GitHub Pages hosting follow-up
+
+The user selected GitHub-only hosting. Added `.github/workflows/pages.yml` and removed Vercel
+configuration. Re-ran all 10 Node tests and the standalone build successfully. Parsed the workflow
+YAML and checked its `main`-only deployment guards and job permissions. Served the build under
+`/singlebedroomdetails/` in Chromium: HTTP 200, expected title, and `seek(15.9)` reporting 450 mm
+extension / 1,050 mm clearance, with no page errors. These are local checks, not a claim that
+GitHub Actions or the live Pages deployment has run. Repository Pages API access returned HTTP 403;
+activation instructions are in `DEPLOYMENT.md`.

@@ -3,6 +3,9 @@
 A complete illustrated bedroom explainer: seven guided stages, a shared numerical/geometry model,
 Manual/Auto playback, finish studies and an interactive drawer-clearance experiment.
 
+Hosting: **GitHub Pages**. See [activation instructions](docs/DEPLOYMENT.md#github-pages).
+Expected URL after deployment: https://argaurshar.github.io/singlebedroomdetails/
+
 **[Download the standalone app ZIP](https://github.com/argaurshar/singlebedroomdetails/raw/refs/heads/feat/room-anatomy/dist/room-anatomy.zip)**
 
 The app is also in [`dist/room-anatomy.html`](dist/room-anatomy.html), with an identical hosting entry

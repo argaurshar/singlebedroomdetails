@@ -7,7 +7,9 @@ Read `docs/PHASE_CHECKLIST.md` and `docs/SETUP.md` for current decisions and evi
 
 The user has authorized implementation, testing, standalone packaging and hosting configuration.
 Use feature branch `feat/room-anatomy`; commit coherent changes and prepare a reviewable PR.
-Do not merge or publish publicly without user authorization. Video/audio follow app acceptance.
+GitHub Pages hosting is now authorized and configured via `.github/workflows/pages.yml`.
+Do not merge the PR automatically. Deploy only from `main` through the Pages workflow.
+Video/audio follow app acceptance.
 Use this existing isolated checkout; do not create a worktree unless explicitly requested.
 
 ## Confirmed decisions
