@@ -7,7 +7,7 @@ const pt=p=>kit.iso(p,P);
 const path=(ps,closed=false)=>kit.pathOf(ps.map(pt),closed);
 // Sort overlapping convex silhouettes using separating world planes. A top surface stays
 // above its supporting mattress/rug regardless of the objects' different centre positions.
-function hull(points){
+export function hull(points){
  const p=points.sort((a,b)=>a[0]-b[0]||a[1]-b[1]), cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
  const lo=[],hi=[];for(const x of p){while(lo.length>1&&cross(lo.at(-2),lo.at(-1),x)<=0)lo.pop();lo.push(x);}
  for(const x of [...p].reverse()){while(hi.length>1&&cross(hi.at(-2),hi.at(-1),x)<=0)hi.pop();hi.push(x);}return [...lo.slice(0,-1),...hi.slice(0,-1)];
@@ -20,7 +20,7 @@ function overlap(a,b){
  }return true;
 }
 const overlapCache=new WeakMap();
-function geometryOrder(items){
+export function geometryOrder(items){
  const sorted=[...items].sort((a,b)=>a.depth-b.depth||a.order-b.order);
  const edges=sorted.map(()=>[]),degree=sorted.map(()=>0);
  for(let i=0;i<sorted.length;i++)for(let j=i+1;j<sorted.length;j++){
@@ -189,8 +189,10 @@ export function renderScene(m,finish='sage'){
  box('curtain-track',900,4750,2540,1800,30,25,'bronze','front',{opacity:.55});
  for(const x of[920,2460])for(let i=0;i<4;i++)box(`curtain-${x}-${i}`,x+i*45,4770,900,42,42,1620,'linen','front',{r:20,opacity:.42});
  // Lifted ceiling: local panel, three framing battens and a fixed cable route.
- const cz=3000+m.ceiling*520;
- box('ceiling-panel',500,100,cz,2500,640,15,'linen','rear',{opacity:.28+.5*m.ceiling});
+ const cz=3000+m.open*420+m.ceiling*120;
+ box('ceiling-panel',0,0,cz,3600,4800,12.5,'linen','overlay',{opacity:.12+.05*m.ceiling});
+ for(const x of[0,1200,2400,3600])topLine([[x,0,cz+13],[x,4800,cz+13]],'#7a8c81',.75,'overlay');
+ for(const y of[0,2400,4800])topLine([[0,y,cz+13],[3600,y,cz+13]],'#7a8c81',.75,'overlay');
  for(const x of[650,1720,2820])box(`ceiling-batten-${x}`,x,100,3015,35,640,75,'metal','rear',{opacity:.18+.72*m.ceiling});
  for(const x of[650,2820])box(`ceiling-hanger-${x}`,x,380,3090,12,12,60,'bronze','rear',{opacity:m.ceiling});
  for(const x of[1100,2500])cylinder(`downlight-${x}`,x,500,2960,75,40,'light','rear');
@@ -251,10 +253,12 @@ const domCaches=new WeakMap();
 export function updateRoomDOM(container,room){
  let cache=domCaches.get(container);
  if(!cache){container.innerHTML=room.svg;cache=new Map();for(const n of room.nodes)cache.set(n.key,{markup:n.svg,el:[...container.querySelector('#room-art').children].find(el=>el.dataset.renderKey===n.key)});domCaches.set(container,cache);return;}
- const art=container.querySelector('#room-art');let cursor=art.firstElementChild;const used=new Set();
+ const art=container.querySelector('#room-art');
+ if(room.title)container.querySelector('#scene-title').textContent=room.title;let cursor=art.firstElementChild;const used=new Set();
  for(const node of room.nodes){
   used.add(node.key);let entry=cache.get(node.key);
   if(!entry){const el=document.createElementNS('http://www.w3.org/2000/svg','g');el.dataset.renderKey=node.key;entry={el,markup:null};cache.set(node.key,entry);}
+  entry.el.setAttribute('opacity',String(node.opacity??1));
   if(entry.markup!==node.svg){entry.el.innerHTML=node.svg;entry.markup=node.svg;}
   if(entry.el!==cursor)art.insertBefore(entry.el,cursor);
   cursor=entry.el.nextElementSibling;
