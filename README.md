@@ -1,23 +1,39 @@
 # Room Anatomy
 
-An interactive complete-bedroom explainer is planned. **Project preparation is complete;
-application implementation has not started and awaits the user's instruction.**
+A complete illustrated bedroom explainer: seven guided stages, a shared numerical/geometry model,
+Manual/Auto playback, finish studies and an interactive drawer-clearance experiment.
 
-- [Full handoff](docs/Room_Anatomy_RDB_Build_Plan.md)
-- [Project instructions](AGENTS.md)
-- [RDB phase checklist](docs/PHASE_CHECKLIST.md)
-- [Environment results and tool check](docs/SETUP.md)
-- [Local skill provenance](docs/SKILLS.md)
+**[Download the standalone app ZIP](https://github.com/argaurshar/singlebedroomdetails/raw/refs/heads/feat/room-anatomy/dist/room-anatomy.zip)**
 
-The selected basis is the proposed demonstration bedroom. RDB means Requirements → Design → Build.
-The initial deliverable will be the core interactive app and standalone HTML; video/audio are optional.
-
-To repeat the preparation checks:
+The app is also in [`dist/room-anatomy.html`](dist/room-anatomy.html), with an identical hosting entry
+at `dist/index.html`. It has no required runtime network dependencies. Open the downloaded file in
+a browser permitting local HTML, or run the internal development server below.
 
 ```sh
-cd /workspace/singlebedroomdetails
-python3 scripts/check-environment.py
+npm run build
+npm test
+npm run serve
+# In another terminal:
+npm run test:browser
+python3 tests/visual.py
 ```
 
-This runs an upstream Anatomy example in a temporary directory, checks Chromium/Playwright,
-and verifies the encoder. It does not create the bedroom app.
+Use Tab to reach controls, Enter/Space for buttons and arrow keys for sliders. Manual is the first-visit
+default. Auto plays the 36-second tour. Explore pauses playback; a negative clearance displays the
+intersection. Reset restores the room while retaining the chosen mode and finish. Reduced motion
+uses still states and prevents looping. `?render` disables the clock; `window.seek(t)` reconstructs
+any time from 0 to 36 seconds, in any order.
+
+All dimensions and fixture powers are demonstration assumptions. Air and light effects are illustrative;
+no compliance, ventilation, lux, pricing or engineering performance is implied.
+
+- [Full source handoff](docs/Room_Anatomy_RDB_Build_Plan.md)
+- [Design and data contracts](docs/DESIGN.md)
+- [Implementation checklist](docs/PHASE_CHECKLIST.md)
+- [QA evidence and limitations](docs/QA.md)
+- [Deployment preparation](docs/DEPLOYMENT.md)
+- [Environment checks](docs/SETUP.md) and [pinned local skills](docs/SKILLS.md)
+
+Built with the MIT-licensed [Anatomy toolkit](https://github.com/wheresryan22/anatomy).
+The original handoff remains unchanged. Work is isolated on `feat/room-anatomy`; no public deployment
+or merge is performed. Video/audio are optional follow-up deliverables after app acceptance.
