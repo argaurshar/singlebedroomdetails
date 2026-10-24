@@ -1,0 +1,19 @@
+{
+  "passed": [
+    "fresh Manual default; full room inventory; one next action",
+    "keyboard activation; repeated click gating; reset cancels motion",
+    "all seven real-time stages complete; reset during every stage",
+    "Auto\u2192Manual stable endpoint; explicit Auto preference survives reload",
+    "simulated hidden-tab pause/resume does not jump forward",
+    "Auto final hold and canonical loop restart",
+    "finish recolouring and persistence preserve geometry",
+    "slider endpoints/intermediate, keyboard, negative clearance, Explore return/reset",
+    "reduced motion: all stages instant; no endless Auto loop",
+    "storage failure fallback remains interactive",
+    "canonical repeated/backward/shuffled seeks; render mode has no clock",
+    "42 desktop/mobile stage screenshots; no horizontal overflow or ordering cycles",
+    "no required external requests",
+    "no uncaught browser errors"
+  ],
+  "count": 14
+}

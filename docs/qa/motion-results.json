@@ -1,0 +1,68 @@
+{
+  "samples": 361,
+  "interval_seconds": 0.1,
+  "range": [
+    0,
+    36
+  ],
+  "depth_cycles": 0,
+  "nonfinite_geometry": 0,
+  "flags": [
+    {
+      "time": 0.9,
+      "region": "whole-figure",
+      "delta": 0.3237864673137665,
+      "baseline": 0.06
+    },
+    {
+      "time": 5.2,
+      "region": "whole-figure",
+      "delta": 0.3407656252384186,
+      "baseline": 0.06
+    },
+    {
+      "time": 9.9,
+      "region": "whole-figure",
+      "delta": 0.29629167914390564,
+      "baseline": 0.06
+    },
+    {
+      "time": 16.6,
+      "region": "whole-figure",
+      "delta": 0.3291510343551636,
+      "baseline": 0.06
+    },
+    {
+      "time": 21.3,
+      "region": "whole-figure",
+      "delta": 0.31425780057907104,
+      "baseline": 0.06
+    },
+    {
+      "time": 26.0,
+      "region": "whole-figure",
+      "delta": 0.3580130338668823,
+      "baseline": 0.06
+    },
+    {
+      "time": 31.3,
+      "region": "whole-figure",
+      "delta": 0.39157551527023315,
+      "baseline": 0.06
+    }
+  ],
+  "scene_cpu_ms_median": 6.0,
+  "scene_cpu_ms_p95": 17.300000000046566,
+  "bounds_min": [
+    170.0,
+    57.26628112792969,
+    660.0,
+    685.7337036132812
+  ],
+  "bounds_max": [
+    170.0,
+    57.26628112792969,
+    660.0,
+    685.7337036132812
+  ]
+}

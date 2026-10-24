@@ -1,0 +1,7 @@
+{
+  "elapsed": 2066.6000000000004,
+  "parts": 150,
+  "median_frame_ms": 16.699999999999932,
+  "average_fps": 58.06638923836252,
+  "environment": "Headless system Chromium 154, Linux cloud runner, 1440x1100; no tablet hardware benchmark"
+}
