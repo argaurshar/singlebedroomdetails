@@ -1,6 +1,6 @@
 import {spec,stages,finishes} from './spec.mjs';
 import {evaluate,clamp} from './model.mjs';
-import {renderScene,clearanceDetail} from './scene.mjs';
+import {renderScene,clearanceDetail,updateRoomDOM} from './scene.mjs';
 const $=s=>document.querySelector(s),reduced=matchMedia('(prefers-reduced-motion: reduce)'),renderMode=new URLSearchParams(location.search).has('render');
 let preferences={};try{preferences=JSON.parse(localStorage.getItem('room-anatomy')||'{}')||{};}catch{}
 let mode=preferences.mode==='auto'?'auto':'manual',finish=finishes[preferences.finish]?preferences.finish:'sage';
@@ -10,9 +10,10 @@ const announce=s=>$('#status').textContent=s;
 $('#steps').innerHTML=stages.map((s,i)=>`<li><button class="step" data-index="${i}" aria-label="${i+1}. ${s.title}"><span class="step-num">${String(i+1).padStart(2,'0')}</span><span><strong>${s.title}</strong><small>${s.short}</small></span></button></li>`).join('');
 $('#swatches').innerHTML=Object.entries(finishes).map(([key,f])=>`<button data-finish="${key}" aria-label="${f.name}" title="${f.name}"><span style="background:linear-gradient(135deg,${f.fabric} 50%,${f.wood} 50%)"></span></button>`).join('');
 const format=n=>Math.round(n).toLocaleString('en');
+const html=(el,value)=>{if(el.innerHTML!==value)el.innerHTML=value;};
 function draw(){
  model=evaluate({time,explore,extension:explore?extension:null,bedGap});
- const room=renderScene(model,finish);$('#scene').innerHTML=room.svg;
+ const room=renderScene(model,finish);updateRoomDOM($('#scene'),room);
  const completed=model.completed;
  const index=explore?2:model.active>=0?model.active:completed>0?Math.min(completed-1,6):-1;
  $('#chapter').textContent=explore?'EXPLORE / SPACE TO MOVE':index>=0?`DISCOVERY ${String(index+1).padStart(2,'0')} / ${stages[index].short.toUpperCase()}`:'THE COMPLETE ROOM';
@@ -28,10 +29,10 @@ function draw(){
  });
  for(const value of['manual','auto'])$('#'+value).setAttribute('aria-pressed',String(mode===value));
  $('#mode-hint').textContent=reduced.matches?'Reduced motion: one still per action.':mode==='auto'?'A 36-second tour. Pause with Manual.':'Go at your own pace.';
- $('#area').innerHTML=`${model.area.toFixed(2)} <small>m²</small>`;$('#volume').innerHTML=`${model.volume.toFixed(2)} <small>m³</small>`;
+ html($('#area'),`${model.area.toFixed(2)} <small>m²</small>`);html($('#volume'),`${model.volume.toFixed(2)} <small>m³</small>`);
  const metric=index===1?['Floor section',model.layerTotal,'mm']:index===3?['Connected load',model.connectedPower,'W']:index===4?['Service void',spec.ceilingVoid,'mm']:['Drawer travel',model.extension,'mm'];
- $('#metric-label').textContent=metric[0];$('#metric').innerHTML=`${format(metric[1])} <small>${metric[2]}</small>`;
- $('#clearance').innerHTML=`${format(model.clearance)} <small>mm</small>`;$('#clearance').style.color=model.collision?'#a14f3c':'';
+ $('#metric-label').textContent=metric[0];html($('#metric'),`${format(metric[1])} <small>${metric[2]}</small>`);
+ html($('#clearance'),`${format(model.clearance)} <small>mm</small>`);$('#clearance').style.color=model.collision?'#a14f3c':'';
  $('#scene-note').textContent=index===5?'Recirculation · schematic':index===3?'Light pools · illustrative':index===4?'Selected ceiling panel · cutaway':'Finished surfaces · illustrative view';
  document.querySelectorAll('[data-finish]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.finish===finish)));
  $('#finish-name').textContent=finishes[finish].name;

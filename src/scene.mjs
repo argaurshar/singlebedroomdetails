@@ -232,10 +232,32 @@ export function renderScene(m,finish='sage'){
  const ordered=geometryOrder(layers.objects);
  const order=(arr,sort=true)=> (sort?ordered.items:arr).map(o=>o.svg).join('');
  // Stable semantic strata prevent complete rear walls from sorting across the room contents.
- const result=`<svg id="room-svg" viewBox="0 0 1000 800" role="img" aria-labelledby="scene-title scene-desc"><title id="scene-title">Room Anatomy: furnished demonstration bedroom</title><desc id="scene-desc">Isometric architectural cutaway with a bed, wardrobe, opening drawer, window, door, lamps, ceiling and indoor air unit. The adjacent text explains the active stage.</desc><ellipse cx="500" cy="677" rx="330" ry="66" fill="#ddd4c3" opacity=".45"/>${order(layers.base,false)}${order(layers.rear,false)}${order(layers.objects)}${order(layers.front,false)}${order(layers.overlay,false)}</svg>`;
- return {svg:result,inventory,projection:P,depthCycles:ordered.cycles};
+ const nodes=[{key:'shadow',svg:'<ellipse cx="500" cy="677" rx="330" ry="66" fill="#ddd4c3" opacity=".45"/>'}];
+ for(const name of['base','rear','objects','front','overlay']){
+  const list=name==='objects'?ordered.items:layers[name];
+  list.forEach((item,i)=>{const identity=item.svg.match(/data-(?:part|assembly)="([^"]+)"/);nodes.push({key:identity?identity[1]:`${name}-${i}`,svg:item.svg});});
+ }
+ const result=`<svg id="room-svg" viewBox="0 0 1000 800" role="img" aria-labelledby="scene-title scene-desc"><title id="scene-title">Room Anatomy: furnished demonstration bedroom</title><desc id="scene-desc">Isometric architectural cutaway with a bed, wardrobe, opening drawer, window, door, lamps, ceiling and indoor air unit. The adjacent text explains the active stage.</desc><g id="room-art">${nodes.map(n=>`<g data-render-key="${n.key}">${n.svg}</g>`).join('')}</g></svg>`;
+ return {svg:result,nodes,inventory,projection:P,depthCycles:ordered.cycles};
 }
 export function clearanceDetail(m,finish='sage'){
  const f=finishes[finish];const scale=.18,gap=m.bedGap*scale,travel=m.extension*scale;
  return `<svg viewBox="0 0 520 200" role="img" aria-label="Plan view: drawer extension ${Math.round(m.extension)} millimetres; remaining clearance ${Math.round(m.clearance)} millimetres"><text x="20" y="22" class="detail-kicker">PLAN VIEW · SAME MODEL</text><rect x="20" y="50" width="105" height="92" rx="5" fill="${f.wood}" stroke="#514f44"/><rect x="${40+travel}" y="72" width="85" height="48" fill="#eadac0" stroke="#514f44"/><line x1="40" y1="67" x2="${125+travel}" y2="67" stroke="#767d79" stroke-width="5"/><line x1="40" y1="127" x2="${125+travel}" y2="127" stroke="#767d79" stroke-width="5"/><rect x="${125+gap}" y="40" width="65" height="115" rx="8" fill="${f.fabric}" stroke="#514f44"/>${m.collision?`<rect x="${125+gap}" y="72" width="${-m.clearance*scale}" height="48" fill="#b54f3c" opacity=".65"/>`:''}<line x1="${125+travel}" y1="166" x2="${125+gap}" y2="166" stroke="${m.collision?'#ad4f3b':'#3b7065'}" stroke-width="2"/><text x="20" y="190">Wardrobe</text><text x="${125+gap}" y="190">Bed</text><text x="${Math.min(130+travel,370)}" y="157" fill="${m.collision?'#ad4f3b':'#3b7065'}">${Math.round(m.clearance).toLocaleString('en')} mm</text></svg>`;
+}
+
+// Retain static SVG nodes. Only moving/material-changing parts are reparsed, then
+// keyed nodes are reordered to the exact same geometry-derived painter order.
+const domCaches=new WeakMap();
+export function updateRoomDOM(container,room){
+ let cache=domCaches.get(container);
+ if(!cache){container.innerHTML=room.svg;cache=new Map();for(const n of room.nodes)cache.set(n.key,{markup:n.svg,el:[...container.querySelector('#room-art').children].find(el=>el.dataset.renderKey===n.key)});domCaches.set(container,cache);return;}
+ const art=container.querySelector('#room-art');let cursor=art.firstElementChild;const used=new Set();
+ for(const node of room.nodes){
+  used.add(node.key);let entry=cache.get(node.key);
+  if(!entry){const el=document.createElementNS('http://www.w3.org/2000/svg','g');el.dataset.renderKey=node.key;entry={el,markup:null};cache.set(node.key,entry);}
+  if(entry.markup!==node.svg){entry.el.innerHTML=node.svg;entry.markup=node.svg;}
+  if(entry.el!==cursor)art.insertBefore(entry.el,cursor);
+  cursor=entry.el.nextElementSibling;
+ }
+ for(const [key,entry]of cache)if(!used.has(key)){entry.el.remove();cache.delete(key);}
 }
