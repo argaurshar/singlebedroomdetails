@@ -1,3 +1,9 @@
+# Current revision evidence
+
+See [REVISION_QA.md](REVISION_QA.md) for the architectural-study build. The results below describe
+the original version and are retained as historical evidence; reference access and REA runtime
+availability were subsequently resolved as documented in [REFERENCE_ANALYSIS.md](REFERENCE_ANALYSIS.md).
+
 # Validation record
 
 24 October 2026. The original handoff was read in full and preserved byte-for-byte. Tests below

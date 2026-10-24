@@ -57,3 +57,17 @@ upstream example. Serve files over local HTTP for browser checks; managed Chromi
 Do not modify browser policy. Keep localhost URLs internal to validation.
 Use writable npm cache/prefix locations if npm is needed; see `docs/SETUP.md`.
 Do not add application dependencies until implementation selects them.
+
+## Architectural-study revision status
+
+The reference gate is closed; `docs/REFERENCE_ANALYSIS.md` records the downloaded
+artifact hash, REA scenario evidence and direct-browser certificate limitation.
+Implementation is complete in `src/study-model.mjs` and `src/study-scene.mjs`, integrated
+with the original numerical model and controller. Read `docs/REVISION_QA.md` before
+continuing. Preserve the seven-stage / 36-second contract and canonical seek behaviour.
+The camera may crop context on component selection; active geometry must remain visible.
+Mobile uses HTML component labels rather than illegibly small SVG labels. Primary controls
+require at least 44 px hit areas. Detail offsets never enter physical measurements.
+Do not redo reference setup or install unused native engines. Use `npm run test:study`
+with the internal server for new study interactions. The user must merge the review
+branch before the existing GitHub Pages workflow can publish the revision.

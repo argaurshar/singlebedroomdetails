@@ -188,3 +188,17 @@ view, confirming the user's visibility complaint. This observation does not insp
 Reproduce tooling with `npm ci --prefix tooling/rea --ignore-scripts --no-audit --no-fund`;
 use `tooling/rea/node_modules/.bin/rea capture-browser-scenario <scenario.json> --format json`.
 The CLI is verified independently of MCP registration. Native engines are unnecessary for this work.
+
+## Reference gate closed — 24 October 2026
+
+See [REFERENCE_ANALYSIS.md](REFERENCE_ANALYSIS.md): verified artifact fetched, source
+inspected and all seven chapters exercised with REA browser scenarios. The direct
+Chromium HTTPS certificate failure is preserved as a limitation. Implementation may
+proceed against the frozen revision contract above; no reference content is invented.
+
+- [x] Reference artifact and interaction evidence
+- [x] Pure study model and physical/display contracts
+- [x] Readable detailed assemblies and full ceiling
+- [x] Synchronized sidebar, inspector, scrubbing and playback
+- [x] Numerical, browser, visual and motion acceptance (see REVISION_QA.md)
+- [x] Standalone package and review branch delivery (merge remains with user)

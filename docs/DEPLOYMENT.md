@@ -19,12 +19,13 @@ npm run build       # deterministic, dependency-free single-file build
 npm test            # pure model, scene contracts and deterministic geometry
 npm run test:browser # launches its own temporary HTTP server and Chromium
 npm run serve       # internal development server, port 4173
+npm run test:study  # revision controls; requires the running development server
 python3 tests/visual.py # dense motion review against that running server
 ```
 
 Use Node 24 (minimum 22). Browser tests use Python Playwright and `/usr/bin/chromium`;
 `docs/SETUP.md` records their verified versions. See `docs/QA.md` for actual results and limitations.
-`src/spec.mjs`, `model.mjs`, `scene.mjs` and `controller.mjs` keep physical data, calculation,
+`src/spec.mjs`, `model.mjs`, `scene.mjs`, `study-model.mjs`, `study-scene.mjs` and `controller.mjs` keep physical data, calculation,
 geometry and interaction separate. The bundler inlines them and the pinned Anatomy core.
 
 ## GitHub Pages
@@ -37,8 +38,8 @@ One-time activation:
 
 1. Open repository **Settings → Pages**.
 2. Under **Build and deployment**, set **Source → GitHub Actions**.
-3. Review [PR #1](https://github.com/argaurshar/singlebedroomdetails/pull/1), wait for its build check
-   to pass, and merge it into `main` when satisfied.
+3. PR #1 is already merged. Review the `feat/architectural-study` revision, wait for its build
+   check to pass, and merge the new pull request into `main` when satisfied.
 4. Open **Actions → GitHub Pages** and wait for the build and deploy jobs to succeed.
    If the initial deploy ran before Pages was enabled, rerun the failed job or use **Run workflow**
    on `main` after enabling it.
@@ -54,7 +55,7 @@ The standalone document uses inline scripts/styles and no root-relative asset UR
 under the `/singlebedroomdetails/` project prefix without a base-path rewrite. The source build
 is served directly; no Jekyll processing is involved.
 
-The cloud proxy rejects the GitHub Pages API with HTTP 403, so this agent cannot enable repository
+The cloud proxy rejects the GitHub API and the live project URL with HTTP 403, so this agent cannot enable repository
 Pages settings or inspect deployment runs here. The workflow is locally validated; actual GitHub
 Actions execution and the live URL remain pending the activation and merge above. If GitHub shows
 Pages is unavailable for the repository's visibility/plan, follow its indicated eligibility requirement.

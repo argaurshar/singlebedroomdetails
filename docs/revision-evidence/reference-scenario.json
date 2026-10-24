@@ -1,0 +1,141 @@
+{
+  "target": "https://visual-learning.app/vision-pro",
+  "artifact_sha256": "62d08baee6ed4726408ebccf4bfb76a65f245298bd3ae4599742af9d98731c42",
+  "artifact_bytes": 159864,
+  "evidence_id": "ev_457096b92b71d73e7b6c07debd3d7e5cf381973de55ee7b8991565a7ba7ad739",
+  "execution": "Verified HTTPS download served locally; direct Chromium HTTPS certificate failure was not bypassed.",
+  "browser": {
+    "mode": "launch",
+    "process_ownership": "provider-owned",
+    "cleanup": "terminated-owned-process",
+    "product": "Chromium",
+    "version": "154.0.8037.57"
+  },
+  "steps": [
+    {
+      "step_id": "scenario_start",
+      "status": "completed"
+    },
+    {
+      "step_id": "initial",
+      "status": "completed"
+    },
+    {
+      "step_id": "open",
+      "status": "completed"
+    },
+    {
+      "step_id": "open-mid",
+      "status": "completed"
+    },
+    {
+      "step_id": "open-end",
+      "status": "completed"
+    },
+    {
+      "step_id": "sees",
+      "status": "completed"
+    },
+    {
+      "step_id": "sees-mid",
+      "status": "completed"
+    },
+    {
+      "step_id": "sees-end",
+      "status": "completed"
+    },
+    {
+      "step_id": "apart",
+      "status": "completed"
+    },
+    {
+      "step_id": "apart-mid",
+      "status": "completed"
+    },
+    {
+      "step_id": "apart-end",
+      "status": "completed"
+    },
+    {
+      "step_id": "pixels",
+      "status": "completed"
+    },
+    {
+      "step_id": "pixels-mid",
+      "status": "completed"
+    },
+    {
+      "step_id": "pixels-end",
+      "status": "completed"
+    },
+    {
+      "step_id": "eyes",
+      "status": "completed"
+    },
+    {
+      "step_id": "eyes-mid",
+      "status": "completed"
+    },
+    {
+      "step_id": "eyes-end",
+      "status": "completed"
+    },
+    {
+      "step_id": "air",
+      "status": "completed"
+    },
+    {
+      "step_id": "air-mid",
+      "status": "completed"
+    },
+    {
+      "step_id": "air-end",
+      "status": "completed"
+    },
+    {
+      "step_id": "together",
+      "status": "completed"
+    },
+    {
+      "step_id": "together-mid",
+      "status": "completed"
+    },
+    {
+      "step_id": "together-end",
+      "status": "completed"
+    }
+  ],
+  "limitations": [
+    "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+    "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+    "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+    "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+    "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+    "Storage values are hashed only after declared-secret redaction."
+  ],
+  "screenshots": {
+    "air-end.png": "745a597bef3fcb6fb0a4c7df1692f9f4d4de9d67fc74f593f8fc320e6d308b88",
+    "air-mid.png": "1d34773f53aa16aa0d8141629603188ca4552c84a248c247009374f569c879c7",
+    "air.png": "d75e4fcd3c2408f7466c847cfa28aeb341ff2f12f98f2f93b8498dc8e033ddb7",
+    "apart-end.png": "6caa231ca246f82a4905f894f50633247dc3c57f236a88b6bea13ebe16985136",
+    "apart-mid.png": "d95ca553fe2692669422b626b56175ba1490a421243b8281a260217d25379320",
+    "apart.png": "3131ced7458daf981463798fe76cdb63a05d38acede127765230a95525e095fc",
+    "eyes-end.png": "a1fe1f595ba306ea625341be08e623987750911c6b33a451037e5e95af2121a3",
+    "eyes-mid.png": "fb173fe02f3e478a8c61d29cded7e148fab37f2d2865f603071838eb6019847f",
+    "eyes.png": "ca6d38a2634db6c23166e9c912a08f8bf16894a5a41e2ef5420b96968c412d35",
+    "initial.png": "7a09e7c801dd0b8431409d1a8313a35e40ba270a37850707aa435a3741e273b2",
+    "open-end.png": "552dcf6c6c14ecab77bbf8894b10aafe47c5fe89e738080b1489de26490c75e0",
+    "open-mid.png": "7a4aee8d3713b0ce86a8bbd993b5ba1d55233ad4954ee8cd73b81436cd5f7de0",
+    "open.png": "a1144b8639b7e92bf9444eae64c53a7878330ff7e1051d22a68b1e384fcc5d76",
+    "pixels-end.png": "b25f542a144ff72f3646a2c55dc3d35dc904d387de83f63008f2084b3b93fe02",
+    "pixels-mid.png": "61f356b69393789174a228c573bf1bb76380cca10de8a4a42b2eb6930d0c66c6",
+    "pixels.png": "af48dcc38d5c69259ab5ea1a0df5a642fa51787608b8f8f48f77874b8d7a39ae",
+    "scenario_start.png": "7a09e7c801dd0b8431409d1a8313a35e40ba270a37850707aa435a3741e273b2",
+    "sees-end.png": "d54515368ec16f031d51f815682c2f2b2f6856c3bb202bb17d18b94c4a128d83",
+    "sees-mid.png": "8d06285dd9090ad8090d9caf62394405cf92b19e2288a06048a1d8074cbcae8b",
+    "sees.png": "8e40c9bd5168892c9c4e17ef99af3ba688b7d72b58bf07be5e3dece51b0a6f1c",
+    "together-end.png": "38603bed6b84b4d627f791dbb52a196cd928f740d7694e6992bd9d4109768f1b",
+    "together-mid.png": "e7d1e900c76f78de627239a3a88ab01c973142b0be911e74972a1b4f1ffb3bd4",
+    "together.png": "3dca6673f3009dcb146e091ee23626b664cc1b920c1255de1ac2eee878a37f46"
+  }
+}
