@@ -2,10 +2,11 @@
 
 ## Standalone app
 
-`dist/room-anatomy.zip` contains the standalone HTML, licence and opening instructions.
-`dist/room-anatomy.html` is the complete application, including JavaScript, CSS and geometry toolkit.
-Download it and open it in a browser that allows local HTML files. `dist/index.html` is identical
-and serves as the hosting entry point. Keep `dist/ANATOMY-LICENSE.txt` with redistributed files.
+`dist/cabinet.zip` contains the cabinet and bedroom HTML files, licence and opening instructions.
+`dist/cabinet.html` is the current lead study, including JavaScript, CSS and geometry toolkit.
+Extract the ZIP and open `cabinet.html` in a browser that allows local HTML files.
+`dist/index.html` is identical and serves as the hosting entry point. The earlier bedroom remains
+at `dist/bedroom.html` and `dist/room-anatomy.html`. Keep `dist/ANATOMY-LICENSE.txt` with redistributed files.
 There are no runtime API keys, fonts, images, packages or CDN dependencies.
 
 The managed cloud browser blocks `file://` navigation. Local HTTP browser acceptance establishes
@@ -17,14 +18,14 @@ another browser remains outstanding. This is recorded separately from successful
 ```sh
 npm run build       # deterministic, dependency-free single-file build
 npm test            # pure model, scene contracts and deterministic geometry
-npm run test:browser # launches its own temporary HTTP server and Chromium
+npm run test:cabinet # launches its own temporary HTTP server and Chromium
 npm run serve       # internal development server, port 4173
 npm run test:study  # revision controls; requires the running development server
 python3 tests/visual.py # dense motion review against that running server
 ```
 
 Use Node 24 (minimum 22). Browser tests use Python Playwright and `/usr/bin/chromium`;
-`docs/SETUP.md` records their verified versions. See `docs/QA.md` for actual results and limitations.
+`docs/SETUP.md` records their verified versions. See `docs/CABINET_QA.md` for current results and limitations.
 `src/spec.mjs`, `model.mjs`, `scene.mjs`, `study-model.mjs`, `study-scene.mjs` and `controller.mjs` keep physical data, calculation,
 geometry and interaction separate. The bundler inlines them and the pinned Anatomy core.
 
@@ -38,7 +39,7 @@ One-time activation:
 
 1. Open repository **Settings → Pages**.
 2. Under **Build and deployment**, set **Source → GitHub Actions**.
-3. PR #1 is already merged. Review the `feat/architectural-study` revision, wait for its build
+3. PR #1 is already merged. Review the `feat/bedside-cabinet` revision, wait for its build
    check to pass, and merge the new pull request into `main` when satisfied.
 4. Open **Actions → GitHub Pages** and wait for the build and deploy jobs to succeed.
    If the initial deploy ran before Pages was enabled, rerun the failed job or use **Run workflow**

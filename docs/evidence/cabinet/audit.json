@@ -1,0 +1,406 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.43.2",
+        "area": 5.6753999999928055,
+        "at": "sweep 123.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.43.6",
+        "area": 5.6753999999928055,
+        "at": "sweep 123.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.46.24",
+        "area": 5.6753999999928055,
+        "at": "sweep 123.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.46.64000000000001",
+        "area": 5.727950000000419,
+        "at": "sweep 123.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.43.2",
+        "area": 5.6753999999928055,
+        "at": "sweep 132.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.43.6",
+        "area": 5.6754000000073574,
+        "at": "sweep 132.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.46.24",
+        "area": 5.6753999999928055,
+        "at": "sweep 132.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.46.64000000000001",
+        "area": 5.727950000014971,
+        "at": "sweep 132.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.43.2",
+        "area": 5.6753999999928055,
+        "at": "sweep 303.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.43.6",
+        "area": 5.6753999999928055,
+        "at": "sweep 303.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.46.24",
+        "area": 5.6753999999928055,
+        "at": "sweep 303.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.46.64000000000001",
+        "area": 5.727950000000419,
+        "at": "sweep 303.285"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.43.2",
+        "area": 5.6753999999928055,
+        "at": "sweep 312.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.43.6",
+        "area": 5.6754000000073574,
+        "at": "sweep 312.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.46.24",
+        "area": 5.6753999999928055,
+        "at": "sweep 312.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.46.64000000000001",
+        "area": 5.727950000014971,
+        "at": "sweep 312.715"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.43.2",
+        "area": 5.6753999999928055,
+        "at": "story 3.268"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.43.6",
+        "area": 5.6753999999928055,
+        "at": "story 3.268"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.46.24",
+        "area": 5.6753999999928055,
+        "at": "story 3.268"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.46.64000000000001",
+        "area": 5.727950000000419,
+        "at": "story 3.268"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.43.2",
+        "area": 5.6753999999928055,
+        "at": "story 3.472"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.43.6",
+        "area": 5.6754000000073574,
+        "at": "story 3.472"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.46.24",
+        "area": 5.6753999999928055,
+        "at": "story 3.472"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.46.64000000000001",
+        "area": 5.727950000014971,
+        "at": "story 3.472"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.46.64000000000001",
+        "area": 5.727950000000419,
+        "at": "story 6.922"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.46.24",
+        "area": 5.6753999999928055,
+        "at": "story 6.922"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.43.6",
+        "area": 5.6753999999928055,
+        "at": "story 6.922"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.43.2",
+        "area": 5.6753999999928055,
+        "at": "story 6.922"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.middle",
+        "b": "runner.-1.middle.lip.43.2",
+        "area": 5.727950000000419,
+        "at": "story 7.012"
+      },
+      {
+        "layer": "object",
+        "a": "runner.-1.inner",
+        "b": "runner.-1.inner.lip.43.6",
+        "area": 5.6754000000073574,
+        "at": "story 7.012"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.inner",
+        "b": "runner.1.inner.lip.46.24",
+        "area": 5.727949999985867,
+        "at": "story 7.012"
+      },
+      {
+        "layer": "object",
+        "a": "runner.1.middle",
+        "b": "runner.1.middle.lip.46.64000000000001",
+        "area": 5.6754000000073574,
+        "at": "story 7.012"
+      }
+    ],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 206,
+      "tightest": 0,
+      "orderStates": 1041,
+      "changes": 130,
+      "posedStates": 1081,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 1.6594971580052515,
+          "dot": 0.010000000000000009,
+          "fade": 0.03125,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 194092
+      },
+      "depthStates": 35,
+      "depthPairs": 12760,
+      "seconds": 965.59
+    },
+    "quick": false,
+    "skipped": [],
+    "changes": [
+      {
+        "family": "story",
+        "x": 7,
+        "count": 843,
+        "pairs": [
+          "book.pages / book.spine",
+          "case.left / case.right",
+          "case.left / case.back",
+          "case.left / case.shelf"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 820,
+        "pairs": [
+          "book.pages / book.spine",
+          "case.left / case.right",
+          "case.left / case.back",
+          "case.left / case.shelf"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 3.4000000000000004,
+        "count": 788,
+        "pairs": [
+          "book.pages / book.spine",
+          "case.right / case.back",
+          "case.right / case.shelf",
+          "case.right / drawer.left"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 777,
+        "pairs": [
+          "book.pages / book.spine",
+          "case.right / case.back",
+          "case.right / case.shelf",
+          "case.right / drawer.left"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.2,
+        "count": 216,
+        "pairs": [
+          "drawer.right / front.spacer.-18",
+          "drawer.right / front.spacer.18",
+          "case.back / case.shelf",
+          "case.back / drawer.front"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 219,
+        "count": 174,
+        "pairs": [
+          "drawer.right / front.spacer.-18",
+          "case.back / case.shelf",
+          "case.back / drawer.front",
+          "case.back / handle.post.-9"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 28.5,
+        "count": 156,
+        "pairs": [
+          "drawer.front / drawer.right",
+          "drawer.front / drawer.back",
+          "drawer.front / drawer.bottom",
+          "drawer.front / drawer.inner-front"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 1.8,
+        "count": 145,
+        "pairs": [
+          "handle.pull / drawer.right",
+          "handle.pull / drawer.back",
+          "handle.pull / drawer.bottom",
+          "handle.pull / drawer.inner-front"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 28.900000000000002,
+        "count": 132,
+        "pairs": [
+          "bearing.-1.bearingInner.11 / runner.1.middle.lip.43.2",
+          "bearing.-1.bearingInner.11 / runner.1.inner",
+          "bearing.-1.bearingInner.11 / runner.1.inner.lip.46.24",
+          "bearing.-1.bearingInner.11 / drawer.mount.1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 39,
+        "count": 112,
+        "pairs": [
+          "case.back / case.shelf",
+          "case.back / book.cover.top",
+          "handle.pull / drawer.right",
+          "handle.pull / drawer.back"
+        ]
+      }
+    ]
+  }
+}

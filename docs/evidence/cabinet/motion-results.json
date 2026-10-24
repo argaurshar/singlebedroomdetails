@@ -1,0 +1,14 @@
+{
+  "samples": 361,
+  "range": [
+    0,
+    36
+  ],
+  "step": 0.1,
+  "forced_depth_orders": 0,
+  "unseparated_pairs": 0,
+  "initial_final_pixels_identical": true,
+  "flags": [],
+  "js_ms_median": 5.599999999627471,
+  "js_ms_p95": 12.800000000745058
+}

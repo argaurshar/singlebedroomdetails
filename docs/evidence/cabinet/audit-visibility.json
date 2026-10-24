@@ -1,0 +1,150 @@
+[
+  {
+    "at": "sweep 123.285",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.43.6",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.43.2",
+      "runner.1.inner",
+      "runner.1.inner.lip.46.24",
+      "runner.1.middle",
+      "runner.1.middle.lip.46.64000000000001"
+    ],
+    "identical_with_parts_hidden": true,
+    "difference_bounds": null,
+    "changed_pixels": 0
+  },
+  {
+    "at": "sweep 132.715",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.46.24",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.46.64000000000001",
+      "runner.1.inner",
+      "runner.1.inner.lip.43.6",
+      "runner.1.middle",
+      "runner.1.middle.lip.43.2"
+    ],
+    "identical_with_parts_hidden": true,
+    "difference_bounds": null,
+    "changed_pixels": 0
+  },
+  {
+    "at": "sweep 303.285",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.46.24",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.46.64000000000001",
+      "runner.1.inner",
+      "runner.1.inner.lip.43.6",
+      "runner.1.middle",
+      "runner.1.middle.lip.43.2"
+    ],
+    "identical_with_parts_hidden": false,
+    "difference_bounds": [
+      358,
+      219,
+      677,
+      325
+    ],
+    "changed_pixels": 219
+  },
+  {
+    "at": "sweep 312.715",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.43.6",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.43.2",
+      "runner.1.inner",
+      "runner.1.inner.lip.46.24",
+      "runner.1.middle",
+      "runner.1.middle.lip.46.64000000000001"
+    ],
+    "identical_with_parts_hidden": false,
+    "difference_bounds": [
+      356,
+      219,
+      676,
+      326
+    ],
+    "changed_pixels": 246
+  },
+  {
+    "at": "story 3.268",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.43.6",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.43.2",
+      "runner.1.inner",
+      "runner.1.inner.lip.46.24",
+      "runner.1.middle",
+      "runner.1.middle.lip.46.64000000000001"
+    ],
+    "identical_with_parts_hidden": true,
+    "difference_bounds": null,
+    "changed_pixels": 0
+  },
+  {
+    "at": "story 3.472",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.46.24",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.46.64000000000001",
+      "runner.1.inner",
+      "runner.1.inner.lip.43.6",
+      "runner.1.middle",
+      "runner.1.middle.lip.43.2"
+    ],
+    "identical_with_parts_hidden": true,
+    "difference_bounds": null,
+    "changed_pixels": 0
+  },
+  {
+    "at": "story 6.922",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.46.24",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.46.64000000000001",
+      "runner.1.inner",
+      "runner.1.inner.lip.43.6",
+      "runner.1.middle",
+      "runner.1.middle.lip.43.2"
+    ],
+    "identical_with_parts_hidden": false,
+    "difference_bounds": [
+      358,
+      219,
+      677,
+      325
+    ],
+    "changed_pixels": 217
+  },
+  {
+    "at": "story 7.012",
+    "parts": [
+      "runner.-1.inner",
+      "runner.-1.inner.lip.43.6",
+      "runner.-1.middle",
+      "runner.-1.middle.lip.43.2",
+      "runner.1.inner",
+      "runner.1.inner.lip.46.24",
+      "runner.1.middle",
+      "runner.1.middle.lip.46.64000000000001"
+    ],
+    "identical_with_parts_hidden": false,
+    "difference_bounds": [
+      356,
+      219,
+      676,
+      325
+    ],
+    "changed_pixels": 256
+  }
+]

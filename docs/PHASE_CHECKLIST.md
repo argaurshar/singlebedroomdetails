@@ -1,3 +1,7 @@
+> Current lead revision: the user authorized a single furniture study after reviewing the room.
+> See [cabinet direction and checklist](CABINET_DIRECTION.md) and [cabinet evidence](CABINET_QA.md).
+> The original room checklist below remains historical evidence for the preserved bedroom.
+
 # RDB phase checklist
 
 Status: core implementation complete on `feat/room-anatomy`, 24 October 2026.
