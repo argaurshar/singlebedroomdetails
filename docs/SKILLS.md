@@ -19,3 +19,11 @@ REA's MCP server and engines are not installed or registered. At the pinned revi
 runtime declares Node `^22.23.4 || ^24.22.1 || >=26.12.1` and npm `11.16.0`; current Node 24.19.0
 and npm 11.9.0 do not meet that runtime declaration. Source-based SVG development does not need it.
 Preserve both licences with reused code. Cloud-catalog availability is separate from these local files.
+
+## Architectural-study revision
+
+The published `rea-agents@6.7.0` browser CLI was subsequently installed and successfully exercised
+on the existing Room Anatomy app. Its published engine range accepts Node 24.19.0, unlike the
+recorded source-checkout range above. Locked manifests are in `tooling/rea/`; the originally pinned
+skill files remain unchanged. No MCP registration or native analysis engine was installed. See
+`ARCHITECTURAL_STUDY_REVISION.md` for complete evidence, limitations and the reference-access blocker.
