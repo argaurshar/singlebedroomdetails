@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'.test-artifacts';OUT.mkdir(ex
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium')
  page=b.new_page(viewport={'width':1440,'height':1100},device_scale_factor=1)
- page.goto('http://127.0.0.1:4173/?render');page.wait_for_function("typeof window.seek === 'function'")
+ page.goto('http://127.0.0.1:4173/bedroom.html?render');page.wait_for_function("typeof window.seek === 'function'")
  scene_deltas=[];ui_deltas=[];previous=None;previous_ui=None;bounds=[];cpu=[];frames=[]
  for i in range(361):
   t=i/10

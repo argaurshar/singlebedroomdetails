@@ -6,7 +6,7 @@ OUT=Path(__file__).resolve().parents[1]/'.test-artifacts';OUT.mkdir(exist_ok=Tru
 with sync_playwright() as p:
  browser=p.chromium.launch(executable_path='/usr/bin/chromium')
  page=browser.new_page(viewport={'width':1440,'height':1100})
- page.goto('http://127.0.0.1:4173/')
+ page.goto('http://127.0.0.1:4173/bedroom.html')
  page.evaluate('seek(9.2)')
  page.locator('[data-index="2"]').click()
  result=page.evaluate('''()=>new Promise(resolve=>{let times=[];function sample(t){times.push(t);if(times.length<121)requestAnimationFrame(sample);else resolve({elapsed:times.at(-1)-times[0],intervals:times.slice(1).map((x,i)=>x-times[i]),parts:roomState.partCount});}requestAnimationFrame(sample);})''')

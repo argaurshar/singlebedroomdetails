@@ -8,7 +8,7 @@ def passed(s):checks.append(s);print('PASS',s,flush=True)
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium')
  page=b.new_page(viewport={'width':1440,'height':1000});errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
- page.goto('http://127.0.0.1:4173/');page.wait_for_function('roomState')
+ page.goto('http://127.0.0.1:4173/bedroom.html');page.wait_for_function('roomState')
  page.locator('#study').click();assert page.locator('.step:enabled').count()==7
  page.locator('[data-index="4"]').click();page.wait_for_function('roomState.running && roomState.studyIndex===4')
  page.locator('[data-index="1"]').click();page.wait_for_function('roomState.running && roomState.studyIndex===1')
@@ -29,7 +29,7 @@ with sync_playwright() as p:
  page.locator('#motion-opt').click();page.locator('#pause').click();page.wait_for_function('roomState.running')
  page.locator('#motion-opt').click();assert not page.evaluate('roomState.running')
  passed('reduced motion remains still by default; explicit per-visit opt-in is reversible')
- page.emulate_media(reduced_motion='no-preference');page.goto('http://127.0.0.1:4173/?render');page.wait_for_function('roomState')
+ page.emulate_media(reduced_motion='no-preference');page.goto('http://127.0.0.1:4173/bedroom.html?render');page.wait_for_function('roomState')
  selected_bounds=[]
  for i,t in enumerate([4.5,9.2,15.9,20.6,25.3,30.6,35.7]):
   page.evaluate('(t)=>seek(t)',t)

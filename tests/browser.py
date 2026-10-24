@@ -8,7 +8,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
  def log_message(self,*a): pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Handler,directory=str(ROOT/'dist')))
 threading.Thread(target=server.serve_forever,daemon=True).start()
-URL=f'http://127.0.0.1:{server.server_port}/'
+URL=f'http://127.0.0.1:{server.server_port}/bedroom.html'
 results=[]
 def passed(name): results.append(name);print('PASS',name,flush=True)
 def state(page):return page.evaluate('window.roomState')
