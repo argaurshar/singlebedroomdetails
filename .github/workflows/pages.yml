@@ -24,7 +24,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-      # The project has no npm dependencies; Node supplies the build and test runner.
+      - name: Install pinned build tools
+        run: npm ci
       - name: Test the model and scene
         run: npm test
       - name: Build the standalone app

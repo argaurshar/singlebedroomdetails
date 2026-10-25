@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f0ede4" />
+    <title>Room Anatomy — Furniture & objects</title>
+    <style>
+      /* STYLES */
+    </style>
+  </head>
+  <body
+    class="iso"
+    data-theme="light"
+    data-finish="natural"
+    data-material="timber"
+  >
+    <header class="site-header">
+      <a class="brand" href="#library"
+        ><span class="brand-mark">RA</span> Room Anatomy<span class="brand-sub"
+          >THE OBJECT LIBRARY</span
+        ></a
+      >
+      <nav>
+        <a href="#library">Library</a><a href="cabinet.html">Original cabinet</a
+        ><a href="bedroom.html">Bedroom</a>
+      </nav>
+    </header>
+    <main>
+      <section id="library" aria-label="Preset library">
+        <div class="library-hero">
+          <div class="hero-copy">
+            <span class="eyebrow">FURNITURE, TAKEN SERIOUSLY</span>
+            <h1>Look closer.<br />Understand how<br />it comes together.</h1>
+            <p>
+              Seven everyday objects. Explore their parts, study the
+              connections, and make the dimensions your own.
+            </p>
+            <button id="hero-open" class="primary">
+              Explore the bedside cabinet <span>→</span>
+            </button>
+            <div class="hero-meta">
+              3D STUDIES <span>·</span> CONSTRUCTION DETAILS <span>·</span> YOUR
+              VARIATIONS
+            </div>
+          </div>
+          <div id="hero-art" class="hero-art" aria-hidden="true"></div>
+        </div>
+        <div class="library-heading">
+          <div>
+            <span class="eyebrow">THE COLLECTION / 01–07</span>
+            <h2>Choose an object to understand.</h2>
+          </div>
+          <label class="search"
+            >Search the collection<input
+              id="search"
+              type="search"
+              placeholder="Try “table” or “lighting”…"
+          /></label>
+        </div>
+        <div class="filters" role="group" aria-label="Filter presets">
+          <button data-filter="All" aria-pressed="true">
+            All objects <span>7</span></button
+          ><button data-filter="Furniture" aria-pressed="false">
+            Furniture</button
+          ><button data-filter="Decor" aria-pressed="false">Decor</button
+          ><button data-filter="Saved" aria-pressed="false">
+            Favourites ♡
+          </button>
+        </div>
+        <div id="preset-grid" class="preset-grid"></div>
+        <p id="no-results" hidden>
+          No matching objects. Try another search or filter.
+        </p>
+        <section class="saved-section">
+          <div>
+            <span class="eyebrow">YOUR WORKBENCH</span>
+            <h2>Saved variations</h2>
+          </div>
+          <div id="saved-list"></div>
+          <p id="saved-empty">
+            Save a dimension or material variation from any object study.
+            Designs stay in this browser; export JSON to keep a portable copy.
+          </p>
+        </section>
+        <p class="assumptions">
+          Original demonstration designs, not manufacturer specifications or
+          certified fabrication drawings.
+        </p>
+      </section>
+      <section id="study" hidden aria-label="Interactive object study">
+        <div class="study-heading">
+          <button id="back-library" class="quiet">← All objects</button>
+          <div>
+            <span id="study-tag" class="eyebrow"></span>
+            <h1 id="study-name"></h1>
+          </div>
+          <button id="favourite" class="quiet" aria-pressed="false">
+            ♡ Favourite</button
+          ><button id="save-design" class="primary">Save variation</button>
+        </div>
+        <div class="study-layout">
+          <aside class="chapter-panel">
+            <span class="eyebrow">THE GUIDED STUDY</span>
+            <div class="mode-buttons">
+              <button id="manual" aria-pressed="true">Manual</button
+              ><button id="auto" aria-pressed="false">▶ Auto</button>
+            </div>
+            <ol id="chapters"></ol>
+            <button id="reset" class="quiet">↺ Reset study</button
+            ><button id="motion-opt" hidden>
+              Enable motion for this visit
+            </button>
+            <p id="status" role="status">
+              Choose a chapter or select a component.
+            </p>
+            <a class="small-link" href="#library">Return to collection →</a>
+          </aside>
+          <div class="workspace">
+            <div class="scene-heading">
+              <div>
+                <span id="stage-count" class="eyebrow">01 / 07</span>
+                <h2 id="stage-title"></h2>
+              </div>
+              <span class="demo-tag">DEMO DIMENSIONS · mm</span>
+            </div>
+            <div class="view-tabs" role="group" aria-label="Drawing view">
+              <button data-view="3d" aria-pressed="true">3D study</button
+              ><button data-view="front" aria-pressed="false">Front</button
+              ><button data-view="side" aria-pressed="false">Side</button
+              ><button data-view="plan" aria-pressed="false">Plan</button
+              ><button data-view="section" aria-pressed="false">
+                Section A–A
+              </button>
+            </div>
+            <div
+              id="scene"
+              class="iso-stage iso-turn"
+              tabindex="0"
+              role="group"
+              aria-describedby="view-hint"
+              aria-label="Interactive furniture illustration"
+            ></div>
+            <div id="technical" hidden></div>
+            <div class="view-tools">
+              <span id="view-hint">Drag to turn · select a visible part</span
+              ><button id="fit-view" class="quiet">Fit object</button>
+            </div>
+            <div class="transport">
+              <button id="play" class="primary">▶ Play story</button
+              ><label class="sr-only" for="timeline">Story position</label
+              ><input
+                id="timeline"
+                type="range"
+                min="0"
+                max="36"
+                step=".01"
+                value="0"
+              /><output id="clock">0:00 / 0:36</output>
+            </div>
+            <div class="readouts" id="readouts"></div>
+            <div id="drawer-tools" class="drawer-tools" hidden>
+              <label
+                >Drawer travel<input
+                  id="travel"
+                  type="range"
+                  min="0"
+                  value="0"
+                  step="1" /></label
+              ><label
+                >Opposing gap (mm)<input
+                  id="gap"
+                  type="number"
+                  min="0"
+                  max="2000"
+                  step="10"
+                  value="800" /></label
+              ><output id="clearance"></output>
+            </div>
+            <p class="lesson" id="lesson"></p>
+            <div class="assembly-tools">
+              <button id="assembly-toggle" class="quiet" aria-pressed="false">
+                Build it step by step</button
+              ><button id="assembly-prev" hidden>← Previous</button
+              ><button id="assembly-next" hidden>Next connection →</button
+              ><output id="assembly-caption"></output>
+            </div>
+          </div>
+          <aside class="inspector">
+            <nav class="inspector-tabs" aria-label="Study tools">
+              <button data-panel="inspect" aria-pressed="true">Inspect</button
+              ><button data-panel="design" aria-pressed="false">Design</button
+              ><button data-panel="export" aria-pressed="false">Export</button>
+            </nav>
+            <section data-inspector="inspect">
+              <div class="panel-title">
+                <span class="eyebrow">01 / INSPECT</span
+                ><button id="clear-selection" class="quiet">Clear</button>
+              </div>
+              <label for="component-select">Select an assembly</label
+              ><select id="component-select"></select>
+              <h3 id="part-title"></h3>
+              <p id="part-description"></p>
+              <p id="connection"></p>
+              <div class="selection-actions">
+                <button id="isolate" aria-pressed="false">Isolate</button
+                ><button id="focus-part">Close-up →</button>
+              </div>
+              <label for="part-select">Individual part</label
+              ><select id="part-select"></select
+              ><output id="part-size"></output>
+              <details>
+                <summary>View controls</summary>
+                <label
+                  >Rotation<input
+                    id="orbit"
+                    type="range"
+                    min="-180"
+                    max="180"
+                    step="1"
+                    value="0" /></label
+                ><label
+                  >Zoom<input
+                    id="zoom"
+                    type="range"
+                    min="1"
+                    max="2.5"
+                    step=".1"
+                    value="1"
+                /></label>
+              </details>
+            </section>
+            <section data-inspector="design" hidden>
+              <span class="eyebrow">02 / MAKE A VARIATION</span>
+              <form id="dimensions">
+                <div id="dimension-fields" class="dimension-fields"></div>
+                <label id="material-label"
+                  >Construction material<select id="material">
+                    <option value="timber">Solid oak</option>
+                    <option value="ply">Oak-veneered plywood</option>
+                    <option value="mdf">Painted MDF</option>
+                  </select></label
+                >
+                <p id="material-note" class="small"></p>
+                <button type="submit" id="apply-dimensions" class="primary">
+                  Apply dimensions</button
+                ><button type="button" id="restore-defaults" class="quiet">
+                  Restore preset
+                </button>
+                <p id="form-error" role="alert"></p>
+              </form>
+              <div class="finishes" role="group" aria-label="Finish">
+                <button
+                  data-finish="natural"
+                  aria-label="Natural finish"
+                  aria-pressed="true"
+                ></button
+                ><button
+                  data-finish="walnut"
+                  aria-label="Walnut tone"
+                  aria-pressed="false"
+                ></button
+                ><button
+                  data-finish="sage"
+                  aria-label="Sage finish"
+                  aria-pressed="false"
+                ></button
+                ><button
+                  data-finish="ink"
+                  aria-label="Ink finish"
+                  aria-pressed="false"
+                ></button>
+              </div>
+            </section>
+            <section data-inspector="export" hidden>
+              <span class="eyebrow">03 / TAKE IT WITH YOU</span>
+              <div class="export-grid">
+                <button id="print-sheet">Study sheet / PDF</button
+                ><button id="export-svg">Drawing SVG</button
+                ><button id="export-csv">Parts CSV</button
+                ><button id="export-json">Design JSON</button
+                ><button id="export-video">Record 36-second video</button>
+              </div>
+              <label class="import-label"
+                >Open saved design<input
+                  id="import-json"
+                  type="file"
+                  accept="application/json,.json"
+              /></label>
+              <p class="small">
+                Video records locally without audio; keep this tab visible. PDF
+                uses your browser’s Print → Save as PDF. Parts and drawings are
+                study references, not workshop instructions.
+              </p>
+            </section>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Room Anatomy · objects explained through their construction.</span
+      ><span
+        >Anatomy toolkit · original demonstration geometry ·
+        <a href="ANATOMY-LICENSE.txt">MIT licence</a></span
+      >
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="save-dialog">
+      <form id="save-form">
+        <h2>Keep this variation.</h2>
+        <label
+          >Design name<input
+            id="design-name"
+            maxlength="60"
+            required
+            placeholder="My oak writing desk"
+        /></label>
+        <div>
+          <button id="cancel-save" type="button">Cancel</button
+          ><button type="submit" class="primary">Save design</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="video-dialog" aria-labelledby="video-title">
+      <h2 id="video-title">Recording your study</h2>
+      <p id="video-status" role="status"></p>
+      <progress
+        id="video-progress"
+        max="1"
+        value="0"
+        aria-label="Video recording progress"
+      ></progress>
+      <p><button id="cancel-video">Cancel recording</button></p>
+    </dialog>
+    <script>
+      /* APP */
+    </script>
+  </body>
+</html>
