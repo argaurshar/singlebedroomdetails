@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "cancel recording",
+    "36-second local video downloaded and decoded",
+    "six extracted frames",
+    "previous time restored",
+    "standalone SVG image decodes",
+    "no browser errors"
+  ],
+  "video": "bedside-study.webm",
+  "metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 960,
+        "height": 800
+      }
+    ],
+    "format": {},
+    "measured_last_frame_seconds": 36.011
+  }
+}

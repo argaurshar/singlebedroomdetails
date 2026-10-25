@@ -1,0 +1,605 @@
+{
+  "bedside": {
+    "skipped": [
+      "continuity"
+    ],
+    "failures": {
+      "separation": 0,
+      "unseparated": 0,
+      "cycles": 0,
+      "forced": 0,
+      "swaps": 8,
+      "rigid": 0,
+      "swept": 0,
+      "posed": 0,
+      "folds": 0,
+      "self": 0,
+      "crowding": 0,
+      "endon": 0,
+      "coverage": 0,
+      "depth": 0,
+      "continuity": 0
+    },
+    "swapWarnings": [
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.inner-front",
+        "area": 0.8525949791328458,
+        "at": "sweep 38.000"
+      },
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.side.1",
+        "area": 0.8783234847942367,
+        "at": "sweep 218.000"
+      },
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.base",
+        "area": 0.7770338643458672,
+        "at": "sweep 218.000"
+      },
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.inner-front",
+        "area": 1.5353949791169725,
+        "at": "sweep 218.000"
+      },
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.inner-front",
+        "area": 0.8525949791328458,
+        "at": "story 1.808"
+      },
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.side.1",
+        "area": 0.861023484794714,
+        "at": "story 6.211"
+      },
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.base",
+        "area": 0.7770338643458672,
+        "at": "story 6.211"
+      },
+      {
+        "layer": "object",
+        "a": "bedside.drawer.front",
+        "b": "bedside.drawer.inner-front",
+        "area": 1.5353949791169725,
+        "at": "story 6.211"
+      }
+    ],
+    "stats": {
+      "planes": 217,
+      "tightest": -3.552713678800501e-15,
+      "orderStates": 1076,
+      "changes": 122,
+      "posedStates": 1132,
+      "depthStates": 48,
+      "depthPairs": 12055,
+      "seconds": 307.549
+    }
+  },
+  "bookcase": {
+    "skipped": [
+      "layers",
+      "depth",
+      "continuity"
+    ],
+    "failures": {
+      "separation": 0,
+      "unseparated": 0,
+      "cycles": 0,
+      "forced": 0,
+      "swaps": 2,
+      "rigid": 0,
+      "swept": 0,
+      "posed": 0,
+      "folds": 0,
+      "self": 0,
+      "crowding": 0,
+      "endon": 0,
+      "coverage": 0,
+      "depth": 0,
+      "continuity": 0
+    },
+    "swapWarnings": [
+      {
+        "layer": "object",
+        "a": "bookcase.side.-1",
+        "b": "bookcase.back",
+        "area": 44.75896249998914,
+        "at": "sweep 310.043"
+      },
+      {
+        "layer": "object",
+        "a": "bookcase.side.-1",
+        "b": "bookcase.back",
+        "area": 44.75896249998914,
+        "at": "story 6.945"
+      }
+    ],
+    "stats": {
+      "planes": 138,
+      "tightest": 0,
+      "orderStates": 936,
+      "changes": 57,
+      "posedStates": 1122,
+      "depthStates": 48,
+      "depthPairs": 0,
+      "seconds": 2.594
+    }
+  },
+  "coffee": {
+    "skipped": [
+      "layers",
+      "depth",
+      "continuity"
+    ],
+    "failures": {
+      "separation": 0,
+      "unseparated": 0,
+      "cycles": 0,
+      "forced": 0,
+      "swaps": 4,
+      "rigid": 0,
+      "swept": 0,
+      "posed": 0,
+      "folds": 0,
+      "self": 0,
+      "crowding": 0,
+      "endon": 0,
+      "coverage": 0,
+      "depth": 0,
+      "continuity": 0
+    },
+    "swapWarnings": [
+      {
+        "layer": "object",
+        "a": "coffee.leg.445.-245",
+        "b": "coffee.shelf.block.410.-210",
+        "area": 1.220895757767721,
+        "at": "sweep 128.402"
+      },
+      {
+        "layer": "object",
+        "a": "coffee.leg.-445.245",
+        "b": "coffee.shelf.block.-410.210",
+        "area": 1.220895757767721,
+        "at": "sweep 308.402"
+      },
+      {
+        "layer": "object",
+        "a": "coffee.leg.445.-245",
+        "b": "coffee.shelf.block.410.-210",
+        "area": 1.220895757767721,
+        "at": "story 3.574"
+      },
+      {
+        "layer": "object",
+        "a": "coffee.leg.-445.245",
+        "b": "coffee.shelf.block.-410.210",
+        "area": 1.220895757767721,
+        "at": "story 6.930"
+      }
+    ],
+    "stats": {
+      "planes": 112,
+      "tightest": -7.105427357601002e-15,
+      "orderStates": 1008,
+      "changes": 93,
+      "posedStates": 1122,
+      "depthStates": 48,
+      "depthPairs": 0,
+      "seconds": 3.654
+    }
+  },
+  "console": {
+    "skipped": [
+      "continuity"
+    ],
+    "failures": {
+      "separation": 0,
+      "unseparated": 0,
+      "cycles": 0,
+      "forced": 0,
+      "swaps": 0,
+      "rigid": 0,
+      "swept": 0,
+      "posed": 0,
+      "folds": 0,
+      "self": 0,
+      "crowding": 0,
+      "endon": 0,
+      "coverage": 0,
+      "depth": 0,
+      "continuity": 0
+    },
+    "swapWarnings": [],
+    "stats": {
+      "planes": 172,
+      "tightest": -7.105427357601002e-15,
+      "orderStates": 980,
+      "changes": 79,
+      "posedStates": 1122,
+      "depthStates": 48,
+      "depthPairs": 5113,
+      "seconds": 59.04
+    }
+  },
+  "desk": {
+    "skipped": [
+      "layers",
+      "depth",
+      "continuity"
+    ],
+    "failures": {
+      "separation": 0,
+      "unseparated": 0,
+      "cycles": 0,
+      "forced": 0,
+      "swaps": 5,
+      "rigid": 0,
+      "swept": 0,
+      "posed": 0,
+      "folds": 0,
+      "self": 0,
+      "crowding": 0,
+      "endon": 0,
+      "coverage": 0,
+      "depth": 0,
+      "continuity": 0
+    },
+    "swapWarnings": [
+      {
+        "layer": "object",
+        "a": "desk.rail.-1.inner.web",
+        "b": "desk.rail.-1.inner.lip",
+        "area": 9.647500000006403,
+        "at": "sweep 125.039"
+      },
+      {
+        "layer": "object",
+        "a": "desk.rail.1.inner.web",
+        "b": "desk.rail.1.inner.lip",
+        "area": 9.656000000009954,
+        "at": "sweep 305.039"
+      },
+      {
+        "layer": "object",
+        "a": "desk.rail.-1.inner.web",
+        "b": "desk.rail.-1.inner.lip",
+        "area": 9.647500000006403,
+        "at": "story 3.487"
+      },
+      {
+        "layer": "object",
+        "a": "desk.rail.1.inner.web",
+        "b": "desk.rail.1.inner.lip",
+        "area": 9.647499999999127,
+        "at": "story 6.900"
+      },
+      {
+        "layer": "object",
+        "a": "desk.rail.-1.inner.web",
+        "b": "desk.rail.-1.inner.lip",
+        "area": 9.656000000002678,
+        "at": "story 6.953"
+      }
+    ],
+    "stats": {
+      "planes": 359,
+      "tightest": -3.552713678800501e-15,
+      "orderStates": 1134,
+      "changes": 151,
+      "posedStates": 1132,
+      "depthStates": 48,
+      "depthPairs": 0,
+      "seconds": 7.537
+    }
+  },
+  "lamp": {
+    "skipped": [
+      "layers",
+      "depth",
+      "continuity"
+    ],
+    "failures": {
+      "separation": 0,
+      "unseparated": 0,
+      "cycles": 0,
+      "forced": 0,
+      "swaps": 32,
+      "rigid": 0,
+      "swept": 0,
+      "posed": 0,
+      "folds": 0,
+      "self": 0,
+      "crowding": 0,
+      "endon": 0,
+      "coverage": 0,
+      "depth": 0,
+      "continuity": 0
+    },
+    "swapWarnings": [
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.13",
+        "b": "lamp.shade.fold.14",
+        "area": 1.6390412626606121,
+        "at": "sweep 1.530"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.12",
+        "b": "lamp.shade.fold.13",
+        "area": 0.6299623817467364,
+        "at": "sweep 29.471"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.0",
+        "b": "lamp.shade.fold.1",
+        "area": 1.0288554982507776,
+        "at": "sweep 30.918"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.10",
+        "b": "lamp.shade.fold.11",
+        "area": 2.0264202607650077,
+        "at": "sweep 46.530"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.22",
+        "b": "lamp.shade.fold.23",
+        "area": 0.6922440999842365,
+        "at": "sweep 60.920"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.19",
+        "b": "lamp.shade.fold.20",
+        "area": 1.8002432875073282,
+        "at": "sweep 90.080"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.4",
+        "b": "lamp.shade.fold.5",
+        "area": 2.0264202607650077,
+        "at": "sweep 136.530"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.16",
+        "b": "lamp.shade.fold.17",
+        "area": 2.9295054247922963,
+        "at": "sweep 135.080"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.13",
+        "b": "lamp.shade.fold.14",
+        "area": 1.8002432875073282,
+        "at": "sweep 180.080"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.0",
+        "b": "lamp.shade.fold.1",
+        "area": 0.6299623817467364,
+        "at": "sweep 209.471"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.12",
+        "b": "lamp.shade.fold.13",
+        "area": 1.0288554982507776,
+        "at": "sweep 210.918"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.10",
+        "b": "lamp.shade.fold.11",
+        "area": 2.9295054247922963,
+        "at": "sweep 225.080"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.19",
+        "b": "lamp.shade.fold.20",
+        "area": 1.6390412626606121,
+        "at": "sweep 271.530"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.7",
+        "b": "lamp.shade.fold.8",
+        "area": 1.2748988043640566,
+        "at": "sweep 278.001"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.16",
+        "b": "lamp.shade.fold.17",
+        "area": 2.0264202607650077,
+        "at": "sweep 316.530"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.4",
+        "b": "lamp.shade.fold.5",
+        "area": 2.9295054247922963,
+        "at": "sweep 315.080"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.13",
+        "b": "lamp.shade.fold.14",
+        "area": 1.6390412626606121,
+        "at": "story 0.532"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.12",
+        "b": "lamp.shade.fold.13",
+        "area": 0.6299623817467364,
+        "at": "story 1.621"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.0",
+        "b": "lamp.shade.fold.1",
+        "area": 1.0288554982507776,
+        "at": "story 1.654"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.10",
+        "b": "lamp.shade.fold.11",
+        "area": 2.0264202607650077,
+        "at": "story 1.979"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.22",
+        "b": "lamp.shade.fold.23",
+        "area": 0.6922440999842365,
+        "at": "story 2.248"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.19",
+        "b": "lamp.shade.fold.20",
+        "area": 1.8002432875073282,
+        "at": "story 2.770"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.16",
+        "b": "lamp.shade.fold.17",
+        "area": 2.9295054247922963,
+        "at": "story 3.769"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.4",
+        "b": "lamp.shade.fold.5",
+        "area": 2.0264202607650077,
+        "at": "story 3.817"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.13",
+        "b": "lamp.shade.fold.14",
+        "area": 1.8002432875073282,
+        "at": "story 5.854"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.0",
+        "b": "lamp.shade.fold.1",
+        "area": 0.6299623817467364,
+        "at": "story 6.139"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.12",
+        "b": "lamp.shade.fold.13",
+        "area": 1.0288554982507776,
+        "at": "story 6.152"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.10",
+        "b": "lamp.shade.fold.11",
+        "area": 2.9295054247922963,
+        "at": "story 6.268"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.19",
+        "b": "lamp.shade.fold.20",
+        "area": 1.6390412626606121,
+        "at": "story 6.627"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.7",
+        "b": "lamp.shade.fold.8",
+        "area": 1.2748988043640566,
+        "at": "story 6.677"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.4",
+        "b": "lamp.shade.fold.5",
+        "area": 2.9295054247922963,
+        "at": "story 6.992"
+      },
+      {
+        "layer": "object",
+        "a": "lamp.shade.fold.16",
+        "b": "lamp.shade.fold.17",
+        "area": 2.0264202607650077,
+        "at": "story 7.006"
+      }
+    ],
+    "stats": {
+      "planes": 351,
+      "tightest": -2.6645352591003757e-15,
+      "orderStates": 1110,
+      "changes": 144,
+      "posedStates": 1122,
+      "depthStates": 48,
+      "depthPairs": 0,
+      "seconds": 4.218
+    }
+  },
+  "mirror": {
+    "skipped": [
+      "layers",
+      "depth",
+      "continuity"
+    ],
+    "failures": {
+      "separation": 0,
+      "unseparated": 0,
+      "cycles": 0,
+      "forced": 0,
+      "swaps": 0,
+      "rigid": 0,
+      "swept": 0,
+      "posed": 0,
+      "folds": 0,
+      "self": 0,
+      "crowding": 0,
+      "endon": 0,
+      "coverage": 0,
+      "depth": 0,
+      "continuity": 0
+    },
+    "swapWarnings": [],
+    "stats": {
+      "planes": 130,
+      "tightest": -4.440892098500626e-16,
+      "orderStates": 940,
+      "changes": 59,
+      "posedStates": 1122,
+      "depthStates": 48,
+      "depthPairs": 0,
+      "seconds": 3.159
+    }
+  }
+}

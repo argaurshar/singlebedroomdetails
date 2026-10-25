@@ -1,0 +1,24 @@
+{
+  "measurements": [
+    {
+      "viewport": 1440,
+      "CPUThrottle": 1,
+      "fps": 59.99999999999999,
+      "p95FrameMs": 16.799999999999955,
+      "p95RenderMs": 2.5,
+      "time": 1.9999999999999984
+    },
+    {
+      "viewport": 390,
+      "CPUThrottle": 4,
+      "fps": 25.175705444246304,
+      "p95FrameMs": 50.100000000000364,
+      "p95RenderMs": 11.5,
+      "time": 7.165599999999994
+    }
+  ],
+  "checks": [
+    "offscreen pause/resume",
+    "render-mode clock disabled"
+  ]
+}
