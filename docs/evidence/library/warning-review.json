@@ -1,0 +1,87 @@
+[
+  [
+    "bedside",
+    6.211,
+    "drawer.front / drawer.inner-front"
+  ],
+  [
+    "bedside",
+    6.211,
+    "drawer.front / drawer.side.1"
+  ],
+  [
+    "bedside",
+    6.211,
+    "drawer.front / drawer.base"
+  ],
+  [
+    "desk",
+    6.953,
+    "rail.-1.inner.web / rail.-1.inner.lip"
+  ],
+  [
+    "desk",
+    6.9,
+    "rail.1.inner.web / rail.1.inner.lip"
+  ],
+  [
+    "coffee",
+    3.574,
+    "leg.445.-245 / shelf.block.410.-210"
+  ],
+  [
+    "coffee",
+    6.93,
+    "leg.-445.245 / shelf.block.-410.210"
+  ],
+  [
+    "bookcase",
+    6.945,
+    "side.-1 / back"
+  ],
+  [
+    "lamp",
+    5.854,
+    "shade.fold.13 / shade.fold.14"
+  ],
+  [
+    "lamp",
+    6.152,
+    "shade.fold.12 / shade.fold.13"
+  ],
+  [
+    "lamp",
+    6.139,
+    "shade.fold.0 / shade.fold.1"
+  ],
+  [
+    "lamp",
+    6.268,
+    "shade.fold.10 / shade.fold.11"
+  ],
+  [
+    "lamp",
+    2.248,
+    "shade.fold.22 / shade.fold.23"
+  ],
+  [
+    "lamp",
+    6.627,
+    "shade.fold.19 / shade.fold.20"
+  ],
+  [
+    "lamp",
+    7.006,
+    "shade.fold.16 / shade.fold.17"
+  ],
+  [
+    "lamp",
+    6.992,
+    "shade.fold.4 / shade.fold.5"
+  ],
+  [
+    "lamp",
+    6.677,
+    "shade.fold.7 / shade.fold.8"
+  ]
+]

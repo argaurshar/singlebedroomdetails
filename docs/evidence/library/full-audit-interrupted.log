@@ -1,0 +1,35 @@
+bedside clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+bedside separation
+bedside order scan sweep: 120 states
+bedside order scan sweep: 100 random states, 104 event states
+bedside order scan story: 361 states
+bedside order scan story: 100 random states, 120 event states
+bedside order scan assembly: 51 states
+bedside order scan assembly: 100 random states, 20 event states
+bedside rigid
+bedside swept
+bedside posed
+bedside folds, self, crowding, endon
+bedside coverage
+bedside continuity
+bedside continuity object: 7200 steps of 0.05° over 29 parts
+bedside continuity frame.left: 400 steps of 0.105 over 3 parts
+bedside continuity frame.right: 400 steps of 0.105 over 3 parts
+bedside continuity frame.back: 400 steps of 0.1125 over 1 parts
+bedside continuity frame.front: 400 steps of 0.1375 over 1 parts
+bedside continuity drawer: 400 steps of 0.22 over 15 parts
+bedside continuity middle: 400 steps of 0.035 over 4 parts
+bedside continuity story: 361 frames over 61 parts
+bedside continuity assembly: 51 frames over 61 parts

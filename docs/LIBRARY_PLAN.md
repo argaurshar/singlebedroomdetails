@@ -36,7 +36,7 @@ Use the pinned Anatomy SVG turning engine; retain its supporting files and licen
 - [x] Finish standalone exports and print sheet; validate before video work. Silent local video export was then implemented and tested.
 - [x] Validate numerical contracts, every preset/stage, reset/switching/worker races,
   keyboard/reduced motion, desktop/mobile screenshots, motion/depth and performance.
-- [ ] Package, document evidence/limits, commit and push a reviewable feature branch.
+- [x] Package, document evidence/limits, commit and push a reviewable feature branch.
 
 ## Acceptance
 
@@ -52,7 +52,7 @@ Prior cabinet warnings are tracked separately, never relabelled as a clean libra
 
 Core implementation and acceptance checks are complete. See `LIBRARY_QA.md` for the exact
 performed tests and known renderer diagnostics. The scoped audit has 51 edge-order warnings;
-full pixel-level continuity/depth audits remain outstanding, so no audit-clean claim is made.
+full pixel-level continuity remains outstanding; the depth oracle completed without failures, so no audit-clean claim is made.
 Source, standalone build, ZIP and reproducible checks are prepared for review. Do not merge or
 publish automatically. A room composition editor, manufacturer catalogs, CAD/GLB export and
 narrated audio are outside this first library version.

@@ -61,12 +61,12 @@ colour difference, not shape or position changes.
 The completed scoped command was:
 
 ```sh
-node scripts/audit-library.mjs --only=order,rigid,swept,posed,routes,coverage
+node scripts/audit-library.mjs --only=order,rigid,swept,posed,routes,coverage,depth
 ```
 
 It scans a full rotation, the story and assembly workshop, with sampled, random and event states.
 For all seven presets it reported **zero separation failures, unseparated pairs, cycles, forced
-orders, rigid collisions, swept/posed intersections, route or coverage failures**.
+orders, rigid collisions, swept/posed intersections, route, coverage or depth-oracle failures**.
 It also reported **51 unresolved order-change warnings**: bedside 8, console 0, desk 5, coffee 4,
 bookcase 2, lamp 32. These are actual nonzero toolkit diagnostics; the command exits unsuccessfully
 and is not labelled an audit pass. The affected pair/state records are committed in
@@ -79,11 +79,12 @@ visible in those paired views; that does not invalidate the warnings or prove ev
 pixel correct. The largest reported overlap area is approximately 44.76 toolkit pixel² at a
 bookcase contact. No vendored diagnostic code, tolerance or failure threshold was changed.
 
-A full pixel-level continuity/depth run and a separate depth-oracle run were attempted but did
-not finish within this task's extended validation window. Their partial progress is not counted
-as successful coverage. The exhaustive audits remain outstanding; rerun `npm run audit:library`
-or use `--preset=bedside` for one study. This is a scope/time limitation of this review, not a
-reported network or browser blockage. The scripted sampled/browser checks above are completed.
+The separate depth-oracle run completed for all seven presets with zero failures. A full
+continuity audit was stopped after approximately 31 minutes while still processing the bedside
+clip checks; its partial log is retained and is not counted as a pass. Exhaustive pixel-level
+continuity remains outstanding; rerun `npm run audit:library` or use `--preset=bedside` for one
+study. This is a deliberate limit of this review, not a reported network or browser blockage.
+The scripted sampled/browser/depth checks above are completed.
 
 ## Performance and browser limits
 
@@ -109,8 +110,12 @@ PDF is the browser Print/Save as PDF flow, not a CAD/dimensioned fabrication del
 `npm ci` installs pinned build-only esbuild. `npm run build` produces the room, original cabinet,
 then library. `dist/index.html` and `dist/library.html` are identical. `dist/library.zip` includes
 both preserved studies and the Anatomy MIT licence. GitHub Actions now installs the lockfile
-before tests/build and still publishes only `main`.
+before tests/build and still publishes only `main`. Two consecutive library builds produced
+identical HTML and ZIP hashes; transient compiler timings are kept out of the shipped document.
+Hashes are recorded in `evidence/library/build-hashes.json`.
 
-The GitHub CLI credential reports failed authentication in this cloud environment. PR creation
-is therefore not claimed. The branch/download and review URL are provided at handoff if the
-Git transport push succeeds. Merging and live GitHub Pages deployment remain user actions.
+The GitHub CLI credential reports failed authentication in this cloud environment. The Git transport push succeeded for `feat/preset-library`; attempted draft PR creation returned
+`Post "https://api.github.com/graphql": Forbidden`. No PR was created. Open
+https://github.com/argaurshar/singlebedroomdetails/pull/new/feat/preset-library to create the review.
+The actual app is downloadable from the branch’s `dist/library.zip`. Merging and live GitHub
+Pages deployment remain user actions.

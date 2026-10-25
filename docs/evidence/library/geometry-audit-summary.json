@@ -17,6 +17,7 @@
       "crowding": 0,
       "endon": 0,
       "coverage": 0,
+      "layers": 0,
       "depth": 0,
       "continuity": 0
     },
@@ -91,8 +92,6 @@
   },
   "bookcase": {
     "skipped": [
-      "layers",
-      "depth",
       "continuity"
     ],
     "failures": {
@@ -109,6 +108,7 @@
       "crowding": 0,
       "endon": 0,
       "coverage": 0,
+      "layers": 0,
       "depth": 0,
       "continuity": 0
     },
@@ -135,14 +135,12 @@
       "changes": 57,
       "posedStates": 1122,
       "depthStates": 48,
-      "depthPairs": 0,
-      "seconds": 2.594
+      "depthPairs": 5098,
+      "seconds": 121.617
     }
   },
   "coffee": {
     "skipped": [
-      "layers",
-      "depth",
       "continuity"
     ],
     "failures": {
@@ -159,6 +157,7 @@
       "crowding": 0,
       "endon": 0,
       "coverage": 0,
+      "layers": 0,
       "depth": 0,
       "continuity": 0
     },
@@ -199,8 +198,8 @@
       "changes": 93,
       "posedStates": 1122,
       "depthStates": 48,
-      "depthPairs": 0,
-      "seconds": 3.654
+      "depthPairs": 5623,
+      "seconds": 117.498
     }
   },
   "console": {
@@ -221,6 +220,7 @@
       "crowding": 0,
       "endon": 0,
       "coverage": 0,
+      "layers": 0,
       "depth": 0,
       "continuity": 0
     },
@@ -238,8 +238,6 @@
   },
   "desk": {
     "skipped": [
-      "layers",
-      "depth",
       "continuity"
     ],
     "failures": {
@@ -256,6 +254,7 @@
       "crowding": 0,
       "endon": 0,
       "coverage": 0,
+      "layers": 0,
       "depth": 0,
       "continuity": 0
     },
@@ -303,14 +302,12 @@
       "changes": 151,
       "posedStates": 1132,
       "depthStates": 48,
-      "depthPairs": 0,
-      "seconds": 7.537
+      "depthPairs": 10859,
+      "seconds": 163.141
     }
   },
   "lamp": {
     "skipped": [
-      "layers",
-      "depth",
       "continuity"
     ],
     "failures": {
@@ -327,6 +324,7 @@
       "crowding": 0,
       "endon": 0,
       "coverage": 0,
+      "layers": 0,
       "depth": 0,
       "continuity": 0
     },
@@ -563,14 +561,12 @@
       "changes": 144,
       "posedStates": 1122,
       "depthStates": 48,
-      "depthPairs": 0,
-      "seconds": 4.218
+      "depthPairs": 3598,
+      "seconds": 57.234
     }
   },
   "mirror": {
     "skipped": [
-      "layers",
-      "depth",
       "continuity"
     ],
     "failures": {
@@ -587,6 +583,7 @@
       "crowding": 0,
       "endon": 0,
       "coverage": 0,
+      "layers": 0,
       "depth": 0,
       "continuity": 0
     },
@@ -598,8 +595,8 @@
       "changes": 59,
       "posedStates": 1122,
       "depthStates": 48,
-      "depthPairs": 0,
-      "seconds": 3.159
+      "depthPairs": 5177,
+      "seconds": 70.646
     }
   }
 }

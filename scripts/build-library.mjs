@@ -4,9 +4,11 @@ import { presets } from "../src/library/catalog.mjs";
 import { compilePreset } from "../src/library/geometry.mjs";
 import { ISO_CSS } from "../.agents/skills/anatomy/kit/iso-kit.mjs";
 import { storeZip } from "./zip.mjs";
-const library = {};
+const library = {},
+  reports = {};
 for (const p of presets) {
-  const result = compilePreset(p.id);
+  const { report, ...result } = compilePreset(p.id);
+  reports[p.id] = report;
   library[p.id] = result;
   console.log(
     `${p.name}: ${result.model.parts.length} physical parts; strict compilation passed`,
@@ -66,7 +68,7 @@ await writeFile(
     Object.fromEntries(
       Object.entries(library).map(([id, b]) => [
         id,
-        { parts: b.model.parts.length, report: b.report },
+        { parts: b.model.parts.length, report: reports[id] },
       ]),
     ),
     null,
