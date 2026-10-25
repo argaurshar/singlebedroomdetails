@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'.test-artifacts';OUT.mkdir(ex
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium')
  page=b.new_page(viewport={'width':1440,'height':1100},device_scale_factor=1)
- page.goto('http://127.0.0.1:4173/?render');page.wait_for_function("typeof window.seek === 'function'")
+ page.goto('http://127.0.0.1:4173/bedroom.html?render');page.wait_for_function("typeof window.seek === 'function'")
  scene_deltas=[];ui_deltas=[];previous=None;previous_ui=None;bounds=[];cpu=[];frames=[]
  for i in range(361):
   t=i/10
@@ -17,9 +17,12 @@ with sync_playwright() as p:
   assert abs(result['ext']+result['clearance']-1500)<1e-8
   bounds.append(result['box']);cpu.append(result['ms'])
   shot=Image.open(io.BytesIO(page.locator('.figure-column').screenshot())).convert('RGB')
-  # Upper scene area vs the complete figure (heading and live chips included).
+  # Use actual scene bounds: the revision adds a transport bar below the SVG.
+  # A fixed crop would misclassify the chapter scrubber reset as a geometry jump.
+  figure_box=page.locator('.figure-column').bounding_box();scene_box=page.locator('#scene').bounding_box()
+  sx=scene_box['x']-figure_box['x'];sy=scene_box['y']-figure_box['y']
   full=np.asarray(shot.resize((400,320)),dtype=np.float32)
-  arr=np.asarray(shot.crop((0,90,shot.width,shot.height-100)).resize((400,260)),dtype=np.float32)
+  arr=np.asarray(shot.crop((sx,sy,sx+scene_box['width'],sy+scene_box['height'])).resize((400,260)),dtype=np.float32)
   scene_deltas.append(0 if previous is None else float(np.abs(arr-previous).mean()))
   ui_deltas.append(0 if previous_ui is None else float(np.abs(full-previous_ui).mean()))
   previous,previous_ui=arr,full

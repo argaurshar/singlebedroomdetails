@@ -1,0 +1,15 @@
+{
+  "passed": [
+    "initial model, keyboard start and reset during motion",
+    "all seven real-time chapters complete and retain their active caption; reset during each",
+    "Auto/Manual pause and direct chapter interruption",
+    "interactive drawer endpoints, half stroke and keyboard all agree with clearance model",
+    "keyboard/pointer orbit, reset view, material changes and persistence",
+    "all reduced-motion still poses and reversible explicit animation opt-in",
+    "forward/reverse/shuffled seek and render mode are deterministic",
+    "42 desktop/mobile captures; 360/390/768/1440 layouts; 44 px primary touch controls",
+    "blocked storage fallback; no runtime external requests or browser errors",
+    "offscreen playback pauses and resumes without a time jump"
+  ],
+  "count": 10
+}

@@ -1,0 +1,92 @@
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+separation
+order scan sweep: 120 states
+order scan sweep: 150 random states, 108 event states
+order scan story: 361 states
+order scan story: 150 random states, 152 event states
+rigid
+swept
+posed
+folds, self, crowding, endon
+coverage
+continuity
+continuity cabinet: 7200 steps of 0.05° over 24 parts
+continuity drawer: 400 steps of 0.08 over 8 parts
+continuity middle: 400 steps of 0.04 over 6 parts
+continuity bearingOuter: 400 steps of 0.02 over 6 parts
+continuity bearingInner: 400 steps of 0.06 over 6 parts
+continuity story: 361 frames over 69 parts
+depth oracle
+separation: 0
+unseparated: 0
+cycles: 0
+forced: 0
+swaps: 32
+  object: runner.-1.middle / runner.-1.middle.lip.43.2 swap at sweep 123.285 while overlapping 5.68 px²
+  object: runner.-1.inner / runner.-1.inner.lip.43.6 swap at sweep 123.285 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.46.24 swap at sweep 123.285 while overlapping 5.68 px²
+  object: runner.1.middle / runner.1.middle.lip.46.64000000000001 swap at sweep 123.285 while overlapping 5.73 px²
+  object: runner.1.middle / runner.1.middle.lip.43.2 swap at sweep 132.715 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.43.6 swap at sweep 132.715 while overlapping 5.68 px²
+  object: runner.-1.inner / runner.-1.inner.lip.46.24 swap at sweep 132.715 while overlapping 5.68 px²
+  object: runner.-1.middle / runner.-1.middle.lip.46.64000000000001 swap at sweep 132.715 while overlapping 5.73 px²
+  object: runner.1.middle / runner.1.middle.lip.43.2 swap at sweep 303.285 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.43.6 swap at sweep 303.285 while overlapping 5.68 px²
+  object: runner.-1.inner / runner.-1.inner.lip.46.24 swap at sweep 303.285 while overlapping 5.68 px²
+  object: runner.-1.middle / runner.-1.middle.lip.46.64000000000001 swap at sweep 303.285 while overlapping 5.73 px²
+  object: runner.-1.middle / runner.-1.middle.lip.43.2 swap at sweep 312.715 while overlapping 5.68 px²
+  object: runner.-1.inner / runner.-1.inner.lip.43.6 swap at sweep 312.715 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.46.24 swap at sweep 312.715 while overlapping 5.68 px²
+  object: runner.1.middle / runner.1.middle.lip.46.64000000000001 swap at sweep 312.715 while overlapping 5.73 px²
+  object: runner.-1.middle / runner.-1.middle.lip.43.2 swap at story 3.268 while overlapping 5.68 px²
+  object: runner.-1.inner / runner.-1.inner.lip.43.6 swap at story 3.268 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.46.24 swap at story 3.268 while overlapping 5.68 px²
+  object: runner.1.middle / runner.1.middle.lip.46.64000000000001 swap at story 3.268 while overlapping 5.73 px²
+  object: runner.1.middle / runner.1.middle.lip.43.2 swap at story 3.472 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.43.6 swap at story 3.472 while overlapping 5.68 px²
+  object: runner.-1.inner / runner.-1.inner.lip.46.24 swap at story 3.472 while overlapping 5.68 px²
+  object: runner.-1.middle / runner.-1.middle.lip.46.64000000000001 swap at story 3.472 while overlapping 5.73 px²
+  object: runner.-1.middle / runner.-1.middle.lip.46.64000000000001 swap at story 6.922 while overlapping 5.73 px²
+  object: runner.-1.inner / runner.-1.inner.lip.46.24 swap at story 6.922 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.43.6 swap at story 6.922 while overlapping 5.68 px²
+  object: runner.1.middle / runner.1.middle.lip.43.2 swap at story 6.922 while overlapping 5.68 px²
+  object: runner.-1.middle / runner.-1.middle.lip.43.2 swap at story 7.012 while overlapping 5.73 px²
+  object: runner.-1.inner / runner.-1.inner.lip.43.6 swap at story 7.012 while overlapping 5.68 px²
+  object: runner.1.inner / runner.1.inner.lip.46.24 swap at story 7.012 while overlapping 5.73 px²
+  object: runner.1.middle / runner.1.middle.lip.46.64000000000001 swap at story 7.012 while overlapping 5.68 px²
+layers: 0
+rigid: 0
+swept: 0
+posed: 0
+folds: 0
+self: 0
+crowding: 0
+endon: 0
+coverage: 0
+depth: 0
+continuity: 0
+worst tone step 0.25 · worst birth 1.66 px² · worst dot α step 0.010 · worst faded α step 0.031 · merges 0 · outline motion over bound 0.000 px · halving 0 of 800
+order changes: 130 states with swaps · 1041 order states · 1081 posed states · 206 planes (tightest margin 0.000) · depth oracle 35 states, 12760 overlapping pairs
+  story at 7.000: 843 pairs reorder (book.pages / book.spine; case.left / case.right; case.left / case.back; case.left / case.shelf)
+  sweep at 309.000: 820 pairs reorder (book.pages / book.spine; case.left / case.right; case.left / case.back; case.left / case.shelf)
+  story at 3.400: 788 pairs reorder (book.pages / book.spine; case.right / case.back; case.right / case.shelf; case.right / drawer.left)
+  sweep at 129.000: 777 pairs reorder (book.pages / book.spine; case.right / case.back; case.right / case.shelf; case.right / drawer.left)
+  story at 6.200: 216 pairs reorder (drawer.right / front.spacer.-18; drawer.right / front.spacer.18; case.back / case.shelf; case.back / drawer.front)
+  sweep at 219.000: 174 pairs reorder (drawer.right / front.spacer.-18; case.back / case.shelf; case.back / drawer.front; case.back / handle.post.-9)
+  story at 28.500: 156 pairs reorder (drawer.front / drawer.right; drawer.front / drawer.back; drawer.front / drawer.bottom; drawer.front / drawer.inner-front)
+  story at 1.800: 145 pairs reorder (handle.pull / drawer.right; handle.pull / drawer.back; handle.pull / drawer.bottom; handle.pull / drawer.inner-front)
+  story at 28.900: 132 pairs reorder (bearing.-1.bearingInner.11 / runner.1.middle.lip.43.2; bearing.-1.bearingInner.11 / runner.1.inner; bearing.-1.bearingInner.11 / runner.1.inner.lip.46.24; bearing.-1.bearingInner.11 / drawer.mount.1)
+  sweep at 39.000: 112 pairs reorder (case.back / case.shelf; case.back / book.cover.top; handle.pull / drawer.right; handle.pull / drawer.back)
+turn audit · 965.59 s

@@ -1,42 +1,49 @@
-# Room Anatomy
+# Room Anatomy — object studies
 
-A complete illustrated bedroom explainer: seven guided stages, a shared numerical/geometry model,
-Manual/Auto playback, finish studies and an interactive drawer-clearance experiment.
+The current revision leads with an interactive **bedside cabinet**: turn it in depth, open its
+drawer, inspect the telescopic runners, separate its construction and reassemble the same object.
+The earlier complete bedroom remains available through **The bedroom** link.
 
-Hosting: **GitHub Pages**. See [activation instructions](docs/DEPLOYMENT.md#github-pages).
-Expected URL after deployment: https://argaurshar.github.io/singlebedroomdetails/
+**[Download the working cabinet and bedroom ZIP](https://github.com/argaurshar/singlebedroomdetails/raw/refs/heads/feat/bedside-cabinet/dist/cabinet.zip)**
 
-**[Download the standalone app ZIP](https://github.com/argaurshar/singlebedroomdetails/raw/refs/heads/feat/room-anatomy/dist/room-anatomy.zip)**
+Extract it and open `cabinet.html` in a browser that permits local HTML. Both studies contain
+their artwork and scripts inline, with no runtime CDN, API or package dependencies.
+Source: [`src/cabinet`](src/cabinet); builds: [`dist/cabinet.html`](dist/cabinet.html) and
+[`dist/bedroom.html`](dist/bedroom.html). `dist/index.html` is identical to the cabinet.
 
-The app is also in [`dist/room-anatomy.html`](dist/room-anatomy.html), with an identical hosting entry
-at `dist/index.html`. It has no required runtime network dependencies. Open the downloaded file in
-a browser permitting local HTML, or run the internal development server below.
+This revision is on **`feat/bedside-cabinet`**, pending review and merge. The existing GitHub Pages
+workflow publishes `dist` only from `main`. The public URL remains
+https://argaurshar.github.io/singlebedroomdetails/ — it does not show this branch until deployment.
+No Vercel account is required. See [deployment instructions](docs/DEPLOYMENT.md).
 
 ```sh
 npm run build
 npm test
 npm run serve
-# In another terminal:
-npm run test:browser
-python3 tests/visual.py
+# Browser checks start their own HTTP server:
+npm run test:cabinet
+# More extensive geometric diagnostics:
+npm run audit:cabinet
 ```
 
-Use Tab to reach controls, Enter/Space for buttons and arrow keys for sliders. Manual is the first-visit
-default. Auto plays the 36-second tour. Explore pauses playback; a negative clearance displays the
-intersection. Reset restores the room while retaining the chosen mode and finish. Reduced motion
-uses still states and prevents looping. `?render` disables the clock; `window.seek(t)` reconstructs
-any time from 0 to 36 seconds, in any order.
+Requires Node 22+ for development; browser tests use Python Playwright and `/usr/bin/chromium`.
+Pinned Anatomy code and its licence are checked in; the build needs no package installation.
+See [setup](docs/SETUP.md) and [skill provenance](docs/SKILLS.md).
 
-All dimensions and fixture powers are demonstration assumptions. Air and light effects are illustrative;
-no compliance, ventilation, lux, pricing or engineering performance is implied.
+Manual plays a selected chapter and waits; Auto loops the 36-second story. Drag the cabinet to
+turn it, or use the keyboard rotation slider in Study notes. Scrub, change finishes, and pull the
+drawer using its slider. Tab reaches controls; Enter/Space activates buttons; arrow keys adjust
+sliders. Reduced motion uses settled views unless explicitly enabled for the visit.
+`?render` disables playback; `window.seek(t)` reconstructs any time from 0 to 36 seconds.
 
-- [Full source handoff](docs/Room_Anatomy_RDB_Build_Plan.md)
-- [Design and data contracts](docs/DESIGN.md)
-- [Implementation checklist](docs/PHASE_CHECKLIST.md)
-- [QA evidence and limitations](docs/QA.md)
-- [Deployment preparation](docs/DEPLOYMENT.md)
-- [Environment checks](docs/SETUP.md) and [pinned local skills](docs/SKILLS.md)
+Cabinet dimensions, clearance and runner proportions are demonstration assumptions. This is an
+illustrated construction study, not a shop drawing, product load rating or fabrication certification.
+The original bedroom's lighting and air effects remain illustrative.
+
+- [Cabinet scope, reference observations and checklist](docs/CABINET_DIRECTION.md)
+- [Cabinet validation and limitations](docs/CABINET_QA.md)
+- [Original complete bedroom handoff](docs/Room_Anatomy_RDB_Build_Plan.md)
+- [Previous website reference investigation](docs/REFERENCE_ANALYSIS.md)
 
 Built with the MIT-licensed [Anatomy toolkit](https://github.com/wheresryan22/anatomy).
-The original handoff remains unchanged. Work is isolated on `feat/room-anatomy`; no public deployment
-or merge is performed. Video/audio are optional follow-up deliverables after app acceptance.
+The new user-supplied video was visually inspected; no source-code recovery from the video is claimed.

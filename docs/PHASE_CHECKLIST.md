@@ -1,3 +1,7 @@
+> Current lead revision: the user authorized a single furniture study after reviewing the room.
+> See [cabinet direction and checklist](CABINET_DIRECTION.md) and [cabinet evidence](CABINET_QA.md).
+> The original room checklist below remains historical evidence for the preserved bedroom.
+
 # RDB phase checklist
 
 Status: core implementation complete on `feat/room-anatomy`, 24 October 2026.
@@ -131,3 +135,22 @@ belong to the previous research environment; this checkout has separate verified
 - GitHub Pages workflow is ready. Repository activation and reviewed merge are pending; no live deployment is claimed.
 - Original video/article frames are absent; the complete handoff is the reference evidence available here.
 - No 60 fps video, audio export, physical-services simulation or tablet-hardware benchmark is claimed.
+
+
+## Architectural-study revision (current)
+
+This section supersedes the original delivery/reference limitations where noted.
+
+- [x] Analyze delivered reference HTML and run its seven chapters with REA; record hash and evidence.
+- [x] Preserve physical model; add explicit construction assumptions and component contracts.
+- [x] Full ceiling footprint; floor/wall, carcass/runner and indoor-unit detail views.
+- [x] Staggered separation, fitted component focus, delayed labels and continuous view handoffs.
+- [x] Compact synchronized chapter sidebar, part inspector, direct Study navigation and motion scrubber.
+- [x] Keyboard focus retention, mobile active-chapter visibility and reversible reduced-motion opt-in.
+- [x] Final revised numerical/browser/motion evidence and package recorded in REVISION_QA.md.
+- [x] Prepare tested revision and review handoff; user retains merge/deployment control.
+
+The reference domain is now fetchable through verified Python HTTPS; Chromium's direct visit
+fails certificate validation. REA successfully ran the downloaded artifact locally. Native REA
+engines remain unnecessary. GitHub API and live Pages URL checks are proxy-blocked, so publication
+is not verified here. The revised standalone build is independent of those services.

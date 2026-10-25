@@ -1,0 +1,2772 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f0e5"><meta name="description" content="Open a complete illustrated bedroom to discover how its furniture, layers and services fit together."><title>Room Anatomy — How a room fits together</title><style>:root {
+  --paper:#f5f0e5;
+  --ink:#283630;
+  --muted:#777d70;
+  --line:#d9d1c0;
+  --green:#416656;
+  --accent:#b67d65;
+  color-scheme:light;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:var(--paper)
+}
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0
+}
+button,input,a {
+  -webkit-tap-highlight-color:transparent
+}
+button {
+  font:inherit;
+  color:inherit;
+  cursor:pointer
+}
+button:disabled {
+  cursor:default
+}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible {
+  outline:3px solid #b67d65;
+  outline-offset:4px
+}
+a {
+  color:inherit;
+  text-underline-offset:3px
+}
+button {
+  border:0
+}
+button:active:not(:disabled) {
+  transform:translateY(1px)
+}
+.masthead {
+  height:82px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 5.2%;
+  gap:15px
+}
+.wordmark {
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  gap:12px
+}
+.mark {
+  font-size:37px;
+  font-weight:400;
+  line-height:1
+}
+.edition,.eyebrow,.figure-caption,.detail-kicker {
+  font-size:10px;
+  letter-spacing:1.7px;
+  font-weight:600
+}
+.edition {
+  color:var(--muted)
+}
+main {
+  max-width:1600px;
+  margin:auto;
+  padding:0 5.2%
+}
+.intro {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:48px 0 38px
+}
+.eyebrow {
+  margin:0 0 13px;
+  color:var(--muted)
+}
+h1 {
+  font-family:Georgia,'Times New Roman',serif;
+  font-weight:400;
+  font-size:clamp(42px,4.2vw,66px);
+  line-height:1.1;
+  margin:0 0 17px;
+  letter-spacing:-2px
+}
+h1 em {
+  font-weight:400;
+  color:var(--green)
+}
+.dek {
+  font-size:14px;
+  line-height:1.7;
+  color:#687065;
+  margin:0
+}
+.intro-note {
+  display:flex;
+  gap:20px;
+  font-size:12px;
+  line-height:1.8;
+  color:#777d70;
+  padding-right:14px
+}
+.tiny-grid {
+  color:#b8ad96;
+  font-size:22px
+}
+.explainer {
+  display:grid;
+  grid-template-columns:260px minmax(0,1fr);
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#f8f4eb;
+  overflow:hidden
+}
+.tour {
+  padding:26px 22px;
+  display:flex;
+  flex-direction:column;
+  border-right:1px solid var(--line);
+  background:#f0ebdf
+}
+.tour-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:start
+}
+.tour-head .eyebrow {
+  font-size:9px;
+  letter-spacing:1.2px
+}
+.tour-head #count {
+  font-size:10px;
+  color:var(--muted);
+  font-variant-numeric:tabular-nums
+}
+.mode {
+  border:1px solid #ccc6b7;
+  padding:3px;
+  display:flex;
+  border-radius:7px;
+  margin-top:10px
+}
+.mode button {
+  width:50%;
+  height:37px;
+  background:transparent;
+  font-size:12px;
+  border-radius:4px
+}
+.mode button[aria-pressed=true] {
+  background:#fffaf0;
+  box-shadow:0 1px 3px #0001
+}
+.mode-hint {
+  font-size:11px;
+  color:var(--muted);
+  margin:10px 0 21px
+}
+.tour ol {
+  padding:0;
+  margin:0;
+  list-style:none
+}
+.step {
+  display:flex;
+  align-items:center;
+  width:100%;
+  gap:12px;
+  text-align:left;
+  min-height:66px;
+  background:transparent;
+  border-radius:6px;
+  padding:8px;
+  border:1px solid transparent
+}
+.step-num {
+  width:29px;
+  height:29px;
+  border:1px solid #c9c4b6;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+  font-size:11px;
+  font-variant-numeric:tabular-nums
+}
+.step strong {
+  font-size:12px;
+  font-weight:500;
+  display:block;
+  line-height:1.3
+}
+.step small {
+  font-size:9px;
+  color:var(--muted);
+  display:block;
+  margin-top:4px
+}
+.step:disabled {
+  opacity:.43
+}
+.step[data-state=done] {
+  opacity:.75
+}
+.step[data-state=done] .step-num {
+  color:var(--green);
+  border-color:#9fac9a
+}
+.step[data-state=next],.step[data-state=running] {
+  background:#e1e7da;
+  border-color:#c4cfbd;
+  opacity:1
+}
+.step[data-state=next] .step-num,.step[data-state=running] .step-num {
+  background:var(--green);
+  border-color:var(--green);
+  color:#fff
+}
+.text-button {
+  background:transparent;
+  text-align:left;
+  min-height:44px;
+  font-size:12px;
+  padding:8px 0;
+  color:var(--green)
+}
+#reset {
+  margin-top:15px;
+  border-top:1px solid var(--line);
+  padding-top:18px
+}
+.status {
+  font-size:11px;
+  line-height:1.6;
+  color:var(--muted);
+  min-height:34px;
+  margin-bottom:0
+}
+.figure-column {
+  min-width:0;
+  display:flex;
+  flex-direction:column
+}
+.figure-heading {
+  padding:28px 30px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:start;
+  gap:12px;
+  min-height:91px
+}
+.figure-heading .eyebrow {
+  font-size:9px;
+  margin-bottom:8px
+}
+.figure-heading h2 {
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:21px;
+  line-height:1.35;
+  margin:0;
+  max-width:450px
+}
+.demo-badge {
+  white-space:nowrap;
+  font-size:9px;
+  padding:7px 9px;
+  border:1px solid var(--line);
+  border-radius:4px;
+  color:var(--muted)
+}
+.scene {
+  width:100%;
+  aspect-ratio:1.35;
+  max-height:630px;
+  min-height:320px;
+  display:grid;
+  place-items:center;
+  overflow:hidden
+}
+.scene svg {
+  width:100%;
+  height:100%;
+  max-height:630px
+}
+.iso-fill {
+  fill:var(--material)
+}
+.iso-top {
+  fill:var(--material);
+  filter:brightness(1.08)
+}
+.iso-shade {
+  fill:#1d3029
+}
+.iso-shade[data-shade="0"] {
+  opacity:.24
+}
+.iso-shade[data-shade="1"] {
+  opacity:.16
+}
+.iso-shade[data-shade="2"] {
+  opacity:.09
+}
+.iso-shade[data-shade="3"] {
+  opacity:.035
+}
+.iso-line {
+  fill:none;
+  stroke:#38453c;
+  stroke-width:.8;
+  stroke-linejoin:round;
+  stroke-linecap:round;
+  vector-effect:non-scaling-stroke
+}
+.iso-crease {
+  opacity:.24;
+  stroke-width:.5
+}
+.iso-bevel {
+  opacity:.3
+}
+.scene-label {
+  font:13px Arial,sans-serif;
+  letter-spacing:.2px;
+  fill:#3c5044
+}
+.figure-caption {
+  display:flex;
+  justify-content:space-between;
+  padding:0 30px 20px;
+  color:#8c8c7c;
+  letter-spacing:1px;
+  font-size:8px;
+  gap:12px
+}
+.readouts {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:20px 0;
+  border-top:1px solid var(--line);
+  margin-top:auto
+}
+.readouts>div {
+  padding:0 24px;
+  border-right:1px solid var(--line)
+}
+.readouts>div:last-child {
+  border:0
+}
+.readouts span {
+  display:block;
+  font-size:10px;
+  color:var(--muted);
+  margin-bottom:9px
+}
+.readouts strong {
+  font-family:Georgia,serif;
+  font-size:25px;
+  font-weight:400;
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap
+}
+.readouts small {
+  font:11px Arial,sans-serif;
+  color:var(--muted)
+}
+.below {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:65px;
+  margin:40px 0
+}
+.below h2 {
+  font-family:Georgia,serif;
+  font-size:25px;
+  font-weight:400;
+  margin:0 0 14px
+}
+.below p:not(.eyebrow) {
+  font-size:13px;
+  line-height:1.8;
+  color:#71766b
+}
+.finishes {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-top:25px;
+  font-size:11px;
+  color:var(--muted);
+  flex-wrap:wrap
+}
+#swatches {
+  display:flex;
+  gap:4px
+}
+#swatches button {
+  width:44px;
+  height:44px;
+  background:transparent;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid transparent
+}
+#swatches button[aria-pressed=true] {
+  border-color:#78846e
+}
+#swatches button span {
+  height:25px;
+  width:25px;
+  border-radius:50%;
+  border:1px solid #0002
+}
+.experiment {
+  border-left:1px solid var(--line);
+  padding-left:40px
+}
+.experiment-head {
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap
+}
+.experiment-head h2 {
+  font-size:22px
+}
+.outline-button {
+  background:transparent;
+  border:1px solid #aeb9a4;
+  border-radius:5px;
+  min-height:44px;
+  padding:10px 14px;
+  font-size:11px;
+  color:var(--green);
+  align-self:start
+}
+.fineprint {
+  font-size:10px!important;
+  line-height:1.5!important
+}
+.sliders {
+  display:grid;
+  gap:10px;
+  margin-top:18px
+}
+.sliders label {
+  display:flex;
+  justify-content:space-between;
+  font-size:11px
+}
+.sliders output {
+  font-variant-numeric:tabular-nums
+}
+.sliders input {
+  width:100%;
+  accent-color:var(--green);
+  height:28px;
+  margin:0 0 10px
+}
+#clearance-detail svg {
+  width:100%;
+  height:auto
+}
+#clearance-detail text {
+  font:11px Arial,sans-serif
+}
+#collision {
+  min-height:22px;
+  font-weight:600
+}
+#collision[data-collision=true] {
+  color:#a14f3c
+}
+.notes {
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  margin:32px 0
+}
+.notes summary {
+  cursor:pointer;
+  list-style:none;
+  font-size:12px;
+  min-height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+.notes-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+  padding-bottom:25px
+}
+.notes h3 {
+  font-size:13px;
+  font-weight:500
+}
+.notes p {
+  font-size:12px;
+  line-height:1.8;
+  color:var(--muted)
+}
+footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:9px 0 36px;
+  font-size:9px;
+  letter-spacing:1px;
+  color:var(--muted)
+}
+footer p {
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:14px;
+  letter-spacing:0;
+  text-align:center
+}
+[hidden] {
+  display:none!important
+}
+@media(min-width:1450px) {
+  .scene {
+    aspect-ratio:1.5
+  }
+  .explainer {
+    grid-template-columns:290px minmax(0,1fr)
+  }
+}
+@media(max-width:1050px) {
+  .explainer {
+    grid-template-columns:225px minmax(0,1fr)
+  }
+  .tour {
+    padding:22px 14px
+  }
+  .readouts>div {
+    padding:0 12px
+  }
+  .figure-heading {
+    padding:22px 20px 0
+  }
+  .figure-heading h2 {
+    font-size:18px
+  }
+  .demo-badge {
+    font-size:8px
+  }
+  .scene {
+    aspect-ratio:1.13
+  }
+  .below {
+    gap:30px
+  }
+  .experiment {
+    padding-left:25px
+  }
+}
+@media(max-width:760px) {
+  .masthead {
+    height:64px;
+    padding:0 6%
+  }
+  .edition:last-child {
+    display:none
+  }
+  .edition {
+    font-size:8px
+  }
+  .wordmark {
+    font-size:10px;
+    letter-spacing:1px
+  }
+  .intro {
+    padding:32px 0
+  }
+  .intro-note {
+    display:none
+  }
+  main {
+    padding:0 5%
+  }
+  h1 {
+    font-size:44px
+  }
+  .dek {
+    font-size:12px
+  }
+  .explainer {
+    display:flex;
+    flex-direction:column
+  }
+  .figure-column {
+    order:0
+  }
+  .tour {
+    order:1;
+    border-right:0;
+    border-top:1px solid var(--line);
+    padding:22px
+  }
+  .figure-heading {
+    padding:22px 16px 0;
+    min-height:95px
+  }
+  .figure-heading h2 {
+    font-size:18px
+  }
+  .demo-badge {
+    white-space:normal;
+    max-width:76px;
+    line-height:1.5
+  }
+  .scene {
+    min-height:300px;
+    aspect-ratio:1.15
+  }
+  .scene svg {
+    width:115%;
+    max-width:none
+  }
+  .figure-caption {
+    font-size:7px;
+    padding:0 14px 16px;
+    line-height:1.5
+  }
+  .readouts {
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    padding:18px 0
+  }
+  .readouts>div {
+    padding:0 19px
+  }
+  .readouts>div:nth-child(2) {
+    border:0
+  }
+  .readouts strong {
+    font-size:25px
+  }
+  .tour ol {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4px 8px
+  }
+  .step {
+    min-height:66px;
+    padding:6px;
+    gap:8px
+  }
+  .step strong {
+    font-size:11px
+  }
+  .step small {
+    font-size:8px
+  }
+  .mode {
+    max-width:260px
+  }
+  .below {
+    grid-template-columns:1fr;
+    gap:30px;
+    margin:30px 0
+  }
+  .experiment {
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:25px 0 0
+  }
+  .notes-grid {
+    grid-template-columns:1fr;
+    gap:12px
+  }
+  .notes summary {
+    font-size:11px;
+    gap:18px
+  }
+  footer {
+    flex-wrap:wrap;
+    justify-content:center
+  }
+  footer p {
+    order:2;
+    width:100%;
+    line-height:1.6;
+    margin:0
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  * {
+    scroll-behavior:auto!important
+  }
+}
+/* Architectural study revision: compact reference-inspired card and a readable assembly. */
+:root {
+  --ink:#293b35;
+  --muted:#667064;
+  --line:#c6c0ac;
+  --paper:#eee9dc
+}
+.masthead {
+  height:51px;
+  border-bottom:0;
+  padding:0 3.5%
+}
+.edition {
+  font-size:9px
+}
+.wordmark {
+  font-size:11px
+}
+.mark {
+  font-size:30px
+}
+main {
+  max-width:1680px;
+  padding:0 3.5%
+}
+.intro {
+  padding:12px 0 22px;
+  align-items:end
+}
+.intro .eyebrow {
+  font-size:9px;
+  margin-bottom:7px
+}
+h1 {
+  font-size:32px;
+  letter-spacing:-.7px;
+  margin:0
+}
+.intro>p {
+  font-size:12px;
+  line-height:1.6;
+  color:#45594e;
+  margin:0
+}
+.intro>p span {
+  font-size:10px;
+  color:var(--muted)
+}
+.explainer {
+  grid-template-columns:207px minmax(0,1fr) 225px;
+  border:1px solid #46564b;
+  border-radius:7px;
+  box-shadow:4px 5px 0 #35473e;
+  background:#f8f3e8;
+  overflow:hidden
+}
+.tour {
+  padding:20px 15px;
+  background:#eae5d6
+}
+.tour-head .eyebrow {
+  font-size:9px;
+  line-height:1.5
+}
+.tour-head #count {
+  white-space:nowrap
+}
+.mode {
+  margin-top:8px;
+  border-color:#68786b;
+  border-radius:24px;
+  padding:3px
+}
+.mode button {
+  height:30px;
+  font-size:11px;
+  border-radius:20px
+}
+.mode button[aria-pressed=true] {
+  background:#354f43;
+  color:#fff7e7;
+  box-shadow:none
+}
+.mode-hint {
+  min-height:30px;
+  line-height:1.5;
+  font-size:10px;
+  margin:9px 0 13px
+}
+.step {
+  min-height:51px;
+  border:1px solid #9a9e8e;
+  border-radius:25px;
+  margin-bottom:8px;
+  padding:6px 9px;
+  gap:8px;
+  background:#f8f3e8
+}
+.step strong {
+  font-size:11px;
+  font-weight:600
+}
+.step small {
+  font-size:8px;
+  margin-top:2px
+}
+.step-num {
+  height:23px;
+  width:23px;
+  font-size:10px;
+  background:#a7aa98;
+  color:white;
+  border:0
+}
+.step:disabled {
+  opacity:.57
+}
+.step.current {
+  border-color:#3b5544;
+  box-shadow:1px 2px 0 #35473e;
+  opacity:1
+}
+.step[data-state=next],.step[data-state=running] {
+  background:#e9cb7b;
+  border-color:#46564b
+}
+.step[data-state=done] {
+  opacity:.8
+}
+.step[data-state=running] .step-num {
+  background:#354f43
+}
+.tour #study {
+  font-size:10px;
+  margin-top:10px;
+  width:100%;
+  border-radius:5px;
+  min-height:36px;
+  padding:8px
+}
+.tour #study[aria-pressed=true] {
+  background:#d5dfcf
+}
+#reset {
+  margin-top:auto;
+  padding-top:14px;
+  min-height:40px
+}
+.status {
+  min-height:28px;
+  font-size:10px
+}
+.figure-heading {
+  padding:20px 22px 4px;
+  min-height:88px
+}
+.figure-heading h2 {
+  font-family:Georgia,serif;
+  font-size:20px;
+  max-width:100%
+}
+.figure-heading .eyebrow {
+  color:#637960;
+  font-size:9px
+}
+.demo-badge {
+  font-size:8px;
+  color:#6c715e
+}
+.scene-tools {
+  padding:0 22px;
+  display:flex;
+  justify-content:space-between;
+  min-height:26px;
+  align-items:center;
+  font-size:8px;
+  letter-spacing:1px;
+  color:#727b68
+}
+.scene-tools button {
+  font-size:9px;
+  letter-spacing:0;
+  background:transparent;
+  text-decoration:underline;
+  min-height:26px
+}
+.scene {
+  min-height:0;
+  aspect-ratio:1.25;
+  max-height:560px;
+  background:radial-gradient(ellipse at 50% 60%,#e9eadb88,transparent 67%)
+}
+.scene svg {
+  width:100%;
+  height:100%;
+  max-height:560px
+}
+.scene-label {
+  font-size:14px;
+  paint-order:stroke;
+  stroke:#f8f3e8;
+  stroke-width:3px;
+  stroke-linejoin:round
+}
+.part-label {
+  font:600 12px Arial,sans-serif;
+  fill:#34483e
+}
+.part-measure {
+  font:10px Arial,sans-serif;
+  fill:#5a6659
+}
+.measure-label {
+  font:600 17px Arial,sans-serif;
+  fill:#426958;
+  paint-order:stroke;
+  stroke:#f8f3e8;
+  stroke-width:5px
+}
+.study-part {
+  cursor:pointer
+}
+.study-part.selected .iso-line {
+  stroke:#b27325;
+  stroke-width:2
+}
+.study-part.selected .iso-top {
+  filter:brightness(1.15)
+}
+.lit-part .iso-line {
+  stroke:#a87226;
+  stroke-width:1.5
+}
+.transport {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:5px 22px 11px;
+  font-size:10px;
+  min-height:48px
+}
+.transport button {
+  background:#e5eadb;
+  border:1px solid #899984;
+  border-radius:20px;
+  min-height:32px;
+  padding:6px 12px;
+  font-size:10px;
+  white-space:nowrap
+}
+.transport label {
+  white-space:nowrap
+}
+.transport input {
+  min-width:30px;
+  width:100%;
+  accent-color:#496d54;
+  height:28px
+}
+.transport output {
+  width:32px;
+  flex-shrink:0;
+  font-variant-numeric:tabular-nums
+}
+.figure-caption {
+  padding:0 22px 10px;
+  font-size:7px
+}
+.readouts {
+  padding:13px 0;
+  background:#efeadd
+}
+.readouts>div {
+  padding:0 14px
+}
+.readouts span {
+  font-size:9px;
+  margin-bottom:7px
+}
+.readouts strong {
+  font-size:22px
+}
+.inspector {
+  border-left:1px solid var(--line);
+  padding:22px 17px;
+  background:#f0ecdf
+}
+.inspector>.eyebrow {
+  font-size:8px;
+  letter-spacing:1px;
+  line-height:1.5
+}
+#parts {
+  display:grid;
+  gap:6px
+}
+#parts button {
+  display:flex;
+  gap:8px;
+  align-items:center;
+  background:transparent;
+  border:1px solid #bfc5b1;
+  border-radius:5px;
+  min-height:36px;
+  text-align:left;
+  font-size:11px;
+  padding:6px 8px
+}
+#parts button span {
+  background:#d7decb;
+  border-radius:50%;
+  height:18px;
+  width:18px;
+  display:grid;
+  place-items:center;
+  font-size:9px;
+  flex-shrink:0
+}
+#parts button[aria-pressed=true] {
+  background:#eacb7b;
+  border-color:#7f784d
+}
+#parts button:hover {
+  border-color:#526c54
+}
+.part-card {
+  border-top:1px solid #c6c0ac;
+  margin-top:23px;
+  padding-top:17px
+}
+.part-card h2 {
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:23px;
+  line-height:1.2;
+  margin:8px 0 13px
+}
+.part-card p {
+  font-size:12px;
+  line-height:1.75;
+  color:#586751
+}
+.part-card #part-role {
+  font-size:10px;
+  color:#69745d
+}
+.part-card strong {
+  font-size:11px;
+  font-weight:600;
+  color:#42624c;
+  line-height:1.7;
+  display:block
+}
+.assumption-tag {
+  font-size:7px;
+  letter-spacing:.8px;
+  color:#7c7f69;
+  display:block;
+  margin-top:21px
+}
+.below {
+  gap:45px;
+  margin:29px 0
+}
+.below h2 {
+  font-size:22px
+}
+.below p:not(.eyebrow) {
+  font-size:12px
+}
+.finishes {
+  margin-top:12px
+}
+.notes {
+  margin:25px 0
+}
+.notes summary {
+  min-height:50px
+}
+@media(min-width:1450px) {
+  .explainer {
+    grid-template-columns:215px minmax(0,1fr) 245px
+  }
+  .scene {
+    aspect-ratio:1.3;
+    max-height:600px
+  }
+  .scene svg {
+    max-height:600px
+  }
+}
+@media(max-width:1150px) {
+  .explainer {
+    grid-template-columns:185px minmax(0,1fr)
+  }
+  .inspector {
+    grid-column:1/-1;
+    border-left:0;
+    border-top:1px solid var(--line);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0 24px;
+    padding:18px 22px
+  }
+  .inspector>.eyebrow {
+    grid-column:1/-1
+  }
+  .part-card {
+    margin-top:0;
+    padding-top:0;
+    border:0
+  }
+  .part-card h2 {
+    font-size:20px
+  }
+  #parts {
+    grid-template-columns:1fr 1fr
+  }
+  .scene {
+    max-height:510px
+  }
+  .intro>p {
+    font-size:11px
+  }
+  .assumption-tag {
+    margin-top:10px
+  }
+  .tour {
+    padding:19px 12px
+  }
+}
+@media(max-width:760px) {
+  main {
+    padding:0 12px
+  }
+  .masthead {
+    padding:0 16px;
+    height:45px
+  }
+  .intro {
+    padding:8px 3px 18px
+  }
+  .intro>p {
+    display:none
+  }
+  .intro h1 {
+    font-size:28px
+  }
+  .intro .eyebrow {
+    font-size:8px
+  }
+  .explainer {
+    display:flex;
+    flex-direction:column;
+    box-shadow:3px 4px 0 #35473e
+  }
+  .figure-column {
+    order:1
+  }
+  .tour {
+    order:0;
+    padding:13px 14px 9px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:6px 12px;
+    border:0;
+    border-bottom:1px solid var(--line)
+  }
+  .tour-head {
+    grid-column:1
+  }
+  .mode {
+    margin:0;
+    grid-column:2;
+    grid-row:1
+  }
+  .tour-head .eyebrow {
+    margin:0;
+    max-width:90px;
+    font-size:8px
+  }
+  .tour-head #count {
+    margin-right:8px
+  }
+  .mode-hint {
+    grid-column:1/-1;
+    margin:0;
+    min-height:0;
+    font-size:9px
+  }
+  .tour ol {
+    grid-column:1/-1;
+    display:flex;
+    overflow-x:auto;
+    gap:6px;
+    padding:4px 2px 6px;
+    scrollbar-width:thin
+  }
+  .tour li {
+    min-width:142px
+  }
+  .step {
+    min-height:40px;
+    margin:0;
+    padding:6px
+  }
+  .step strong {
+    font-size:10px
+  }
+  .step small {
+    display:none
+  }
+  .step-num {
+    width:20px;
+    height:20px
+  }
+  .tour #study {
+    margin:0;
+    min-height:30px;
+    padding:5px;
+    font-size:9px
+  }
+  .tour #reset {
+    margin:0;
+    padding:5px;
+    text-align:right;
+    border:0;
+    min-height:30px;
+    font-size:10px
+  }
+  .status {
+    grid-column:1/-1;
+    margin:0;
+    min-height:0;
+    font-size:9px
+  }
+  .figure-heading {
+    padding:16px 14px 5px;
+    min-height:83px
+  }
+  .figure-heading h2 {
+    font-size:19px
+  }
+  .figure-heading .eyebrow {
+    font-size:8px
+  }
+  .demo-badge {
+    max-width:70px;
+    font-size:8px;
+    white-space:normal
+  }
+  .scene-tools {
+    padding:0 14px;
+    font-size:7px;
+    letter-spacing:.5px
+  }
+  .scene {
+    aspect-ratio:1.2;
+    min-height:280px;
+    max-height:none
+  }
+  .scene svg {
+    width:100%;
+    height:100%;
+    max-height:none
+  }
+  .detail-label {
+    display:none
+  }
+  .room-locator {
+    display:none
+  }
+  .detail-drawing {
+    transform:matrix(1.16,0,0,1.16,-80,-64);
+    transform-origin:0 0;
+    transform-box:view-box
+  }
+  .transport {
+    padding:5px 13px 8px;
+    gap:8px
+  }
+  .transport label {
+    font-size:0
+  }
+  .transport button {
+    font-size:9px;
+    min-height:33px;
+    padding:5px 10px
+  }
+  .transport output {
+    font-size:9px
+  }
+  .figure-caption {
+    padding:0 13px 10px;
+    font-size:6px
+  }
+  .readouts {
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    padding:12px 0
+  }
+  .readouts>div {
+    padding:0 8px;
+    border-right:1px solid var(--line)
+  }
+  .readouts>div:nth-child(2) {
+    border-right:1px solid var(--line)
+  }
+  .readouts span {
+    font-size:8px;
+    min-height:19px
+  }
+  .readouts strong {
+    font-size:19px
+  }
+  .readouts small {
+    font-size:8px
+  }
+  .inspector {
+    order:2;
+    padding:16px 14px;
+    display:block
+  }
+  .inspector>.eyebrow {
+    font-size:8px
+  }
+  #parts {
+    grid-template-columns:1fr 1fr;
+    gap:6px
+  }
+  #parts button {
+    font-size:10px;
+    min-height:37px
+  }
+  .part-card {
+    margin-top:15px;
+    padding-top:12px;
+    border-top:1px solid var(--line)
+  }
+  .part-card h2 {
+    font-size:21px;
+    margin-top:5px
+  }
+  .part-card p {
+    font-size:12px;
+    line-height:1.7;
+    margin-bottom:8px
+  }
+  .part-card #part-role {
+    margin:0
+  }
+  .assumption-tag {
+    margin-top:10px
+  }
+  .below {
+    margin:26px 5px;
+    gap:22px
+  }
+  .below h2 {
+    font-size:22px
+  }
+  .notes-grid {
+    gap:10px
+  }
+  .notes {
+    margin:20px 4px
+  }
+  .notes summary {
+    font-size:10px;
+    line-height:1.5
+  }
+  .edition {
+    font-size:8px
+  }
+  .notes p {
+    font-size:11px
+  }
+}
+/* Primary controls keep a 44 px hit area on touch and desktop devices. */
+.mode button, .step, .tour #study, .tour #reset, .transport button,
+#parts button, .scene-tools button, #motion-opt {
+  min-height:44px;
+}
+input[type=range] {
+  min-height:44px;
+}
+</style><!-- Anatomy toolkit licence:
+MIT License
+
+Copyright (c) 2026 Ryan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="#main" aria-label="Room Anatomy home"><span class="mark" aria-hidden="true">▱</span> ROOM ANATOMY</a><span class="edition">FIELD NOTES / 001</span><span class="edition">THE BEDROOM</span></header>
+<main id="main">
+<section class="intro"><div><p class="eyebrow">AN INTERACTIVE ARCHITECTURAL STUDY</p><h1>The bedroom, <em>inside out.</em></h1></div><p>Seven assemblies. One coordinated room.<br><span>Demonstration dimensions · SVG construction study</span></p></section>
+<section class="explainer" aria-label="Interactive bedroom explainer">
+<aside class="tour"><div class="tour-head"><span class="eyebrow">FIG. 01 / THE BEDROOM</span><span id="count">0 / 7</span></div><div class="mode" role="group" aria-label="Playback mode"><button id="manual" aria-pressed="true">Manual</button><button id="auto" aria-pressed="false">Auto <span aria-hidden="true">↻</span></button></div><p class="mode-hint" id="mode-hint">Go at your own pace.</p><ol id="steps"></ol><button id="study" class="outline-button" aria-pressed="false">Study any chapter</button><button id="motion-opt" class="text-button" hidden aria-pressed="false">Enable animation for this visit</button><button id="reset" class="text-button">↺ &nbsp; Start over</button><p id="status" class="status" role="status" aria-live="polite">Ready when you are.</p></aside>
+<div class="figure-column"><div class="figure-heading"><div><p class="eyebrow" id="chapter">THE COMPLETE ROOM</p><h2 id="hint">Everything has its place.</h2></div><span class="demo-badge">Demo dimensions</span></div><div class="scene-tools"><span id="view-label">COMPLETE ROOM / CUTAWAY</span><button id="focus-clear" hidden>Show all parts</button></div><div id="scene" class="scene"></div>
+<div class="transport"><button id="pause">Replay chapter</button><label for="scrub">Examine motion</label><input id="scrub" type="range" min="0" max="1000" step="1" value="0"><output id="scrub-output" for="scrub">0%</output></div><div class="figure-caption"><span>FIG. 01 &nbsp; / &nbsp; ISOMETRIC CUTAWAY</span><span id="scene-note">Finished surfaces · illustrative view</span></div><div class="readouts" aria-label="Live room measurements"><div><span>Floor area</span><strong id="area">17.28 <small>m²</small></strong></div><div><span>Room volume</span><strong id="volume">51.84 <small>m³</small></strong></div><div><span id="metric-label">Drawer travel</span><strong id="metric">0 <small>mm</small></strong></div><div><span>Remaining clearance</span><strong id="clearance">1,500 <small>mm</small></strong></div></div></div>
+<aside class="inspector" aria-label="Assembly inspector"><p class="eyebrow">COMPONENTS / SELECT TO STUDY</p><div id="parts"></div><div class="part-card"><p id="part-role"></p><h2 id="part-title"></h2><strong id="part-measure"></strong><p id="part-description"></p><span class="assumption-tag">DEMONSTRATION ASSUMPTION</span></div></aside>
+</section>
+<section class="below"><div class="explanation"><p class="eyebrow">THE IDEA</p><h2>Space is a shared resource.</h2><p id="explanation">A room works when its layers, furniture and services fit together. Open the room, then follow each discovery to see why.</p><div class="finishes"><span>Finish study</span><div id="swatches" role="group" aria-label="Finish palette"></div><span id="finish-name">Sage & oak</span></div></div><section class="experiment" aria-labelledby="experiment-title"><div class="experiment-head"><div><p class="eyebrow">TRY IT YOURSELF</p><h2 id="experiment-title">Make room for the drawer.</h2></div><button id="explore" class="outline-button">Explore clearance</button></div><div id="explore-controls" hidden><div class="sliders"><label for="extension">Drawer extension <output id="extension-output">450 mm</output></label><input id="extension" type="range" min="0" max="450" step="1" value="450"><label for="bed-gap">Wardrobe-to-bed gap <output id="gap-output">1,500 mm</output></label><input id="bed-gap" type="range" min="200" max="1800" step="10" value="1500"></div><div id="clearance-detail"></div><p id="collision" role="status"></p><button id="return" class="text-button">← Return to the guided tour</button></div><p id="explore-intro">A drawer can only open into the space you leave it. Adjust the gap to see what happens when the furniture meets.</p><p class="fineprint">Geometric clearance, not a certified aisle. All dimensions are demonstration assumptions.</p></section></section>
+<details class="notes"><summary>Dimensions, assumptions & how this drawing works <span aria-hidden="true">＋</span></summary><div class="notes-grid"><div><h3>The demonstration room</h3><p>3,600 × 4,800 mm clear floor; 3,000 mm finished height. Bed: 1,600 × 2,000 mm. Wardrobe: 2,400 × 600 × 2,400 mm. The original wardrobe-to-bed gap is 1,500 mm. A 450 mm drawer extension leaves 1,050 mm.</p><p>The east door is 850 × 2,100 mm. The north window is 1,500 × 1,200 mm with a 1,200 mm sill. Openings, finishes and fixture ratings are demo assumptions.</p></div><div><h3>Illustration, with honest numbers</h3><p>Physical dimensions and measurements share one model. Cutaway walls and exploded display offsets do not change the room area or volume. The ceiling detail covers the full room with six 1,200 × 2,400 × 12.5 mm panels. The 150 mm slab, channel layout and indoor-unit internals are additional illustrative construction assumptions.</p><p>Light pools and recirculating air traces are schematic. No lux, cooling load, ventilation rate, price or compliance result is implied. The illustrative connected lighting load is 30 W.</p></div><div><h3>Made to be explored</h3><p>Tab to a control; Enter or Space activates its button. Arrow keys adjust focused sliders. Manual waits for each step. Study mode unlocks every chapter. Select a part to read its function; use the motion slider to inspect any position. Auto follows a 36-second tour; reduced motion shows still states without looping. Reset retains your chosen mode and finish.</p><p>Illustrated with the <a href="https://github.com/wheresryan22/anatomy">Anatomy isometric toolkit</a> (MIT). Original bedroom composition; interaction inspiration: <a href="https://visual-learning.app/vision-pro">Visual Learning</a>.</p></div></div></details>
+<footer><span>ROOM ANATOMY</span><p>A room works when its layers, furniture and services fit together.</p><span>01 — BEDROOM</span></footer>
+</main><script>(()=>{
+'use strict';
+const kit=(()=>{const AZIMUTH = 45;
+const ELEVATION = 30;
+const SHADES = 4;
+const RADIANS = Math.PI / 180;
+const UNIT = Math.sqrt(1.6);
+function cameraOf({ scale, azimuth = AZIMUTH, elevation = ELEVATION }) {
+    const a = azimuth * RADIANS;
+    const e = elevation * RADIANS;
+    return { sinA: Math.sin(a), cosA: Math.cos(a), sinE: Math.sin(e), cosE: Math.cos(e), k: scale * UNIT };
+}
+function iso([x, y, z], projection) {
+    const { origin } = projection;
+    const { sinA, cosA, sinE, cosE, k } = cameraOf(projection);
+    return [origin[0] + (x * sinA - y * cosA) * k, origin[1] + ((x * cosA + y * sinA) * sinE - z * cosE) * k];
+}
+function towardViewer(projection) {
+    const { sinA, cosA } = cameraOf(projection);
+    return [cosA, sinA];
+}
+function depthOf([x, y, z], projection) {
+    const { sinA, cosA, sinE, cosE } = cameraOf(projection);
+    return (x * cosA + y * sinA) * cosE + z * sinE;
+}
+const tenth = (value) => {
+    const text = (Math.round(value * 10) / 10).toFixed(1).replace(/\.0$/, "");
+    return text === "-0" ? "0" : text;
+};
+function pathOf(points, closed = false) {
+    if (!points.length)
+        return "";
+    return points.map(([x, y], at) => `${at ? "L" : "M"}${tenth(x)} ${tenth(y)}`).join("") + (closed ? "Z" : "");
+}
+const joinPaths = (paths) => paths.filter(Boolean).join("");
+function roundedPlan({ x, y, w, d, r }, steps = 8) {
+    const radius = Math.max(0, Math.min(r, w / 2, d / 2));
+    const corners = [
+        [x + w - radius, y + radius, -90],
+        [x + w - radius, y + d - radius, 0],
+        [x + radius, y + d - radius, 90],
+        [x + radius, y + radius, 180],
+    ];
+    const out = [];
+    for (const [cx, cy, start] of corners) {
+        const count = radius > 0 ? steps : 0;
+        for (let step = 0; step <= count; step++) {
+            const angle = (start + (count ? (90 * step) / count : 45)) * RADIANS;
+            out.push([cx + radius * Math.cos(angle), cy + radius * Math.sin(angle)]);
+        }
+    }
+    return out;
+}
+function signedArea(points) {
+    let area = 0;
+    for (let index = 0; index < points.length; index++) {
+        const [ax, ay] = points[index];
+        const [bx, by] = points[(index + 1) % points.length];
+        area += ax * by - bx * ay;
+    }
+    return area / 2;
+}
+const oriented = (points) => (signedArea(points) < 0 ? [...points].reverse() : points);
+function convexHull(points) {
+    const sorted = [...points].sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    if (sorted.length < 3)
+        return sorted;
+    const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+    const lower = [];
+    for (const point of sorted) {
+        while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], point) <= 0)
+            lower.pop();
+        lower.push(point);
+    }
+    const upper = [];
+    for (let index = sorted.length - 1; index >= 0; index--) {
+        const point = sorted[index];
+        while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], point) <= 0)
+            upper.pop();
+        upper.push(point);
+    }
+    return [...lower.slice(0, -1), ...upper.slice(0, -1)];
+}
+function runsOf(flags, want) {
+    const count = flags.length;
+    const runs = [];
+    const start = flags.findIndex((flag, index) => flag !== flags[(index + count - 1) % count]);
+    if (start < 0)
+        return flags[0] === want ? [Array.from({ length: count + 1 }, (_, index) => index % count)] : [];
+    let run = null;
+    for (let step = 0; step < count; step++) {
+        const index = (start + step) % count;
+        if (flags[index] === want) {
+            if (!run)
+                run = [index];
+            run.push((index + 1) % count);
+        }
+        else if (run) {
+            runs.push(run);
+            run = null;
+        }
+    }
+    if (run)
+        runs.push(run);
+    return runs;
+}
+function extrude(ring, z, height, projection, options = {}) {
+    const convex = options.convex ?? true;
+    const count = ring.length;
+    const counter = signedArea(ring) > 0;
+    const [vx, vy] = towardViewer(projection);
+    const { sinA, cosA } = cameraOf(projection);
+    const normals = ring.map(([ax, ay], index) => {
+        const [bx, by] = ring[(index + 1) % count];
+        const dx = bx - ax;
+        const dy = by - ay;
+        const length = Math.hypot(dx, dy) || 1;
+        return (counter ? [dy / length, -dx / length] : [-dy / length, dx / length]);
+    });
+    const facing = normals.map(([nx, ny]) => nx * vx + ny * vy > 1e-9);
+    const top = ring.map(([x, y]) => iso([x, y, z + height], projection));
+    const bottom = ring.map(([x, y]) => iso([x, y, z], projection));
+    const outline = [];
+    const crease = [];
+    for (const run of runsOf(facing, false))
+        outline.push(pathOf(run.map((index) => top[index])));
+    for (const run of runsOf(facing, true)) {
+        crease.push(pathOf(run.map((index) => top[index])));
+        if (height > 0)
+            outline.push(pathOf(run.map((index) => bottom[index])));
+    }
+    if (height > 0) {
+        for (let index = 0; index < count; index++) {
+            if (facing[(index + count - 1) % count] !== facing[index])
+                outline.push(pathOf([top[index], bottom[index]]));
+        }
+    }
+    let fill;
+    if (convex) {
+        fill = pathOf(convexHull([...top, ...bottom]), true);
+    }
+    else {
+        const parts = [pathOf(oriented(top), true), pathOf(oriented(bottom), true)];
+        for (let index = 0; index < count; index++) {
+            if (!facing[index])
+                continue;
+            const next = (index + 1) % count;
+            parts.push(pathOf(oriented([top[index], top[next], bottom[next], bottom[index]]), true));
+        }
+        fill = parts.join("");
+    }
+    const buckets = Array.from({ length: SHADES }, () => []);
+    if (height > 0) {
+        const [lx, ly] = [-sinA, cosA];
+        for (let index = 0; index < count; index++) {
+            if (!facing[index])
+                continue;
+            const [nx, ny] = normals[index];
+            const lit = (nx * lx + ny * ly + 1) / 2;
+            const shade = Math.min(SHADES - 1, Math.max(0, Math.floor(lit * SHADES)));
+            const next = (index + 1) % count;
+            buckets[shade].push(pathOf(oriented([top[index], top[next], bottom[next], bottom[index]]), true));
+        }
+    }
+    let bevel;
+    if (options.bevel && options.bevel > 0) {
+        const by = options.bevel;
+        const inset = ring.map(([x, y], index) => {
+            const [ax, ay] = normals[(index + count - 1) % count];
+            const [bx, by2] = normals[index];
+            const mx = ax + bx;
+            const my = ay + by2;
+            const length = Math.hypot(mx, my) || 1;
+            return [x - (mx / length) * by, y - (my / length) * by];
+        });
+        const insetTop = inset.map(([x, y]) => iso([x, y, z + height], projection));
+        bevel = runsOf(facing, true)
+            .map((run) => pathOf([top[run[0]], ...run.slice(1, -1).map((index) => insetTop[index]), top[run[run.length - 1]]]))
+            .join("");
+    }
+    return {
+        fill,
+        outline: outline.join(""),
+        crease: crease.join(""),
+        top: pathOf(oriented(top), true),
+        shades: buckets.map((paths) => paths.join("")),
+        bevel,
+    };
+}
+const ringOf = (plan, steps = 8) => roundedPlan(plan, steps);
+function slabOf(plan, z, height, projection, steps = 8, bevel = 0) {
+    return extrude(ringOf(plan, steps), z, height, projection, { convex: true, bevel });
+}
+function circleRing(cx, cy, radius, steps = 40) {
+    return Array.from({ length: steps }, (_, step) => {
+        const angle = (step / steps) * Math.PI * 2;
+        return [cx + radius * Math.cos(angle), cy + radius * Math.sin(angle)];
+    });
+}
+function cylinder(cx, cy, radius, z, height, projection, steps = 32, bevel = 0) {
+    return extrude(circleRing(cx, cy, radius, steps), z, height, projection, { convex: true, bevel });
+}
+const insetPlan = ({ x, y, w, d, r }, by) => ({ x: x + by, y: y + by, w: w - by * 2, d: d - by * 2, r: Math.max(0, r - by) });
+function onTop(points, z, projection, closed = false) {
+    return pathOf(points.map(([x, y]) => iso([x, y, z], projection)), closed);
+}
+const planOutline = (plan, z, projection, steps = 8) => onTop(ringOf(plan, steps), z, projection, true);
+const lineOnTop = (from, to, z, projection) => onTop([from, to], z, projection);
+const segment = (from, to, projection) => pathOf([iso(from, projection), iso(to, projection)]);
+const rise = (at, from, to, projection) => segment([at[0], at[1], from], [at[0], at[1], to], projection);
+const ring = (cx, cy, radius, z, projection, steps = 40) => onTop(circleRing(cx, cy, radius, steps), z, projection, true);
+const pointsAt = (points, projection) => points.map((point) => iso(point, projection));
+function dotGrid(x, y, columns, rows, gap, z, projection) {
+    const dots = [];
+    for (let row = 0; row < rows; row++) {
+        for (let column = 0; column < columns; column++)
+            dots.push(iso([x + column * gap, y + row * gap, z], projection));
+    }
+    return dots;
+}
+function corners({ x, y, w, d }, inset = 0) {
+    return [
+        [x + inset, y + inset],
+        [x + w - inset, y + inset],
+        [x + inset, y + d - inset],
+        [x + w - inset, y + d - inset],
+    ];
+}
+function boxCorners({ x, y, w, d }, z0, z1) {
+    const out = [];
+    for (const px of [x, x + w])
+        for (const py of [y, y + d])
+            for (const z of [z0, z1])
+                out.push([px, py, z]);
+    return out;
+}
+function knurl(cx, cy, radius, z0, z1, count, projection, inset = 0.4) {
+    const [vx, vy] = towardViewer(projection);
+    const lines = [];
+    for (let index = 0; index < count; index++) {
+        const angle = (index / count) * Math.PI * 2;
+        const nx = Math.cos(angle);
+        const ny = Math.sin(angle);
+        if (nx * vx + ny * vy < 0.15)
+            continue;
+        lines.push(segment([cx + radius * nx, cy + radius * ny, z0 + inset], [cx + radius * nx, cy + radius * ny, z1 - inset], projection));
+    }
+    return lines.join("");
+}
+function sideArc(cx, cy, radius, z, projection, steps = 24) {
+    const [vx, vy] = towardViewer(projection);
+    const facing = Math.atan2(vy, vx);
+    const points = [];
+    for (let step = 0; step <= steps; step++) {
+        const angle = facing - Math.PI / 2 + (step / steps) * Math.PI;
+        points.push(iso([cx + radius * Math.cos(angle), cy + radius * Math.sin(angle), z], projection));
+    }
+    return pathOf(points);
+}
+function ringSeam(ring, z, projection) {
+    const count = ring.length;
+    const counter = signedArea(ring) > 0;
+    const [vx, vy] = towardViewer(projection);
+    const facing = ring.map(([ax, ay], index) => {
+        const [bx, by] = ring[(index + 1) % count];
+        const dx = bx - ax;
+        const dy = by - ay;
+        const [nx, ny] = counter ? [dy, -dx] : [-dy, dx];
+        return nx * vx + ny * vy > 1e-9;
+    });
+    return runsOf(facing, true).map((run) => pathOf(run.map((index) => iso([ring[index][0], ring[index][1], z], projection)))).join("");
+}
+const sideSeam = (plan, z, projection, steps = 8) => ringSeam(ringOf(plan, steps), z, projection);
+function sideRing(center, radius, axis, projection, steps = 20) {
+    const [px, py, pz] = center;
+    const points = [];
+    for (let step = 0; step < steps; step++) {
+        const angle = (step / steps) * Math.PI * 2;
+        const u = radius * Math.cos(angle);
+        const v = radius * Math.sin(angle);
+        points.push(iso(axis === "x" ? [px, py + u, pz + v] : [px + u, py, pz + v], projection));
+    }
+    return pathOf(points, true);
+}
+function coil(from, to, center, radius, turns, axis, projection, perTurn = 16) {
+    const count = Math.max(1, Math.round(turns * perTurn));
+    const back = [];
+    const front = [];
+    let run = [];
+    let near = null;
+    for (let index = 0; index <= count; index++) {
+        const share = index / count;
+        const angle = share * turns * Math.PI * 2;
+        const u = radius * Math.cos(angle);
+        const v = radius * Math.sin(angle);
+        const along = from + (to - from) * share;
+        const point = axis === "x" ? [along, center[0] + u, center[1] + v] : [center[0] + u, along, center[1] + v];
+        const normal = axis === "x" ? [0, Math.cos(angle), Math.sin(angle)] : [Math.cos(angle), 0, Math.sin(angle)];
+        const facing = depthOf(normal, projection) > 0;
+        const flat = iso(point, projection);
+        if (near === null)
+            near = facing;
+        if (facing !== near) {
+            run.push(flat);
+            (near ? front : back).push(pathOf(run));
+            run = [flat];
+            near = facing;
+            continue;
+        }
+        run.push(flat);
+    }
+    if (run.length > 1)
+        (near ? front : back).push(pathOf(run));
+    return { back: back.join(""), front: front.join("") };
+}
+function topTicks(from, to, step, every, edge, z, lengths, projection, axis = "x") {
+    const minor = [];
+    const major = [];
+    const first = Math.ceil(from / step) * step;
+    for (let at = first, index = Math.round(first / step); at <= to + 1e-9; at += step, index++) {
+        const big = index % every === 0;
+        const length = big ? lengths[1] : lengths[0];
+        const a = axis === "x" ? [at, edge] : [edge, at];
+        const b = axis === "x" ? [at, edge + length] : [edge + length, at];
+        (big ? major : minor).push(lineOnTop(a, b, z, projection));
+    }
+    return { minor: minor.join(""), major: major.join("") };
+}
+function sideTicks(from, to, step, every, face, top, lengths, projection, axis = "x") {
+    const minor = [];
+    const major = [];
+    const first = Math.ceil(from / step) * step;
+    for (let at = first, index = Math.round(first / step); at <= to + 1e-9; at += step, index++) {
+        const big = index % every === 0;
+        const length = big ? lengths[1] : lengths[0];
+        const a = axis === "x" ? [at, face, top] : [face, at, top];
+        const b = axis === "x" ? [at, face, top - length] : [face, at, top - length];
+        (big ? major : minor).push(segment(a, b, projection));
+    }
+    return { minor: minor.join(""), major: major.join("") };
+}
+function radialTicks(cx, cy, radius, count, every, z, lengths, projection, from = 0, span = Math.PI * 2) {
+    const minor = [];
+    const major = [];
+    const closed = Math.abs(span - Math.PI * 2) < 1e-9;
+    const steps = closed ? count : count + 1;
+    for (let index = 0; index < steps; index++) {
+        const angle = from + (index / count) * span;
+        const big = index % every === 0;
+        const inner = radius - (big ? lengths[1] : lengths[0]);
+        const sx = Math.sin(angle);
+        const sy = -Math.cos(angle);
+        (big ? major : minor).push(lineOnTop([cx + sx * inner, cy + sy * inner], [cx + sx * radius, cy + sy * radius], z, projection));
+    }
+    return { minor: minor.join(""), major: major.join("") };
+}
+const haloOf = (plan, z, height, projection) => slabOf(plan, z, height, projection).fill;
+function axisVector(projection, [dx, dy, dz]) {
+    const origin = iso([0, 0, 0], projection);
+    const moved = iso([dx, dy, dz], projection);
+    return [moved[0] - origin[0], moved[1] - origin[1]];
+}
+const fine = (value) => Math.round(value * 100) / 100;
+function translateAlong(projection, by) {
+    const [x, y] = axisVector(projection, by);
+    return `translate(${fine(x)} ${fine(y)})`;
+}
+const thousandth = (value) => Math.round(value * 1000) / 1000;
+function axesAt(at, z, projection) {
+    const origin = iso([at[0], at[1], z], projection);
+    const along = (point) => {
+        const [px, py] = iso(point, projection);
+        return [px - origin[0], py - origin[1]];
+    };
+    return { origin, x: along([at[0] + 1, at[1], z]), y: along([at[0], at[1] + 1, z]), z: along([at[0], at[1], z + 1]) };
+}
+const matrixOf = (u, v, origin) => `matrix(${thousandth(u[0])} ${thousandth(u[1])} ${thousandth(v[0])} ${thousandth(v[1])} ${thousandth(origin[0])} ${thousandth(origin[1])})`;
+function holdStill(element, [dx, dy]) {
+    const text = dx || dy ? `translate(${-dx} ${-dy})` : "";
+    element.querySelectorAll("[data-hold]").forEach((node) => (text ? node.setAttribute("transform", text) : node.removeAttribute("transform")));
+}
+function topMatrix(at, z, projection, along = "x") {
+    const { origin, x, y } = axesAt(at, z, projection);
+    return along === "x" ? matrixOf(x, y, origin) : matrixOf([-y[0], -y[1]], x, origin);
+}
+function sideMatrix(at, z, projection, face) {
+    const { origin, x, y, z: up } = axesAt(at, z, projection);
+    const down = [-up[0], -up[1]];
+    return face === "left" ? matrixOf(x, down, origin) : matrixOf([-y[0], -y[1]], down, origin);
+}
+function screenRise(height, projection) {
+    const { cosE, k } = cameraOf(projection);
+    return height * cosE * k;
+}
+function fitProjection(points, width, height, { pad = 24, headroom = 0, azimuth = AZIMUTH, elevation = ELEVATION } = {}) {
+    const unit = { origin: [0, 0], scale: 1, azimuth, elevation };
+    const flat = points.map((point) => iso(point, unit));
+    const xs = flat.map(([x]) => x);
+    const ys = flat.map(([, y]) => y);
+    const left = Math.min(...xs);
+    const right = Math.max(...xs);
+    const up = Math.min(...ys);
+    const down = Math.max(...ys);
+    const scale = Math.min((width - pad * 2) / (right - left), (height - pad * 2 - headroom) / (down - up));
+    return {
+        origin: [width / 2 - ((left + right) / 2) * scale, headroom + (height - headroom) / 2 - ((up + down) / 2) * scale],
+        scale,
+        azimuth,
+        elevation,
+    };
+}
+const escape = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const attrs = (pairs) => Object.entries(pairs)
+    .filter(([, value]) => value !== undefined && value !== false)
+    .map(([key, value]) => ` ${key}="${escape(String(value))}"`)
+    .join("");
+function solidSvg(paths, { tone = "hi", crease = "faint", halo = false, lit = false, flat = false, className, inner = "" } = {}) {
+    const parts = [];
+    if (halo)
+        parts.push(`<path class="iso-halo" d="${paths.fill}"/>`);
+    parts.push(`<path class="iso-fill" d="${paths.fill}"/>`);
+    if (!flat) {
+        paths.shades.forEach((d, shade) => {
+            if (d)
+                parts.push(`<path class="iso-shade" data-shade="${shade}" d="${d}"/>`);
+        });
+        parts.push(`<path class="iso-top" d="${paths.top}"/>`);
+    }
+    if (crease !== "none" && paths.crease)
+        parts.push(`<path class="iso-line iso-crease" data-tone="${crease}" d="${paths.crease}"/>`);
+    if (crease !== "none" && paths.bevel)
+        parts.push(`<path class="iso-line iso-bevel" data-tone="${crease}" d="${paths.bevel}"/>`);
+    if (inner)
+        parts.push(inner);
+    parts.push(`<path class="iso-line iso-edge" data-tone="${tone}" d="${paths.outline}"/>`);
+    return `<g${attrs({ class: className ? `iso-solid ${className}` : "iso-solid", "data-lit": lit ? "" : undefined, "data-seamless": paths.seamless ? "" : undefined })}>${parts.join("")}</g>`;
+}
+function lineSvg(d, { tone = "lo", dotted = false, dashed = false, flow = false, className, free } = {}) {
+    if (!d)
+        return "";
+    return `<path${attrs({
+        class: className ? `iso-line ${className}` : "iso-line",
+        "data-tone": tone,
+        "data-free": free === true ? "" : free || undefined,
+        "data-dotted": dotted ? "" : undefined,
+        "data-dashed": dashed ? "" : undefined,
+        "data-flow": flow ? "" : undefined,
+        d,
+    })}/>`;
+}
+function dotsSvg(points, { size = 0.5, tone = "mid", pulse = false } = {}) {
+    const dots = points
+        .map(([x, y, alpha], index) => `<circle cx="${tenth(x)}" cy="${tenth(y)}" r="${size}"${alpha !== undefined && alpha < 1 ? ` fill-opacity="${Math.max(0, alpha).toFixed(2)}"` : ""}${pulse ? ` data-pulse="" style="--pulse-at:${(index * 137) % 1600}ms"` : ""}/>`)
+        .join("");
+    return `<g class="iso-dots" data-tone="${tone}">${dots}</g>`;
+}
+function fadedSvg(list, style = {}) {
+    const groups = new Map();
+    for (const entry of list) {
+        const [d, alpha] = Array.isArray(entry) ? entry : [entry.d, entry.alpha];
+        if (!d || !(alpha > 0.02))
+            continue;
+        const level = Math.min(1, Math.round(alpha * 20) / 20);
+        groups.set(level, (groups.get(level) ?? "") + d);
+    }
+    return [...groups].map(([alpha, d]) => (alpha >= 1 ? lineSvg(d, style) : `<g opacity="${alpha.toFixed(2)}">${lineSvg(d, style)}</g>`)).join("");
+}
+function fadeLineSvg(points, { fade = [0, 0], tone = "lo", className, stops = 6 } = {}) {
+    if (points.length < 2)
+        return "";
+    const ease = (t) => t * t * (3 - 2 * t);
+    const hashOf = (text) => {
+        let hash = 2166136261;
+        for (let index = 0; index < text.length; index++)
+            hash = Math.imul(hash ^ text.charCodeAt(index), 16777619);
+        return (hash >>> 0).toString(36);
+    };
+    const lengths = [0];
+    for (let index = 1; index < points.length; index++)
+        lengths.push(lengths[index - 1] + Math.hypot(points[index][0] - points[index - 1][0], points[index][1] - points[index - 1][1]));
+    const at = (length) => {
+        let index = 1;
+        while (index < points.length - 1 && lengths[index] < length)
+            index++;
+        const span = lengths[index] - lengths[index - 1] || 1;
+        const t = Math.max(0, Math.min(1, (length - lengths[index - 1]) / span));
+        return [points[index - 1][0] + (points[index][0] - points[index - 1][0]) * t, points[index - 1][1] + (points[index][1] - points[index - 1][1]) * t];
+    };
+    const pieceOf = (from, to) => [at(from), ...points.filter((_, index) => lengths[index] > from + 1e-6 && lengths[index] < to - 1e-6), at(to)];
+    const total = lengths[lengths.length - 1];
+    if (total < 1e-6)
+        return "";
+    let [start, end] = Array.isArray(fade) ? fade : [fade, fade];
+    if (start + end > total) {
+        const share = total / (start + end);
+        start *= share;
+        end *= share;
+    }
+    const paint = `var(--anatomy-${tone})`;
+    const ramp = (piece, rising) => {
+        const d = pathOf(piece);
+        const [x1, y1] = piece[0];
+        const [x2, y2] = piece[piece.length - 1];
+        const id = `iso-fade-${hashOf(`${d}|${tone}|${rising}`)}`;
+        const marks = Array.from({ length: stops + 1 }, (_, index) => {
+            const t = index / stops;
+            const alpha = ease(rising ? t : 1 - t);
+            return `<stop offset="${t.toFixed(3)}" stop-opacity="${alpha.toFixed(3)}" style="stop-color:${paint}"/>`;
+        }).join("");
+        const gradient = `<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${tenth(x1)}" y1="${tenth(y1)}" x2="${tenth(x2)}" y2="${tenth(y2)}">${marks}</linearGradient>`;
+        return `<defs>${gradient}</defs><path${attrs({ class: className ? `iso-line ${className}` : "iso-line", "data-tone": tone, "data-free": rising ? "start" : "end", d, style: `stroke:url(#${id})` })}/>`;
+    };
+    const parts = [];
+    if (start > 0.05)
+        parts.push(ramp(pieceOf(0, start), true));
+    if (total - end - start > 0.05)
+        parts.push(lineSvg(pathOf(pieceOf(start, total - end)), { tone, className }));
+    if (end > 0.05)
+        parts.push(ramp(pieceOf(total - end, total), false));
+    return `<g class="iso-fade">${parts.join("")}</g>`;
+}
+function wireSvg(from, to, { via = [], tone = "lo", dotted = false, dashed = false, flow = false, ends = "both", size = 1.2 } = {}) {
+    const d = pathOf([from, ...via, to]);
+    const end = ([x, y]) => `<circle class="iso-wire-end" cx="${tenth(x)}" cy="${tenth(y)}" r="${size}"/>`;
+    return `<g class="iso-wire" data-tone="${tone}">${lineSvg(d, { tone, dotted, dashed, flow })}${ends === "both" || ends === "from" ? end(from) : ""}${ends === "both" || ends === "to" ? end(to) : ""}</g>`;
+}
+function faceTextSvg(transform, text, { size = 3, tone = "mid", anchor = "start" } = {}) {
+    return `<text class="iso-face-text" data-tone="${tone}" transform="${transform}" font-size="${size}" text-anchor="${anchor}">${escape(text)}</text>`;
+}
+function groupSvg(children, extra = {}) {
+    return `<g${attrs(extra)}>${Array.isArray(children) ? children.join("") : children}</g>`;
+}
+function figureSvg({ width, height, label, body, standalone = false, className }) {
+    const style = standalone ? `<style>${ISO_CSS}</style>` : "";
+    return `<svg${attrs({
+        xmlns: "http://www.w3.org/2000/svg",
+        class: `iso-svg${standalone ? " iso" : ""}${className ? ` ${className}` : ""}`,
+        "data-theme": standalone || undefined,
+        viewBox: `0 0 ${width} ${height}`,
+        role: "img",
+        "aria-label": label,
+    })}>${style}${Array.isArray(body) ? body.join("") : body}</svg>`;
+}
+function swatchSvg(mark) {
+    if (mark === "raised" || mark === "flat" || mark === "lit") {
+        const body = mark === "flat" ? "M2 6.5 8 3.5 14 6.5 8 9.5Z" : "M2 4.5 8 1.5 14 4.5 14 6 8 9 2 6Z";
+        const crease = mark === "flat" ? "" : `<path class="iso-swatch-crease" d="M2 4.5 8 7.5 14 4.5"/>`;
+        return `<svg class="iso-swatch" data-mark="${mark}" viewBox="0 0 16 10" aria-hidden="true"><path d="${body}"/>${crease}</svg>`;
+    }
+    return `<svg class="iso-swatch" data-mark="${mark}" viewBox="0 0 16 10" aria-hidden="true"><path d="M1.5 5h13"/></svg>`;
+}
+function plateHtml({ fig, title, hint, readout = "", keys = [], caption, body }) {
+    const corner = (name, text, extra = "") => `<span class="iso-plate-corner" data-corner="${name}"${extra}>${escape(text)}</span>`;
+    const legend = keys.length || caption
+        ? `<figcaption class="iso-legend">${keys.length ? `<span class="iso-keys">${keys.map((key) => `<span class="iso-key">${swatchSvg(key.mark)}${escape(key.label)}</span>`).join("")}</span>` : ""}${caption ? `<span class="iso-caption">${escape(caption)}</span>` : ""}</figcaption>`
+        : "";
+    return `<figure class="iso-figure"><div class="iso-plate"><div class="iso-plate-corners" aria-hidden="true">${corner("fig", fig)}${title ? corner("title", title) : ""}${hint ? corner("hint", hint) : ""}${corner("readout", readout, " data-readout")}</div>${body}</div>${legend}</figure>`;
+}
+function pageHtml({ title, theme = "dark", body, script = "", width = 650 }) {
+    return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escape(title)}</title><style>${ISO_CSS}${PAGE_CSS.replace("__WIDTH__", String(width))}</style></head><body class="iso" data-theme="${theme}"><main class="iso-page">${body}</main>${script ? `<script type="module">${script.replace(/<\/(script)/gi, "<\\/$1")}<\/script>` : ""}</body></html>`;
+}
+const PAGE_CSS = `
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body[data-theme="light"]{color-scheme:light}
+body{margin:0;background:var(--anatomy-page);color:var(--anatomy-text);font:14px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.iso-page{width:min(__WIDTH__px,100% - 32px);margin:64px auto 96px}
+`;
+const ISO_CSS = `
+.iso{
+  --anatomy-page:#0b0b0b;--anatomy-card:#131313;--anatomy-text:#a3a3a3;--anatomy-strong:#e6e6e6;--anatomy-muted:#6e6e6e;
+  --anatomy-paper:#131313;--anatomy-face:#1b1b1b;--anatomy-top:#1c1c1c;
+  --anatomy-shade-0:#0f0f0f;--anatomy-shade-1:#121212;--anatomy-shade-2:#151515;--anatomy-shade-3:#181818;
+  --anatomy-lit-top:#262626;--anatomy-lit-shade:#1d1d1d;
+  --anatomy-hi:#d4d4d4;--anatomy-mid:#6a6a6a;--anatomy-lo:#3e3e3e;--anatomy-faint:#2a2a2a;--anatomy-lit:#ffffff;
+  --anatomy-halo:#050505;--anatomy-halo-opacity:.9;--anatomy-dot:#e6e6e6;
+  --anatomy-red:#ff6b6b;--anatomy-green:#6be0a0;--anatomy-blue:#6b9bff;
+  --anatomy-weight:.6px;--anatomy-ease:cubic-bezier(.32,.72,0,1);
+  --anatomy-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --anatomy-lift:inset 0 1px 0 0 #ffffff0a,inset 0 0 0 1px #ffffff06,0 0 0 1px #00000026,0 1px 1px -.5px #00000014,0 3px 3px -1.5px #00000014,0 6px 6px -3px #00000014,0 12px 12px -6px #00000014;
+}
+.iso[data-theme="light"]{
+  --anatomy-page:#f2f2ef;--anatomy-card:#fbfbfa;--anatomy-text:#57575a;--anatomy-strong:#18181a;--anatomy-muted:#8c8c90;
+  --anatomy-paper:#fbfbfa;--anatomy-face:#ffffff;--anatomy-top:#ffffff;
+  --anatomy-shade-0:#dcdcd9;--anatomy-shade-1:#e5e5e2;--anatomy-shade-2:#ededea;--anatomy-shade-3:#f4f4f1;
+  --anatomy-lit-top:#ffffff;--anatomy-lit-shade:#eeeeeb;
+  --anatomy-hi:#26262a;--anatomy-mid:#8a8a8f;--anatomy-lo:#b4b4b8;--anatomy-faint:#d4d4d6;--anatomy-lit:#000000;
+  --anatomy-halo:#8a8a80;--anatomy-halo-opacity:.32;--anatomy-dot:#3a3a3e;
+  --anatomy-red:#e5484d;--anatomy-green:#30a46c;--anatomy-blue:#3e63dd;
+  --anatomy-lift:inset 0 1px 0 0 #ffffff,0 0 0 1px #0000000f,0 1px 1px -.5px #0000000a,0 3px 3px -1.5px #0000000a,0 6px 6px -3px #0000000a,0 12px 12px -6px #0000000a;
+}
+.iso-svg{display:block;width:100%;height:auto;overflow:visible}
+.iso-svg path,.iso-svg circle{vector-effect:non-scaling-stroke}
+.iso-fill{fill:var(--anatomy-paper);stroke:none}
+.iso-solid[data-lit]>.iso-fill{fill:var(--anatomy-face)}
+.iso-shade,.iso-top{stroke:none}
+.iso-shade[data-shade="0"]{fill:var(--anatomy-shade-0)}
+.iso-shade[data-shade="1"]{fill:var(--anatomy-shade-1)}
+.iso-shade[data-shade="2"]{fill:var(--anatomy-shade-2)}
+.iso-shade[data-shade="3"]{fill:var(--anatomy-shade-3)}
+.iso-top{fill:var(--anatomy-top)}
+.iso-solid[data-lit]>.iso-top{fill:var(--anatomy-lit-top)}
+.iso-solid[data-lit]>.iso-shade{fill:var(--anatomy-lit-shade)}
+.iso-solid[data-seamless]>.iso-shade,.iso-solid[data-seamless]>.iso-top{stroke-width:.4;stroke-linejoin:round}
+.iso-solid[data-seamless]>.iso-shade[data-shade="0"]{stroke:var(--anatomy-shade-0)}
+.iso-solid[data-seamless]>.iso-shade[data-shade="1"]{stroke:var(--anatomy-shade-1)}
+.iso-solid[data-seamless]>.iso-shade[data-shade="2"]{stroke:var(--anatomy-shade-2)}
+.iso-solid[data-seamless]>.iso-shade[data-shade="3"]{stroke:var(--anatomy-shade-3)}
+.iso-solid[data-seamless]>.iso-top{stroke:var(--anatomy-top)}
+.iso-solid[data-seamless][data-lit]>.iso-top{stroke:var(--anatomy-lit-top)}
+.iso-solid[data-seamless][data-lit]>.iso-shade{stroke:var(--anatomy-lit-shade)}
+.iso-solid[data-lit]>.iso-edge{stroke:var(--anatomy-lit)}
+.iso-halo{fill:var(--anatomy-halo);stroke:none;filter:blur(9px);opacity:var(--anatomy-halo-opacity);transform:translateY(3px)}
+.iso-line{fill:none;stroke:var(--anatomy-lo);stroke-width:var(--anatomy-weight);stroke-linecap:round;stroke-linejoin:round}
+.iso-line[data-tone="hi"]{stroke:var(--anatomy-hi)}
+.iso-line[data-tone="mid"]{stroke:var(--anatomy-mid)}
+.iso-line[data-tone="lo"]{stroke:var(--anatomy-lo)}
+.iso-line[data-tone="faint"]{stroke:var(--anatomy-faint)}
+.iso-line[data-tone="lit"]{stroke:var(--anatomy-lit)}
+.iso-line[data-tone="red"]{stroke:var(--anatomy-red)}
+.iso-line[data-tone="green"]{stroke:var(--anatomy-green)}
+.iso-line[data-tone="blue"]{stroke:var(--anatomy-blue)}
+.iso-line[data-dotted]{stroke-dasharray:.01 3.5;stroke-width:1}
+.iso-line[data-dashed]{stroke-dasharray:3 3}
+.iso-line[data-flow]{stroke-dasharray:2 6}
+.iso-wire-end{fill:var(--anatomy-paper);stroke:var(--anatomy-lo);stroke-width:var(--anatomy-weight)}
+.iso-wire[data-tone="hi"] .iso-wire-end{stroke:var(--anatomy-hi)}
+.iso-wire[data-tone="mid"] .iso-wire-end{stroke:var(--anatomy-mid)}
+.iso-wire[data-tone="faint"] .iso-wire-end{stroke:var(--anatomy-faint)}
+.iso-wire[data-tone="lit"] .iso-wire-end{stroke:var(--anatomy-lit)}
+.iso-dots circle{fill:var(--anatomy-dot);stroke:none;opacity:.32}
+.iso-dots[data-tone="hi"] circle{opacity:.85}
+.iso-dots[data-tone="mid"] circle{opacity:.45}
+.iso-dots[data-tone="lo"] circle{opacity:.22}
+.iso-dots[data-tone="faint"] circle{opacity:.12}
+.iso-face-text{fill:var(--anatomy-mid);font-family:var(--anatomy-mono);letter-spacing:.04em}
+.iso-face-text[data-tone="hi"]{fill:var(--anatomy-hi)}
+.iso-face-text[data-tone="lo"]{fill:var(--anatomy-lo)}
+.iso-face-text[data-tone="faint"]{fill:var(--anatomy-faint)}
+.tb-body{fill:var(--anatomy-shade-2);stroke:none}
+.tb-shine{fill:var(--anatomy-top);stroke:none}
+.tb-shade{fill:var(--anatomy-shade-0);stroke:none}
+.tb-ring{fill:none;stroke:var(--anatomy-lo);stroke-width:.45;stroke-linecap:butt;stroke-linejoin:round}
+.tb-ring[data-tone="mid"]{stroke:var(--anatomy-mid)}
+.tb-ring[data-tone="faint"]{stroke:var(--anatomy-faint)}
+.tb-ring[data-tone="hi"]{stroke:var(--anatomy-hi)}
+@keyframes iso-flow{to{stroke-dashoffset:-32}}
+@keyframes iso-pulse{0%,100%{opacity:.18}12%{opacity:1}40%{opacity:.18}}
+.iso-line[data-flow]{animation:iso-flow 1600ms linear infinite}
+.iso-dots circle[data-pulse]{animation:iso-pulse 1600ms steps(1,end) infinite;animation-delay:var(--pulse-at,0ms)}
+.iso-figure{margin:32px 0 36px}
+.iso-plate{position:relative;padding:52px 24px;border-radius:0;background:var(--anatomy-card);box-shadow:0 0 0 1px var(--anatomy-mid);--anatomy-paper:var(--anatomy-card)}
+.iso-plate-corners{position:absolute;inset:18px 20px;pointer-events:none}
+.iso-plate-corner{position:absolute;color:var(--anatomy-muted);font-family:var(--anatomy-mono);font-size:10.5px;line-height:1;letter-spacing:.04em;white-space:nowrap}
+.iso-plate-corner[data-corner="fig"]{top:0;left:0;color:var(--anatomy-text)}
+.iso-plate-corner[data-corner="title"]{top:0;right:0;text-transform:uppercase;letter-spacing:.1em}
+.iso-plate-corner[data-corner="hint"]{bottom:0;left:0;text-transform:uppercase;letter-spacing:.1em}
+.iso-plate-corner[data-corner="readout"]{right:0;bottom:0;color:var(--anatomy-text);font-variant-numeric:tabular-nums}
+.iso-plate .iso-svg{margin:0 auto}
+.iso-legend{display:grid;gap:8px;margin-top:12px;color:var(--anatomy-muted);font-size:13px;line-height:1.55}
+.iso-keys{display:flex;flex-wrap:wrap;gap:6px 18px}
+.iso-key{display:inline-flex;align-items:center;gap:7px}
+.iso-swatch{width:16px;height:10px;flex:none;overflow:visible}
+.iso-swatch path{fill:none;stroke:var(--anatomy-hi);stroke-width:1;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
+.iso-swatch[data-mark="raised"] path,.iso-swatch[data-mark="flat"] path{stroke:var(--anatomy-mid)}
+.iso-swatch[data-mark="lit"] path{stroke:var(--anatomy-lit)}
+.iso-swatch[data-mark="dim"] path{stroke:var(--anatomy-lo)}
+.iso-swatch[data-mark="dotted"] path{stroke-dasharray:.01 3;stroke-width:1.4}
+.iso-swatch[data-mark="dashed"] path{stroke-dasharray:3 2.5}
+.iso-swatch[data-mark="red"] path{stroke:var(--anatomy-red)}
+.iso-swatch[data-mark="green"] path{stroke:var(--anatomy-green)}
+.iso-swatch[data-mark="blue"] path{stroke:var(--anatomy-blue)}
+.iso-swatch-crease{stroke:var(--anatomy-lo)!important}
+@media (max-width:560px){.iso-plate{padding:48px 12px 70px}.iso-plate-corner[data-corner="hint"]{bottom:18px}}
+@media (prefers-reduced-motion:reduce){.iso-line[data-flow],.iso-dots circle[data-pulse]{animation:none}}
+`;
+
+return {AZIMUTH,ELEVATION,SHADES,cameraOf,iso,towardViewer,depthOf,pathOf,joinPaths,roundedPlan,extrude,ringOf,slabOf,circleRing,cylinder,insetPlan,onTop,planOutline,lineOnTop,segment,rise,ring,pointsAt,dotGrid,corners,boxCorners,knurl,sideArc,ringSeam,sideSeam,sideRing,coil,topTicks,sideTicks,radialTicks,haloOf,axisVector,translateAlong,holdStill,topMatrix,sideMatrix,screenRise,fitProjection,solidSvg,lineSvg,dotsSvg,fadedSvg,fadeLineSvg,wireSvg,faceTextSvg,groupSvg,figureSvg,plateHtml,pageHtml,ISO_CSS};})();
+// All inputs are demonstration assumptions, in millimetres unless stated otherwise.
+const spec = Object.freeze({
+  width:3600, length:4800, height:3000,
+  bed:{x:1000,y:2100,width:1600,length:2000},
+  wardrobe:{x:600,y:0,width:2400,depth:600,height:2400},
+  drawer:{x:1410,width:780,depth:540,base:620,height:190,travel:450},
+  door:{wall:'east',y:950,width:850,height:2100,hingeY:950},
+  window:{wall:'north',x:1050,width:1500,sill:1200,height:1200},
+  layers:[{name:'Oak finish',mm:15},{name:'Acoustic underlay',mm:5},{name:'Screed',mm:50}],
+  wallLayers:[{name:'Plaster',mm:12},{name:'Block substrate',mm:150}],
+  ceilingVoid:150,
+  study:{panelThickness:12.5,panelWidth:1200,panelLength:2400,channelDepth:35,
+    hangerDiameter:8,structuralSlab:150,carcassThickness:30,
+    air:{x:3150,y:5,z:2450,width:420,depth:180,height:370}},
+  fixtures:[{id:'downlight-1',watts:7},{id:'downlight-2',watts:7},{id:'bedside-left',watts:4},{id:'bedside-right',watts:4},{id:'wardrobe-strip',watts:8}],
+  provenance:'Demonstration assumption — not measured or certified'
+});
+const stages = [
+  {title:'Open the room',short:'The space',start:.9,end:4.5,hint:'Move the foreground walls to look inside.',detail:'A cutaway keeps the bedroom readable. The clear dimensions describe the finished space; moving a drawing never changes its area.'},
+  {title:'See the layers',short:'Beneath the finish',start:5.2,end:9.2,hint:'The finished surface sits on other layers.',detail:'A magnified floor and wall section separates into 15 mm oak, 5 mm acoustic underlay and 50 mm screed. The wall section reveals plaster over a block substrate.'},
+  {title:'Open the drawer',short:'Space to move',start:9.9,end:15.9,hint:'The drawer needs space in front of it.',detail:'The runner telescopes as the drawer moves. Every millimetre of travel removes one millimetre from the gap to the bed. Study the carcass, select a runner, then test the clearance controls.'},
+  {title:'Turn on the lights',short:'One connected circuit',start:16.6,end:20.6,hint:'This switch controls these lights.',detail:'Two downlights, two bedside lamps and a wardrobe strip share an illustrative circuit: 7 + 7 + 4 + 4 + 8 = 30 W. Light pools are illustrative, not a lux calculation.'},
+  {title:'Lift the ceiling',short:'Above the surface',start:21.3,end:25.3,hint:'The ceiling hides the service route.',detail:'The full ceiling separates into six panels, framing, hangers and structural slab to reveal the cable route in a nominal 150 mm service void. This is an explanatory cutaway, not an installation drawing.'},
+  {title:'Follow the air',short:'Around, and back again',start:26,end:30.6,hint:'The unit takes room air in and sends it back out.',detail:'The indoor unit recirculates room air through its intake, fan and outlet. The moving traces are schematic: they do not predict ventilation, temperature or airflow rate.'},
+  {title:'Put it together',short:'One complete room',start:31.3,end:35.7,hint:'All the parts fit back into one room.',detail:'The drawer closes, the section settles and the ceiling returns. Furniture, finishes and services share the same space.'}
+];
+const finishes={sage:{name:'Sage & oak',fabric:'#8f9e85',wood:'#c3a47b',accent:'#b67d65'},clay:{name:'Clay & walnut',fabric:'#b98070',wood:'#94735b',accent:'#89947b'},blue:{name:'Slate & ash',fabric:'#81979e',wood:'#c6bba5',accent:'#b08b67'}};
+
+
+const clamp=(n,a=0,b=1)=>Math.max(a,Math.min(b,n));
+const smooth=n=>{n=clamp(n);return n*n*(3-2*n);};
+function validateSpec(s){
+ for(const key of ['width','length','height'])if(!Number.isFinite(s[key])||s[key]<=0)throw new RangeError(key);
+ for(const n of [s.bed.x,s.bed.y,s.bed.width,s.bed.length,s.wardrobe.depth,s.drawer.travel])if(!Number.isFinite(n)||n<0)throw new RangeError('Invalid furniture dimension');
+ if(s.bed.x+s.bed.width>s.width||s.bed.y+s.bed.length>s.length)throw new RangeError('Bed outside room');
+ if(s.layers.some(l=>!Number.isFinite(l.mm)||l.mm<=0)||s.fixtures.some(f=>!Number.isFinite(f.watts)||f.watts<0))throw new RangeError('Invalid layer or power');
+ return s;
+}
+function timeline(t){
+ if(!Number.isFinite(t))throw new TypeError('Time must be finite');
+ t=clamp(t,0,36);
+ const progress=stages.map(s=>smooth((t-s.start)/(s.end-s.start)));
+ const close=progress[6];
+ const keep=1-close;
+ let active=stages.findIndex(s=>t>=s.start&&t<s.end);
+ let completed=stages.filter(s=>t>=s.end).length;
+ return {t,progress,active,completed,open:progress[0]*keep,layers:progress[1]*(1-progress[2])*keep,drawer:progress[2]*keep,lights:progress[3]*keep,ceiling:progress[4]*keep,air:progress[5]*keep};
+}
+function evaluate({time=0,extension=null,bedGap=1500,explore=false}={},s=spec){
+ validateSpec(s);
+ if(!Number.isFinite(bedGap)||bedGap<200||bedGap>1800)throw new RangeError('Bed gap must be 200–1800 mm');
+ if(extension!==null&&(!Number.isFinite(extension)||extension<0||extension>s.drawer.travel))throw new RangeError('Drawer extension must be 0–450 mm');
+ const state=timeline(time);
+ if(explore){Object.assign(state,{open:1,layers:0,ceiling:0,air:0,lights:0,drawer:extension===null?1:extension/s.drawer.travel});}
+ const travel=extension!==null&&explore?extension:s.drawer.travel*state.drawer;
+ const gap=bedGap;
+ return {...state,explore,bedGap:gap,bedY:s.wardrobe.depth+gap,extension:travel,clearance:gap-travel,collision:gap-travel<0,
+ area:s.width*s.length/1e6,volume:s.width*s.length*s.height/1e9,layerTotal:s.layers.reduce((n,l)=>n+l.mm,0),
+ connectedPower:state.lights>0?s.fixtures.reduce((n,f)=>n+f.watts,0):0};
+}
+// Hierarchical translations and true hinge rotations, shared by scene and geometry tests.
+function transform(point,{translation=[0,0,0],pivot=[0,0,0],angle=0}={}){
+ const [x,y,z]=point;const [px,py]=pivot;const c=Math.cos(angle),s=Math.sin(angle);
+ return [px+(x-px)*c-(y-py)*s+translation[0],py+(x-px)*s+(y-py)*c+translation[1],z+translation[2]];
+}
+function compose(point,transforms){return transforms.reduce((p,t)=>transform(p,t),point);}
+
+
+
+
+const P=kit.fitProjection(kit.boxCorners({x:-450,y:-250,w:4450,d:5550},-250,3650),1000,800,{pad:32,azimuth:48,elevation:37});
+const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pt=p=>kit.iso(p,P);
+const path=(ps,closed=false)=>kit.pathOf(ps.map(pt),closed);
+// Sort overlapping convex silhouettes using separating world planes. A top surface stays
+// above its supporting mattress/rug regardless of the objects' different centre positions.
+function hull(points){
+ const p=points.sort((a,b)=>a[0]-b[0]||a[1]-b[1]), cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
+ const lo=[],hi=[];for(const x of p){while(lo.length>1&&cross(lo.at(-2),lo.at(-1),x)<=0)lo.pop();lo.push(x);}
+ for(const x of [...p].reverse()){while(hi.length>1&&cross(hi.at(-2),hi.at(-1),x)<=0)hi.pop();hi.push(x);}return [...lo.slice(0,-1),...hi.slice(0,-1)];
+}
+function overlap(a,b){
+ for(const shape of[a,b])for(let i=0;i<shape.length;i++){
+  const p=shape[i],q=shape[(i+1)%shape.length],n=[p[1]-q[1],q[0]-p[0]];
+  const aa=a.map(v=>v[0]*n[0]+v[1]*n[1]),bb=b.map(v=>v[0]*n[0]+v[1]*n[1]);
+  if(Math.max(...aa)<=Math.min(...bb)+.001||Math.max(...bb)<=Math.min(...aa)+.001)return false;
+ }return true;
+}
+const overlapCache=new WeakMap();
+function geometryOrder(items){
+ const sorted=[...items].sort((a,b)=>a.depth-b.depth||a.order-b.order);
+ const edges=sorted.map(()=>[]),degree=sorted.map(()=>0);
+ for(let i=0;i<sorted.length;i++)for(let j=i+1;j<sorted.length;j++){
+  const a=sorted[i],b=sorted[j];if(!a.bounds||!b.bounds)continue;
+  let cache=overlapCache.get(a.hull);if(!cache){cache=new WeakMap();overlapCache.set(a.hull,cache);}
+  let relation=cache.get(b.hull);
+  if(relation===undefined){
+   const forward=[0,1,2].some(k=>a.bounds[k+3]<=b.bounds[k]+.001);
+   const backward=[0,1,2].some(k=>b.bounds[k+3]<=a.bounds[k]+.001);
+   relation=forward===backward||!overlap(a.hull,b.hull)?0:forward?1:-1;cache.set(b.hull,relation);
+  }
+  const ab=relation===1,ba=relation===-1;
+  if(ab===ba)continue;
+  const [from,to]=ab?[i,j]:[j,i];edges[from].push(to);degree[to]++;
+ }
+ const result=[],used=new Set();let cycles=0;
+ while(result.length<sorted.length){let i=degree.findIndex((d,i)=>!d&&!used.has(i));if(i<0){i=degree.findIndex((d,i)=>!used.has(i));cycles++;}
+ used.add(i);result.push(sorted[i]);for(const j of edges[i])degree[j]--;}
+ return {items:result,cycles};
+}
+const shapeCache=new Map();
+function renderScene(m,finish='sage'){
+ const f=finishes[finish]||finishes.sage;
+ const colors={plaster:'#e8dfcd',floor:'#d3bc96',wood:f.wood,fabric:f.fabric,accent:f.accent,linen:'#f1e8d7',bronze:'#655846',metal:'#a5aba5',dark:'#46504c',glass:'#b3c9c7',soil:'#655444',leaf:'#7d9275',wall:'#c4baa6',white:'#faf5e9',light:`rgb(${Math.round(241+14*m.lights)},${Math.round(232+16*m.lights)},${Math.round(215-13*m.lights)})`};
+ const layers={base:[],rear:[],objects:[],front:[],overlay:[]};let serial=0, inventory=[];
+ const group=(id,body,opacity=1)=>`<g data-assembly="${id}" opacity="${opacity.toFixed(4)}">${body}</g>`;
+ function box(id,x,y,z,w,d,h,material='wood',layer='objects',opts={}){
+  const color=colors[material]||material;
+  const key=JSON.stringify([x,y,z,w,d,h,opts.r,opts.bevel]);
+  let cached=shapeCache.get(id);if(!cached||cached.key!==key){cached={key,shape:kit.slabOf({x,y,w,d,r:opts.r||0},z,h,P,opts.r?4:1,opts.bevel||0),hull:hull(kit.boxCorners({x,y,w,d},z,z+h).map(pt))};shapeCache.set(id,cached);}
+  const shape=cached.shape;
+  const svg=`<g data-part="${id}" style="--material:${color}" opacity="${opts.opacity??1}">${kit.solidSvg(shape,{crease:'faint'})}</g>`;
+  const depth=kit.depthOf([x+w/2,y+d/2,z+h/2],P);
+  layers[layer].push({svg,depth,id,order:serial++,bounds:[x,y,z,x+w,y+d,z+h],hull:cached.hull});inventory.push({id,assembly:opts.assembly||id.split('-')[0],x,y,z,w,d,h,material});return svg;
+ }
+ const line=(points,color='#655846',width=1,extra='')=>`<path d="${path(points)}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
+ function topLine(points,color,width,layer='objects',depth=99999){layers[layer].push({svg:line(points,color,width),depth,order:serial++});}
+ function cylinder(id,x,y,z,r,h,material,layer='objects'){
+  const key=JSON.stringify([x,y,z,r,h]);let cached=shapeCache.get(id);
+  if(!cached||cached.key!==key){cached={key,shape:kit.cylinder(x,y,r,z,h,P,20,3),hull:hull(kit.boxCorners({x:x-r,y:y-r,w:r*2,d:r*2},z,z+h).map(pt))};shapeCache.set(id,cached);}
+  const svg=`<g data-part="${id}" style="--material:${colors[material]}">${kit.solidSvg(cached.shape)}</g>`;
+  layers[layer].push({svg,depth:kit.depthOf([x,y,z+h/2],P),order:serial++,bounds:[x-r,y-r,z,x+r,y+r,z+h],hull:cached.hull});inventory.push({id,assembly:id.split('-')[0],x:x-r,y:y-r,z,w:r*2,d:r*2,h,material});
+ }
+ // Finished floor is z=0. Physical layers remain fixed; only the local section explodes.
+ box('shell-foundation',-160,-160,-220,3920,5120,150,'wall','base');
+ box('shell-screed',0,0,-70,3600,4800,50,'wall','base');
+ box('shell-underlay',0,0,-20,3600,4800,5,'dark','base');
+ box('shell-finish',0,0,-15,3600,4800,15,'floor','base');
+ for(let x=0;x<3600;x+=240)for(let y=0;y<4800;y+=1200){
+  // Closed plank outlines terminate at physical plank edges.
+  const y0=y+(x%480?600:0);if(y0>=4800)continue;
+  topLine([[x,y0,1],[x+240,y0,1],[x+240,Math.min(y0+1200,4800),1],[x,Math.min(y0+1200,4800),1],[x,y0,1]],'#ac9577',.45,'base');
+ }
+ box('wall-west',-160,-160,0,160,5120,3000,'plaster','rear');
+ box('wall-south',0,-160,0,3760,160,3000,'plaster','rear');
+ box('skirting-west',0,0,0,22,4800,100,'linen','rear');
+ box('skirting-south',0,0,0,3600,22,100,'linen','rear');
+ // West-wall framed artwork, built in its actual vertical plane.
+ box('art-frame',0,2850,1550,35,820,820,'wood','rear');
+ box('art-paper',35,2880,1580,5,760,760,'linen','rear');
+ box('art-colour-1',41,2940,1660,3,285,570,'accent','rear');
+ box('art-colour-2',41,3250,1660,3,330,300,'fabric','rear');
+ // Wardrobe carcass: open centre bay makes the functional drawer readable.
+ box('wardrobe-plinth',600,20,0,2400,560,90,'dark');
+ box('wardrobe-base',600,0,90,2400,600,30);
+ box('wardrobe-back',600,0,120,2400,22,2250);
+ for(const x of[600,1380,2190,2970])box(`wardrobe-upright-${x}`,x,22,120,30,578,2250);
+ box('wardrobe-crown',600,0,2370,2400,600,30);
+ for(const x of[630,2220]){
+  box(`wardrobe-door-${x}`,x,575,120,750,25,2240,'wood');
+  box(`wardrobe-door-inset-${x}`,x+38,601,170,674,3,2140,'wood');
+  box(`wardrobe-handle-${x}`,x+640,608,1040,12,30,260,'bronze');
+ }
+ for(const z of[580,1060,1690])box(`wardrobe-shelf-${z}`,1410,25,z,780,550,25);
+ box('wardrobe-rail',1435,300,2180,730,18,18,'bronze');
+ for(let i=0;i<4;i++)box(`hanging-shirt-${i}`,1475+i*155,265,1750,95,80,380,i%2?'linen':'fabric','objects');
+ box('wardrobe-folded-linen-1',1480,140,1715,310,300,60,'linen');
+ box('wardrobe-folded-linen-2',1820,160,1715,285,280,90,'accent');
+ box('wardrobe-storage-box',1500,80,1090,510,370,240,'linen', 'objects',{r:18});
+ box('wardrobe-box-pull',1710,452,1195,80,8,30,'bronze');
+ const e=m.extension,dy=35+e;
+ box('drawer-base',1410,dy,620,780,540,18,'wood','objects',{assembly:'drawer'});
+ for(const x of[1410,2172])box(`drawer-side-${x}`,x,dy,638,18,540,160,'wood','objects',{assembly:'drawer'});
+ box('drawer-back',1428,dy,638,744,18,160,'wood','objects',{assembly:'drawer'});
+ box('drawer-front',1410,575+e,620,780,25,190,'wood','objects',{assembly:'drawer'});
+ box('drawer-handle',1710,607+e,705,180,25,18,'bronze','objects',{assembly:'drawer'});
+ box('drawer-linen',1490,dy+80,638,280,280,95,'linen','objects',{r:24,assembly:'drawer'});
+ for(const x of[1395,2192]){
+  box(`runner-fixed-${x}`,x,45,690,12,500,32,'metal');
+  box(`runner-middle-${x}`,x+3,45+e/2,722,9,500,22,'bronze');
+  box(`runner-inner-${x}`,x+5,45+e,744,7,500,18,'metal');
+ }
+ // Bed, rug and side tables move together in the deliberate clearance experiment.
+ const by=m.bedY;
+ box('rug',650,by-220,2,2300,2500,8,'linen','objects',{r:65});
+ for(let i=0;i<6;i++)box(`rug-fringe-${i}`,700+i*420,by-235,2,260,18,5,'linen');
+ for(const x of[1060,2470])for(const y of[by+100,by+1800])box(`bed-leg-${x}-${y}`,x,y,10,70,70,180,'bronze');
+ box('bed-frame',1000,by,190,1600,2000,150,'wood','objects',{r:30});
+ box('bed-mattress',1025,by+25,340,1550,1950,200,'linen','objects',{r:70,bevel:8});
+ box('bed-duvet',1010,by+40,540,1580,1360,110,'fabric','objects',{r:75,bevel:10});
+ box('bed-throw',1005,by+90,650,1590,440,35,'accent','objects',{r:25});
+ for(let i=0;i<5;i++)box(`bed-throw-weave-${i}`,1020,by+120+i*75,685,1555,8,2,'linen');
+ box('bed-headboard',960,by+1990,0,1680,85,1120,'fabric','objects',{r:38});
+ for(const x of[1080,1840])box(`bed-pillow-${x}`,x,by+1500,540,650,400,140,'linen','objects',{r:95,bevel:10});
+ for(const x of[420,2760]){
+  for(const xx of[x+25,x+345])box(`table-leg-${xx}`,xx,by+1750,10,30,320,370,'bronze');
+  box(`table-case-${x}`,x,by+1710,380,420,420,170,'wood','objects',{r:10});
+  box(`table-top-${x}`,x-15,by+1695,550,450,450,22,'wood','objects',{r:15});
+  box(`table-handle-${x}`,x+150,by+2132,445,120,15,12,'bronze');
+  cylinder(`lamp-base-${x}`,x+220,by+1900,572,95,15,'bronze');
+  cylinder(`lamp-stem-${x}`,x+220,by+1900,587,12,230,'bronze');
+  cylinder(`lamp-shade-${x}`,x+220,by+1900,817,125,150,'light');
+ }
+ box('books-1',430,by+1720,572,160,220,25,'accent');
+ box('books-2',440,by+1725,597,145,200,20,'fabric');
+ // Plant by the west wall, clear of the drawer section and door sweep.
+ cylinder('plant-pot',320,1250,0,140,240,'accent');
+ cylinder('plant-soil',320,1250,240,125,5,'soil');
+ cylinder('plant-stem',320,1250,245,14,590,'bronze');
+ for(let i=0;i<7;i++){
+  const angle=i*2.4;const x=320+Math.cos(angle)*100,y=1250+Math.sin(angle)*110,z=380+i*65;
+  box(`plant-leaf-${i}`,x-60,y-35,z,170,90,18,'leaf','objects',{r:42});
+ }
+ // Indoor recirculating unit on south wall; visible fan and outlet slot.
+ box('air-housing',3150,5,2450,420,180,370,'linen','rear',{r:25});
+ box('air-intake',3180,190,2680,360,6,85,'dark','rear');
+ for(let i=0;i<6;i++)box(`air-louvre-${i}`,3185,198,2690+i*11,350,8,4,'metal','rear');
+ box('air-outlet',3180,188,2480,360,8,65,'dark','rear');
+ // The fan lives in the front x/z plane, with a real hub pivot and continuous blade rotation.
+ if(m.air>0){
+  const cx=3355,cy=207,cz=2590,rot=m.t*2.4;
+  const ring=Array.from({length:33},(_,i)=>[cx+70*Math.cos(i*Math.PI/16),cy,cz+70*Math.sin(i*Math.PI/16)]);
+  let blades=`<path d="${path(ring,true)}" fill="#d6d9cc" stroke="#58645b" stroke-width="1"/>`;
+  for(let i=0;i<5;i++){
+   const a=rot+i*Math.PI*2/5;
+   const ps=[[0,0],[62,-14],[54,26],[15,17]].map(([x,z])=>[cx+x*Math.cos(a)-z*Math.sin(a),cy+1,cz+x*Math.sin(a)+z*Math.cos(a)]);
+   blades+=`<path d="${path(ps,true)}" fill="#7a9186" stroke="#35473e" stroke-width=".7"/>`;
+  }
+  const hub=pt([cx,cy+2,cz]);blades+=`<circle cx="${hub[0]}" cy="${hub[1]}" r="3" fill="#415247"/>`;
+  layers.overlay.push({svg:group('air-fan-cutaway',blades,m.air)});
+ }
+ // East door jambs and a rotated leaf; its real hinge remains fixed.
+ const angle=Math.PI/2*.75;
+ const leaf=[[3600,950,0],[3600,1800,0],[3565,1800,0],[3565,950,0]].map(p=>transform(p,{pivot:[3600,950,0],angle}));
+ const ring=leaf.map(p=>p.slice(0,2));
+ layers.objects.push({svg:`<g data-part="door-leaf" style="--material:${colors.wood}" opacity=".72">${kit.solidSvg(kit.extrude(ring,0,2100,P))}</g>`,depth:kit.depthOf([3680,1200,1000],P),order:serial++});
+ const doorPoint=p=>transform(p,{pivot:[3600,950,0],angle});
+ layers.front.push({svg:line([doorPoint([3558,1680,1050]),doorPoint([3530,1680,1050]),doorPoint([3530,1570,1050])],'#655846',2)});
+ for(const z of[250,1750])box(`door-hinge-${z}`,3576,950,z,20,25,90,'bronze','front');
+ // Door swing is available as a floor overlay in stage one.
+ const swing=Array.from({length:25},(_,i)=>transform([3600,1800,4],{pivot:[3600,950,0],angle:i*Math.PI/48}));
+ layers.overlay.push({svg:group('door-swing',line(swing,'#927f61',1.2,'stroke-dasharray="3 5"'),m.open*.5)});
+ for(const y of[915,1800])box(`door-jamb-${y}`,3580,y,0,55,35,2140,'linen','front',{opacity:.65});
+ box('door-header',3580,915,2100,55,920,40,'linen','front',{opacity:.65});
+ box('switch-plate',3570,1870,1100,15,95,130,'linen','front');
+ box('switch-rocker',3565,1890,1120,6,55,85,'light','front');
+ const wallHeight=560-420*m.open;
+ box('cutaway-east-south',3600,0,0,150,915,wallHeight,'plaster','front');
+ box('cutaway-east-north',3600,1835,0,150,2965,wallHeight,'plaster','front');
+ box('cutaway-north',0,4800,0,3600,150,wallHeight,'plaster','front',{opacity:.45});
+ // North window shown as a lightweight section above the cutaway wall.
+ for(const x of[1050,2515])box(`window-jamb-${x}`,x,4790,1200,35,75,1200,'linen','front',{opacity:.75});
+ for(const z of[1200,2370])box(`window-rail-${z}`,1050,4790,z,1500,75,30,'linen','front',{opacity:.75});
+ box('window-mullion',1782,4790,1230,35,75,1140,'linen','front',{opacity:.65});
+ box('window-glass',1085,4820,1230,1430,4,1140,'glass','front',{opacity:.09});
+ box('curtain-track',900,4750,2540,1800,30,25,'bronze','front',{opacity:.55});
+ for(const x of[920,2460])for(let i=0;i<4;i++)box(`curtain-${x}-${i}`,x+i*45,4770,900,42,42,1620,'linen','front',{r:20,opacity:.42});
+ // Lifted ceiling: local panel, three framing battens and a fixed cable route.
+ const cz=3000+m.open*420+m.ceiling*120;
+ box('ceiling-panel',0,0,cz,3600,4800,12.5,'linen','overlay',{opacity:.12+.05*m.ceiling});
+ for(const x of[0,1200,2400,3600])topLine([[x,0,cz+13],[x,4800,cz+13]],'#7a8c81',.75,'overlay');
+ for(const y of[0,2400,4800])topLine([[0,y,cz+13],[3600,y,cz+13]],'#7a8c81',.75,'overlay');
+ for(const x of[650,1720,2820])box(`ceiling-batten-${x}`,x,100,3015,35,640,75,'metal','rear',{opacity:.18+.72*m.ceiling});
+ for(const x of[650,2820])box(`ceiling-hanger-${x}`,x,380,3090,12,12,60,'bronze','rear',{opacity:m.ceiling});
+ for(const x of[1100,2500])cylinder(`downlight-${x}`,x,500,2960,75,40,'light','rear');
+ box('wardrobe-light-strip',650,592,2320,2300,10,12,'light');
+ const cable=[[3570,1920,1230],[3570,1920,3070],[3570,500,3070],[2500,500,3070],[1100,500,3070]];
+ layers.overlay.push({svg:group('service-cable',line(cable,'#b08245',2.2)+line([[1100,500,3070],[1100,500,3000]],'#b08245',2.2)+line([[2500,500,3070],[2500,500,3000]],'#b08245',2.2),m.ceiling)});
+ // Separate small sample at the west-front floor edge; physical thicknesses are preserved.
+ let physical=-70;
+ for(let i=2;i>=0;i--){const l=spec.layers[i];const z=physical+(3-i)*190*m.layers;
+  box(`floor-section-${i}`,-440,-40,z,420,700,l.mm,['wood','dark','wall'][i],'front',{opacity:m.layers});physical+=l.mm;
+ }
+ box('wall-section-substrate',-310,700,700,150,400,650,'wall','front',{opacity:m.layers});
+ box('wall-section-plaster',-160-180*m.layers,700,700,12,400,650,'linen','front',{opacity:m.layers});
+ // Illustrative light pools, kept within floor/bed surfaces rather than suggesting measured lux.
+ if(m.lights>0){for(const x of[640,2980]){const q=pt([x,by+1850,575]);layers.overlay.push({svg:`<ellipse cx="${q[0]}" cy="${q[1]}" rx="37" ry="18" fill="#f5cf7b" opacity="${m.lights*.18}"/>`});}}
+ if(m.air>0){
+  const traces=[];for(let i=0;i<3;i++){
+   const pts=[[3290+i*70,205,2520],[3300+i*70,1000,2200],[3300+i*45,2200,1500],[3200+i*35,2900,900]];
+   traces.push(line(pts,'#668e8c',1.8,`stroke-dasharray="7 10" stroke-dashoffset="${(-m.t*18).toFixed(3)}"`));
+   const ret=[[3100-i*65,2700,1200],[3050-i*65,1800,1900],[3100-i*50,500,2750],[3200+i*30,205,2750]];
+   traces.push(line(ret,'#a88865',1.5,`stroke-dasharray="3 8" stroke-dashoffset="${(-m.t*13).toFixed(3)}"`));
+  }layers.overlay.push({svg:group('recirculation',traces.join(''),m.air)});
+ }
+ // Dimension anchors share the drawer front and opposing bed face exactly.
+ if(m.drawer>0||m.explore){
+  const x=2240,z=380,a=[x,600+m.extension,z],b=[x,m.bedY,z];
+  const q=pt([x,(a[1]+b[1])/2,z]);
+  const color=m.collision?'#ad4f3b':'#3b7065';
+  layers.overlay.push({svg:group('clearance',line([a,b],color,2)+line([[x-70,a[1],z],[x+70,a[1],z]],color,2)+line([[x-70,b[1],z],[x+70,b[1],z]],color,2)+`<g transform="translate(${q[0]+8} ${q[1]-9})"><rect x="-5" y="-16" width="116" height="26" rx="6" fill="#f5f0e5" stroke="${color}"/><text class="scene-label" fill="${color}">${Math.round(m.clearance).toLocaleString('en')} mm</text></g>`,m.explore?1:m.drawer*(1-m.progress[3]))});
+ }
+ const label=(id,world,text,opacity)=>{const [x,y]=pt(world);return group(id,`<g transform="translate(${x} ${y})"><rect x="-8" y="-20" width="${text.length*7.3+18}" height="29" rx="6" fill="#f5f0e5" stroke="#c9beaa"/><text class="scene-label">${escape(text)}</text></g>`,opacity);};
+ const dimensions=m.open*(1-m.progress[1]);
+ layers.overlay.push({svg:group('room-dimensions',line([[0,5030,-20],[3600,5030,-20]],'#8c947f',1)+line([[3830,0,-20],[3830,4800,-20]],'#8c947f',1),dimensions)});
+ layers.overlay.push({svg:label('width-label',[1500,5030,-30],'3,600 mm',dimensions)});
+ layers.overlay.push({svg:label('length-label',[3880,2200,-30],'4,800 mm',dimensions)});
+ layers.overlay.push({svg:label('layer-label',[-400,900,1400],'15 + 5 + 50 = 70 mm',m.layers)});
+ layers.overlay.push({svg:label('ceiling-label',[500,0,3700],'150 mm service void',m.ceiling*(1-m.progress[5]))});
+ layers.overlay.push({svg:label('air-label',[2300,1600,2200],'Room air · schematic',m.air)});
+ const ordered=geometryOrder(layers.objects);
+ const order=(arr,sort=true)=> (sort?ordered.items:arr).map(o=>o.svg).join('');
+ // Stable semantic strata prevent complete rear walls from sorting across the room contents.
+ const nodes=[{key:'shadow',svg:'<ellipse cx="500" cy="677" rx="330" ry="66" fill="#ddd4c3" opacity=".45"/>'}];
+ for(const name of['base','rear','objects','front','overlay']){
+  const list=name==='objects'?ordered.items:layers[name];
+  list.forEach((item,i)=>{const identity=item.svg.match(/data-(?:part|assembly)="([^"]+)"/);nodes.push({key:identity?identity[1]:`${name}-${i}`,svg:item.svg});});
+ }
+ const result=`<svg id="room-svg" viewBox="0 0 1000 800" role="img" aria-labelledby="scene-title scene-desc"><title id="scene-title">Room Anatomy: furnished demonstration bedroom</title><desc id="scene-desc">Isometric architectural cutaway with a bed, wardrobe, opening drawer, window, door, lamps, ceiling and indoor air unit. The adjacent text explains the active stage.</desc><g id="room-art">${nodes.map(n=>`<g data-render-key="${n.key}">${n.svg}</g>`).join('')}</g></svg>`;
+ return {svg:result,nodes,inventory,projection:P,depthCycles:ordered.cycles};
+}
+function clearanceDetail(m,finish='sage'){
+ const f=finishes[finish];const scale=.18,gap=m.bedGap*scale,travel=m.extension*scale;
+ return `<svg viewBox="0 0 520 200" role="img" aria-label="Plan view: drawer extension ${Math.round(m.extension)} millimetres; remaining clearance ${Math.round(m.clearance)} millimetres"><text x="20" y="22" class="detail-kicker">PLAN VIEW · SAME MODEL</text><rect x="20" y="50" width="105" height="92" rx="5" fill="${f.wood}" stroke="#514f44"/><rect x="${40+travel}" y="72" width="85" height="48" fill="#eadac0" stroke="#514f44"/><line x1="40" y1="67" x2="${125+travel}" y2="67" stroke="#767d79" stroke-width="5"/><line x1="40" y1="127" x2="${125+travel}" y2="127" stroke="#767d79" stroke-width="5"/><rect x="${125+gap}" y="40" width="65" height="115" rx="8" fill="${f.fabric}" stroke="#514f44"/>${m.collision?`<rect x="${125+gap}" y="72" width="${-m.clearance*scale}" height="48" fill="#b54f3c" opacity=".65"/>`:''}<line x1="${125+travel}" y1="166" x2="${125+gap}" y2="166" stroke="${m.collision?'#ad4f3b':'#3b7065'}" stroke-width="2"/><text x="20" y="190">Wardrobe</text><text x="${125+gap}" y="190">Bed</text><text x="${Math.min(130+travel,370)}" y="157" fill="${m.collision?'#ad4f3b':'#3b7065'}">${Math.round(m.clearance).toLocaleString('en')} mm</text></svg>`;
+}
+
+// Retain static SVG nodes. Only moving/material-changing parts are reparsed, then
+// keyed nodes are reordered to the exact same geometry-derived painter order.
+const domCaches=new WeakMap();
+function updateRoomDOM(container,room){
+ let cache=domCaches.get(container);
+ if(!cache){container.innerHTML=room.svg;cache=new Map();for(const n of room.nodes)cache.set(n.key,{markup:n.svg,el:[...container.querySelector('#room-art').children].find(el=>el.dataset.renderKey===n.key)});domCaches.set(container,cache);return;}
+ const art=container.querySelector('#room-art');
+ if(room.title)container.querySelector('#scene-title').textContent=room.title;let cursor=art.firstElementChild;const used=new Set();
+ for(const node of room.nodes){
+  used.add(node.key);let entry=cache.get(node.key);
+  if(!entry){const el=document.createElementNS('http://www.w3.org/2000/svg','g');el.dataset.renderKey=node.key;entry={el,markup:null};cache.set(node.key,entry);}
+  entry.el.setAttribute('opacity',String(node.opacity??1));
+  if(entry.markup!==node.svg){entry.el.innerHTML=node.svg;entry.markup=node.svg;}
+  if(entry.el!==cursor)art.insertBefore(entry.el,cursor);
+  cursor=entry.el.nextElementSibling;
+ }
+ for(const [key,entry]of cache)if(!used.has(key)){entry.el.remove();cache.delete(key);}
+}
+
+
+
+
+// Physical extents stay in millimetres. offset is only an exploded drawing translation.
+const lessons=[
+ {name:'Room & circulation',parts:[['enclosure','Enclosure','Finished internal space','3,600 × 4,800 × 3,000 mm','Walls define the clear volume. Cutaway edges expose the furniture and circulation.'],['furniture','Furniture layout','Objects share one floor','Bed 1,600 × 2,000 mm','Compare the bed, wardrobe, door swing and window before studying their details.'],['ceiling','Ceiling plane','The fifth surface','17.28 m² footprint','A translucent full-room plane identifies the ceiling; chapter five exposes its construction.']]},
+ {name:'Floor & wall build-up',parts:[['oak','Oak finish','Walking surface','15 mm','The finish sits on the underlay. Board joints remain on the upper face.'],['underlay','Acoustic underlay','Resilient separating layer','5 mm','Shown at its actual thickness; the vertical gap is a display offset, not an air cavity. No acoustic rating is assumed.'],['screed','Screed','Levelling substrate','50 mm','Supports the floor build-up. Finish + underlay + screed = 70 mm.'],['block','Block substrate','Wall backing','150 mm','A cut section exposes the substrate. This is a typical assembly assumption, not a structural design.'],['plaster','Plaster finish','Wall surface','12 mm','Separates normal to the wall to reveal the interface behind it.']]},
+ {name:'Wardrobe & drawer',parts:[['carcass','Carcass & shelves','Support and storage','2,400 × 600 × 2,400 mm','The back, uprights, shelves and crown form the cabinet. Panels separate for inspection; offsets do not change its size.'],['doors','Doors & handles','Access to side bays','Two 750 mm leaves','The leaves move out of the drawing to expose the carcass. This is an exploded view, not a door hinge simulation.'],['drawer','Drawer tray','Moving storage','780 × 540 × 190 mm','Base, sides, back and front travel together. The front face determines the remaining gap to the bed.'],['runner','Telescopic runners','Guide drawer travel','0–450 mm stroke','Fixed rail stays on the cabinet; intermediate rail travels half the stroke; inner rail follows the tray.'],['bed-edge','Opposing bed','Clearance boundary','1,500 mm nominal gap','Remaining clearance = initial gap − extension. A negative value means geometric interference.']]},
+ {name:'Lighting & connections',parts:[['downlights','Two downlights','Overhead lighting','2 × 7 W','Two fittings share the illustrative switched circuit. Their output is not a lux calculation.'],['lamps','Bedside lamps','Local lighting','2 × 4 W','These two loads are included in the illustrative circuit. Actual wiring and switching depend on the installation.'],['strip','Wardrobe strip','Cabinet lighting','8 W','A linear light sits at the wardrobe opening. Drivers and cable routing require an installation-specific design.'],['circuit','Switch & route','Electrical connection','30 W connected load','7 + 7 + 4 + 4 + 8 = 30 W. The animated route indicates connectivity, not current or electrical compliance.']]},
+ {name:'Full ceiling assembly',parts:[['slab','Structural slab','Upper boundary','150 mm study slab','Translucent for visibility. Thickness is an added demonstration assumption, not a structural calculation.'],['hangers','Hangers & anchors','Suspension connections','150 mm nominal void','Rods connect the channel grid to the slab. Exploded gaps are exaggerated only for display.'],['primary','Primary channels','Suspension grid','35 mm study depth','Primary members carry the crossing furring members. Layout and fixings are illustrative, not a certified span design.'],['furring','Furring channels','Panel support','35 mm study depth','Cross members sit below the primary grid and support the panel edges.'],['panels','Six ceiling panels','Finished ceiling surface','6 × 1,200 × 2,400 × 12.5 mm','The six panels cover the full 3,600 × 4,800 mm footprint. The finish plane remains at 3,000 mm above the floor.'],['services','Cable & luminaires','Services in the void','2 × 7 W fittings','The route is supported within the ceiling zone. The drawing does not specify a rated installation.']]},
+ {name:'Indoor unit & recirculation',parts:[['housing','Casing & cover','Protective enclosure','420 × 180 × 370 mm','Dimensions match the demonstration unit in the room. The cover lifts to expose an illustrative internal arrangement.'],['filter','Intake filter','Air entry','Illustrative filter','Room air passes through the intake and filter. Filter performance is not modelled.'],['coil','Coil fins','Heat-exchange surface','Schematic internal assembly','Fins illustrate the heat-exchange zone. No capacity, refrigerant circuit or temperature is calculated.'],['fan','Fan & motor','Recirculation mechanism','Illustrative rotor','The rotor turns about its own fixed axis. Speed is visual only and does not imply an airflow rate.'],['outlet','Outlet louvres','Air direction','Schematic recirculation','Air returns to the same room; this view does not demonstrate fresh-air ventilation.']]},
+ {name:'One coordinated room',parts:[['enclosure','Enclosure','A shared space','17.28 m² · 51.84 m³','The assemblies return to the same room. Display movements never alter its physical dimensions.'],['furniture','Furniture & access','Use and movement','1,050 mm at full extension','Furniture, door swings and opening drawers need to be coordinated. This is geometric clearance, not a certified accessible aisle.'],['ceiling','Finishes & services','Coordination above and below','150 mm nominal ceiling void','Ceiling, lighting and indoor unit occupy the same room. Detailed installation design remains project-specific.']]}
+];
+function studyState(m){
+ const index=m.explore?2:Math.max(0,stages.findLastIndex(s=>m.t>=s.start));
+ const stage=stages[index];return {index,u:m.explore?1:clamp((m.t-stage.start)/(stage.end-stage.start)),transition:m.explore?1:smooth((m.t-stage.start)/.65)};
+}
+const stageEase=(u,a=0,b=1)=>smooth((u-a)/(b-a));
+let cabinetInventory;
+function studyParts(index,u,m){
+ const parts=[];
+ const add=(id,component,x,y,z,w,d,h,material,offset=[0,0,0],opacity=1,r=0)=>parts.push({id,component,x,y,z,w,d,h,material,offset,opacity,r});
+ if(index===1){
+  let z=-70;
+  for(let i=2;i>=0;i--){const l=spec.layers[i],e=stageEase(u,.05+i*.09,.7+i*.1);add(`layer-${i}`,['oak','underlay','screed'][i],0,0,z,900,850,l.mm,['wood','dark','wall'][i],[0,0,(3-i)*180*e]);z+=l.mm;}
+  add('wall-substrate','block',-162,0,0,150,850,950,'wall',[-240*stageEase(u,.12,.8),0,0]);
+  add('wall-plaster','plaster',-12,0,0,12,850,950,'linen',[-90*stageEase(u,.26,.95),0,0]);
+  for(let i=0;i<5;i++)add(`plank-joint-${i}`,'oak',i*180,0,0,1,850,.4,'bronze',[0,0,540*stageEase(u,.05,.7)]);
+ }
+ if(index===2){
+  cabinetInventory??=renderScene(evaluate()).inventory.filter(p=>/^(wardrobe|drawer|runner)/.test(p.id)&&!p.id.includes('light-strip'));
+  for(const p of cabinetInventory){
+   const component=p.id.startsWith('runner')?'runner':p.id.startsWith('drawer')?'drawer':/door|handle/.test(p.id)?'doors':'carcass';
+   let delta=0;if(component==='drawer')delta=m.extension;if(p.id.startsWith('runner-middle'))delta=m.extension/2;if(p.id.startsWith('runner-inner'))delta=m.extension;
+   let offset=[0,0,0];const e=stageEase(u,.05,.65);
+   if(component==='doors')offset=[p.x<1800?-420*e:420*e,280*e,60*e];
+   if(p.id==='wardrobe-back')offset=[0,-240*e,0];
+   if(p.id==='wardrobe-crown')offset=[0,0,320*stageEase(u,.15,.8)];
+   if(/wardrobe-shelf|wardrobe-folded-linen|wardrobe-storage-box|wardrobe-box-pull/.test(p.id))offset=[0,100*e,80*e];
+   add(p.id,component,p.x,p.y+delta,p.z,p.w,p.d,p.h,p.material,offset,1,p.id.includes('linen')?16:0);
+  }
+  add('bed-clearance-edge','bed-edge',1000,m.bedY,190,1600,260,350,'fabric',[0,0,0],.55,24);
+ }
+ if(index===4){
+  const e=stageEase(u,.05,.9),s=spec.study;
+  add('structure','slab',0,0,3150,spec.width,spec.length,s.structuralSlab,'wall',[0,0,950*e],.17);
+  for(const x of[600,1800,3000]){
+   for(const y of[600,1800,3000,4200]){
+    add(`anchor-${x}-${y}`,'hangers',x-24,y-24,3140,48,48,10,'bronze',[0,0,750*e]);
+    add(`rod-${x}-${y}`,'hangers',x-4,y-4,3082.5,8,8,57.5,'metal',[0,0,750*e]);
+    add(`clip-${x}-${y}`,'hangers',x-20,y-18,3077.5,40,36,5,'bronze',[0,0,750*e]);
+   }
+   add(`primary-${x}`,'primary',x-25,0,3047.5,50,4800,35,'metal',[0,0,450*e]);
+   add(`primary-web-${x}`,'primary',x-25,0,3082.5,8,4800,8,'dark',[0,0,450*e]);
+  }
+  for(let y=0;y<=4800;y+=600){add(`furring-${y}`,'furring',0,Math.min(y,4770),3012.5,3600,30,35,'metal',[0,0,160*e]);}
+  for(let i=0;i<3;i++)for(let j=0;j<2;j++){
+   const stagger=stageEase(u,.08+(i+j)*.06,.58+(i+j)*.08);
+   add(`panel-${i}-${j}`,'panels',i*1200,j*2400,3000,1200,2400,12.5,'linen',[(i-1)*160*stagger,(j-.5)*220*stagger,-550*stagger]);
+   for(const x of[60,1140])for(const y of[80,1200,2320])add(`fixing-${i}-${j}-${x}-${y}`,'panels',i*1200+x,j*2400+y,3012.5,6,6,3,'bronze',[(i-1)*160*stagger,(j-.5)*220*stagger,-550*stagger]);
+  }
+  for(const x of[1100,2500]){add(`ceiling-fitting-${x}`,'services',x-75,425,2960,150,150,40,'light',[0,0,-800*stageEase(u,.3,.95)],1,50);add(`driver-${x}`,'services',x,600,3020,180,70,35,'dark',[0,0,-80*e]);}
+ }
+ if(index===5){
+  const a=spec.study.air,e=stageEase(u,.05,.8);
+  // These internals are schematic within the existing physical casing envelope.
+  add('unit-back','housing',0,0,0,a.width,16,a.height,'linen');
+  add('unit-base','housing',0,16,0,a.width,a.depth-16,18,'linen');
+  add('unit-cover','housing',0,170,0,a.width,10,a.height,'linen',[0,135*e,175*e],.68,10);
+  add('unit-top','housing',0,16,a.height-15,a.width,154,15,'linen',[0,70*e,180*e]);
+  add('filter-frame','filter',25,125,200,370,8,140,'bronze',[0,80*stageEase(u,.15,.9),105*stageEase(u,.15,.9)]);
+  for(let x=35;x<390;x+=14)add(`filter-mesh-${x}`,'filter',x,134,210,2,2,120,'dark',[0,80*stageEase(u,.15,.9),105*stageEase(u,.15,.9)]);
+  for(let z=215;z<335;z+=14)add(`filter-mesh-z-${z}`,'filter',35,135,z,350,2,2,'dark',[0,80*stageEase(u,.15,.9),105*stageEase(u,.15,.9)]);
+  add('coil-back','coil',35,30,190,350,60,145,'metal');
+  for(let x=40;x<380;x+=12)add(`coil-fin-${x}`,'coil',x,30,190,2,70,145,'metal');
+  add('motor','fan',340,45,80,45,65,70,'dark',[-10*e,10*e,0],1,12);
+  add('fan-axle','fan',55,77,110,285,8,8,'bronze');
+  for(let i=0;i<5;i++)add(`outlet-louvre-${i}`,'outlet',25,135+i*8,28+i*7,370,4,5,'bronze',[0,95*stageEase(u,.25,1),-65*stageEase(u,.25,1)]);
+ }
+ return parts;
+}
+
+
+
+
+
+
+const detailCache=new Map(),projectionCache=new Map(),locatorCache=new Map();
+function detailProjection(index,m){
+ if(!projectionCache.has(index)){
+  const bounds=[...studyParts(index,0,{...m,extension:0,bedY:2100}),...studyParts(index,1,{...m,extension:450,bedY:2400})].flatMap(p=>kit.boxCorners({x:p.x+p.offset[0],y:p.y+p.offset[1],w:p.w,d:p.d},p.z+p.offset[2],p.z+p.offset[2]+p.h));
+  const proj=kit.fitProjection(bounds,720,660,{pad:28,azimuth:index===2?62:42,elevation:index===4?22:30});
+  // Reserve label gutters. Projection's origin is offset only in screen space.
+  projectionCache.set(index,proj);
+ }
+ return projectionCache.get(index);
+}
+const detailEsc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function detailView(index,u,m,finish,selected){
+ const f=finishes[finish],colors={wood:f.wood,fabric:f.fabric,accent:f.accent,linen:'#eee6d6',wall:'#bdb5a5',metal:'#a4b5b0',bronze:'#876b43',dark:'#475854',light:'#f4d078'};
+ const proj=detailProjection(index,m),parts=studyParts(index,u,m),items=[],inventory=[];
+ const point=p=>{const q=kit.iso(p,proj);return[q[0]+140,q[1]+60];};
+ for(const p of parts){
+  const [dx,dy,dz]=p.offset,x=p.x+dx,y=p.y+dy,z=p.z+dz;
+  const k=JSON.stringify([index,p.id,p.x,p.y,p.z,p.w,p.d,p.h,p.r]);let shape=detailCache.get(k);
+  if(!shape){shape=kit.solidSvg(kit.slabOf({x:p.x,y:p.y,w:p.w,d:p.d,r:p.r},p.z,p.h,proj,p.r?6:1),{crease:'faint'});detailCache.set(k,shape);}
+  const zero=kit.iso([0,0,0],proj),d=kit.iso(p.offset,proj),corners=kit.boxCorners({x,y,w:p.w,d:p.d},z,z+p.h),pts=corners.map(point);
+  const faded=selected&&selected!==p.component?.36:1;
+  items.push({id:p.id,order:items.length,depth:kit.depthOf([x+p.w/2,y+p.d/2,z+p.h/2],proj),bounds:[x,y,z,x+p.w,y+p.d,z+p.h],hull:hull(pts),svg:`<g data-part="study-${p.id}" data-component="${p.component}" class="study-part ${selected===p.component?'selected':''}" style="--material:${colors[p.material]||p.material}" opacity="${p.opacity*faded}" transform="translate(${140+d[0]-zero[0]} ${60+d[1]-zero[1]})">${shape}</g>`});
+  inventory.push({...p,screenBounds:[Math.min(...pts.map(p=>p[0])),Math.min(...pts.map(p=>p[1])),Math.max(...pts.map(p=>p[0])),Math.max(...pts.map(p=>p[1]))]});
+ }
+ const ordered=geometryOrder(items),nodes=ordered.items.map(p=>({key:`detail-${index}-${p.id}`,svg:p.svg}));
+ let effects='';
+ const line=(ps,color='#a97a35',width=2,extra='')=>`<path d="${kit.pathOf(ps.map(point))}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" ${extra}/>`;
+ if(index===2){
+  const a=[1800,600+m.extension,615],b=[1800,m.bedY,615],pa=point(a),pb=point(b);
+  effects+=line([a,b],m.collision?'#b44332':'#437767',3)+`<circle cx="${pa[0]}" cy="${pa[1]}" r="4" fill="#437767"/><circle cx="${pb[0]}" cy="${pb[1]}" r="4" fill="#437767"/><text x="${(pa[0]+pb[0])/2+12}" y="${(pa[1]+pb[1])/2}" class="measure-label">${Math.round(m.clearance)} mm</text>`;
+ }
+ if(index===4){const dz=450*smooth((u-.05)/.85);effects+=line([[1100,500,3060+dz],[2500,500,3060+dz],[3300,500,3060+dz],[3300,4000,3060+dz]],'#ae783c',2.8,'stroke-dasharray="8 4"');}
+ if(index===5){
+  const reveal=smooth((u-.4)/.4),rot=m.t*2.4;
+  const rotorSurfaces=[],rotorPoints=[];
+  // Actual blade vertices rotate about x. Sort their planes and cap the drum ends.
+  for(let i=0;i<12;i++){
+   const a=rot+i*Math.PI/6;
+   const ring=[[60,80+45*Math.cos(a),115+45*Math.sin(a)],[335,80+45*Math.cos(a),115+45*Math.sin(a)],[335,80+45*Math.cos(a+.2),115+45*Math.sin(a+.2)],[60,80+45*Math.cos(a+.2),115+45*Math.sin(a+.2)]];
+   rotorPoints.push(...ring);rotorSurfaces.push({depth:kit.depthOf([197.5,80+45*Math.cos(a+.1),115+45*Math.sin(a+.1)],proj),svg:`<path d="${kit.pathOf(ring.map(point),true)}" fill="${i%2?'#738f85':'#bed0bf'}" stroke="#3a514b" stroke-width=".6"/>`});
+  }
+  const cap=x=>{const ring=Array.from({length:33},(_,i)=>[x,80+45*Math.cos(i*Math.PI/16),115+45*Math.sin(i*Math.PI/16)]);rotorPoints.push(...ring);return `<path d="${kit.pathOf(ring.map(point),true)}" fill="#93afa1" stroke="#3a514b" stroke-width="1"/>`;};
+  const rotor=cap(60)+rotorSurfaces.sort((a,b)=>a.depth-b.depth).map(s=>s.svg).join('')+cap(335);
+  const rotorScreen=rotorPoints.map(point);
+  inventory.push({id:'fan-rotor',component:'fan',x:60,y:35,z:70,w:275,d:90,h:90,offset:[0,0,0],screenBounds:[Math.min(...rotorScreen.map(p=>p[0])),Math.min(...rotorScreen.map(p=>p[1])),Math.max(...rotorScreen.map(p=>p[0])),Math.max(...rotorScreen.map(p=>p[1]))]});
+  effects+=`<g data-component="fan" data-part="study-rotor" opacity="${selected&&selected!=='fan'?.36:1}">${rotor}</g>`;
+  for(let i=0;i<3;i++)effects+=`<g opacity="${reveal}">${line([[100+i*85,430,-65],[100+i*85,330,50],[100+i*85,205,110]],'#447f86',3,`stroke-dasharray="9 7" stroke-dashoffset="${-m.t*20}"`)}${line([[100+i*85,245,460],[100+i*85,180,380],[100+i*85,95,285]],'#b0874d',2,`stroke-dasharray="6 8" stroke-dashoffset="${-m.t*16}"`)}</g>`;
+ }
+ nodes.push({key:`detail-${index}-effects`,svg:effects});
+ // Fit the visible assembly, or the selected component, without changing world dimensions.
+ const fitting=inventory.filter(p=>!selected||p.component===selected),bb=fitting.map(p=>p.screenBounds);
+ const xmin=Math.min(...bb.map(b=>b[0])),ymin=Math.min(...bb.map(b=>b[1])),xmax=Math.max(...bb.map(b=>b[2])),ymax=Math.max(...bb.map(b=>b[3]));
+ const zoom=Math.min(selected?2.4:1.25,690/(xmax-xmin),570/(ymax-ymin));
+ const tx=500-(xmin+xmax)/2*zoom,ty=365-(ymin+ymax)/2*zoom;
+ for(const node of nodes)node.svg=`<g class="detail-drawing"><g transform="translate(${tx} ${ty}) scale(${zoom})">${node.svg}</g></g>`;
+ for(const part of inventory)part.screenBounds=part.screenBounds.map((n,i)=>n*zoom+(i%2?ty:tx));
+ const labelOpacity=smooth((u-.64)/.3),labels=lessons[index].parts;
+ let labelSvg='';
+ labels.forEach(([component,name,,measure],i)=>{
+  if(selected&&selected!==component)return;
+  const matching=inventory.filter(p=>p.component===component&&!/fixing|mesh|web|fin-/.test(p.id));if(!matching.length)return;
+  const p=matching[Math.floor(matching.length/2)],target=point([p.x+p.offset[0]+p.w/2,p.y+p.offset[1]+p.d/2,p.z+p.offset[2]+p.h]);
+  target[0]=target[0]*zoom+tx;target[1]=target[1]*zoom+ty;
+  const left=i%2===0,lx=left?14:826,ly=110+Math.floor(i/2)*185,w=160,anchor=left?lx+w:lx;
+  labelSvg+=`<g class="detail-label" opacity="${labelOpacity}" data-component="${component}"><path d="M${anchor} ${ly+14} L${target[0]} ${target[1]}" fill="none" stroke="#727b6d" stroke-dasharray="3 4"/><circle cx="${target[0]}" cy="${target[1]}" r="3" fill="#344b41"/><rect x="${lx}" y="${ly}" width="${w}" height="45" rx="5" fill="#fcf7ec" stroke="#5b6559"/><text x="${lx+8}" y="${ly+17}" class="part-label">${i+1}. ${detailEsc(name)}</text><text x="${lx+8}" y="${ly+34}" class="part-measure">${detailEsc(measure)}</text></g>`;
+ });
+ nodes.push({key:`detail-${index}-labels`,svg:labelSvg});
+ return {nodes,inventory,depthCycles:ordered.cycles};
+}
+function lightingView(m,finish,selected){
+ const room=renderScene(m,finish);
+ // Every lit item remains in its actual room position. The cable trace is illustrative.
+ const comp=id=>/downlight/.test(id)?'downlights':/lamp-/.test(id)?'lamps':/wardrobe-light/.test(id)?'strip':/switch|service-cable/.test(id)?'circuit':null;
+ room.nodes=room.nodes.map(n=>{const id=n.svg.match(/data-part="([^"]+)"/)?.[1],c=comp(id||'');return {...n,svg:`<g ${c?`data-component="${c}"`:''} opacity="${c?(selected&&selected!==c?.45:1):.4}" class="${c?'lit-part':''}">${n.svg}</g>`};});
+ const proj=room.projection,pts=[[3570,1920,1230],[3570,1920,3030],[3570,500,3030],[2500,500,3030],[1100,500,3030]];
+ const branchPaths=[[[2500,500,3030],[2980,500,3030],[2980,m.bedY+1900,3030],[2980,m.bedY+1900,970]],[[1100,500,3030],[640,500,3030],[640,m.bedY+1900,3030],[640,m.bedY+1900,970]],[[1100,500,3030],[1100,590,3030],[1100,590,2332],[2850,590,2332]]];
+ let beams='';
+ for(const x of[1100,2500]){
+  const q=kit.iso([x,500,2960],proj),a=kit.iso([x-480,1050,10],proj),b=kit.iso([x+480,1050,10],proj);
+  beams+=`<path d="M${q} L${a} L${b} Z" fill="#dfad48" opacity="${m.lights*.12}"/><circle cx="${q[0]}" cy="${q[1]}" r="12" fill="#edc872" opacity="${m.lights*.45}"/>`;
+ }
+ room.nodes.push({key:'lighting-effects',svg:beams+branchPaths.map(ps=>`<path d="${kit.pathOf(ps.map(p=>kit.iso(p,proj)))}" fill="none" stroke="#b98a46" stroke-width="1.5" stroke-dasharray="4 7" stroke-dashoffset="${-m.t*15}" opacity="${m.lights*.7}"/>`).join('')});
+ room.nodes.push({key:'lighting-route',svg:`<path d="${kit.pathOf(pts.map(p=>kit.iso(p,proj)))}" fill="none" stroke="#c0802b" stroke-width="3" stroke-dasharray="9 5" stroke-dashoffset="${-m.t*20}" opacity="${m.lights}"/><text x="45" y="735" class="measure-label">7 + 7 + 4 + 4 + 8 = 30 W · illustrative circuit</text>`});
+ return room;
+}
+function renderStudy(m,finish='sage',selected=null){
+ const state=studyState(m),i=state.index,u=state.u;
+ const view=(index,progress,model,selection)=>[1,2,4,5].includes(index)?detailView(index,progress,model,finish,selection):index===3?lightingView(model,finish,selection):renderScene(model,finish);
+ const current=view(i,u,m,selected);
+ if(i===0||i===6)current.nodes=current.nodes.map(n=>{
+  const id=n.svg.match(/data-part="([^"]+)"/)?.[1]||'';
+  const c=/ceiling|downlight|service/.test(id)?'ceiling':/wall|shell|cutaway|skirting/.test(id)?'enclosure':'furniture';
+  return {...n,svg:`<g data-component="${c}" opacity="${selected&&selected!==c?.3:1}" class="${selected===c?'study-part selected':''}">${n.svg}</g>`};
+ });
+ let nodes=current.nodes.map(n=>({...n,key:'current-'+n.key,opacity:state.transition}));
+ if(state.transition<1&&i>0){
+  const previous=view(i-1,1,{...m,explore:false},null);
+  nodes=[...previous.nodes.map(n=>({...n,key:'previous-'+n.key,opacity:1-state.transition})),...nodes];
+ }else if(i===0)nodes=nodes.map(n=>({...n,opacity:1}));
+ const detail=[1,2,4,5].includes(i);
+ const previousDetail=[1,2,4,5].includes(i-1);
+ const locatorOpacity=detail?(previousDetail?1:state.transition):previousDetail?1-state.transition:0;
+ if(locatorOpacity>0){
+  if(!locatorCache.has(finish))locatorCache.set(finish,renderScene(evaluate({time:4.5}),finish).nodes.map(n=>n.svg).join(''));
+  nodes.push({key:'room-locator',svg:`<g class="room-locator" opacity="${locatorOpacity}"><rect x="815" y="625" width="170" height="158" rx="8" fill="#efe9da" stroke="#c2b8a3"/><g transform="translate(820 625) scale(.16)">${locatorCache.get(finish)}</g><text x="830" y="770" class="part-measure">${detailEsc(lessons[detail?i:i-1].name)}</text></g>`});
+ }
+ const title=`Room Anatomy: ${lessons[i].name}`;
+ const svg=`<svg id="room-svg" viewBox="0 0 1000 800" role="img" aria-labelledby="scene-title scene-desc"><title id="scene-title">${title}</title><desc id="scene-desc">${detail?'Magnified assembly, exploded display offsets. Physical dimensions are demonstration assumptions.':'Furnished demonstration bedroom, architectural cutaway.'} Select a component using the adjacent part buttons.</desc><g id="room-art">${nodes.map(n=>`<g data-render-key="${n.key}" opacity="${n.opacity??1}">${n.svg}</g>`).join('')}</g></svg>`;
+ return {svg,nodes,inventory:current.inventory,depthCycles:current.depthCycles,state,detail,title};
+}
+
+
+
+
+
+
+
+const $=s=>document.querySelector(s),reduced=matchMedia('(prefers-reduced-motion: reduce)'),renderMode=new URLSearchParams(location.search).has('render');
+let preferences={};try{preferences=JSON.parse(localStorage.getItem('room-anatomy')||'{}')||{};}catch{}
+let mode=preferences.mode==='auto'?'auto':'manual',finish=finishes[preferences.finish]?preferences.finish:'sage';
+let study=false,selected=null,motionOverride=false,lastLesson=-1,lastSidebarIndex=-1;
+let time=0,running=false,explore=false,extension=450,bedGap=1500,frame=0,last=0,target=null,model;
+const save=()=>{try{localStorage.setItem('room-anatomy',JSON.stringify({mode,finish}));}catch{}};
+const announce=s=>$('#status').textContent=s;
+$('#steps').innerHTML=stages.map((s,i)=>`<li><button class="step" data-index="${i}" aria-label="${i+1}. ${s.title}"><span class="step-num">${String(i+1).padStart(2,'0')}</span><span><strong>${s.title}</strong><small>${s.short}</small></span></button></li>`).join('');
+$('#swatches').innerHTML=Object.entries(finishes).map(([key,f])=>`<button data-finish="${key}" aria-label="${f.name}" title="${f.name}"><span style="background:linear-gradient(135deg,${f.fabric} 50%,${f.wood} 50%)"></span></button>`).join('');
+const format=n=>Math.round(n).toLocaleString('en');
+const html=(el,value)=>{if(el.innerHTML!==value)el.innerHTML=value;};
+function draw(){
+ model=evaluate({time,explore,extension:explore?extension:null,bedGap});
+ const state=studyState(model);
+ if(lastLesson!==state.index){selected=null;lastLesson=state.index;}
+ const room=renderStudy(model,finish,selected);updateRoomDOM($('#scene'),room);
+ drawStudy(state,room);
+ const completed=model.completed;
+ const index=explore?2:model.active>=0?model.active:completed>0?Math.min(completed-1,6):-1;
+ $('#chapter').textContent=explore?'EXPLORE / SPACE TO MOVE':index>=0?`DISCOVERY ${String(index+1).padStart(2,'0')} / ${stages[index].short.toUpperCase()}`:'THE COMPLETE ROOM';
+ $('#hint').textContent=explore?'How much space does a drawer need?':index>=0?stages[index].hint:'Everything has its place.';
+ $('#explanation').textContent=index>=0?stages[index].detail:'A room works when its layers, furniture and services fit together. Open the room, then follow each discovery to see why.';
+ $('#count').textContent=`${completed} / 7`;
+ document.querySelectorAll('.step').forEach((b,i)=>{
+  const active=running&&model.active===i;const done=i<completed;
+  b.dataset.state=active?'running':done?'done':i===completed?'next':'waiting';
+  b.disabled=explore||(!study&&(running||i!==completed));
+  b.classList.toggle('current',i===state.index);
+  b.setAttribute('aria-current',active||(!running&&i===completed)?'step':'false');
+  b.querySelector('.step-num').textContent=done?'✓':String(i+1).padStart(2,'0');
+ });
+ for(const value of['manual','auto'])$('#'+value).setAttribute('aria-pressed',String(mode===value));
+ $('#mode-hint').textContent=reduced.matches&&!motionOverride?'Reduced motion: one still per action.':mode==='auto'?'A 36-second tour. Pause with Manual.':'Go at your own pace.';
+ html($('#area'),`${model.area.toFixed(2)} <small>m²</small>`);html($('#volume'),`${model.volume.toFixed(2)} <small>m³</small>`);
+ const metric=index===1?['Floor section',model.layerTotal,'mm']:index===3?['Connected load',model.connectedPower,'W']:index===4?['Service void',spec.ceilingVoid,'mm']:['Drawer travel',model.extension,'mm'];
+ $('#metric-label').textContent=metric[0];html($('#metric'),`${format(metric[1])} <small>${metric[2]}</small>`);
+ html($('#clearance'),`${format(model.clearance)} <small>mm</small>`);$('#clearance').style.color=model.collision?'#a14f3c':'';
+ $('#scene-note').textContent=index===5?'Recirculation · schematic':index===3?'Light pools · illustrative':index===4?'Full ceiling · exploded construction':'Finished surfaces · illustrative view';
+ document.querySelectorAll('[data-finish]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.finish===finish)));
+ $('#finish-name').textContent=finishes[finish].name;
+ $('#explore-controls').hidden=!explore;$('#explore-intro').hidden=explore;$('#explore').hidden=explore;
+ if(explore){$('#extension-output').textContent=`${format(extension)} mm`;$('#gap-output').textContent=`${format(bedGap)} mm`;$('#clearance-detail').innerHTML=clearanceDetail(model,finish);
+  const msg=model.collision?`Interference: the drawer overlaps the bed by ${format(-model.clearance)} mm.`:`${format(model.clearance)} mm of geometric clearance remains.`;
+  if($('#collision').textContent!==msg)$('#collision').textContent=msg;
+  $('#collision').dataset.collision=String(model.collision);
+ }
+ window.roomState={...model,study,selected,studyIndex:state.index,studyProgress:state.u,motionOverride,mode,finish,running,renderMode,partCount:room.inventory.length,depthCycles:room.depthCycles};
+ window.roomInventory=room.inventory;
+}
+function drawStudy(state,room){
+ const lesson=lessons[state.index];
+ if($('#parts').dataset.lesson!==String(state.index)){
+  $('#parts').innerHTML=lesson.parts.map(([id,name],i)=>`<button data-component="${id}" aria-pressed="false"><span>${i+1}</span>${name}</button>`).join('');
+  $('#parts').dataset.lesson=String(state.index);
+ }
+ for(const button of $('#parts').querySelectorAll('button'))button.setAttribute('aria-pressed',String(button.dataset.component===selected));
+ if(lastSidebarIndex!==state.index){const list=$('#steps'),button=list.querySelector(`[data-index="${state.index}"]`);if(list.scrollWidth>list.clientWidth)list.scrollLeft=button.offsetLeft-list.offsetLeft-10;lastSidebarIndex=state.index;}
+ const part=lesson.parts.find(p=>p[0]===selected);
+ $('#part-title').textContent=part?part[1]:lesson.name;
+ $('#part-role').textContent=part?part[2]:'Select a part to inspect its role and connection.';
+ $('#part-measure').textContent=part?part[3]:'Demonstration assembly';
+ $('#part-description').textContent=part?part[4]:stages[state.index].detail;
+ $('#study').setAttribute('aria-pressed',String(study));
+ $('#study').textContent=study?'Study: any chapter':'Study any chapter';
+ $('#scrub').value=String(Math.round(state.u*1000));
+ $('#scrub-output').textContent=`${Math.round(state.u*100)}%`;
+ $('#scrub').setAttribute('aria-valuetext',`${stages[state.index].title}, ${Math.round(state.u*100)} percent`);
+ $('#motion-opt').hidden=!reduced.matches;
+ $('#motion-opt').textContent=motionOverride?'Use reduced motion':'Enable animation for this visit';
+ $('#motion-opt').setAttribute('aria-pressed',String(motionOverride));
+ $('#pause').textContent=running?'Pause':'Replay chapter';
+ $('#view-label').textContent=selected&&room.detail?'COMPONENT FOCUS / CONTEXT CROPPED':room.detail?'DETAIL VIEW / DISPLAY GAPS EXAGGERATED':'COMPLETE ROOM / CUTAWAY';
+ $('#focus-clear').hidden=!selected;
+ $('#scene').dataset.detail=String(room.detail);
+}
+function chooseComponent(id){selected=selected===id?null:id;draw();announce(selected?`${$('#part-title').textContent}. ${$('#part-measure').textContent}.`:'Showing the complete assembly.');}
+$('#parts').addEventListener('click',e=>{const b=e.target.closest('[data-component]');if(b)chooseComponent(b.dataset.component);});
+$('#scene').addEventListener('click',e=>{const p=e.target.closest('[data-component]');if(p&&lessons[studyState(model).index].parts.some(x=>x[0]===p.dataset.component))chooseComponent(p.dataset.component);});
+$('#focus-clear').addEventListener('click',()=>{selected=null;draw();});
+$('#study').addEventListener('click',()=>{study=!study;stop();draw();announce(study?'Study mode. Choose any chapter, select parts or scrub the motion.':'Ordered guide selected.');});
+$('#scrub').addEventListener('input',()=>{const i=studyState(model).index;stop();explore=false;time=stages[i].start+(stages[i].end-stages[i].start)*Number($('#scrub').value)/1000;draw();});
+$('#pause').addEventListener('click',()=>{if(running){stop();draw();announce('Paused. Scrub or replay this chapter.');return;}const i=studyState(model).index;stop();explore=false;time=stages[i].start;if((reduced.matches&&!motionOverride)||renderMode)time=stages[i].end;else{target=stages[i].end;play();}draw();});
+$('#motion-opt').addEventListener('click',()=>{motionOverride=!motionOverride;stop();draw();announce(motionOverride?'Animation enabled for this visit. Replay a chapter to start.':'Reduced motion enabled.');});
+function stop(){cancelAnimationFrame(frame);frame=0;running=false;last=0;target=null;}
+function tick(now){
+ if(!running)return;
+ if(document.hidden){last=0;frame=requestAnimationFrame(tick);return;}
+ const dt=last?Math.min((now-last)/1000,.05):0;last=now;time+=dt;
+ const end=target??36;
+ if(time>=end){time=end;draw();if(target!==null){const i=stages.findIndex(s=>s.end===target);stop();announce(`${stages[i].title} complete.${i===6?' Room reassembled. Start over to replay.':' Next discovery is ready.'}`);draw();return;}
+  time=0;announce('Tour complete. Beginning again.');
+ }
+ draw();frame=requestAnimationFrame(tick);
+}
+function play(){if(renderMode||(reduced.matches&&!motionOverride)||explore)return;running=true;last=0;frame=requestAnimationFrame(tick);}
+function advance(i){if(explore||(!study&&(running||i!==model.completed)))return;
+ stop();time=stages[i].start;announce(`${stages[i].title}.`);
+ if((reduced.matches&&!motionOverride)||renderMode){time=stages[i].end;draw();announce(`${stages[i].title} complete.`);return;}
+ target=stages[i].end;play();draw();
+}
+function setMode(value){if(mode===value){if(value==='auto'&&!running&&!explore){if(time>=36)time=0;play();draw();}return;}
+ if(value==='manual'){
+  if(running){const active=model.active;if(active>=0)time=stages[active].end;}
+  stop();mode=value;announce('Manual. Continue when you are ready.');
+ }else{stop();mode=value;if(!explore){if(time>=36)time=0;play();}announce(reduced.matches&&!motionOverride?'Auto selected. Reduced motion uses still steps.':'Auto tour selected.');}
+ save();draw();
+}
+function reset(){stop();time=0;explore=false;selected=null;bedGap=1500;extension=450;$('#extension').value='450';$('#bed-gap').value='1500';announce('Room reset. Ready when you are.');draw();if(mode==='auto')play();}
+$('.tour').addEventListener('click',e=>{const b=e.target.closest('[data-index]');if(b)advance(Number(b.dataset.index));});
+$('#manual').addEventListener('click',()=>setMode('manual'));$('#auto').addEventListener('click',()=>setMode('auto'));$('#reset').addEventListener('click',reset);
+$('#swatches').addEventListener('click',e=>{const b=e.target.closest('[data-finish]');if(!b)return;finish=b.dataset.finish;save();draw();});
+$('#explore').addEventListener('click',()=>{stop();explore=true;draw();$('#extension').focus();announce('Explore clearance. The tour is paused.');});
+for(const id of['extension','bed-gap'])$('#'+id).addEventListener('input',()=>{extension=Number($('#extension').value);bedGap=Number($('#bed-gap').value);draw();});
+$('#return').addEventListener('click',()=>{stop();explore=false;time=0;draw();document.querySelector('.step').focus();announce('Guided tour reset with your valid room inputs.');if(mode==='auto')play();});
+reduced.addEventListener('change',()=>{motionOverride=false;if(reduced.matches){if(model.active>=0)time=stages[model.active].end;stop();}draw();});
+document.addEventListener('visibilitychange',()=>{last=0;});
+// Public deterministic capture contract. Stops live playback; canonical time reconstructs state.
+window.seek=t=>{if(!Number.isFinite(t))throw new TypeError('Time must be finite');stop();explore=false;selected=null;time=clamp(t,0,36);announce('Paused. Select a chapter or replay to continue.');draw();return structuredClone(window.roomState);};
+window.roomAPI={evaluate,stages,spec,reset,lessons};
+draw();if(mode==='auto'&&!renderMode)play();
+
+})();</script></body></html>

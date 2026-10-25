@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#eeeadf" />
+    <title>Inside the bedside cabinet — Room Anatomy</title>
+    <style>
+      /* STYLES */
+    </style>
+  </head>
+  <body class="iso" data-theme="light" data-finish="oak">
+    <header>
+      <a href="./cabinet.html">← Room Anatomy</a><span>OBJECT STUDIES / 02</span
+      ><a href="./bedroom.html">The bedroom</a>
+    </header>
+    <main>
+      <section
+        class="object-card"
+        aria-label="Interactive bedside cabinet study"
+      >
+        <aside class="chapters">
+          <p class="kicker">FIG. 02 · FURNITURE</p>
+          <h1>
+            The bedside<br />
+            cabinet.
+          </h1>
+          <p class="subhead">
+            An everyday object.<br />A small piece of engineering.
+          </p>
+          <div class="modes" role="group" aria-label="Playback mode">
+            <button id="manual" aria-pressed="true">Manual</button
+            ><button id="auto" aria-pressed="false">▶ Auto</button>
+          </div>
+          <nav aria-label="Chapters"><ol id="chapters"></ol></nav>
+          <div class="aside-bottom">
+            <button id="reset">↺ Start over</button>
+            <p id="status" role="status">Choose a chapter to begin.</p>
+          </div>
+        </aside>
+        <div class="main-figure">
+          <div class="scene-heading">
+            <p id="instruction">One cabinet. Every connection.</p>
+            <span id="chapter-count">00 / 07</span>
+          </div>
+          <div
+            id="cabinet-stage"
+            class="iso-stage iso-turn"
+            role="img"
+            aria-label="Detailed oak bedside cabinet with brass legs and a telescopic drawer"
+          >
+            <!-- SCENE -->
+          </div>
+          <div class="view-controls">
+            <span id="view-note">DRAG TO TURN · SCROLL THE PAGE NORMALLY</span
+            ><button id="home-view">Reset view</button>
+          </div>
+          <div class="transport">
+            <button id="play">▶ Play the story</button
+            ><label for="scrub" class="sr-only">Story position</label
+            ><input
+              id="scrub"
+              type="range"
+              min="0"
+              max="3600"
+              value="0"
+              step="1"
+            /><output id="time">0:00 / 0:36</output>
+          </div>
+          <div class="drawer-control" id="drawer-control" hidden>
+            <label for="extension">Pull the drawer</label
+            ><input
+              id="extension"
+              type="range"
+              min="0"
+              max="320"
+              value="0"
+              step="1"
+            /><output id="clearance">800 mm remaining</output>
+          </div>
+          <div class="readouts">
+            <span>WIDTH <b id="width-readout">600 mm</b></span
+            ><span>DEPTH <b id="depth-readout">450 mm</b></span
+            ><span>HEIGHT <b id="height-readout">650 mm</b></span
+            ><span id="travel-chip">DRAWER <b id="travel">0 mm</b></span
+            ><span id="rail-chip">MIDDLE RAIL <b id="rail">0 mm</b></span>
+          </div>
+        </div>
+        <div class="story">
+          <div>
+            <span class="kicker" id="lesson-name">THE BIG IDEA</span>
+            <p id="explanation">
+              A cabinet is more than its surfaces. Open it, look through it,
+              then take it apart—without losing sight of how it goes back
+              together.
+            </p>
+          </div>
+          <div class="finishes">
+            <span>FINISH</span
+            ><button
+              data-finish="oak"
+              aria-label="Natural oak"
+              aria-pressed="true"
+            >
+              <i></i></button
+            ><button
+              data-finish="walnut"
+              aria-label="Walnut-stained oak"
+              aria-pressed="false"
+            >
+              <i></i></button
+            ><button
+              data-finish="sage"
+              aria-label="Painted sage"
+              aria-pressed="false"
+            >
+              <i></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="under-card">
+        <p>
+          Demonstration dimensions · exploded gaps exaggerated · no load or
+          performance rating
+        </p>
+        <button id="motion" hidden>Enable animation for this visit</button>
+        <details>
+          <summary>Study notes & controls</summary>
+          <p>
+            Seven chapters, one continuous object. Manual plays a chapter and
+            waits. Auto plays the 36-second story. Drag to orbit; use the
+            rotation slider for keyboard access. Scrub to inspect any position.
+            Reset restores the assembled cabinet and retains your finish.
+            Reduced motion shows settled poses unless you enable animation.
+          </p>
+          <label for="orbit">Viewing angle</label
+          ><input
+            id="orbit"
+            type="range"
+            min="-180"
+            max="180"
+            value="0"
+            step="1"
+          />
+          <p>
+            The cabinet is a new demonstration design: 600 × 450 × 650 mm; 30 mm
+            top; 20 mm case sides; 470 × 360 mm drawer box; 320 mm drawer
+            travel. Runner geometry and bearing motion illustrate a three-stage
+            mechanism, not a particular manufacturer's product. All assembly
+            offsets are presentation-only.
+          </p>
+          <p>
+            Made with the MIT-licensed Anatomy toolkit. Interaction references:
+            Visual Learning and the supplied Apple Watch demonstration. Original
+            furniture geometry; no reference artwork copied.
+          </p>
+        </details>
+      </div>
+    </main>
+    <script>
+      /* APP */
+    </script>
+  </body>
+</html>
