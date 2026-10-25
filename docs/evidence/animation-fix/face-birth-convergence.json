@@ -1,0 +1,7457 @@
+[
+  {
+    "preset": "bedside",
+    "rootParts": 29,
+    "roles": 36,
+    "events": [
+      26.490871,
+      38,
+      49.509129,
+      83,
+      128,
+      173,
+      206.490871,
+      218,
+      229.509129,
+      263,
+      308,
+      353
+    ],
+    "steps": [
+      {
+        "step": 0.05,
+        "maximum": 3.821592845939449,
+        "toggles": 72,
+        "aboveTwo": 8,
+        "worst": {
+          "part": "bedside.case.base",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 3.821592845939449
+        }
+      },
+      {
+        "step": 0.01,
+        "maximum": 0.7643067550088745,
+        "toggles": 72,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "bedside.case.base",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 0.7643067550088745
+        }
+      },
+      {
+        "step": 0.005,
+        "maximum": 0.3821533774971613,
+        "toggles": 72,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "bedside.case.base",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 0.3821533774971613
+        }
+      },
+      {
+        "step": 0.001,
+        "maximum": 0.07643776403710945,
+        "toggles": 72,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "bedside.case.base",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 0.07643776403710945
+        }
+      }
+    ],
+    "bisected": [
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.0014029342128196731,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.03455647650116589,
+        "visibleArea": 0.00004253105726093054,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.1010818742506672,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.03455648625094909,
+        "visibleArea": 0.000042531071812845767,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.1010818742506672,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.034556476486613974,
+        "visibleArea": 0.00004430321860127151,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.101081874265219,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.03455648625094909,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 3.821592845939449,
+        "visibleArea": 0.0048674433783162385,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.1010818742506672,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.03455648623639718,
+        "visibleArea": 0.000042531071812845767,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.03455647650116589,
+        "visibleArea": 0.000042531071812845767,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.101081874279771,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.03455648626550101,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.034556476486613974,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 3.821592845910345,
+        "visibleArea": 0.0048674433783162385,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.1010818667709827,
+        "visibleArea": 0.0014029342273715883,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.03455826808931306,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.1010818667709827,
+        "visibleArea": 0.0014029342273715883,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.034558248618850484,
+        "visibleArea": 0.0000443031603936106,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.001402934271027334,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.03455649598618038,
+        "visibleArea": 0.000044303174945525825,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.1010818593204021,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.03455647649388993,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 2.8458594719704706,
+        "visibleArea": 0.0036269541960791685,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.1010818742215633,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.03455649601528421,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.1010818592912983,
+        "visibleArea": 0.0014029342855792493,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.034556476486613974,
+        "visibleArea": 0.00004430321860127151,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.1010818667709827,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.03455826814752072,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.1010818667855347,
+        "visibleArea": 0.0014029342273715883,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.034558248618850484,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 2.845859471941367,
+        "visibleArea": 0.0036269542179070413,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.101081874265219,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.03455648625094909,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.1010818742506672,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.034556476486613974,
+        "visibleArea": 0.00004430321860127151,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.1010818742506672,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.03455648625094909,
+        "visibleArea": 0.000042531071812845767,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.0014029342128196731,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.03455647650116589,
+        "visibleArea": 0.00004253105726093054,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 3.821592845939449,
+        "visibleArea": 0.0048674433783162385,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.034556476486613974,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.101081874279771,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.03455648626550101,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.03455647650116589,
+        "visibleArea": 0.000042531071812845767,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.1010818742506672,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.03455648623639718,
+        "visibleArea": 0.000042531071812845767,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 3.821592845910345,
+        "visibleArea": 0.0048674433783162385,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.1010818593204021,
+        "visibleArea": 0.0014029342419235036,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.03455647649388993,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.1010818742361153,
+        "visibleArea": 0.001402934271027334,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.03455649598618038,
+        "visibleArea": 0.000044303174945525825,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.1010818667709827,
+        "visibleArea": 0.0014029342273715883,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.034558248618850484,
+        "visibleArea": 0.0000443031603936106,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.1010818667709827,
+        "visibleArea": 0.0014029342273715883,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.03455826808931306,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 2.8458594719704706,
+        "visibleArea": 0.0036269541960791685,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.-167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.1010818667855347,
+        "visibleArea": 0.0014029342273715883,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.-167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.034558248618850484,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.leg.-242.167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.1010818667709827,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.mount.-242.167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.03455826814752072,
+        "visibleArea": 0.00004430320404935628,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.leg.242.-167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.1010818592912983,
+        "visibleArea": 0.0014029342855792493,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.mount.242.-167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.034556476486613974,
+        "visibleArea": 0.00004430321860127151,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.leg.242.167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.1010818742215633,
+        "visibleArea": 0.0014029342564754188,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.mount.242.167",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.03455649601528421,
+        "visibleArea": 0.000044303189497441053,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bedside.case.base",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 2.845859471941367,
+        "visibleArea": 0.0036269542179070413,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      }
+    ],
+    "maxBisectedArea": 0.0048674433783162385
+  },
+  {
+    "preset": "console",
+    "rootParts": 32,
+    "roles": 48,
+    "events": [
+      10.865239,
+      21.663115,
+      37.602914,
+      37.609534,
+      37.644916,
+      37.650884,
+      38,
+      38.349116,
+      38.355084,
+      38.390466,
+      38.397086,
+      54.336885,
+      65.134761,
+      83,
+      115.047178,
+      115.202403,
+      115.34013,
+      115.491901,
+      115.958897,
+      116.356449,
+      116.512444,
+      116.621472,
+      116.773963,
+      116.774202,
+      116.943587,
+      117.292658,
+      117.326891,
+      127.920377,
+      127.922238,
+      128,
+      128.077762,
+      128.079623,
+      138.669996,
+      138.69441,
+      139.056413,
+      139.225798,
+      139.226037,
+      139.378528,
+      139.487556,
+      139.643551,
+      140.041103,
+      140.508099,
+      140.65987,
+      140.797597,
+      140.952822,
+      173,
+      190.865239,
+      201.663115,
+      217.602914,
+      217.609534,
+      217.644916,
+      217.650884,
+      218,
+      218.349116,
+      218.355084,
+      218.390466,
+      218.397086,
+      234.336885,
+      245.134761,
+      263,
+      295.047178,
+      295.202403,
+      295.34013,
+      295.491901,
+      295.958897,
+      296.356449,
+      296.512444,
+      296.621472,
+      296.773963,
+      296.774202,
+      296.943587,
+      297.297148,
+      297.318628,
+      307.920377,
+      307.922238,
+      308,
+      308.077762,
+      308.079623,
+      318.663663,
+      318.695901,
+      319.056413,
+      319.225798,
+      319.226037,
+      319.378528,
+      319.487556,
+      319.643551,
+      320.041103,
+      320.508099,
+      320.65987,
+      320.797597,
+      320.952822,
+      353
+    ],
+    "steps": [
+      {
+        "step": 0.05,
+        "maximum": 5.997629596007755,
+        "toggles": 96,
+        "aboveTwo": 32,
+        "worst": {
+          "part": "console.leg.-545.-125",
+          "role": "f3",
+          "event": 38,
+          "interval": 1,
+          "birth": 5.997629596007755
+        }
+      },
+      {
+        "step": 0.01,
+        "maximum": 1.1995930480770767,
+        "toggles": 96,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "console.leg.545.125",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 1.1995930480770767
+        }
+      },
+      {
+        "step": 0.005,
+        "maximum": 0.5997965249698609,
+        "toggles": 96,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "console.leg.545.125",
+          "role": "f3",
+          "event": 38,
+          "interval": 1,
+          "birth": 0.5997965249698609
+        }
+      },
+      {
+        "step": 0.001,
+        "maximum": 0.12016069126548246,
+        "toggles": 96,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "console.leg.-545.-125",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 0.12016069126548246
+        }
+      }
+    ],
+    "bisected": [
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.997629595949547,
+        "visibleArea": 0.007719820918282494,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.02796277788002044,
+        "visibleArea": 0.000035492430470185354,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.997629595978651,
+        "visibleArea": 0.007719820947386324,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.027962767244389397,
+        "visibleArea": 0.00003549241409928072,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.997629595993203,
+        "visibleArea": 0.007384176555206068,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.027962767257122323,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.997629587043775,
+        "visibleArea": 0.00771982096193824,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549241228029132,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.06151361852244008,
+        "visibleArea": 0.00007229938637465239,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.06151362789387349,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.061513627850217745,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.061513627879321575,
+        "visibleArea": 0.00007887206447776407,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.997629596007755,
+        "visibleArea": 0.007719820976490155,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.027962767253484344,
+        "visibleArea": 0.00003549241955624893,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.997629595993203,
+        "visibleArea": 0.00771982096193824,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.02796277788365842,
+        "visibleArea": 0.00003549243410816416,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.997629587043775,
+        "visibleArea": 0.00771982096193824,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.027962767257122323,
+        "visibleArea": 0.00003549241228029132,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.997629595964099,
+        "visibleArea": 0.007384176555206068,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.000035492441384121776,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.06151362786476966,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.06151361850788817,
+        "visibleArea": 0.00007229938637465239,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.061513627821113914,
+        "visibleArea": 0.0000788720790296793,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.061513627879321575,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.9976295959349955,
+        "visibleArea": 0.007719820976490155,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.997629586985568,
+        "visibleArea": 0.007719820947386324,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.997293951586471,
+        "visibleArea": 0.007719820947386324,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.027962767249846365,
+        "visibleArea": 0.000035492415918270126,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.997293951586471,
+        "visibleArea": 0.007384176569757983,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.027962767246208386,
+        "visibleArea": 0.000035492415918270126,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.09787363646319136,
+        "visibleArea": 0.00012488069478422403,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.0978670711920131,
+        "visibleArea": 0.0001248807238880545,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.0978736438555643,
+        "visibleArea": 0.0001248807311640121,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.0978670711920131,
+        "visibleArea": 0.00012488073843996972,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.997293951571919,
+        "visibleArea": 0.007719820918282494,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.997293951601023,
+        "visibleArea": 0.007384176569757983,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.027962767249846365,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.997629595971375,
+        "visibleArea": 0.007719820940110367,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.027962767246208386,
+        "visibleArea": 0.00003549241955624893,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.997629587051051,
+        "visibleArea": 0.007719820954662282,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.027962767249846365,
+        "visibleArea": 0.00003549241955624893,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.0978736438555643,
+        "visibleArea": 0.0001248807238880545,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.09786707116290927,
+        "visibleArea": 0.00012488075299188495,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.09787363641225966,
+        "visibleArea": 0.00012488073843996972,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.0978670711920131,
+        "visibleArea": 0.00012488073843996972,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.997629587043775,
+        "visibleArea": 0.00771982096193824,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549241228029132,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.997629595993203,
+        "visibleArea": 0.007384176555206068,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.027962767257122323,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.997629595978651,
+        "visibleArea": 0.007719820947386324,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.027962767244389397,
+        "visibleArea": 0.00003549241409928072,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.997629595949547,
+        "visibleArea": 0.007719820918282494,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.02796277788002044,
+        "visibleArea": 0.000035492430470185354,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.061513627879321575,
+        "visibleArea": 0.00007887206447776407,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.061513627850217745,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.06151362789387349,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.06151361852244008,
+        "visibleArea": 0.00007229938637465239,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.997629595964099,
+        "visibleArea": 0.007384176555206068,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.000035492441384121776,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.997629587043775,
+        "visibleArea": 0.00771982096193824,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.027962767257122323,
+        "visibleArea": 0.00003549241228029132,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.997629595993203,
+        "visibleArea": 0.00771982096193824,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.02796277788365842,
+        "visibleArea": 0.00003549243410816416,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.997629596007755,
+        "visibleArea": 0.007719820976490155,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.027962767253484344,
+        "visibleArea": 0.00003549241955624893,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.061513627879321575,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.061513627821113914,
+        "visibleArea": 0.0000788720790296793,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.06151361850788817,
+        "visibleArea": 0.00007229938637465239,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.06151362786476966,
+        "visibleArea": 0.00007887204992584884,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.997293951586471,
+        "visibleArea": 0.007384176569757983,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.027962767246208386,
+        "visibleArea": 0.000035492415918270126,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.997293951586471,
+        "visibleArea": 0.007719820947386324,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.027962767249846365,
+        "visibleArea": 0.000035492415918270126,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.997629586985568,
+        "visibleArea": 0.007719820947386324,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.9976295959349955,
+        "visibleArea": 0.007719820976490155,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.0978670711920131,
+        "visibleArea": 0.00012488073843996972,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.0978736438555643,
+        "visibleArea": 0.0001248807311640121,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.0978670711920131,
+        "visibleArea": 0.0001248807238880545,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.09787363646319136,
+        "visibleArea": 0.00012488069478422403,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "console.leg.-545.-125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.997629587051051,
+        "visibleArea": 0.007719820954662282,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.mount.-545.-125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.027962767249846365,
+        "visibleArea": 0.00003549241955624893,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.leg.-545.125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.997629595971375,
+        "visibleArea": 0.007719820940110367,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.mount.-545.125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.027962767246208386,
+        "visibleArea": 0.00003549241955624893,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.leg.545.-125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.997293951601023,
+        "visibleArea": 0.007384176569757983,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.mount.545.-125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.027962767249846365,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.leg.545.125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.997293951571919,
+        "visibleArea": 0.007719820918282494,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.mount.545.125",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.027962767242570408,
+        "visibleArea": 0.00003549242683220655,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.-90",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.0978670711920131,
+        "visibleArea": 0.00012488073843996972,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.shelf.block.-510.90",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.09787363641225966,
+        "visibleArea": 0.00012488073843996972,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.-90",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.09786707116290927,
+        "visibleArea": 0.00012488075299188495,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "console.shelf.block.510.90",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.0978736438555643,
+        "visibleArea": 0.0001248807238880545,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      }
+    ],
+    "maxBisectedArea": 0.007719820976490155
+  },
+  {
+    "preset": "desk",
+    "rootParts": 34,
+    "roles": 56,
+    "events": [
+      37.831833,
+      37.834761,
+      37.841251,
+      38,
+      38.158749,
+      38.166703,
+      38.168167,
+      83,
+      91.535789,
+      93.895595,
+      94.909788,
+      96.809679,
+      97.075916,
+      98.497289,
+      99.31397,
+      99.749384,
+      101.160943,
+      101.226268,
+      101.277981,
+      101.368468,
+      101.745699,
+      101.885228,
+      102.028064,
+      102.049782,
+      102.307529,
+      102.451081,
+      102.583361,
+      102.67742,
+      102.833219,
+      102.974026,
+      103.804881,
+      107.193867,
+      108.526625,
+      109.205835,
+      109.24992,
+      109.575162,
+      109.742761,
+      115.499309,
+      115.623317,
+      115.62803,
+      116.945207,
+      116.949162,
+      118.460751,
+      118.463388,
+      118.477925,
+      119.482619,
+      119.484952,
+      123.298985,
+      123.311888,
+      123.322817,
+      127.920377,
+      127.922238,
+      128,
+      128.077762,
+      128.079623,
+      132.691779,
+      132.702555,
+      132.713627,
+      136.515168,
+      136.517381,
+      137.536503,
+      137.536631,
+      137.539249,
+      139.050849,
+      139.054793,
+      140.371988,
+      140.376683,
+      140.493814,
+      146.237006,
+      146.402534,
+      146.75008,
+      146.794165,
+      147.457291,
+      148.806133,
+      152.195119,
+      153.025974,
+      153.166781,
+      153.32258,
+      153.416639,
+      153.548919,
+      153.692471,
+      153.950218,
+      153.971936,
+      154.114772,
+      154.254301,
+      154.631532,
+      154.7171,
+      154.773732,
+      154.839057,
+      156.250616,
+      156.68603,
+      157.502711,
+      158.924084,
+      159.190321,
+      161.090212,
+      162.104405,
+      164.464211,
+      173,
+      217.833297,
+      217.834761,
+      217.841251,
+      218,
+      218.158749,
+      218.165239,
+      218.168167,
+      263,
+      281.226268,
+      281.278071,
+      281.368468,
+      281.745699,
+      281.885228,
+      282.049782,
+      282.307529,
+      282.451081,
+      282.583361,
+      282.67742,
+      282.833219,
+      282.974026,
+      283.804881,
+      287.193867,
+      288.503999,
+      289.205835,
+      289.24992,
+      289.552946,
+      289.720128,
+      291.076945,
+      292.717856,
+      293.853451,
+      295.229991,
+      295.492393,
+      295.621176,
+      295.623317,
+      296.943049,
+      296.945207,
+      297.241021,
+      298.226886,
+      298.449478,
+      298.456712,
+      298.460751,
+      299.329233,
+      299.47872,
+      299.482619,
+      300.085616,
+      300.785621,
+      302.317862,
+      303.293131,
+      303.305723,
+      303.316829,
+      307.920377,
+      307.922238,
+      308,
+      308.077762,
+      308.079623,
+      312.697716,
+      312.709025,
+      312.720285,
+      313.682138,
+      315.214379,
+      315.914384,
+      316.517381,
+      316.521141,
+      316.670767,
+      317.535482,
+      317.539249,
+      317.543476,
+      317.773114,
+      318.758979,
+      319.054793,
+      319.056929,
+      320.376683,
+      320.3788,
+      320.512187,
+      320.770009,
+      322.146549,
+      323.282144,
+      324.923055,
+      326.261912,
+      326.426995,
+      326.75008,
+      326.794165,
+      327.480963,
+      328.806133,
+      332.195119,
+      333.025974,
+      333.166781,
+      333.32258,
+      333.416639,
+      333.548919,
+      333.692471,
+      333.950218,
+      334.114772,
+      334.254301,
+      334.631532,
+      334.7171,
+      334.773732,
+      353
+    ],
+    "steps": [
+      {
+        "step": 0.05,
+        "maximum": 8.018388737335044,
+        "toggles": 112,
+        "aboveTwo": 40,
+        "worst": {
+          "part": "desk.drawer.hanger.1",
+          "role": "f0",
+          "event": 308,
+          "interval": 1,
+          "birth": 8.018388737335044
+        }
+      },
+      {
+        "step": 0.01,
+        "maximum": 1.603677766644978,
+        "toggles": 112,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "desk.drawer.hanger.-1",
+          "role": "f0",
+          "event": 128,
+          "interval": 0,
+          "birth": 1.603677766644978
+        }
+      },
+      {
+        "step": 0.005,
+        "maximum": 0.8018597783666337,
+        "toggles": 112,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "desk.drawer.hanger.1",
+          "role": "f0",
+          "event": 128,
+          "interval": 0,
+          "birth": 0.8018597783666337
+        }
+      },
+      {
+        "step": 0.001,
+        "maximum": 0.16038031753123505,
+        "toggles": 112,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "desk.drawer.hanger.1",
+          "role": "f0",
+          "event": 128,
+          "interval": 0,
+          "birth": 0.16038031753123505
+        }
+      }
+    ],
+    "bisected": [
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.314149657700909,
+        "visibleArea": 0.0067201984784333035,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.02650751184046385,
+        "visibleArea": 0.00003327677768538706,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.314149657693633,
+        "visibleArea": 0.007025662009255029,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.026507501477681217,
+        "visibleArea": 0.00003327677768538706,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.314149657686357,
+        "visibleArea": 0.007025661965599284,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.026507501490414143,
+        "visibleArea": 0.000033276723115704954,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 5.314455121253559,
+        "visibleArea": 0.0067201984420535155,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.026507491122174542,
+        "visibleArea": 0.00003455662226770073,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.00848813265474746,
+        "visibleArea": 0.000010239004041068256,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.0007064914134389255,
+        "visibleArea": 8.532442734576762e-7,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.008477893650706392,
+        "visibleArea": 0.000010239004041068256,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.000707344661350362,
+        "visibleArea": 8.532515494152904e-7,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.2077920197189087,
+        "visibleArea": 0.0002508555517124478,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.2078338264982449,
+        "visibleArea": 0.00025085554807446897,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.3141496576718055,
+        "visibleArea": 0.007025662009255029,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.026507501479500206,
+        "visibleArea": 0.00003327678132336587,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.314149657693633,
+        "visibleArea": 0.006720198449329473,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.02650751183318789,
+        "visibleArea": 0.00003327677404740825,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.314455121260835,
+        "visibleArea": 0.006720198463881388,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.026507491114898585,
+        "visibleArea": 0.0000345566077157855,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 5.314149657700909,
+        "visibleArea": 0.007025662009255029,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.026507501475862227,
+        "visibleArea": 0.000033276744943577796,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.008477893650706392,
+        "visibleArea": 0.000010239004041068256,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.000707344661350362,
+        "visibleArea": 8.532515494152904e-7,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.008488132632919587,
+        "visibleArea": 0.000010239004041068256,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.0007064910023473203,
+        "visibleArea": 8.53236997500062e-7,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.20783382649096893,
+        "visibleArea": 0.00029266480851219967,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.2078338289866224,
+        "visibleArea": 0.0002926648303400725,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.314455121275387,
+        "visibleArea": 0.006720198434777558,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.02650751183682587,
+        "visibleArea": 0.00003327673766762018,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.3144551213190425,
+        "visibleArea": 0.006720198463881388,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.026507511851377785,
+        "visibleArea": 0.000034556629543658346,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.314149666399317,
+        "visibleArea": 0.0067201984602434095,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.02650749112581252,
+        "visibleArea": 0.00003327675221953541,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 5.314149675097724,
+        "visibleArea": 0.006720198467519367,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.02650749112763151,
+        "visibleArea": 0.0000332767485815566,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.9636768554555601,
+        "visibleArea": 0.0024983167168102227,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.16364064712979598,
+        "visibleArea": 0.00020904625853290781,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.9636869985661178,
+        "visibleArea": 0.002508555491658626,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.16364055124722654,
+        "visibleArea": 0.00020904637131025083,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 8.018388737327768,
+        "visibleArea": 0.010201459197560325,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 8.018388737313217,
+        "visibleArea": 0.010243268454360077,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.314149666373851,
+        "visibleArea": 0.006720198420225643,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.0265074911294505,
+        "visibleArea": 0.00003327675221953541,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.314149675119552,
+        "visibleArea": 0.006720198449329473,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.026507491114898585,
+        "visibleArea": 0.00003327675221953541,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.314455121275387,
+        "visibleArea": 0.006720198456605431,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.02650751183682587,
+        "visibleArea": 0.000033276744943577796,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 5.314455121260835,
+        "visibleArea": 0.006720198456605431,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.02650751184046385,
+        "visibleArea": 0.00003455662590567954,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.9636869985624799,
+        "visibleArea": 0.0025085555025725625,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.16364055124722654,
+        "visibleArea": 0.0002090463603963144,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.9636768554555601,
+        "visibleArea": 0.0024983167204482015,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.16364064713707194,
+        "visibleArea": 0.0002090462512569502,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 8.018388737320493,
+        "visibleArea": 0.010243268450722098,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 8.018388737313217,
+        "visibleArea": 0.010201459197560325,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.314455121253559,
+        "visibleArea": 0.0067201984420535155,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.026507491122174542,
+        "visibleArea": 0.00003455662226770073,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.314149657686357,
+        "visibleArea": 0.007025661965599284,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.026507501490414143,
+        "visibleArea": 0.000033276723115704954,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.314149657693633,
+        "visibleArea": 0.007025662009255029,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.026507501477681217,
+        "visibleArea": 0.00003327677768538706,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 5.314149657700909,
+        "visibleArea": 0.0067201984784333035,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.02650751184046385,
+        "visibleArea": 0.00003327677768538706,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.00848813265474746,
+        "visibleArea": 0.000010239004041068256,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.0007064909950713627,
+        "visibleArea": 8.532442734576762e-7,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.008477893665258307,
+        "visibleArea": 0.000010238996765110642,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.0007073446540744044,
+        "visibleArea": 8.532442734576762e-7,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.20783382897207048,
+        "visibleArea": 0.0002926648157881573,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.20783382649096893,
+        "visibleArea": 0.0002926648194261361,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.314149657700909,
+        "visibleArea": 0.007025662009255029,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.026507501475862227,
+        "visibleArea": 0.000033276744943577796,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.314455121260835,
+        "visibleArea": 0.006720198463881388,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.026507491114898585,
+        "visibleArea": 0.0000345566077157855,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.314149657693633,
+        "visibleArea": 0.006720198449329473,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.02650751183318789,
+        "visibleArea": 0.00003327677404740825,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 5.3141496576718055,
+        "visibleArea": 0.007025662009255029,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.026507501479500206,
+        "visibleArea": 0.00003327678132336587,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.008477893672534265,
+        "visibleArea": 0.000010239004041068256,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.0007073446759022772,
+        "visibleArea": 8.53236997500062e-7,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.00848813265474746,
+        "visibleArea": 0.000010239004041068256,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.0007064914170769043,
+        "visibleArea": 8.532515494152904e-7,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.20783382648369297,
+        "visibleArea": 0.0002508555626263842,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.20779201971163275,
+        "visibleArea": 0.00025085554079851136,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.314149675097724,
+        "visibleArea": 0.006720198467519367,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.02650749112763151,
+        "visibleArea": 0.0000332767485815566,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.314149666399317,
+        "visibleArea": 0.0067201984602434095,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.02650749112581252,
+        "visibleArea": 0.00003327675221953541,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.3144551213190425,
+        "visibleArea": 0.006720198463881388,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.026507511851377785,
+        "visibleArea": 0.000034556629543658346,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 5.314455121275387,
+        "visibleArea": 0.006720198434777558,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.02650751183682587,
+        "visibleArea": 0.00003327673766762018,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.9636870944596012,
+        "visibleArea": 0.0024983164767036214,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.16363979390007444,
+        "visibleArea": 0.00020819312339881435,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.9636869985624799,
+        "visibleArea": 0.0025085557499551214,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.16364064713707194,
+        "visibleArea": 0.0002081929997075349,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 8.018388737316855,
+        "visibleArea": 0.010201459190284368,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 8.018388737313217,
+        "visibleArea": 0.010243268465274014,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.314455121260835,
+        "visibleArea": 0.006720198456605431,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.mount.-545.-270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.02650751184046385,
+        "visibleArea": 0.00003455662590567954,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.314455121275387,
+        "visibleArea": 0.006720198456605431,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.mount.-545.270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.02650751183682587,
+        "visibleArea": 0.000033276744943577796,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.314149675119552,
+        "visibleArea": 0.006720198449329473,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.mount.545.-270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.026507491114898585,
+        "visibleArea": 0.00003327675221953541,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.leg.545.270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 5.314149666373851,
+        "visibleArea": 0.006720198420225643,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.mount.545.270",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.0265074911294505,
+        "visibleArea": 0.00003327675221953541,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.web",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.9636869985697558,
+        "visibleArea": 0.0025085557281272486,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.rail.-1.fixed.lip",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.1636406471443479,
+        "visibleArea": 0.0002081929997075349,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.web",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.9636870944741531,
+        "visibleArea": 0.0024983164912555367,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.rail.1.fixed.lip",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.16363979388552252,
+        "visibleArea": 0.0002081931452266872,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 8.01838873730594,
+        "visibleArea": 0.010243268450722098,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 8.018388737335044,
+        "visibleArea": 0.010201459204836283,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      }
+    ],
+    "maxBisectedArea": 0.010243268465274014
+  },
+  {
+    "preset": "coffee",
+    "rootParts": 36,
+    "roles": 64,
+    "events": [
+      32.408576,
+      37.813273,
+      37.816513,
+      37.823112,
+      37.826187,
+      38,
+      38.175351,
+      38.176888,
+      38.183487,
+      38.186727,
+      43.591424,
+      83,
+      115.285454,
+      128,
+      140.714546,
+      173,
+      212.408576,
+      217.813273,
+      217.816513,
+      217.824649,
+      217.826187,
+      218,
+      218.173813,
+      218.176888,
+      218.183487,
+      218.186727,
+      223.591424,
+      263,
+      295.285454,
+      308,
+      320.714546,
+      353
+    ],
+    "steps": [
+      {
+        "step": 0.05,
+        "maximum": 4.422774616061361,
+        "toggles": 128,
+        "aboveTwo": 32,
+        "worst": {
+          "part": "coffee.leg.-445.-245.upper",
+          "role": "f2",
+          "event": 128,
+          "interval": 1,
+          "birth": 4.422774616061361
+        }
+      },
+      {
+        "step": 0.01,
+        "maximum": 0.8846261111193598,
+        "toggles": 128,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "coffee.leg.445.245.upper",
+          "role": "f0",
+          "event": 128,
+          "interval": 0,
+          "birth": 0.8846261111193598
+        }
+      },
+      {
+        "step": 0.005,
+        "maximum": 0.44240203181107063,
+        "toggles": 128,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "coffee.leg.-445.-245.upper",
+          "role": "f2",
+          "event": 128,
+          "interval": 1,
+          "birth": 0.44240203181107063
+        }
+      },
+      {
+        "step": 0.001,
+        "maximum": 0.08862277224761783,
+        "toggles": 128,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "coffee.leg.445.245.upper",
+          "role": "f0",
+          "event": 128,
+          "interval": 0,
+          "birth": 0.08862277224761783
+        }
+      }
+    ],
+    "bisected": [
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.3631291059136856,
+        "visibleArea": 0.0017551960336277261,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 4.422596658660041,
+        "visibleArea": 0.005694635940017179,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.05409294180572033,
+        "visibleArea": 0.00006947649671928957,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.3631291059282375,
+        "visibleArea": 0.0017003461616695859,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 4.422596671072824,
+        "visibleArea": 0.0055166785859910306,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.05409295658682822,
+        "visibleArea": 0.00006947652218514122,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.3631839558365755,
+        "visibleArea": 0.00175519596086815,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 4.422774616003153,
+        "visibleArea": 0.005694636012776755,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.054094784922199324,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.3631839682057034,
+        "visibleArea": 0.0017551960045238957,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 4.422774616039533,
+        "visibleArea": 0.005694635969121009,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.05409477011562558,
+        "visibleArea": 0.00006947651854716241,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.1190059476357419,
+        "visibleArea": 0.00015540799358859658,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.11900594762846595,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.11900594766484573,
+        "visibleArea": 0.00015540799358859658,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.11900594762118999,
+        "visibleArea": 0.00014626632037106901,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.3631291059136856,
+        "visibleArea": 0.001700346139841713,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 4.422596671087376,
+        "visibleArea": 0.005516678611456882,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947651854716241,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.3631291059282375,
+        "visibleArea": 0.0017551960336277261,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 4.422596658638213,
+        "visibleArea": 0.0056946359618450515,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.05409294179844437,
+        "visibleArea": 0.00006947649671928957,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.3631839682348073,
+        "visibleArea": 0.0017551960481796414,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 4.422774616032257,
+        "visibleArea": 0.005694635954569094,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.054094770122901537,
+        "visibleArea": 0.00006947648944333196,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.3631839558074716,
+        "visibleArea": 0.001755196019075811,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 4.422774616024981,
+        "visibleArea": 0.005694635969121009,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.054094784914923366,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.1190059476357419,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.11900594762846595,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.11900594760663807,
+        "visibleArea": 0.00014626633492298424,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.11900594765029382,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.3631839557783678,
+        "visibleArea": 0.001755196019075811,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 4.422774616046809,
+        "visibleArea": 0.00569463599822484,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.054092941791168414,
+        "visibleArea": 0.00006947651854716241,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.3631291058845818,
+        "visibleArea": 0.0017003461252897978,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 4.422596671094652,
+        "visibleArea": 0.005516678589629009,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947649671928957,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.3631839558001957,
+        "visibleArea": 0.001755195997247938,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 4.422774616017705,
+        "visibleArea": 0.005694635987310903,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.3631291183410212,
+        "visibleArea": 0.0017003461325657554,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 4.422596658652765,
+        "visibleArea": 0.005516678596904967,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.05409294179480639,
+        "visibleArea": 0.00006764817226212472,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.18932348865200765,
+        "visibleArea": 0.00023768280516378582,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.18932347832014784,
+        "visibleArea": 0.00023768283426761627,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.1893234886592836,
+        "visibleArea": 0.0002468244420015253,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.1893234886592836,
+        "visibleArea": 0.0002376827978878282,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.3631839557783678,
+        "visibleArea": 0.0017551959899719805,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 4.422774616061361,
+        "visibleArea": 0.005694635983672924,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.3631291183410212,
+        "visibleArea": 0.0017003460961859673,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 4.422596658638213,
+        "visibleArea": 0.005516678633284755,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.054092941791168414,
+        "visibleArea": 0.00006764815771020949,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.3631839558001957,
+        "visibleArea": 0.0017551960263517685,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 4.422774616028619,
+        "visibleArea": 0.005694635969121009,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.05409294179480639,
+        "visibleArea": 0.00006947652218514122,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.3631291059282375,
+        "visibleArea": 0.0017003461471176706,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 4.422596671069186,
+        "visibleArea": 0.0055166785859910306,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947650035726838,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.18932348862290382,
+        "visibleArea": 0.0002468244347255677,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.18932348868111148,
+        "visibleArea": 0.00023768280516378582,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.18932348866655957,
+        "visibleArea": 0.00023768278333591297,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.18932347831287188,
+        "visibleArea": 0.00023768280516378582,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.3631839682057034,
+        "visibleArea": 0.0017551960045238957,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 4.422774616039533,
+        "visibleArea": 0.005694635969121009,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.05409477011562558,
+        "visibleArea": 0.00006947651854716241,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.3631839558365755,
+        "visibleArea": 0.00175519596086815,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 4.422774616003153,
+        "visibleArea": 0.005694636012776755,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.054094784922199324,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.3631291059282375,
+        "visibleArea": 0.0017003461616695859,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 4.422596671072824,
+        "visibleArea": 0.0055166785859910306,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.05409295658682822,
+        "visibleArea": 0.00006947652218514122,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.3631291059136856,
+        "visibleArea": 0.0017551960336277261,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 4.422596658660041,
+        "visibleArea": 0.005694635940017179,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.05409294180572033,
+        "visibleArea": 0.00006947649671928957,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.11900594762118999,
+        "visibleArea": 0.00014626632037106901,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.11900594766484573,
+        "visibleArea": 0.00015540799358859658,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.11900594762846595,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.1190059476357419,
+        "visibleArea": 0.00015540799358859658,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.3631839558074716,
+        "visibleArea": 0.001755196019075811,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 4.422774616024981,
+        "visibleArea": 0.005694635969121009,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.054094784914923366,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.3631839682348073,
+        "visibleArea": 0.0017551960481796414,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 4.422774616032257,
+        "visibleArea": 0.005694635954569094,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.054094770122901537,
+        "visibleArea": 0.00006947648944333196,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.3631291059282375,
+        "visibleArea": 0.0017551960336277261,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 4.422596658638213,
+        "visibleArea": 0.0056946359618450515,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.05409294179844437,
+        "visibleArea": 0.00006947649671928957,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.3631291059136856,
+        "visibleArea": 0.001700346139841713,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 4.422596671087376,
+        "visibleArea": 0.005516678611456882,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947651854716241,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.11900594765029382,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.11900594760663807,
+        "visibleArea": 0.00014626633492298424,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.11900594762846595,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.1190059476357419,
+        "visibleArea": 0.00015540797903668135,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.3631291183410212,
+        "visibleArea": 0.0017003461325657554,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 4.422596658652765,
+        "visibleArea": 0.005516678596904967,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.05409294179480639,
+        "visibleArea": 0.00006764817226212472,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.3631839558001957,
+        "visibleArea": 0.001755195997247938,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 4.422774616017705,
+        "visibleArea": 0.005694635987310903,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.3631291058845818,
+        "visibleArea": 0.0017003461252897978,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 4.422596671094652,
+        "visibleArea": 0.005516678589629009,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947649671928957,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.3631839557783678,
+        "visibleArea": 0.001755196019075811,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 4.422774616046809,
+        "visibleArea": 0.00569463599822484,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.054092941791168414,
+        "visibleArea": 0.00006947651854716241,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.1893234886592836,
+        "visibleArea": 0.0002376827978878282,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.1893234886592836,
+        "visibleArea": 0.0002468244420015253,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.18932347832014784,
+        "visibleArea": 0.00023768283426761627,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.18932348865200765,
+        "visibleArea": 0.00023768280516378582,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.lower",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.3631291059282375,
+        "visibleArea": 0.0017003461471176706,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.-245.upper",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 4.422596671069186,
+        "visibleArea": 0.0055166785859910306,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.-245",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947650035726838,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.lower",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.3631839558001957,
+        "visibleArea": 0.0017551960263517685,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.leg.-445.245.upper",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 4.422774616028619,
+        "visibleArea": 0.005694635969121009,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.mount.-445.245",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.05409294179480639,
+        "visibleArea": 0.00006947652218514122,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.lower",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.3631291183410212,
+        "visibleArea": 0.0017003460961859673,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.leg.445.-245.upper",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 4.422596658638213,
+        "visibleArea": 0.005516678633284755,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.mount.445.-245",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.054092941791168414,
+        "visibleArea": 0.00006764815771020949,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.lower",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.3631839557783678,
+        "visibleArea": 0.0017551959899719805,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.leg.445.245.upper",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 4.422774616061361,
+        "visibleArea": 0.005694635983672924,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.mount.445.245",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.0540929565904662,
+        "visibleArea": 0.00006947650399524719,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.-210",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.18932347831287188,
+        "visibleArea": 0.00023768280516378582,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.-410.210",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.18932348866655957,
+        "visibleArea": 0.00023768278333591297,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.-210",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.18932348868111148,
+        "visibleArea": 0.00023768280516378582,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "coffee.shelf.block.410.210",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.18932348862290382,
+        "visibleArea": 0.0002468244347255677,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      }
+    ],
+    "maxBisectedArea": 0.005694636012776755
+  },
+  {
+    "preset": "bookcase",
+    "rootParts": 14,
+    "roles": 40,
+    "events": [
+      38,
+      104.672127,
+      109.486836,
+      109.830517,
+      120.115065,
+      124.942965,
+      126.107068,
+      126.150895,
+      126.156307,
+      128,
+      129.454991,
+      129.745719,
+      132.799241,
+      135.884935,
+      153.446318,
+      153.850447,
+      154.108184,
+      161.076895,
+      218,
+      254.135702,
+      259.790987,
+      260.181613,
+      260.784048,
+      274.933079,
+      281.905082,
+      282.163953,
+      282.563656,
+      300.115065,
+      308,
+      315.884935,
+      326.094762,
+      326.436663,
+      331.243012,
+      343.754281,
+      344.045009,
+      348.557035
+    ],
+    "steps": [
+      {
+        "step": 0.05,
+        "maximum": 3.958803203277057,
+        "toggles": 80,
+        "aboveTwo": 4,
+        "worst": {
+          "part": "bookcase.plinth",
+          "role": "f3",
+          "event": 38,
+          "interval": 1,
+          "birth": 3.958803203277057
+        }
+      },
+      {
+        "step": 0.01,
+        "maximum": 0.7917708531022072,
+        "toggles": 80,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "bookcase.plinth",
+          "role": "f3",
+          "event": 38,
+          "interval": 1,
+          "birth": 0.7917708531022072
+        }
+      },
+      {
+        "step": 0.005,
+        "maximum": 0.3958854265802074,
+        "toggles": 80,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "bookcase.plinth",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 0.3958854265802074
+        }
+      },
+      {
+        "step": 0.001,
+        "maximum": 0.07918049178260844,
+        "toggles": 80,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "bookcase.plinth",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 0.07918049178260844
+        }
+      }
+    ],
+    "bisected": [
+      {
+        "part": "bookcase.plinth",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 3.9588032032334013,
+        "visibleArea": 0.0050381394976284355,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.4662234473944409,
+        "visibleArea": 0.001872281456599012,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.04012858324858826,
+        "visibleArea": 0.00005106219032313675,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.3576795354456408,
+        "visibleArea": 0.0004538864450296387,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.04012861510273069,
+        "visibleArea": 0.00005106223397888243,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.0042438384116394445,
+        "visibleArea": 0,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.04012798469921108,
+        "visibleArea": 0.00005169263749849051,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.3576795354747446,
+        "visibleArea": 0.0004538864450296387,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.04012798469921108,
+        "visibleArea": 0.000051692608394660056,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.00424383812060114,
+        "visibleArea": 0,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "bookcase.plinth",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 3.958803203277057,
+        "visibleArea": 0.0050381394976284355,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.466223447379889,
+        "visibleArea": 0.0018659777706488967,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.04012798468465917,
+        "visibleArea": 0.00005106217577122152,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.35767953548929654,
+        "visibleArea": 0.0004538864304777235,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.040127984713763,
+        "visibleArea": 0.00005106226308271289,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.00424383842619136,
+        "visibleArea": 0.0000069343659561127424,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.04012792103458196,
+        "visibleArea": 0.000051062204875051975,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.35768520904821344,
+        "visibleArea": 0.000459560047602281,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.04012798468465917,
+        "visibleArea": 0.00005106214666739106,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.004243838135153055,
+        "visibleArea": 0.000006934395059943199,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "bookcase.plinth",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 1.458507296294556,
+        "visibleArea": 0.001855260823504068,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.6019227791111916,
+        "visibleArea": 0.0007690853672102094,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.03827587538398802,
+        "visibleArea": 0.00004854064900428057,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.3410162295913324,
+        "visibleArea": 0.00043686566641554236,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.038275844970485196,
+        "visibleArea": 0.00004854061990045011,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.42103450756985694,
+        "visibleArea": 0.0005339469644241035,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.038276505772955716,
+        "visibleArea": 0.00004917105252388865,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.3410162295331247,
+        "visibleArea": 0.0004368657391751185,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.038276505772955716,
+        "visibleArea": 0.00004917103797197342,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.421034537939704,
+        "visibleArea": 0.0005408813449321315,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "bookcase.plinth",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 1.458507296280004,
+        "visibleArea": 0.0018552608089521527,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.6019227790820878,
+        "visibleArea": 0.0007690853672102094,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.03827587532578036,
+        "visibleArea": 0.00004917103797197342,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.3410105558868963,
+        "visibleArea": 0.0004311920783948153,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.03827587535488419,
+        "visibleArea": 0.000049171067075803876,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.4210414723784197,
+        "visibleArea": 0.000533946935320273,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.038276505743851885,
+        "visibleArea": 0.00004854063445236534,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.34101058600936085,
+        "visibleArea": 0.0004368656955193728,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.03827647544676438,
+        "visibleArea": 0.000048540663556195796,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.42103450758440886,
+        "visibleArea": 0.000533946935320273,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.plinth",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 3.9588032032334013,
+        "visibleArea": 0.0050381394976284355,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.4662234473507851,
+        "visibleArea": 0.0018659777706488967,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.04012798468465917,
+        "visibleArea": 0.00005169265205040574,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.3576795354747446,
+        "visibleArea": 0.0004538864450296387,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.04012795284506865,
+        "visibleArea": 0.00005169263749849051,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.00424383842619136,
+        "visibleArea": 0,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.04012798469921108,
+        "visibleArea": 0.000051062219426967204,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.357679566994193,
+        "visibleArea": 0.0004538864304777235,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.04012798468465917,
+        "visibleArea": 0.00005106224853079766,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.004250772486557253,
+        "visibleArea": 0.000006934380508027971,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "bookcase.plinth",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 3.958803203277057,
+        "visibleArea": 0.0050381394976284355,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.4662234474089928,
+        "visibleArea": 0.0018722814274951816,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.04012798468465917,
+        "visibleArea": 0.00005106223397888243,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.3576795354601927,
+        "visibleArea": 0.000459560047602281,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.040127984713763,
+        "visibleArea": 0.000051062204875051975,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.004243838484399021,
+        "visibleArea": 0.000006934395059943199,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.04012861507362686,
+        "visibleArea": 0.00005106217577122152,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.3576795354310889,
+        "visibleArea": 0.0004538864304777235,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.04012855136534199,
+        "visibleArea": 0.00005106226308271289,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.004243838106049225,
+        "visibleArea": 0.000006934395059943199,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "bookcase.plinth",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 1.458507296294556,
+        "visibleArea": 0.001855260823504068,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.6019227313663578,
+        "visibleArea": 0.0007690853235544637,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.03827584501414094,
+        "visibleArea": 0.000048540590796619654,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.3410105559305521,
+        "visibleArea": 0.0004368657391751185,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.03827587536943611,
+        "visibleArea": 0.00004854064900428057,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.42104147233476397,
+        "visibleArea": 0.0005339469498721883,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.03827587538398802,
+        "visibleArea": 0.00004917103797197342,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.34101058600936085,
+        "visibleArea": 0.0004311920783948153,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.038275845028692856,
+        "visibleArea": 0.00004917103797197342,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.4210414419940207,
+        "visibleArea": 0.0005339469644241035,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "bookcase.plinth",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 1.458507296280004,
+        "visibleArea": 0.0018552608089521527,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.bottom",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.6019227313809097,
+        "visibleArea": 0.0007690853090025485,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.0",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.038276505772955716,
+        "visibleArea": 0.00004854063445236534,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.0",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.34101058599480893,
+        "visibleArea": 0.00043686576827894896,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.0",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.038276475403108634,
+        "visibleArea": 0.00004854064900428057,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.0",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.42103450758440886,
+        "visibleArea": 0.0005408813303802162,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.lower.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.038276505802059546,
+        "visibleArea": 0.00004854064900428057,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.pages.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.341010555945104,
+        "visibleArea": 0.00043686566641554236,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.cover.upper.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.038276505772955716,
+        "visibleArea": 0.00004854064900428057,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "bookcase.book.spine.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.42104147232021205,
+        "visibleArea": 0.000533946935320273,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      }
+    ],
+    "maxBisectedArea": 0.0050381394976284355
+  },
+  {
+    "preset": "lamp",
+    "rootParts": 6,
+    "roles": 0,
+    "events": [
+      38,
+      128,
+      218,
+      308
+    ],
+    "steps": [
+      {
+        "step": 0.05,
+        "maximum": 0,
+        "toggles": 0,
+        "aboveTwo": 0,
+        "worst": null
+      },
+      {
+        "step": 0.01,
+        "maximum": 0,
+        "toggles": 0,
+        "aboveTwo": 0,
+        "worst": null
+      },
+      {
+        "step": 0.005,
+        "maximum": 0,
+        "toggles": 0,
+        "aboveTwo": 0,
+        "worst": null
+      },
+      {
+        "step": 0.001,
+        "maximum": 0,
+        "toggles": 0,
+        "aboveTwo": 0,
+        "worst": null
+      }
+    ],
+    "bisected": [],
+    "maxBisectedArea": 0
+  },
+  {
+    "preset": "mirror",
+    "rootParts": 16,
+    "roles": 32,
+    "events": [
+      6.244612,
+      6.315458,
+      17.682321,
+      21.191893,
+      22.398633,
+      26.081653,
+      27.312356,
+      38,
+      48.687644,
+      53.601367,
+      55.16639,
+      62.249154,
+      67.051656,
+      69.659916,
+      69.701912,
+      100.321665,
+      128,
+      155.678335,
+      186.255189,
+      186.300929,
+      188.948344,
+      193.750846,
+      200.83361,
+      202.398633,
+      207.272818,
+      218,
+      228.727182,
+      229.918347,
+      233.601367,
+      234.765307,
+      238.317679,
+      249.699452,
+      249.701032,
+      280.321665,
+      308,
+      335.678335
+    ],
+    "steps": [
+      {
+        "step": 0.05,
+        "maximum": 1.7173715791286668,
+        "toggles": 64,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "mirror.frame.cross.90",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 1.7173715791286668
+        }
+      },
+      {
+        "step": 0.01,
+        "maximum": 0.34347221662756056,
+        "toggles": 64,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "mirror.frame.cross.90",
+          "role": "f3",
+          "event": 38,
+          "interval": 1,
+          "birth": 0.34347221662756056
+        }
+      },
+      {
+        "step": 0.005,
+        "maximum": 0.17173610831378028,
+        "toggles": 64,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "mirror.frame.cross.90",
+          "role": "f3",
+          "event": 38,
+          "interval": 1,
+          "birth": 0.17173610831378028
+        }
+      },
+      {
+        "step": 0.001,
+        "maximum": 0.034343023275141604,
+        "toggles": 64,
+        "aboveTwo": 0,
+        "worst": {
+          "part": "mirror.frame.cross.90",
+          "role": "f1",
+          "event": 38,
+          "interval": 0,
+          "birth": 0.034343023275141604
+        }
+      }
+    ],
+    "bisected": [
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.0001679365523159504,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.00016793653776403517,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.8979660305776633,
+        "visibleArea": 0.0011475663632154465,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 1.7173715791286668,
+        "visibleArea": 0.0021831750782439485,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.06602587932138704,
+        "visibleArea": 0.00008746693492867053,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f1",
+        "event": 38,
+        "interval": 0,
+        "coarseBirth": 0.06603171612368897,
+        "visibleArea": 0.00008163577876985073,
+        "bracket": [
+          37.99993625260393,
+          37.99993625260539
+        ]
+      },
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.0001679365523159504,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.0001679365523159504,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.8979660305776633,
+        "visibleArea": 0.0011475663632154465,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.10300341280526482,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 1.7173715791286668,
+        "visibleArea": 0.0021831750782439485,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.06602587932138704,
+        "visibleArea": 0.00008163577876985073,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f3",
+        "event": 38,
+        "interval": 1,
+        "coarseBirth": 0.06602588502573781,
+        "visibleArea": 0.00008163580787368119,
+        "bracket": [
+          38.00006374739461,
+          38.00006374739607
+        ]
+      },
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.9507914034184068,
+        "visibleArea": 0.0012128750968258828,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.9507913525158074,
+        "visibleArea": 0.0012035452236887068,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.09508007334079593,
+        "visibleArea": 0.00012128750677220523,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.10696507738612127,
+        "visibleArea": 0.00013644846330862492,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.013207509444328025,
+        "visibleArea": 0.00001749341026879847,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f0",
+        "event": 128,
+        "interval": 0,
+        "coarseBirth": 0.013201678317273036,
+        "visibleArea": 0.000017493381164968014,
+        "bracket": [
+          127.99993625260396,
+          127.99993625260541
+        ]
+      },
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.9507913525158074,
+        "visibleArea": 0.0012035451945848763,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.9507914034766145,
+        "visibleArea": 0.001212875053170137,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.0950800733116921,
+        "visibleArea": 0.00012128750677220523,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.10300341274705715,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.10300341276160907,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.10696507737156935,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.013201678346376866,
+        "visibleArea": 0.000017493381164968014,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f2",
+        "event": 128,
+        "interval": 1,
+        "coarseBirth": 0.013207509415224195,
+        "visibleArea": 0.00001749341026879847,
+        "bracket": [
+          128.00006374739453,
+          128.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.00016793653776403517,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.0001679365523159504,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.8979660305776633,
+        "visibleArea": 0.0011475663632154465,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 1.7173715791286668,
+        "visibleArea": 0.0021831750782439485,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.06602588496753015,
+        "visibleArea": 0.00008163577876985073,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f3",
+        "event": 218,
+        "interval": 0,
+        "coarseBirth": 0.06602587933593895,
+        "visibleArea": 0.00008163582242559642,
+        "bracket": [
+          217.99993625260402,
+          217.99993625260547
+        ]
+      },
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.0001679365523159504,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.13205410243244842,
+        "visibleArea": 0.0001679365523159504,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.8979660305776633,
+        "visibleArea": 0.0011475663632154465,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.10300341280526482,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 1.7173715791286668,
+        "visibleArea": 0.0021831750782439485,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.06603171618189663,
+        "visibleArea": 0.00008163577876985073,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f1",
+        "event": 218,
+        "interval": 1,
+        "coarseBirth": 0.06602587935049087,
+        "visibleArea": 0.00008746696403250098,
+        "bracket": [
+          218.00006374739453,
+          218.00006374739598
+        ]
+      },
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.9507913525158074,
+        "visibleArea": 0.0012035452236887068,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.9507914034184068,
+        "visibleArea": 0.0012128750968258828,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.09508007334079593,
+        "visibleArea": 0.00012128750677220523,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.10300341277616099,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.10696507738612127,
+        "visibleArea": 0.00013644846330862492,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.013207509473431855,
+        "visibleArea": 0.000017493381164968014,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f2",
+        "event": 308,
+        "interval": 0,
+        "coarseBirth": 0.013201678317273036,
+        "visibleArea": 0.00001749341026879847,
+        "bracket": [
+          307.9999362526039,
+          307.9999362526054
+        ]
+      },
+      {
+        "part": "mirror.base.rail.-1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.9507914034766145,
+        "visibleArea": 0.001212875053170137,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "mirror.base.rail.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.9507913525158074,
+        "visibleArea": 0.0012035451945848763,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "mirror.base.cross",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.0950800733116921,
+        "visibleArea": 0.00012128750677220523,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "mirror.stand.post.-1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.10300341276160907,
+        "visibleArea": 0.0001364484487567097,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "mirror.stand.post.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.10300341274705715,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "mirror.frame.cross.90",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.10696507737156935,
+        "visibleArea": 0.00013644841965287924,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.-1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.013201678331824951,
+        "visibleArea": 0.000017493366613052785,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      },
+      {
+        "part": "mirror.stand.bracket.1",
+        "role": "f0",
+        "event": 308,
+        "interval": 1,
+        "coarseBirth": 0.013207509444328025,
+        "visibleArea": 0.000017493381164968014,
+        "bracket": [
+          308.0000637473946,
+          308.0000637473961
+        ]
+      }
+    ],
+    "maxBisectedArea": 0.0021831750782439485
+  }
+]

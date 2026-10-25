@@ -1,0 +1,85 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 351,
+      "tightest": -2.6645352591003757e-15,
+      "orderStates": 0,
+      "changes": 0,
+      "posedStates": 2922,
+      "continuity": {
+        "worst": {
+          "q": 0,
+          "birth": 0,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 79148
+      },
+      "depthStates": 38,
+      "depthPairs": 0,
+      "seconds": 337.453
+    },
+    "quick": false,
+    "skipped": [
+      "unseparated",
+      "cycles",
+      "forced",
+      "swaps",
+      "layers",
+      "rigid",
+      "swept",
+      "posed",
+      "folds",
+      "self",
+      "crowding",
+      "endon",
+      "coverage",
+      "depth"
+    ],
+    "changes": []
+  }
+}

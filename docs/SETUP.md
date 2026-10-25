@@ -60,6 +60,9 @@ creates the project renderer/build modules with consistent coordinate precision 
 overlap retention, and copies the licence. No additional dependency or network fetch is needed.
 The generated diagnostic module retains its upstream checks and failure thresholds. A bounded
 16 MiB cache reuses exact integer raster sample buckets during offline audits; it changes neither
-sampling coverage nor edge arithmetic, and is covered by byte-exact differential regressions. Original
+sampling coverage nor edge arithmetic, and is covered by byte-exact differential regressions.
+The additional `angularStep` option refines rotation checks independently of the original linear
+normalization. Final library audits use 0.01° rotation and 60 fps story sampling; defaults and
+unchanged slide-defect detection have regression coverage. Original
 cabinet and bedroom builds continue using their original runtime. Detailed rationale and
 validation are in `ANIMATION_FIX_QA.md`.

@@ -1,0 +1,84 @@
+{
+  "originalWarnings": 41,
+  "birthWarnings": {
+    "eventCount": 40,
+    "uniqueParts": 6,
+    "crossings": 40,
+    "maximumSwitchArea": 0.010243268465274014,
+    "steps": [
+      {
+        "step": 0.05,
+        "maxBirth": 8.018388737335044,
+        "maxPointStep": 0.24037278262110806,
+        "failures": 40
+      },
+      {
+        "step": 0.01,
+        "maxBirth": 1.603677766644978,
+        "maxPointStep": 0.04808117079485688,
+        "failures": 0
+      },
+      {
+        "step": 0.005,
+        "maxBirth": 0.8018597783666337,
+        "maxPointStep": 0.02404107320817834,
+        "failures": 0
+      },
+      {
+        "step": 0.001,
+        "maxBirth": 0.16038031753123505,
+        "maxPointStep": 0.004808390271274645,
+        "failures": 0
+      }
+    ]
+  },
+  "storyHalving": [
+    {
+      "fps": 10,
+      "checks": 1,
+      "failures": 1
+    },
+    {
+      "fps": 60,
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "fps": 120,
+      "checks": 12,
+      "failures": 0
+    }
+  ],
+  "storyPath": [
+    {
+      "part": "desk.leg.545.-270",
+      "at": 6.300000000000001,
+      "cases": [
+        {
+          "dt": 0.016666666666666666,
+          "maxPointStep": 11.087260495461509,
+          "visibleSwitches": []
+        },
+        {
+          "dt": 0.008333333333333333,
+          "maxPointStep": 5.5488247032442155,
+          "visibleSwitches": []
+        },
+        {
+          "dt": 0.004166666666666667,
+          "maxPointStep": 2.775562864776296,
+          "visibleSwitches": []
+        },
+        {
+          "dt": 0.0008333333333333334,
+          "maxPointStep": 0.5552822100635294,
+          "visibleSwitches": []
+        }
+      ]
+    }
+  ],
+  "diagnosis": "At original .05 degree samples, long edge-on faces accumulate measurable area between sample and exact culling event; actual switched area is below .011 px2. At .1 second samples, the thin rapidly moving leg saturates symmetric-difference metric; all60/120fps subdivisions converge. No material renderer discontinuity found.",
+  "applicationChanged": false,
+  "thresholdsChanged": false,
+  "fullAuditWithRefinedSampling": "not run yet"
+}

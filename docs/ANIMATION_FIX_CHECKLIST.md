@@ -16,9 +16,17 @@ Baseline: bedside 8, console 0, desk 5, coffee 4, bookcase 2, lamp 32, mirror 0 
 Prior full continuity audit was interrupted; it must not be counted as passed.
 
 
-Checkpoint: 65 Node tests, 10 main browser groups and five targeted camera browser groups pass.
+Checkpoint: 68 Node tests, 10 main browser groups and five targeted camera browser groups pass.
 The final lamp continuity audit is clean (800 convergence checks). Six other full continuity
 checks are running. All seven scoped ordering/collision/depth audits pass with zero warnings.
 Full continuity remains pending, not passed. The exact raster cache passed both byte-level
 regressions and complete lamp-report equivalence; remaining runs use that verified cache.
 The fresh HTML and ZIP reproduce exactly after a clean install. Export validation passed.
+
+
+Final sampling: 0.01° angular steps, original 0.05 linear normalization, 60 fps story.
+Three regression tests establish default equivalence and unchanged slide-defect detection.
+All seven full, unscoped audits are running to `.test-artifacts/animation-final/`; only those
+completed reports will be counted as final full passes. The coarse desk findings and their
+convergence evidence remain archived. The mirror's previous JSON write failed after a profiling
+cleanup error and is being rerun without profiling. App HTML/ZIP hashes remain unchanged.

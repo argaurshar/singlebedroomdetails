@@ -70,6 +70,22 @@ for (const name of names) {
       "      const bucketRow = jitterBucketRow(row, w);\n      const y = y0 + (row + (sub + 0.5) / 8) / scale;");
     source = replace(source, "Math.floor(jitter(c, row) * 8) !== sub",
       "(bucketRow ? bucketRow[c] : Math.floor(jitter(c, row) * 8)) !== sub");
+
+    // Angular silhouette sampling needs its own resolution: reducing the old
+    // shared step would also relax the allowances for unchanged slide samples.
+    // Defaults reproduce upstream behavior; slides retain delta / step exactly.
+    source = replace(source, "step = 0.05, crowd = []",
+      "step = 0.05, angularStep = step, crowd = []");
+    source = replace(source,
+      "continuity(T, scene, runs, groups, { step, quick, result, say, families, frameOf });",
+      "continuity(T, scene, runs, groups, { step, angularStep, quick, result, say, families, frameOf });");
+    source = replace(source,
+      "function continuity(T, scene, runs, groups, { step, quick, result, say, families = [], frameOf = (f) => f.frame }) {",
+      "function continuity(T, scene, runs, groups, { step, angularStep, quick, result, say, families = [], frameOf = (f) => f.frame }) {");
+    source = replace(source, "const stepSize = quick ? step * 10 : step;",
+      "const stepSize = quick ? angularStep * 10 : angularStep;");
+    source = replace(source, "const scale = delta / step;",
+      'const scale = delta / (g.kind === "slide" ? step : angularStep);');
   }
 
   // Use the production renderer, with remaining support modules from the same pin.

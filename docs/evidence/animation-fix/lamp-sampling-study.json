@@ -37,7 +37,7 @@
   "fullAudit": {
     "result": "pass",
     "exitCode": 0,
-    "artifact": ".test-artifacts/animation-fix/audit-lamp-continuity.json",
+    "artifact": "audit-lamp-continuity-uncached-control.json",
     "runtimeSeconds": 337.45,
     "storyFrames": 2161,
     "assemblyFrames": 41,

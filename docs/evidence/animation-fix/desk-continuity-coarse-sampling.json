@@ -1,0 +1,654 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 38,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657700909,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657700909
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 38,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657693633,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657693633
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 38,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657686357,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657686357
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 38,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121253559,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121253559
+        }
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 38.050000000000004,
+        "m": {
+          "q": 0.25,
+          "birth": 5.3141496576718055,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.3141496576718055
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 38.050000000000004,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657693633,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657693633
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 38.050000000000004,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121260835,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121260835
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 38.050000000000004,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657700909,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657700909
+        }
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 128,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121275387,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121275387
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 128,
+        "m": {
+          "q": 0.25,
+          "birth": 5.3144551213190425,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.3144551213190425
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 128,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149666399317,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149666399317
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 128,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149675097724,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149675097724
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "group": "object",
+        "at": 128,
+        "m": {
+          "q": 0.25,
+          "birth": 8.018388737327768,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.018388737327768
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "group": "object",
+        "at": 128,
+        "m": {
+          "q": 0.25,
+          "birth": 8.018388737313217,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.018388737313217
+        }
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 128.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149666373851,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149666373851
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 128.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149675119552,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149675119552
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 128.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121275387,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121275387
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 128.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121260835,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121260835
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "group": "object",
+        "at": 128.05,
+        "m": {
+          "q": 0.25,
+          "birth": 8.018388737320493,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.018388737320493
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "group": "object",
+        "at": 128.05,
+        "m": {
+          "q": 0.25,
+          "birth": 8.018388737313217,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.018388737313217
+        }
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 218,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121253559,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121253559
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 218,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657686357,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657686357
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 218,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657693633,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657693633
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 218,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657700909,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657700909
+        }
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 218.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657700909,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657700909
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 218.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121260835,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121260835
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 218.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149657693633,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149657693633
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 218.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.3141496576718055,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.3141496576718055
+        }
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 308,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149675097724,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149675097724
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 308,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149666399317,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149666399317
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 308,
+        "m": {
+          "q": 0.25,
+          "birth": 5.3144551213190425,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.3144551213190425
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 308,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121275387,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121275387
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "group": "object",
+        "at": 308,
+        "m": {
+          "q": 0.25,
+          "birth": 8.018388737316855,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.018388737316855
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "group": "object",
+        "at": 308,
+        "m": {
+          "q": 0.25,
+          "birth": 8.018388737313217,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.018388737313217
+        }
+      },
+      {
+        "part": "desk.leg.-545.-270",
+        "group": "object",
+        "at": 308.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121260835,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121260835
+        }
+      },
+      {
+        "part": "desk.leg.-545.270",
+        "group": "object",
+        "at": 308.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314455121275387,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314455121275387
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "object",
+        "at": 308.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149675119552,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149675119552
+        }
+      },
+      {
+        "part": "desk.leg.545.270",
+        "group": "object",
+        "at": 308.05,
+        "m": {
+          "q": 0.25,
+          "birth": 5.314149666373851,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 5.314149666373851
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.-1",
+        "group": "object",
+        "at": 308.05,
+        "m": {
+          "q": 0.25,
+          "birth": 8.01838873730594,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.01838873730594
+        }
+      },
+      {
+        "part": "desk.drawer.hanger.1",
+        "group": "object",
+        "at": 308.05,
+        "m": {
+          "q": 0.25,
+          "birth": 8.018388737335044,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0,
+          "area": 8.018388737335044
+        }
+      },
+      {
+        "part": "desk.leg.545.-270",
+        "group": "story",
+        "at": 6.300000000000001,
+        "m": {
+          "halving": "31057.69 tone·px² step stays 32038.15, 24790.85 and 14936.66 at a half, a quarter and an eighth of the frame"
+        }
+      }
+    ],
+    "notes": [],
+    "stats": {
+      "planes": 359,
+      "tightest": -3.552713678800501e-15,
+      "orderStates": 0,
+      "changes": 0,
+      "posedStates": 1132,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 8.018388737335044,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 1,
+        "measures": 262887
+      },
+      "depthStates": 38,
+      "depthPairs": 0,
+      "seconds": 455.173
+    },
+    "quick": false,
+    "skipped": [
+      "unseparated",
+      "cycles",
+      "forced",
+      "swaps",
+      "layers",
+      "rigid",
+      "swept",
+      "posed",
+      "folds",
+      "self",
+      "crowding",
+      "endon",
+      "coverage",
+      "depth"
+    ],
+    "changes": []
+  }
+}

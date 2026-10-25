@@ -31,8 +31,9 @@ bookcase 2, lamp 32, mirror 0. These were real nonzero diagnostics, not a clean 
 pinned sources under `.generated/anatomy/`. Install, build, test and audit hooks regenerate them.
 The MIT licence and supporting files are retained. All **171 pinned skill hashes** still match.
 The original toolkit files are unchanged. The diagnostic body uses the production renderer and
-an exact raster sample cache, described below. A source guard reverses only the cache substitutions
-and imports, then verifies that all remaining diagnostic logic and thresholds match the pin.
+an exact raster sample cache and separate angular sampling, described below. A source guard
+reverses only those explicit substitutions and imports, then verifies all remaining diagnostic
+logic and thresholds against the pin. Default sampler results also match upstream exactly.
 
 ## Exact audit cache
 
@@ -62,8 +63,32 @@ The same thresholds and raster metric were used to subdivide every reported inte
 corresponding-vertex motion converged from 1.7058 px at 1/60 s to 0.8614 at 1/120 s, 0.4329 at
 1/240 s and 0.0869 at 1/1200 s. Six edge-on face switches were localized by bisection; their
 largest switched projected area was approximately 0.002266 px², below the unchanged 2 px² check.
-The complete lamp story audit now samples at 60 fps. Geometry and playback were not slowed to
+The story audit now samples all presets at 60 fps. Geometry and playback were not slowed to
 avoid diagnostics, and no failure threshold was relaxed.
+
+## Independent angular sampling
+
+The first completed desk continuity report exposed 40 coarse-step face-emergence flags and one
+story halving flag. They were preserved and investigated rather than discarded. Bisection of
+all 552 detected root-turn visibility toggles across the presets found a maximum actual switched
+area of 0.010243 px², below the unchanged 2 px² criterion. At the original 0.05° spacing, normal
+continuous face growth could reach 8.018 px² between samples. At 0.01° every detected birth is
+below 2 px² (largest: 1.604 px²). Halving the angle step halves those areas and vertex movement.
+The desk's story flag also converges normally: all six 60 fps and twelve 120 fps subdivisions
+pass the same raster criterion, with no face-visibility switch in that interval.
+
+A project-owned `angularStep` option defaults to the original `step`, preserving default results.
+The final library audit requests `angularStep: 0.01`: 36,000 rotation steps instead of 7,200,
+with the same 2 px² per-sample birth limit. Linear slides retain their original `delta / step`
+normalization and sample spacing. Changing the shared step alone would have relaxed slide
+limits, so that approach was not used. A regression introduces a 0.005 slide-opacity defect;
+it remains detected against the original 0.0021 allowance, and the complete slide result is
+identical before and after refining angular sampling.
+
+Coarse desk findings and convergence evidence are committed alongside the final reports.
+The earlier mirror audit printed a clean report, but a temporary profiling cleanup call caused
+Node to fail while writing its JSON. That run is not counted as a command/artifact pass; the
+final mirror check is a fresh complete run without profiling.
 
 ## Extended ordering, collision and depth results
 
@@ -88,7 +113,7 @@ alone does not claim that remaining check is complete. Raw reports are committed
 
 ## Validation
 
-- **65 Node tests passed**, including all preserved room/cabinet tests, seven unchanged-threshold
+- **68 Node tests passed**, including all preserved room/cabinet tests, seven unchanged-threshold
   ordering regressions, seven camera boundary checks, physical/render mapping checks and thin
   joinery contact checks. Parameter contracts compile all 112 min/max combinations.
 - Additional coffee ordering investigation: all 16 dimension-limit combinations × 361 angles

@@ -20,6 +20,8 @@ for (const p of presets.filter((p) => !wanted || p.id === wanted)) {
     log: (s) => console.log(p.id, s),
     only,
     random: 300,
+    // Refine angular face emergence without relaxing the original slide limits.
+    angularStep: 0.01,
     depthAngles: 12,
     depthEvents: 12,
     sweep: {
@@ -34,10 +36,9 @@ for (const p of presets.filter((p) => !wanted || p.id === wanted)) {
         at: (t) => poseFor(o.model, motion(o.model, t)),
         from: 0,
         to: 36,
-        // Narrow lamp facets move across their own width at a 10 fps sample.
-        // Use display-rate sampling so the unchanged halving check measures
-        // local convergence, rather than saturation of a long moving face.
-        frame: p.id === "lamp" ? 1 / 60 : 0.1,
+        // Display-rate sampling measures local motion of narrow, fast-moving
+        // faces without saturating the unchanged raster halving criterion.
+        frame: 1 / 60,
       },
       {
         name: "assembly",

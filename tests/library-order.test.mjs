@@ -41,7 +41,12 @@ test("production audit retains upstream diagnostic logic and thresholds", async 
   const stripImports = (s) => s.replace(/^import .*;\n/gm, "")
     .replace("const jitterBucketRow = rasterBucketRows(jitter);\n\n", "")
     .replace("      const bucketRow = jitterBucketRow(row, w);\n", "")
-    .replace("(bucketRow ? bucketRow[c] : Math.floor(jitter(c, row) * 8)) !== sub", "Math.floor(jitter(c, row) * 8) !== sub");
+    .replace("(bucketRow ? bucketRow[c] : Math.floor(jitter(c, row) * 8)) !== sub", "Math.floor(jitter(c, row) * 8) !== sub")
+    .replace("step = 0.05, angularStep = step, crowd = []", "step = 0.05, crowd = []")
+    .replace("{ step, angularStep, quick, result, say, families, frameOf }", "{ step, quick, result, say, families, frameOf }")
+    .replace("{ step, angularStep, quick, result, say, families = [], frameOf = (f) => f.frame }", "{ step, quick, result, say, families = [], frameOf = (f) => f.frame }")
+    .replace("const stepSize = quick ? angularStep * 10 : angularStep;", "const stepSize = quick ? step * 10 : step;")
+    .replace('const scale = delta / (g.kind === "slide" ? step : angularStep);', "const scale = delta / step;");
   assert.equal(
     stripImports(await readFile(".generated/anatomy/turn-audit.mjs", "utf8")),
     stripImports(await readFile(".agents/skills/anatomy/kit/turn-audit.mjs", "utf8")),
