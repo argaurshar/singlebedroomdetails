@@ -1,0 +1,181 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 172,
+      "tightest": -7.105427357601002e-15,
+      "orderStates": 2838,
+      "changes": 108,
+      "posedStates": 2922,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 1.1995930480770767,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 1168918
+      },
+      "depthStates": 48,
+      "depthPairs": 5113,
+      "seconds": 1049.332
+    },
+    "quick": false,
+    "skipped": [],
+    "changes": [
+      {
+        "family": "story",
+        "x": 3.5666666666666664,
+        "count": 133,
+        "pairs": [
+          "console.pad.545.125 / console.shelf.block.510.-90",
+          "console.shelf.block.-510.90 / console.shelf.block.510.-90",
+          "console.shelf.block.-510.90 / console.shelf.block.510.90",
+          "console.leg.-545.125 / console.shelf.block.-510.90"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 27.383333333333333,
+        "count": 133,
+        "pairs": [
+          "console.apron.long.-1 / console.apron.short.-1",
+          "console.apron.long.-1 / console.corner.-521.101",
+          "console.apron.long.-1 / console.shelf.panel",
+          "console.apron.long.-1 / console.shelf.block.-510.90"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 20.6,
+        "count": 132,
+        "pairs": [
+          "console.apron.short.-1 / console.apron.short.1",
+          "console.leg.-545.125 / console.mount.545.-125",
+          "console.leg.-545.125 / console.fixing.545.-125.-12.6.-12.6",
+          "console.leg.-545.125 / console.fixing.545.-125.-12.6.12.6"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 130,
+        "pairs": [
+          "console.pad.545.125 / console.shelf.block.510.-90",
+          "console.shelf.block.-510.90 / console.shelf.block.510.-90",
+          "console.shelf.block.-510.90 / console.shelf.block.510.90",
+          "console.leg.-545.125 / console.shelf.block.-510.90"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 128,
+        "pairs": [
+          "console.leg.545.-125 / console.shelf.block.-510.-90",
+          "console.leg.545.-125 / console.shelf.block.-510.90",
+          "console.leg.545.-125 / console.shelf.block.510.-90",
+          "console.corner.521.101 / console.shelf.panel"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.933333333333334,
+        "count": 127,
+        "pairs": [
+          "console.leg.545.-125 / console.shelf.block.-510.-90",
+          "console.leg.545.-125 / console.shelf.block.-510.90",
+          "console.leg.545.-125 / console.shelf.block.510.-90",
+          "console.corner.521.101 / console.shelf.panel"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 156,
+        "count": 115,
+        "pairs": [
+          "console.leg.545.125 / console.corner.-521.-101",
+          "console.apron.short.1 / console.corner.-521.-101",
+          "console.apron.long.1 / console.corner.-521.-101",
+          "console.corner.-521.-101 / console.shelf.block.510.90"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 27.3,
+        "count": 115,
+        "pairs": [
+          "console.apron.short.-1 / console.apron.short.1",
+          "console.leg.-545.125 / console.mount.545.-125",
+          "console.leg.-545.125 / console.fixing.545.-125.-12.6.-12.6",
+          "console.leg.-545.125 / console.fixing.545.-125.-12.6.12.6"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 5.433333333333334,
+        "count": 111,
+        "pairs": [
+          "console.shelf.block.510.-90 / console.top.clip.360.-90",
+          "console.shelf.panel / console.top.clip.360.-90",
+          "console.mount.545.125 / console.apron.long.-1",
+          "console.mount.545.125 / console.apron.short.-1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 336,
+        "count": 108,
+        "pairs": [
+          "console.leg.-545.-125 / console.corner.521.101",
+          "console.apron.short.-1 / console.corner.521.101",
+          "console.apron.long.-1 / console.corner.521.101",
+          "console.corner.521.101 / console.shelf.block.-510.-90"
+        ]
+      }
+    ]
+  }
+}

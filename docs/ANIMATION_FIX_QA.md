@@ -86,30 +86,35 @@ it remains detected against the original 0.0021 allowance, and the complete slid
 identical before and after refining angular sampling.
 
 Coarse desk findings and convergence evidence are committed alongside the final reports.
-The earlier mirror audit printed a clean report, but a temporary profiling cleanup call caused
-Node to fail while writing its JSON. That run is not counted as a command/artifact pass; the
-final mirror check is a fresh complete run without profiling.
+A previous mirror run failed while saving its artifact. It is excluded from the final evidence;
+the fresh complete mirror rerun finished successfully without profiling.
 
-## Extended ordering, collision and depth results
+## Complete final audits
 
-All seven presets completed `order,rigid,swept,posed,routes,coverage,depth` with exit code 0.
-The formerly recorded **51 order-change warnings are now zero**. All enabled diagnostic
-categories are zero, including collisions, forced ordering and depth failures.
+All seven final commands completed with exit code 0, `quick=false`, no `only` restriction and
+**no skipped categories**. Every base/turn finding category is zero. The original **51
+order-change warnings are cleared**, and the previously unfinished continuity check is complete.
 
-| Preset | Order states | Posed states | Overlapping depth pairs |
-|---|---:|---:|---:|
-| Bedside cabinet | 1,076 | 1,132 | 12,055 |
-| Entry console | 980 | 1,122 | 5,105 |
-| Writing desk | 1,130 | 1,132 | 10,777 |
-| Coffee table | 1,020 | 1,122 | 5,995 |
-| Open bookcase | 934 | 1,122 | 5,095 |
-| Floor lamp | 3,058 | 2,922 | 3,593 |
-| Standing mirror | 942 | 1,122 | 5,177 |
-| Total | 9,140 | 9,674 | 47,797 |
+Settings: 0.01° angular steps, original 0.05 linear normalization, 60 fps story samples,
+0.1 assembly increments, 300 random states and 12 angular/event depth samples. Full coverage
+includes ordering, rigid/swept/posed intersections, routes, coverage, continuity and depth.
 
-Depth sampling covered 336 states. Continuity is recorded separately below; the scoped pass
-alone does not claim that remaining check is complete. Raw reports are committed under
-`evidence/animation-fix/`.
+| Preset | Order states | Continuity measurements | Halving failures | Depth pairs |
+|---|---:|---:|---:|---:|
+| Bedside cabinet | 2,954 | 1,083,705 | 0 / 800 | 12,035 |
+| Entry console | 2,838 | 1,168,918 | 0 / 800 | 5,113 |
+| Writing desk | 3,066 | 1,264,786 | 0 / 800 | 10,583 |
+| Coffee table | 2,874 | 1,319,544 | 0 / 800 | 5,974 |
+| Open bookcase | 2,758 | 527,443 | 0 / 800 | 5,065 |
+| Floor lamp | 3,058 | 251,948 | 0 / 800 | 3,593 |
+| Standing mirror | 2,764 | 599,809 | 0 / 800 | 5,130 |
+| Total | 20,312 | 6,216,153 | 0 / 5,600 | 47,493 |
+
+The runs also covered **20,474 posed states and 336 depth states**. Every final raw report,
+settings, totals and generated-source hashes are in `evidence/animation-fix/`, summarized by
+`full-audit-summary.json`. All four parallel queue processes returned exit code 0. Earlier
+scoped reports and the coarse sampling investigations remain historical evidence; the seven
+`audit-*-full.json` files are the authoritative final results.
 
 ## Validation
 
@@ -148,8 +153,8 @@ at 1440 px (95th-percentile render work 3.0 ms), and **27.8 fps** at 390 px with
 4× CPU slowdown (95th-percentile render work 9.4 ms). Offscreen pause/resume and render-mode
 clock suppression passed. This is a measured sample, not a universal frame-rate guarantee.
 
-Remaining full continuity completion is pending; this document must not be used to claim that
-pending check passed.
+All required follow-up checks are complete. Original cabinet and bedroom builds still match
+`85f86be` byte-for-byte. The feature branch is ready for review; it has not been merged or deployed.
 
 ## Reproduce
 
@@ -178,3 +183,13 @@ certification and device-wide performance guarantees are not implied by sampled 
 The managed browser still blocks direct `file://` navigation; self-contained operation is
 validated over local HTTP. The existing GitHub Pages workflow publishes from `main` after the
 user merges the review branch. This follow-up does not merge or publish automatically.
+
+
+## Review and deployment handoff
+
+Changes are committed on `fix/library-animation-order`. The tested app is in `dist/library.zip`;
+extract and open `index.html`. The branch was pushed successfully. Automatic PR creation returned
+`Post "https://api.github.com/graphql": Forbidden`; use the repository comparison page to create
+the review PR. No merge was performed. After review and merge, the existing GitHub Pages workflow
+publishes the library at https://argaurshar.github.io/singlebedroomdetails/ (the root library page,
+not the preserved `/cabinet.html` study).

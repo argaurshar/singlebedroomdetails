@@ -1,0 +1,181 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 130,
+      "tightest": -4.440892098500626e-16,
+      "orderStates": 2764,
+      "changes": 71,
+      "posedStates": 2922,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 0.34347221662756056,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 599809
+      },
+      "depthStates": 48,
+      "depthPairs": 5130,
+      "seconds": 1321.99
+    },
+    "quick": false,
+    "skipped": [],
+    "changes": [
+      {
+        "family": "sweep",
+        "x": 39,
+        "count": 325,
+        "pairs": [
+          "mirror.pad.195.-108 / mirror.retainer.-289.146",
+          "mirror.pad.195.-108 / mirror.screw.-289.146",
+          "mirror.pad.195.108 / mirror.retainer.-289.146",
+          "mirror.pad.195.108 / mirror.screw.-289.146"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 1.8166666666666667,
+        "count": 325,
+        "pairs": [
+          "mirror.pad.195.-108 / mirror.retainer.-289.146",
+          "mirror.pad.195.-108 / mirror.screw.-289.146",
+          "mirror.pad.195.108 / mirror.retainer.-289.146",
+          "mirror.pad.195.108 / mirror.screw.-289.146"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 219,
+        "count": 302,
+        "pairs": [
+          "mirror.pad.-195.108 / mirror.corner.block.3",
+          "mirror.pad.-195.-108 / mirror.corner.block.2",
+          "mirror.pad.-195.-108 / mirror.corner.block.3",
+          "mirror.pad.195.-108 / mirror.upright.1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.216666666666667,
+        "count": 302,
+        "pairs": [
+          "mirror.pad.-195.108 / mirror.corner.block.3",
+          "mirror.pad.-195.-108 / mirror.corner.block.2",
+          "mirror.pad.-195.-108 / mirror.corner.block.3",
+          "mirror.pad.195.-108 / mirror.upright.1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 258,
+        "count": 171,
+        "pairs": [
+          "mirror.pad.-195.108 / mirror.pad.195.108",
+          "mirror.pad.-195.-108 / mirror.pad.195.108",
+          "mirror.pad.195.-108 / mirror.pad.195.108",
+          "mirror.screw.289.850 / mirror.stand.bracket.-1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.516666666666667,
+        "count": 171,
+        "pairs": [
+          "mirror.pad.-195.108 / mirror.pad.195.108",
+          "mirror.pad.-195.-108 / mirror.pad.195.108",
+          "mirror.pad.195.-108 / mirror.pad.195.108",
+          "mirror.screw.289.850 / mirror.stand.bracket.-1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 100,
+        "pairs": [
+          "mirror.pad.195.108 / mirror.upright.1",
+          "mirror.pad.195.108 / mirror.corner.block.0",
+          "mirror.pad.195.108 / mirror.corner.block.2",
+          "mirror.base.rail.-1 / mirror.base.rail.1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.933333333333334,
+        "count": 100,
+        "pairs": [
+          "mirror.pad.195.108 / mirror.upright.1",
+          "mirror.pad.195.108 / mirror.corner.block.0",
+          "mirror.pad.195.108 / mirror.corner.block.2",
+          "mirror.base.rail.-1 / mirror.base.rail.1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 21.583333333333332,
+        "count": 90,
+        "pairs": [
+          "mirror.screw.289.146 / mirror.stand.bracket.-1",
+          "mirror.screw.289.146 / mirror.stand.fixing.-1.-10",
+          "mirror.screw.289.146 / mirror.stand.fixing.-1.10",
+          "mirror.screw.289.146 / mirror.stand.bracket.1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 77,
+        "pairs": [
+          "mirror.pad.-195.108 / mirror.upright.-1",
+          "mirror.pad.-195.-108 / mirror.upright.-1",
+          "mirror.base.rail.1 / mirror.base.cross",
+          "mirror.base.rail.1 / mirror.upright.-1"
+        ]
+      }
+    ]
+  }
+}

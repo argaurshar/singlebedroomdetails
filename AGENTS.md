@@ -2,19 +2,22 @@
 
 Read `docs/Room_Anatomy_RDB_Build_Plan.md` completely before working on the app.
 Read `docs/PHASE_CHECKLIST.md` and `docs/SETUP.md` for current decisions and evidence.
-The library is merged (PR #3). The active follow-up fixes animation correctness on
+The library is merged (PR #3). Animation correctness is complete on the review branch
 `fix/library-animation-order`; read `docs/ANIMATION_FIX_CHECKLIST.md` and
-`docs/ANIMATION_FIX_QA.md` before resuming. Do not add features in this follow-up.
+`docs/ANIMATION_FIX_QA.md` before resuming. All seven full audits are clean. Further features
+require a new user instruction; the review branch has not been merged automatically.
 
 ## Current authorization
 
 The user has authorized implementation, testing, standalone packaging and hosting configuration.
 The first version is merged. The user subsequently rejected the room animation and explicitly
-authorized narrowing to one furniture item. The cabinet is merged. The user subsequently authorized a furniture/decor preset library on
-`feat/preset-library`. Read `docs/LIBRARY_PLAN.md` and `docs/LIBRARY_QA.md` for current scope,
-verification and outstanding limits. Read
+authorized narrowing to one furniture item. The cabinet and subsequent seven-preset library
+are merged. Read `docs/LIBRARY_PLAN.md` for the library contract and
+`docs/ANIMATION_FIX_QA.md` for current validation; `docs/LIBRARY_QA.md` retains the original
+release evidence. Read
 `docs/CABINET_DIRECTION.md` and `docs/CABINET_QA.md` for the cabinet contract and current evidence.
-Preserve the bedroom source and `dist/bedroom.html`; preserve `dist/cabinet.html` too. The new library becomes the hosting entry after review.
+Preserve the bedroom source and `dist/bedroom.html`; preserve `dist/cabinet.html` too.
+The preset library is the hosting entry; this animation follow-up updates it after review.
 Commit coherent changes and prepare a reviewable PR. Do not treat old room QA as cabinet evidence.
 GitHub Pages hosting is now authorized and configured via `.github/workflows/pages.yml`.
 Do not merge the PR automatically. Deploy only from `main` through the Pages workflow.
@@ -24,8 +27,8 @@ Use this existing isolated checkout; do not create a worktree unless explicitly 
 ## Confirmed decisions
 
 - RDB means Requirements → Design → Build.
-- Preserve the plan's demonstration bedroom as a separate study. The current lead study is the
-  user-authorized bedside cabinet; its new dimensions are explicitly demonstration assumptions.
+- Preserve the plan's demonstration bedroom and original bedside cabinet as separate studies.
+  The current lead experience is the seven-preset library. Dimensions remain demonstration assumptions.
 - Use SVG object-space geometry and isometric projection, HTML controls and CSS; no Plotly.
 - Maintain source modules for specification, pure model, timeline, scene, controller and packaging.
   Produce one offline HTML deliverable with inline assets and no runtime CDN or AI API dependency.

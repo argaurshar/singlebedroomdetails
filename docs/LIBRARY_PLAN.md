@@ -50,9 +50,9 @@ Prior cabinet warnings are tracked separately, never relabelled as a clean libra
 
 ## Review status
 
-Core implementation and acceptance checks are complete. See `LIBRARY_QA.md` for the exact
-performed tests and known renderer diagnostics. The scoped audit has 51 edge-order warnings;
-full pixel-level continuity remains outstanding; the depth oracle completed without failures, so no audit-clean claim is made.
-Source, standalone build, ZIP and reproducible checks are prepared for review. Do not merge or
+The library is merged (PR #3). The animation follow-up is on `fix/library-animation-order`.
+See `ANIMATION_FIX_QA.md` and `ANIMATION_FIX_CHECKLIST.md` for current validation and status;
+`LIBRARY_QA.md` retains the initial release evidence and its original unresolved diagnostics.
+The follow-up includes source, standalone HTML, ZIP and reproducible checks. Do not merge or
 publish automatically. A room composition editor, manufacturer catalogs, CAD/GLB export and
 narrated audio are outside this first library version.

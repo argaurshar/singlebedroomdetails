@@ -1,0 +1,185 @@
+{
+  "complete": true,
+  "quick": false,
+  "skipped": [],
+  "settings": {
+    "random": 300,
+    "step": 0.05,
+    "angularStep": 0.01,
+    "storyFrame": 0.016666666666666666,
+    "assemblyFrame": 0.1,
+    "depthAngles": 12,
+    "depthEvents": 12
+  },
+  "presets": [
+    {
+      "id": "bedside",
+      "findings": 0,
+      "orderStates": 2954,
+      "posedStates": 2932,
+      "depthStates": 48,
+      "depthPairs": 12035,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 0.7643067550088745,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 1083705
+      },
+      "seconds": 2294.486
+    },
+    {
+      "id": "console",
+      "findings": 0,
+      "orderStates": 2838,
+      "posedStates": 2922,
+      "depthStates": 48,
+      "depthPairs": 5113,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 1.1995930480770767,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 1168918
+      },
+      "seconds": 1049.332
+    },
+    {
+      "id": "desk",
+      "findings": 0,
+      "orderStates": 3066,
+      "posedStates": 2932,
+      "depthStates": 48,
+      "depthPairs": 10583,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 1.603677766644978,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 1264786
+      },
+      "seconds": 1625.672
+    },
+    {
+      "id": "coffee",
+      "findings": 0,
+      "orderStates": 2874,
+      "posedStates": 2922,
+      "depthStates": 48,
+      "depthPairs": 5974,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 0.8846261111193598,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 1319544
+      },
+      "seconds": 2162.197
+    },
+    {
+      "id": "bookcase",
+      "findings": 0,
+      "orderStates": 2758,
+      "posedStates": 2922,
+      "depthStates": 48,
+      "depthPairs": 5065,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 0.7917708531022072,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 527443
+      },
+      "seconds": 1317.672
+    },
+    {
+      "id": "lamp",
+      "findings": 0,
+      "orderStates": 3058,
+      "posedStates": 2922,
+      "depthStates": 48,
+      "depthPairs": 3593,
+      "continuity": {
+        "worst": {
+          "q": 0,
+          "birth": 0,
+          "dot": 0,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 251948
+      },
+      "seconds": 200.529
+    },
+    {
+      "id": "mirror",
+      "findings": 0,
+      "orderStates": 2764,
+      "posedStates": 2922,
+      "depthStates": 48,
+      "depthPairs": 5130,
+      "continuity": {
+        "worst": {
+          "q": 0.25,
+          "birth": 0.34347221662756056,
+          "dot": 0.010000000000000009,
+          "fade": 0,
+          "motion": 0,
+          "merge": 0
+        },
+        "halvingChecked": 800,
+        "halvingFails": 0,
+        "measures": 599809
+      },
+      "seconds": 1321.99
+    }
+  ],
+  "totals": {
+    "orderStates": 20312,
+    "posedStates": 20474,
+    "depthStates": 336,
+    "depthPairs": 47493,
+    "seconds": 9971.878,
+    "continuityMeasurements": 6216153,
+    "halvingChecks": 5600
+  },
+  "sourceHashes": {
+    ".generated/anatomy/turn.mjs": "055134adf19493e93fa1297aeed7040371e536c7d55e7c784937dae47f57a246",
+    ".generated/anatomy/turn-build.mjs": "a2f41e23aaee2a6b282d78bcea09fd847abaeaa0ecb628bfb44237f23fb5abb3",
+    ".generated/anatomy/turn-audit.mjs": "ca892907f669fde4225231e7fcac1704271b627442baa34bc47c3610ca4350ad",
+    "scripts/raster-buckets.mjs": "9db546909844d9cf35110eb401fedfcdfe494760d914525601a64c2b41ee4bc8"
+  }
+}

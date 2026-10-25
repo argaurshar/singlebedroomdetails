@@ -19,3 +19,10 @@ regenerate them. The committed images are representative evidence, not a substit
 Extended ordering/collision/depth reports and their summary cover all seven presets.
 `audit-cache-*` records exact cached/uncached comparisons and the measured CPU benefit.
 `performance.json` records the idle browser sample and offscreen/render-mode checks.
+
+
+The seven `audit-*-full.json` files and `full-audit-summary.json` are the final authoritative
+reports: no quick mode, no skipped categories, zero findings. Earlier scoped reports and
+coarse-sampling investigations are retained for provenance, not counted as substitute full runs.
+`unit-results.json` records all 68 passing Node tests. The cached/uncached lamp control reports
+are archived so the exact-equivalence comparison can be independently repeated.

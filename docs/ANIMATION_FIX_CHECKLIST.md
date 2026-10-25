@@ -1,32 +1,29 @@
-# Animation correctness follow-up
+# Animation correctness follow-up — complete
 
-User authorized fixing all remaining library animation warnings before adding features.
+User authorized fixing remaining library animation warnings before adding features.
 Branch: `fix/library-animation-order`, based on merged library PR #3 (`85f86be`).
-Preserve physical dimensions, presets, controls, exports and the original studies.
+The original cabinet and bedroom builds remain unchanged.
 
-- [x] Read current instructions, handoff and previous evidence; confirm clean checkout and merged base.
-- [x] Reproduce the 51 order-change warnings and identify their causes.
-- [x] Correct production rendering/geometry; keep vendored diagnostics and thresholds unchanged.
-- [x] Add meaningful regressions for the actual failures, including smooth camera motion.
-- [ ] Run order, collision, depth and complete continuity checks on all seven presets.
-- [x] Inspect desktop/mobile rendered motion around former warning angles and stage boundaries.
-- [ ] Rebuild, record evidence, commit and push a reviewable branch. Do not merge or deploy.
+- [x] Inspect instructions, handoff, setup and original warning evidence.
+- [x] Reproduce all 51 order-change warnings and identify precision/order causes.
+- [x] Correct production rendering, coffee leg subdivision and thin frame contacts.
+- [x] Smooth the connection/material camera transition and preserve logical part framing.
+- [x] Add regressions; 68 Node tests pass, including exact audit-cache and sampler controls.
+- [x] Complete all seven full audits: no quick mode, no skipped categories, zero findings.
+- [x] Validate desktop/mobile replay, real playback, resets, modes, keyboard and reduced motion.
+- [x] Open and inspect rendered transition contact sheets and all 12 full-page review captures.
+- [x] Validate fresh SVG/video exports, idle performance and reproducible HTML/ZIP hashes.
+- [x] Archive full reports, source hashes, convergence evidence and review/deployment instructions.
+- [x] Commit and push the dedicated review branch. Do not merge or deploy automatically.
 
-Baseline: bedside 8, console 0, desk 5, coffee 4, bookcase 2, lamp 32, mirror 0 order warnings.
-Prior full continuity audit was interrupted; it must not be counted as passed.
+Final coverage: 20,312 order states, 20,474 posed states, 6,216,153 continuity measurements,
+5,600 halving checks and 47,493 overlapping depth pairs. All four audit queue processes exited 0.
+See `ANIMATION_FIX_QA.md` and `evidence/animation-fix/full-audit-summary.json` for the exact scope.
 
+The audit cache is byte-exact. Separate 0.01° angular sampling preserves original slide limits;
+60 fps stories resolve verified coarse-step artifacts. Intermediate desk findings and controls
+are retained; only fresh complete reports count as final passes.
 
-Checkpoint: 68 Node tests, 10 main browser groups and five targeted camera browser groups pass.
-The final lamp continuity audit is clean (800 convergence checks). Six other full continuity
-checks are running. All seven scoped ordering/collision/depth audits pass with zero warnings.
-Full continuity remains pending, not passed. The exact raster cache passed both byte-level
-regressions and complete lamp-report equivalence; remaining runs use that verified cache.
-The fresh HTML and ZIP reproduce exactly after a clean install. Export validation passed.
-
-
-Final sampling: 0.01° angular steps, original 0.05 linear normalization, 60 fps story.
-Three regression tests establish default equivalence and unchanged slide-defect detection.
-All seven full, unscoped audits are running to `.test-artifacts/animation-final/`; only those
-completed reports will be counted as final full passes. The coarse desk findings and their
-convergence evidence remain archived. The mirror's previous JSON write failed after a profiling
-cleanup error and is being rerun without profiling. App HTML/ZIP hashes remain unchanged.
+GitHub API PR creation returned Forbidden. The branch is reviewable at:
+https://github.com/argaurshar/singlebedroomdetails/compare/main...fix/library-animation-order
+After review and merge, the existing main-only Pages workflow updates the root library URL.
