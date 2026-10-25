@@ -11,7 +11,7 @@ import { createModel } from "../src/library/model.mjs";
 import { compilePreset } from "../src/library/geometry.mjs";
 import { drawing, scheduleCSV } from "../src/library/drawings.mjs";
 import * as A from "../.agents/skills/anatomy/kit/audit.mjs";
-import { TURN } from "../.agents/skills/anatomy/kit/turn.mjs";
+import { TURN } from "../.generated/anatomy/turn.mjs";
 const keys = ["width", "depth", "height", "thickness"];
 for (const p of presets) {
   test(`${p.id}: physical contract at every parameter corner`, () => {

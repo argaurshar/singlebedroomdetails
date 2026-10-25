@@ -1,5 +1,6 @@
 import { recordStory, videoType } from "./video.mjs";
-import { TURN } from "../../.agents/skills/anatomy/kit/turn.mjs";
+import { cameraFor, physicalPartBoxes } from "./camera.mjs";
+import { TURN } from "../../.generated/anatomy/turn.mjs";
 import { iso, pathOf } from "../../.agents/skills/anatomy/kit/iso-kit.mjs";
 import {
   presets,
@@ -338,54 +339,14 @@ function draw() {
   document.body.dataset.preset = model.id;
   document.body.dataset.finish = model.config.finish;
   document.body.dataset.material = model.config.material;
-  const active = selected || model.focus,
-    frames = controller.frames(),
-    all = frames.map((f) => f.box),
-    boxOf = (arr) => [
-      Math.min(...arr.map((b) => b[0])),
-      Math.min(...arr.map((b) => b[1])),
-      Math.max(...arr.map((b) => b[2])),
-      Math.max(...arr.map((b) => b[3])),
-    ];
-  const full = boxOf(all),
-    wanted = focus
-      ? selected
-      : state.index === 3 && model.components.some((c) => c.id === "top")
-        ? "top"
-        : active,
-    subset = all.filter((_, i) =>
-      focus && selectedPart
-        ? built.model.parts[i]?.id === selectedPart
-        : built.model.parts[i]?.group === wanted,
-    ),
-    close = subset.length ? boxOf(subset) : full;
-  const weight =
-    focus && selected
-      ? 1
-      : assembly !== null
-        ? 0
-        : state.index === 2
-          ? ease(state.u)
-          : state.index === 3
-            ? 1 - ease(state.u)
-            : 0;
-  const fullW = Math.max(
-      (full[2] - full[0]) * 1.28,
-      (((full[3] - full[1]) * 960) / 720) * 1.28,
-    ),
-    closeW = Math.max(
-      (close[2] - close[0]) * 1.4,
-      (((close[3] - close[1]) * 960) / 720) * 1.4,
-      fullW * (focus && selectedPart ? 0.08 : 0.35),
-    ),
-    width = (fullW + (closeW - fullW) * weight) / zoom,
-    cx =
-      (full[0] + full[2]) / 2 +
-      ((close[0] + close[2] - full[0] - full[2]) / 2) * weight,
-    cy =
-      (full[1] + full[3]) / 2 +
-      ((close[1] + close[3] - full[1] - full[3]) / 2) * weight;
-  const camera = [cx - width / 2, cy - (width * 0.75) / 2, width, width * 0.75];
+  const active = selected || model.focus;
+  const camera = cameraFor(model, state, physicalPartBoxes(model, built.renderParts, controller.frames().map((f) => f.box)), {
+    selected,
+    selectedPart,
+    focus,
+    assembly,
+    zoom,
+  });
   $("#scene")
     .querySelectorAll("svg")
     .forEach((s) =>

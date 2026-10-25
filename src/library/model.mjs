@@ -366,15 +366,18 @@ export function createModel(id, input = {}) {
       );
       const apronH = id === "coffee" ? 60 : 75,
         xLeg = W / 2 - 55,
-        yLeg = D / 2 - 55;
+        yLeg = D / 2 - 55,
+        // Thin aprons meet the leg's inner face, keeping corner blocks attached
+        // to both aprons without cutting into the square leg.
+        apronInset = Math.max(leg / 2, T);
       for (const side of [-1, 1]) {
         box(
           "apron.long." + side,
           "frame",
-          -xLeg + Math.max(leg / 2, T),
-          side < 0 ? -yLeg : yLeg - T,
+          -xLeg + apronInset,
+          side < 0 ? -yLeg + apronInset - T : yLeg - apronInset,
           H - T - 5 - apronH,
-          2 * xLeg - 2 * Math.max(leg / 2, T),
+          2 * xLeg - 2 * apronInset,
           T,
           apronH,
           "wood",
@@ -383,7 +386,7 @@ export function createModel(id, input = {}) {
         box(
           "apron.short." + side,
           "frame",
-          side < 0 ? -xLeg : xLeg - T,
+          side < 0 ? -xLeg + apronInset - T : xLeg - apronInset,
           -yLeg + leg / 2,
           H - T - 5 - apronH,
           T,
@@ -407,8 +410,8 @@ export function createModel(id, input = {}) {
             "core",
           );
         },
-        xLeg - T,
-        yLeg - T,
+        xLeg - apronInset,
+        yLeg - apronInset,
       );
       if (id === "desk") {
         const dw = Math.min(W * 0.53, 660),
@@ -421,10 +424,10 @@ export function createModel(id, input = {}) {
           box(
             "apron.front." + side,
             "frame",
-            side < 0 ? -xLeg + Math.max(leg / 2, T) : opening / 2,
-            yLeg - T,
+            side < 0 ? -xLeg + apronInset : opening / 2,
+            yLeg - apronInset,
             H - T - 5 - apronH,
-            xLeg - Math.max(leg / 2, T) - opening / 2,
+            xLeg - apronInset - opening / 2,
             T,
             apronH,
             "wood",

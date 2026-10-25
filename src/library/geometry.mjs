@@ -1,7 +1,7 @@
 import * as k from "../../.agents/skills/anatomy/kit/iso-kit.mjs";
 import * as G from "../../.agents/skills/anatomy/kit/lathe.mjs";
 import * as A from "../../.agents/skills/anatomy/kit/audit.mjs";
-import { turning } from "../../.agents/skills/anatomy/kit/turn-build.mjs";
+import { turning } from "../../.generated/anatomy/turn-build.mjs";
 import { createModel } from "./model.mjs";
 import { motion, poseFor } from "./catalog.mjs";
 // The upstream builder only needs Buffer for byte-array base64 packaging. Keep it unmodified.
@@ -62,7 +62,19 @@ export function compilePreset(id, input = {}, options = {}) {
       ];
     }),
   );
-  const rendered = model.parts.map((p) => ({ ...p, logical: p.id }));
+  // A continuous leg crosses the coffee table shelf. Two render solids permit
+  // correct painter ordering on either side of that joint, without inventing
+  // a physical seam or changing the parts schedule.
+  const shelf = model.parts.find((p) => p.id === "shelf.panel");
+  const rendered = model.parts.flatMap((p) => {
+    if (id !== "coffee" || !p.id.startsWith("leg."))
+      return [{ ...p, logical: p.id }];
+    const cut = shelf.z;
+    return [
+      { ...p, id: p.id + ".lower", logical: p.id, h: cut - p.z, renderCut: cut },
+      { ...p, id: p.id + ".upper", logical: p.id, z: cut, h: p.z + p.h - cut, renderCut: cut },
+    ];
+  });
   for (const p of rendered) {
     const name = id + "." + p.id;
     let part;
@@ -123,6 +135,11 @@ export function compilePreset(id, input = {}, options = {}) {
         s1: p.thickness / 10,
         bevel: 0,
       });
+    }
+    if (p.renderCut !== undefined) {
+      const normal = [0, 0, 1];
+      part.spec.cuts = [{ n: normal, d: p.renderCut / 10 - part.group.origin[2] }];
+      part.hints.unshift(normal);
     }
     if (p.z === 0) for (const shape of part.shapes) shape.ground = true;
     if (p.shape === "box" && ["wood", "core"].includes(p.material)) {
@@ -199,6 +216,7 @@ export function compilePreset(id, input = {}, options = {}) {
   const result = {
     model,
     P,
+    renderParts: rendered,
     data: out.data,
     svg,
     css: out.css,

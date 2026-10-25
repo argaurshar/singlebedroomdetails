@@ -1,6 +1,6 @@
 {
   "name": "room-anatomy",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "type": "module",
   "engines": {
@@ -15,7 +15,11 @@
     "test:cabinet": "python3 tests/cabinet-browser.py",
     "audit:cabinet": "node scripts/audit-cabinet.mjs",
     "test:library": "python3 tests/library-browser.py",
-    "audit:library": "node scripts/audit-library.mjs"
+    "audit:library": "node scripts/audit-library.mjs",
+    "postinstall": "node scripts/prepare-anatomy-runtime.mjs",
+    "prebuild": "node scripts/prepare-anatomy-runtime.mjs",
+    "pretest": "node scripts/prepare-anatomy-runtime.mjs",
+    "preaudit:library": "node scripts/prepare-anatomy-runtime.mjs"
   },
   "devDependencies": {
     "esbuild": "0.25.12"
