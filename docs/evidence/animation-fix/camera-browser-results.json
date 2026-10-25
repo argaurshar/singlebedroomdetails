@@ -1,0 +1,939 @@
+{
+  "buildSHA256": "5a86d2edfb67dd8c1c1a7b73eb060985c40f81318389494f807ca9c234001b27",
+  "checks": [
+    "desktop: all seven presets seek deterministically around both camera hand-offs",
+    "desktop: actual playback crosses 15s and 17.5s continuously for all seven presets",
+    "mobile: all seven presets seek deterministically around both camera hand-offs",
+    "mobile: actual playback crosses 15s and 17.5s continuously for all seven presets",
+    "no browser page errors"
+  ],
+  "captures": [
+    "desktop-bedside-14.99.png",
+    "desktop-bedside-15.00.png",
+    "desktop-bedside-15.01.png",
+    "desktop-bedside-17.49.png",
+    "desktop-bedside-17.50.png",
+    "desktop-bedside-17.51.png",
+    "desktop-console-14.99.png",
+    "desktop-console-15.00.png",
+    "desktop-console-15.01.png",
+    "desktop-console-17.49.png",
+    "desktop-console-17.50.png",
+    "desktop-console-17.51.png",
+    "desktop-desk-14.99.png",
+    "desktop-desk-15.00.png",
+    "desktop-desk-15.01.png",
+    "desktop-desk-17.49.png",
+    "desktop-desk-17.50.png",
+    "desktop-desk-17.51.png",
+    "desktop-coffee-14.99.png",
+    "desktop-coffee-15.00.png",
+    "desktop-coffee-15.01.png",
+    "desktop-coffee-17.49.png",
+    "desktop-coffee-17.50.png",
+    "desktop-coffee-17.51.png",
+    "desktop-bookcase-14.99.png",
+    "desktop-bookcase-15.00.png",
+    "desktop-bookcase-15.01.png",
+    "desktop-bookcase-17.49.png",
+    "desktop-bookcase-17.50.png",
+    "desktop-bookcase-17.51.png",
+    "desktop-lamp-14.99.png",
+    "desktop-lamp-15.00.png",
+    "desktop-lamp-15.01.png",
+    "desktop-lamp-17.49.png",
+    "desktop-lamp-17.50.png",
+    "desktop-lamp-17.51.png",
+    "desktop-mirror-14.99.png",
+    "desktop-mirror-15.00.png",
+    "desktop-mirror-15.01.png",
+    "desktop-mirror-17.49.png",
+    "desktop-mirror-17.50.png",
+    "desktop-mirror-17.51.png",
+    "mobile-bedside-14.99.png",
+    "mobile-bedside-15.00.png",
+    "mobile-bedside-15.01.png",
+    "mobile-bedside-17.49.png",
+    "mobile-bedside-17.50.png",
+    "mobile-bedside-17.51.png",
+    "mobile-console-14.99.png",
+    "mobile-console-15.00.png",
+    "mobile-console-15.01.png",
+    "mobile-console-17.49.png",
+    "mobile-console-17.50.png",
+    "mobile-console-17.51.png",
+    "mobile-desk-14.99.png",
+    "mobile-desk-15.00.png",
+    "mobile-desk-15.01.png",
+    "mobile-desk-17.49.png",
+    "mobile-desk-17.50.png",
+    "mobile-desk-17.51.png",
+    "mobile-coffee-14.99.png",
+    "mobile-coffee-15.00.png",
+    "mobile-coffee-15.01.png",
+    "mobile-coffee-17.49.png",
+    "mobile-coffee-17.50.png",
+    "mobile-coffee-17.51.png",
+    "mobile-bookcase-14.99.png",
+    "mobile-bookcase-15.00.png",
+    "mobile-bookcase-15.01.png",
+    "mobile-bookcase-17.49.png",
+    "mobile-bookcase-17.50.png",
+    "mobile-bookcase-17.51.png",
+    "mobile-lamp-14.99.png",
+    "mobile-lamp-15.00.png",
+    "mobile-lamp-15.01.png",
+    "mobile-lamp-17.49.png",
+    "mobile-lamp-17.50.png",
+    "mobile-lamp-17.51.png",
+    "mobile-mirror-14.99.png",
+    "mobile-mirror-15.00.png",
+    "mobile-mirror-15.01.png",
+    "mobile-mirror-17.49.png",
+    "mobile-mirror-17.50.png",
+    "mobile-mirror-17.51.png"
+  ],
+  "fullPageCaptures": [
+    "desktop-bedside-15.00-full.png",
+    "desktop-bedside-17.50-full.png",
+    "desktop-coffee-15.00-full.png",
+    "desktop-coffee-17.50-full.png",
+    "desktop-lamp-15.00-full.png",
+    "desktop-lamp-17.50-full.png",
+    "mobile-bedside-15.00-full.png",
+    "mobile-bedside-17.50-full.png",
+    "mobile-coffee-15.00-full.png",
+    "mobile-coffee-17.50-full.png",
+    "mobile-lamp-15.00-full.png",
+    "mobile-lamp-17.50-full.png"
+  ],
+  "playback": [
+    {
+      "preset": "bedside",
+      "layout": "desktop",
+      "frames": 92,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.983200000000004,
+            "camera": [
+              41.25121752654468,
+              130.78552120164386,
+              570.8846622672727,
+              428.1634967004545
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016600000000004,
+            "camera": [
+              41.251617466116556,
+              130.78471455501156,
+              570.8847222984398,
+              428.16354172382984
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0013564574741442056
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.483200000000036,
+            "camera": [
+              141.343262959911,
+              -192.89021775542358,
+              677.3127462118229,
+              507.98455965886717
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.516500000000036,
+            "camera": [
+              141.50576272396876,
+              -192.76869191910941,
+              676.9882191787075,
+              507.74116438403064
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.4601940520748091
+        }
+      ]
+    },
+    {
+      "preset": "console",
+      "layout": "desktop",
+      "frames": 131,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 15,
+            "camera": [
+              193.84396557141895,
+              -0.7494068343935112,
+              572.3120688571621,
+              429.2340516428716
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.0166,
+            "camera": [
+              193.84374800501712,
+              -0.7498434499443647,
+              572.3125039899658,
+              429.2343779924743
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0007323817749577718
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.499900000000032,
+            "camera": [
+              85.2826038061466,
+              -176.51016317625624,
+              789.4347923877068,
+              592.0760942907801
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.533300000000033,
+            "camera": [
+              84.44916501249025,
+              -177.1303322200685,
+              791.1016699750195,
+              593.3262524812646
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 2.02702300335692
+        }
+      ]
+    },
+    {
+      "preset": "desk",
+      "layout": "desktop",
+      "frames": 92,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.983299999999998,
+            "camera": [
+              65.40544957410577,
+              110.14462309671939,
+              510.4950898270155,
+              382.87131737026164
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016699999999998,
+            "camera": [
+              65.40553891875044,
+              110.14374723120517,
+              510.4957946106074,
+              382.87184595795554
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0016470890913634307
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.499900000000018,
+            "camera": [
+              39.11045318748285,
+              -241.14746887324804,
+              881.7790936248741,
+              661.3343202186556
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.53330000000002,
+            "camera": [
+              38.88051488716496,
+              -241.31460956609897,
+              882.2389702256702,
+              661.6792276692527
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.5006713585704914
+        }
+      ]
+    },
+    {
+      "preset": "coffee",
+      "layout": "desktop",
+      "frames": 112,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.983300000000002,
+            "camera": [
+              52.35814310132099,
+              -50.319521532514955,
+              855.283713797358,
+              641.4627853480185
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016600000000002,
+            "camera": [
+              52.35793105377235,
+              -50.32022061420969,
+              855.2841378924553,
+              641.4631034193415
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0007846734552732423
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.46630000000001,
+            "camera": [
+              -61.28676882684459,
+              -321.42887920460305,
+              1082.573537653689,
+              811.9301532402668
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.51630000000001,
+            "camera": [
+              -61.49286309910667,
+              -321.5873123296236,
+              1082.9857261982133,
+              812.23929464866
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.3655188206437409
+        }
+      ]
+    },
+    {
+      "preset": "bookcase",
+      "layout": "desktop",
+      "frames": 127,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.983233999999996,
+            "camera": [
+              110.18136500714286,
+              73.78386706253303,
+              738.5318775102035,
+              553.8989081326527
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.000033999999998,
+            "camera": [
+              110.18143052335904,
+              73.7839223432398,
+              738.5317460630959,
+              553.8988095473219
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.00017086499527496228
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.483233999999996,
+            "camera": [
+              279.53322422511064,
+              -68.22864502363328,
+              400.9335489608612,
+              300.7001617206459
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.500034,
+            "camera": [
+              279.3868452107197,
+              -68.33923248823051,
+              401.2263095785606,
+              300.9197321839204
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.7009894625177907
+        }
+      ]
+    },
+    {
+      "preset": "lamp",
+      "layout": "desktop",
+      "frames": 145,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.999999999999998,
+            "camera": [
+              315.3637783274869,
+              48.40086435953678,
+              329.2724433450263,
+              246.95433250876974
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.0334,
+            "camera": [
+              315.36377713718093,
+              48.4008644939733,
+              329.2724457256382,
+              246.95433429422866
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 6.940718684306039e-06
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.482999999999997,
+            "camera": [
+              315.3612399051604,
+              48.40115131348047,
+              329.2775201896792,
+              246.9581401422594
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.516399999999994,
+            "camera": [
+              315.3654348984674,
+              48.40046887749922,
+              329.2691302030652,
+              246.95184765229888
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.024461409863997745
+        }
+      ]
+    },
+    {
+      "preset": "mirror",
+      "layout": "desktop",
+      "frames": 125,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.999999999999996,
+            "camera": [
+              2.2114227121894032,
+              -13.555947708227052,
+              959.411453260427,
+              719.5585899453203
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016599999999995,
+            "camera": [
+              2.211430682345508,
+              -13.555941680259139,
+              959.4114367870498,
+              719.5585775902873
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 1.6483483090199813e-05
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.499799999999997,
+            "camera": [
+              14.805560784914405,
+              -3.979704278990539,
+              933.3847014127177,
+              700.0385260595383
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.5331,
+            "camera": [
+              15.158726848325955,
+              -3.7095996905855486,
+              932.6548504488188,
+              699.4911378366141
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.7512499667007362
+        }
+      ]
+    },
+    {
+      "preset": "bedside",
+      "layout": "mobile",
+      "frames": 123,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.983400000000003,
+            "camera": [
+              41.25122035311756,
+              130.78552492276333,
+              570.8846541446997,
+              428.16349060852474
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016700000000004,
+            "camera": [
+              41.25162325954199,
+              130.78469802509423,
+              570.8847275644446,
+              428.16354567333343
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0013905116498975488
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.46640000000004,
+            "camera": [
+              141.26544419301234,
+              -192.94049757028165,
+              677.4633256424924,
+              508.0974942318693
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.51640000000004,
+            "camera": [
+              141.50526271399974,
+              -192.76908167715902,
+              676.9892237921358,
+              507.74191784410186
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.672296929326039
+        }
+      ]
+    },
+    {
+      "preset": "console",
+      "layout": "mobile",
+      "frames": 147,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.9834,
+            "camera": [
+              193.8438653677453,
+              -0.7494437112195556,
+              572.3122692645094,
+              429.23420194838206
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016599999999999,
+            "camera": [
+              193.84374800501712,
+              -0.7498434499443647,
+              572.3125039899658,
+              429.2343779924743
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0006705241114434582
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.499800000000025,
+            "camera": [
+              85.28511666100735,
+              -176.5082785346881,
+              789.4297666779853,
+              592.072325008489
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.516400000000026,
+            "camera": [
+              84.86973974292692,
+              -176.81921914241425,
+              790.2605205141462,
+              592.6953903856096
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 1.0102528640014337
+        }
+      ]
+    },
+    {
+      "preset": "desk",
+      "layout": "mobile",
+      "frames": 119,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.999899999999998,
+            "camera": [
+              65.40552691278037,
+              110.14472086630127,
+              510.49483403136253,
+              382.87112552352187
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016599999999999,
+            "camera": [
+              65.40553870477098,
+              110.1437645593831,
+              510.4957775139863,
+              382.87183313548974
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0017983622560739203
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.49969999999999,
+            "camera": [
+              39.11187519144522,
+              -241.1464023649387,
+              881.7762496127847,
+              661.3321872095885
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.51629999999999,
+            "camera": [
+              38.995973711289196,
+              -241.23269972388746,
+              882.0080525774216,
+              661.5060394330662
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.2523665682186042
+        }
+      ]
+    },
+    {
+      "preset": "coffee",
+      "layout": "mobile",
+      "frames": 123,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.983299999999996,
+            "camera": [
+              52.35814310132099,
+              -50.319521532514955,
+              855.283713797358,
+              641.4627853480185
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016699999999997,
+            "camera": [
+              52.35792585099409,
+              -50.32023427876538,
+              855.2841482980118,
+              641.4631112235088
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.000800011024848744
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.4832,
+            "camera": [
+              -61.36364616853308,
+              -321.4904402875229,
+              1082.7272923370663,
+              812.0454692527996
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.5165,
+            "camera": [
+              -61.49357029169312,
+              -321.58782047415855,
+              1082.9871405833862,
+              812.2403554375396
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.2303944107003308
+        }
+      ]
+    },
+    {
+      "preset": "bookcase",
+      "layout": "mobile",
+      "frames": 152,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.999999999999996,
+            "camera": [
+              110.18143052335438,
+              73.78392234324303,
+              738.5317460631052,
+              553.8988095473289
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016599999999997,
+            "camera": [
+              110.18195592699988,
+              73.78353661455282,
+              738.530698613438,
+              553.8980239600785
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.0013615570516225877
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.499800000000004,
+            "camera": [
+              279.38887530198747,
+              -68.3377099184093,
+              401.2222493960206,
+              300.91668704701544
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.516500000000004,
+            "camera": [
+              279.2441779718213,
+              -68.44549125999724,
+              401.51164405635774,
+              301.1337330422683
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.6924313752337854
+        }
+      ]
+    },
+    {
+      "preset": "lamp",
+      "layout": "mobile",
+      "frames": 158,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.999999999999995,
+            "camera": [
+              315.3637783274867,
+              48.40086435953674,
+              329.27244334502666,
+              246.95433250877
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016599999999993,
+            "camera": [
+              315.3637781806135,
+              48.400864376124986,
+              329.272443638773,
+              246.95433272907974
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 8.564229340768202e-07
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.499899999999982,
+            "camera": [
+              315.36376320189936,
+              48.400866067267344,
+              329.2724735962012,
+              246.9543551971509
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.516499999999986,
+            "camera": [
+              315.36543472088255,
+              48.400465073880284,
+              329.2691305582349,
+              246.95184791867618
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.009746788112883853
+        }
+      ]
+    },
+    {
+      "preset": "mirror",
+      "layout": "mobile",
+      "frames": 149,
+      "crossings": [
+        {
+          "boundary": 15,
+          "before": {
+            "time": 14.999899999999997,
+            "camera": [
+              2.2114227121885506,
+              -13.555947708226427,
+              959.4114532604284,
+              719.5585899453213
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 15.016599999999997,
+            "camera": [
+              2.211430682345508,
+              -13.555941680259139,
+              959.4114367870498,
+              719.5585775902873
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 1.6483484455278778e-05
+        },
+        {
+          "boundary": 17.5,
+          "before": {
+            "time": 17.499799999999958,
+            "camera": [
+              14.80556078491395,
+              -3.9797042789908232,
+              933.3847014127185,
+              700.0385260595389
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "after": {
+            "time": 17.516499999999954,
+            "camera": [
+              14.982610721370634,
+              -3.8444636473837477,
+              933.0188450861391,
+              699.7641338146043
+            ],
+            "forced": 0,
+            "unseparated": 0
+          },
+          "maximumNormalizedViewBoxDelta": 0.37643620529854316
+        }
+      ]
+    }
+  ],
+  "pageErrors": []
+}

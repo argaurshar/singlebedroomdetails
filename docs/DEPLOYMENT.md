@@ -27,7 +27,7 @@ python3 tests/visual.py # dense motion review against that running server
 ```
 
 Use Node 24 (minimum 22). Browser tests use Python Playwright and `/usr/bin/chromium`;
-`docs/SETUP.md` records their verified versions. See `docs/LIBRARY_QA.md` for current results and limitations.
+`docs/SETUP.md` records their verified versions. See `docs/ANIMATION_FIX_QA.md` for current animation results and `docs/LIBRARY_QA.md` for the original library validation.
 `src/spec.mjs`, `model.mjs`, `scene.mjs`, `study-model.mjs`, `study-scene.mjs` and `controller.mjs` keep physical data, calculation,
 geometry and interaction separate. The bundler inlines them and the pinned Anatomy core.
 
@@ -41,7 +41,7 @@ One-time activation:
 
 1. Open repository **Settings → Pages**.
 2. Under **Build and deployment**, set **Source → GitHub Actions**.
-3. PRs #1 and #2 are already merged. Review the `feat/preset-library` revision, wait for its build
+3. PRs #1–#3 are already merged. Review the `fix/library-animation-order` revision, wait for its build
    check to pass, and merge the new pull request into `main` when satisfied.
 4. Open **Actions → GitHub Pages** and wait for the build and deploy jobs to succeed.
    If the initial deploy ran before Pages was enabled, rerun the failed job or use **Run workflow**

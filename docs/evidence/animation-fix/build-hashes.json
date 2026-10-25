@@ -1,0 +1,14 @@
+{
+  "dist/index.html": {
+    "bytes": 2226176,
+    "sha256": "5a86d2edfb67dd8c1c1a7b73eb060985c40f81318389494f807ca9c234001b27"
+  },
+  "dist/library.html": {
+    "bytes": 2226176,
+    "sha256": "5a86d2edfb67dd8c1c1a7b73eb060985c40f81318389494f807ca9c234001b27"
+  },
+  "dist/library.zip": {
+    "bytes": 5107324,
+    "sha256": "eaeb5c5d3b875188c2487d62835ab09f46031d9bf0c2bcbaae49826f2e340397"
+  }
+}

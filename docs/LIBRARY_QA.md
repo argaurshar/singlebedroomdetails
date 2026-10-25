@@ -1,5 +1,8 @@
 # Preset library validation — 2026-10-25
 
+Historical evidence for the initial library release. The animation follow-up and its current
+results are recorded separately in [ANIMATION_FIX_QA.md](ANIMATION_FIX_QA.md).
+
 The user authorized a preset library and the previously discussed improvements. Implementation
 is on `feat/preset-library`; the existing cabinet/bedroom are preserved. Nothing was merged or
 publicly deployed by this task. This is a tested review build with the renderer limitations below,

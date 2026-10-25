@@ -50,3 +50,14 @@ local dimension-builder worker are inlined into `dist/library.html` and `dist/in
 No separate REA server or native analysis engine is needed for this source implementation.
 Run `npm run test:library` plus the export/performance scripts listed in the README. Browser
 checks use system Chromium and local HTTP; the managed local-file policy remains unchanged.
+
+
+## Animation follow-up runtime
+
+`npm ci` now runs `scripts/prepare-anatomy-runtime.mjs` automatically. Build, test and audit
+pre-hooks also run it, so deleting `.generated/` is safe. It verifies the pinned toolkit hashes,
+creates the project renderer/build modules with consistent coordinate precision and stricter
+overlap retention, and copies the licence. No additional dependency or network fetch is needed.
+The generated diagnostic module retains its upstream body and failure thresholds. Original
+cabinet and bedroom builds continue using their original runtime. Detailed rationale and
+validation are in `ANIMATION_FIX_QA.md`.

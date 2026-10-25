@@ -1,0 +1,60 @@
+{
+  "reason": "At 10 fps, long narrow moving shade faces travel beyond their own projected width. The symmetric-difference-area halving heuristic saturates outside a local-motion regime. Display-rate sampling measures local convergence without changing thresholds or application motion.",
+  "formerWarnings": 32,
+  "uniqueParts": 19,
+  "targetedHalving": {
+    "60fps": {
+      "checks": 192,
+      "failures": 0
+    },
+    "120fps": {
+      "checks": 384,
+      "failures": 0
+    }
+  },
+  "pointMotion": [
+    {
+      "dt": 0.016666666666666666,
+      "maxStepPx": 1.705751848218259
+    },
+    {
+      "dt": 0.008333333333333333,
+      "maxStepPx": 0.8614494900578866
+    },
+    {
+      "dt": 0.004166666666666667,
+      "maxStepPx": 0.43287365061990524
+    },
+    {
+      "dt": 0.0008333333333333334,
+      "maxStepPx": 0.08691901160276931
+    }
+  ],
+  "edgeOnTransitions": 6,
+  "maxVisibleAreaAtCrossingPx2": 0.002266156043333467,
+  "changedAuditThresholds": false,
+  "changedApplicationMotion": false,
+  "fullAudit": {
+    "result": "pass",
+    "exitCode": 0,
+    "artifact": ".test-artifacts/animation-fix/audit-lamp-continuity.json",
+    "runtimeSeconds": 337.45,
+    "storyFrames": 2161,
+    "assemblyFrames": 41,
+    "objectSteps": 7200,
+    "continuity": {
+      "worst": {
+        "q": 0,
+        "birth": 0,
+        "dot": 0,
+        "fade": 0,
+        "motion": 0,
+        "merge": 0
+      },
+      "halvingChecked": 800,
+      "halvingFails": 0,
+      "measures": 79148
+    },
+    "remainingFailures": 0
+  }
+}

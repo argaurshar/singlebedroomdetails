@@ -2,6 +2,9 @@
 
 Read `docs/Room_Anatomy_RDB_Build_Plan.md` completely before working on the app.
 Read `docs/PHASE_CHECKLIST.md` and `docs/SETUP.md` for current decisions and evidence.
+The library is merged (PR #3). The active follow-up fixes animation correctness on
+`fix/library-animation-order`; read `docs/ANIMATION_FIX_CHECKLIST.md` and
+`docs/ANIMATION_FIX_QA.md` before resuming. Do not add features in this follow-up.
 
 ## Current authorization
 
@@ -99,3 +102,15 @@ orbit audit. Millimetres drive solids, measurements, drawings and exported sched
 library origin is the object centre in XY at finished floor Z=0. Dimension rebuilds use a local
 bundled Web Worker. Keep its esbuild dependency pinned and install it in CI before building.
 Keep the original room/cabinet source and evidence. Do not deploy this branch or merge main.
+
+
+## Library renderer precision
+
+`npm ci`, `npm test` and `npm run build` regenerate the project-owned Anatomy runtime
+under `.generated/anatomy/` using `scripts/prepare-anatomy-runtime.mjs`. It verifies the
+pinned source hashes before applying production precision/order fixes and copies the MIT
+licence. Keep the original skill files unchanged. The generated audit has the exact upstream
+body and thresholds; only its imports select the production renderer. See animation QA for
+why the lamp story uses 60 fps audit sampling. Do not label scoped or quick checks a full pass.
+Coffee-table legs have two render solids each but remain one physical part per leg. Camera
+framing, selection, schedules and drawings must preserve those logical identities.
