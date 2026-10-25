@@ -1,0 +1,7 @@
+{
+  "completeResultExactExcludingSeconds": true,
+  "baselineSeconds": 337.453,
+  "candidateSeconds": 188.402,
+  "baseline": ".test-artifacts/animation-fix/audit-lamp-continuity.json",
+  "candidate": "/tmp/jitter-row-audit/audit-lamp-continuity.json"
+}

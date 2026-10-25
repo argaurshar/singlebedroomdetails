@@ -1,0 +1,13 @@
+{
+  "jitterPairs": 116553,
+  "rowBucketValues": 37170,
+  "rasterCases": 48,
+  "baselineRasterBytes": 8081730,
+  "candidates": [
+    "Float64",
+    "Uint8",
+    "Uint8-row"
+  ],
+  "replaysPerCandidate": 2,
+  "status": "byte-identical"
+}

@@ -1,0 +1,170 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 124,
+      "tightest": -7.105427357601002e-15,
+      "orderStates": 1020,
+      "changes": 99,
+      "posedStates": 1122,
+      "depthStates": 48,
+      "depthPairs": 5995,
+      "seconds": 263.404
+    },
+    "quick": false,
+    "skipped": [
+      "continuity"
+    ],
+    "changes": [
+      {
+        "family": "story",
+        "x": 7,
+        "count": 233,
+        "pairs": [
+          "coffee.leg.-445.-245.lower / coffee.shelf.block.-410.-210",
+          "coffee.leg.-445.245.lower / coffee.shelf.block.-410.210",
+          "coffee.leg.445.-245.lower / coffee.shelf.block.410.-210",
+          "coffee.leg.445.245.lower / coffee.shelf.block.410.210"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 150,
+        "pairs": [
+          "coffee.leg.-445.-245.lower / coffee.shelf.block.-410.-210",
+          "coffee.leg.-445.245.lower / coffee.shelf.block.-410.210",
+          "coffee.leg.445.-245.lower / coffee.shelf.block.410.-210",
+          "coffee.leg.445.245.lower / coffee.shelf.block.410.210"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 3.6,
+        "count": 150,
+        "pairs": [
+          "coffee.leg.-445.-245.lower / coffee.shelf.block.-410.-210",
+          "coffee.leg.-445.245.lower / coffee.shelf.block.-410.210",
+          "coffee.leg.445.-245.lower / coffee.shelf.block.410.-210",
+          "coffee.leg.445.245.lower / coffee.shelf.block.410.210"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 131,
+        "pairs": [
+          "coffee.leg.-445.-245.lower / coffee.shelf.block.-410.-210",
+          "coffee.leg.-445.245.lower / coffee.shelf.block.-410.210",
+          "coffee.leg.445.-245.lower / coffee.shelf.block.410.-210",
+          "coffee.leg.445.245.lower / coffee.shelf.block.410.210"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 132,
+        "count": 127,
+        "pairs": [
+          "coffee.leg.445.245.upper / coffee.corner.-417.-217",
+          "coffee.corner.-417.-217 / coffee.shelf.panel",
+          "coffee.corner.-417.-217 / coffee.top.clip.-300.-150",
+          "coffee.apron.long.-1 / coffee.apron.long.1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 3.7,
+        "count": 127,
+        "pairs": [
+          "coffee.leg.445.245.upper / coffee.corner.-417.-217",
+          "coffee.corner.-417.-217 / coffee.shelf.panel",
+          "coffee.corner.-417.-217 / coffee.top.clip.-300.-150",
+          "coffee.apron.long.-1 / coffee.apron.long.1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 342,
+        "count": 74,
+        "pairs": [
+          "coffee.fixing.-445.-245.-12.6.-12.6 / coffee.leg.445.-245.upper",
+          "coffee.fixing.-445.-245.-12.6.-12.6 / coffee.apron.long.-1",
+          "coffee.fixing.-445.-245.-12.6.-12.6 / coffee.corner.-417.-217",
+          "coffee.fixing.-445.-245.-12.6.-12.6 / coffee.corner.417.-217"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 315,
+        "count": 72,
+        "pairs": [
+          "coffee.leg.-445.245.upper / coffee.apron.long.1",
+          "coffee.mount.-445.-245 / coffee.apron.long.1",
+          "coffee.apron.long.-1 / coffee.apron.long.1",
+          "coffee.fixing.-445.-245.-12.6.-12.6 / coffee.mount.445.-245"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 39,
+        "count": 65,
+        "pairs": [
+          "coffee.leg.445.245.lower / coffee.shelf.panel",
+          "coffee.leg.-445.245.upper / coffee.mount.-445.-245",
+          "coffee.leg.-445.245.upper / coffee.fixing.-445.-245.-12.6.-12.6",
+          "coffee.leg.-445.245.upper / coffee.fixing.-445.-245.-12.6.12.6"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 1.9000000000000001,
+        "count": 65,
+        "pairs": [
+          "coffee.leg.445.245.lower / coffee.shelf.panel",
+          "coffee.leg.-445.245.upper / coffee.mount.-445.-245",
+          "coffee.leg.-445.245.upper / coffee.fixing.-445.-245.-12.6.-12.6",
+          "coffee.leg.-445.245.upper / coffee.fixing.-445.-245.-12.6.12.6"
+        ]
+      }
+    ]
+  }
+}

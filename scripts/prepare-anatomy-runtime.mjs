@@ -1,4 +1,4 @@
-// Project-owned production fixes; pinned upstream sources and diagnostics stay intact.
+// Project-owned production fixes; pinned sources and diagnostic criteria stay intact.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 
@@ -60,8 +60,19 @@ for (const name of names) {
       + source.slice(end);
   }
 
-  // Do not patch the audit body or its failure thresholds. Its imports use the
-  // production renderer, with all remaining support modules from the same pin.
+  if (name === "turn-audit.mjs") {
+    // Cache exact integer raster sample buckets. The original jitter arithmetic,
+    // edge sampling, resolution, tested states and failure thresholds stay intact.
+    source = 'import { rasterBucketRows } from "../../scripts/raster-buckets.mjs";\n' + source;
+    source = replace(source, "function toneRaster(layers, box, scale) {",
+      "const jitterBucketRow = rasterBucketRows(jitter);\n\nfunction toneRaster(layers, box, scale) {");
+    source = replace(source, "      const y = y0 + (row + (sub + 0.5) / 8) / scale;",
+      "      const bucketRow = jitterBucketRow(row, w);\n      const y = y0 + (row + (sub + 0.5) / 8) / scale;");
+    source = replace(source, "Math.floor(jitter(c, row) * 8) !== sub",
+      "(bucketRow ? bucketRow[c] : Math.floor(jitter(c, row) * 8)) !== sub");
+  }
+
+  // Use the production renderer, with remaining support modules from the same pin.
   source = source.replace(/from "\.\/([^\"]+)"/g, (all, file) =>
     names.includes(file) ? all : `from "../../${base}${file}"`,
   );

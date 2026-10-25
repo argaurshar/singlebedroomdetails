@@ -1,0 +1,170 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 217,
+      "tightest": -3.552713678800501e-15,
+      "orderStates": 1076,
+      "changes": 122,
+      "posedStates": 1132,
+      "depthStates": 48,
+      "depthPairs": 12055,
+      "seconds": 758.398
+    },
+    "quick": false,
+    "skipped": [
+      "continuity"
+    ],
+    "changes": [
+      {
+        "family": "story",
+        "x": 7,
+        "count": 275,
+        "pairs": [
+          "bedside.fixing.-242.167.-7.8.-7.8 / bedside.fixing.-242.167.7.8.-7.8",
+          "bedside.fixing.-242.167.-7.8.7.8 / bedside.fixing.-242.167.7.8.-7.8",
+          "bedside.fixing.-242.-167.7.8.7.8 / bedside.fixing.-242.167.7.8.-7.8",
+          "bedside.fixing.-242.-167.-7.8.7.8 / bedside.fixing.-242.-167.7.8.-7.8"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 234,
+        "pairs": [
+          "bedside.case.side.-1 / bedside.case.side.1",
+          "bedside.case.side.-1 / bedside.case.back",
+          "bedside.case.side.-1 / bedside.case.shelf",
+          "bedside.case.side.-1 / bedside.drawer.front"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 233,
+        "pairs": [
+          "bedside.case.side.1 / bedside.case.back",
+          "bedside.case.side.1 / bedside.case.shelf",
+          "bedside.case.side.1 / bedside.drawer.front",
+          "bedside.case.side.1 / bedside.drawer.side.-1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 3.6,
+        "count": 232,
+        "pairs": [
+          "bedside.case.side.1 / bedside.case.back",
+          "bedside.case.side.1 / bedside.case.shelf",
+          "bedside.case.side.1 / bedside.drawer.front",
+          "bedside.case.side.1 / bedside.drawer.side.-1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.300000000000001,
+        "count": 143,
+        "pairs": [
+          "bedside.fixing.242.-167.-7.8.7.8 / bedside.fixing.242.167.-7.8.-7.8",
+          "bedside.fixing.242.-167.-7.8.7.8 / bedside.fixing.242.167.-7.8.7.8",
+          "bedside.fixing.242.-167.-7.8.-7.8 / bedside.fixing.242.167.-7.8.-7.8",
+          "bedside.fixing.242.-167.-7.8.-7.8 / bedside.fixing.242.167.-7.8.7.8"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 1.9000000000000001,
+        "count": 104,
+        "pairs": [
+          "bedside.top.clip.-180.112.5 / bedside.top.clip.180.-112.5",
+          "bedside.top.clip.-180.112.5 / bedside.top.clip.180.112.5",
+          "bedside.pull.bar / bedside.rail.1.inner.web",
+          "bedside.pull.bar / bedside.rail.1.inner.lip"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 219,
+        "count": 83,
+        "pairs": [
+          "bedside.drawer.side.1 / bedside.pull.left",
+          "bedside.drawer.side.1 / bedside.pull.right",
+          "bedside.drawer.side.1 / bedside.pull.bar",
+          "bedside.top.clip.-180.112.5 / bedside.drawer.cleat.1"
+        ]
+      },
+      {
+        "family": "assembly",
+        "x": 1.9000000000000001,
+        "count": 79,
+        "pairs": [
+          "bedside.rail.-1.inner.web / bedside.rail.-1.middle.web",
+          "bedside.rail.-1.inner.web / bedside.rail.-1.middle.lip",
+          "bedside.rail.-1.inner.web / bedside.rail.-1.fixed.web",
+          "bedside.rail.-1.inner.web / bedside.rail.-1.fixed.lip"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 28.6,
+        "count": 73,
+        "pairs": [
+          "bedside.fixing.-242.-167.7.8.7.8 / bedside.drawer.side.-1",
+          "bedside.fixing.-242.-167.7.8.7.8 / bedside.rail.-1.inner.web",
+          "bedside.fixing.-242.-167.7.8.7.8 / bedside.rail.-1.inner.lip",
+          "bedside.fixing.-242.-167.7.8.-7.8 / bedside.drawer.side.-1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 39,
+        "count": 71,
+        "pairs": [
+          "bedside.case.back / bedside.case.shelf",
+          "bedside.pull.bar / bedside.rail.1.inner.web",
+          "bedside.pull.bar / bedside.rail.1.inner.lip",
+          "bedside.pull.bar / bedside.rail.1.middle.web"
+        ]
+      }
+    ]
+  }
+}

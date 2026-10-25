@@ -1,0 +1,170 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 359,
+      "tightest": -3.552713678800501e-15,
+      "orderStates": 1130,
+      "changes": 149,
+      "posedStates": 1132,
+      "depthStates": 48,
+      "depthPairs": 10777,
+      "seconds": 284.904
+    },
+    "quick": false,
+    "skipped": [
+      "continuity"
+    ],
+    "changes": [
+      {
+        "family": "story",
+        "x": 7,
+        "count": 1024,
+        "pairs": [
+          "desk.leg.-545.-270 / desk.leg.545.270",
+          "desk.leg.-545.-270 / desk.apron.long.-1",
+          "desk.leg.-545.-270 / desk.apron.short.1",
+          "desk.leg.-545.-270 / desk.corner.-521.-246"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 312,
+        "count": 751,
+        "pairs": [
+          "desk.top.clip.-360.162.5 / desk.top.clip.360.162.5",
+          "desk.apron.short.-1 / desk.apron.front.1",
+          "desk.apron.short.-1 / desk.top.clip.360.162.5",
+          "desk.apron.long.-1 / desk.apron.front.1"
+        ]
+      },
+      {
+        "family": "assembly",
+        "x": 1.9000000000000001,
+        "count": 573,
+        "pairs": [
+          "desk.rail.-1.inner.web / desk.rail.-1.middle.web",
+          "desk.rail.-1.inner.web / desk.rail.-1.middle.lip",
+          "desk.rail.-1.inner.web / desk.rail.-1.fixed.web",
+          "desk.rail.-1.inner.web / desk.rail.-1.fixed.lip"
+        ]
+      },
+      {
+        "family": "assembly",
+        "x": 2,
+        "count": 562,
+        "pairs": [
+          "desk.apron.short.-1 / desk.drawer.side.-1",
+          "desk.apron.short.-1 / desk.rail.-1.inner.lip",
+          "desk.apron.short.-1 / desk.top.clip.360.-162.5",
+          "desk.corner.-521.246 / desk.drawer.side.-1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 505,
+        "pairs": [
+          "desk.corner.-521.-246 / desk.drawer.cleat.1",
+          "desk.apron.front.-1 / desk.drawer.cleat.1",
+          "desk.corner.-521.246 / desk.drawer.cleat.1",
+          "desk.leg.545.270 / desk.apron.short.-1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 3.6,
+        "count": 482,
+        "pairs": [
+          "desk.corner.-521.-246 / desk.drawer.cleat.1",
+          "desk.apron.front.-1 / desk.drawer.cleat.1",
+          "desk.corner.-521.246 / desk.drawer.cleat.1",
+          "desk.leg.545.270 / desk.apron.short.-1"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.300000000000001,
+        "count": 365,
+        "pairs": [
+          "desk.leg.545.-270 / desk.leg.545.270",
+          "desk.leg.545.-270 / desk.apron.short.1",
+          "desk.leg.545.-270 / desk.corner.521.-246",
+          "desk.leg.545.270 / desk.apron.short.1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 132,
+        "count": 344,
+        "pairs": [
+          "desk.apron.front.-1 / desk.top.clip.-360.-162.5",
+          "desk.corner.-521.246 / desk.top.clip.-360.-162.5",
+          "desk.leg.545.270 / desk.top.clip.-360.-162.5",
+          "desk.drawer.cleat.-1 / desk.top.clip.-360.-162.5"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 20.900000000000002,
+        "count": 313,
+        "pairs": [
+          "desk.apron.long.-1 / desk.apron.short.-1",
+          "desk.apron.long.-1 / desk.corner.-521.-246",
+          "desk.apron.long.-1 / desk.corner.-521.246",
+          "desk.apron.long.-1 / desk.apron.front.-1"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 312,
+        "pairs": [
+          "desk.leg.-545.-270 / desk.leg.545.270",
+          "desk.leg.-545.-270 / desk.apron.long.-1",
+          "desk.leg.-545.-270 / desk.apron.short.1",
+          "desk.leg.-545.-270 / desk.corner.-521.-246"
+        ]
+      }
+    ]
+  }
+}

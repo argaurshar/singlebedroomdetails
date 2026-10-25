@@ -1,0 +1,102 @@
+{
+  "results": [
+    {
+      "round": 0,
+      "name": "bedside.top.panel",
+      "pixels": 1735686,
+      "baselineCpuMs": 505.789,
+      "candidateCpuMs": 232.905,
+      "speedup": 2.1716536785384597,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 0,
+      "name": "bedside.case.back",
+      "pixels": 1672892,
+      "baselineCpuMs": 805.826,
+      "candidateCpuMs": 231.825,
+      "speedup": 3.4760099212768254,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 0,
+      "name": "bedside.case.base",
+      "pixels": 1554309,
+      "baselineCpuMs": 252.478,
+      "candidateCpuMs": 63.784,
+      "speedup": 3.958328107362348,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 1,
+      "name": "bedside.top.panel",
+      "pixels": 1735686,
+      "baselineCpuMs": 451.582,
+      "candidateCpuMs": 125.446,
+      "speedup": 3.5998118712434035,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 1,
+      "name": "bedside.case.back",
+      "pixels": 1672892,
+      "baselineCpuMs": 762.394,
+      "candidateCpuMs": 210.36,
+      "speedup": 3.624234645369842,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 1,
+      "name": "bedside.case.base",
+      "pixels": 1554309,
+      "baselineCpuMs": 242.93,
+      "candidateCpuMs": 93.186,
+      "speedup": 2.6069366643057967,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 2,
+      "name": "bedside.top.panel",
+      "pixels": 1735686,
+      "baselineCpuMs": 473.078,
+      "candidateCpuMs": 125.758,
+      "speedup": 3.7618123697895958,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 2,
+      "name": "bedside.case.back",
+      "pixels": 1672892,
+      "baselineCpuMs": 778.793,
+      "candidateCpuMs": 207.77,
+      "speedup": 3.7483419165423304,
+      "outExact": true,
+      "ownerExact": true
+    },
+    {
+      "round": 2,
+      "name": "bedside.case.base",
+      "pixels": 1554309,
+      "baselineCpuMs": 226.461,
+      "candidateCpuMs": 77.421,
+      "speedup": 2.9250590924942843,
+      "outExact": true,
+      "ownerExact": true
+    }
+  ],
+  "jitterChecks": 300081,
+  "memory": {
+    "rss": 210739200,
+    "heapTotal": 43229184,
+    "heapUsed": 25297032,
+    "external": 105303029,
+    "arrayBuffers": 33905043
+  }
+}

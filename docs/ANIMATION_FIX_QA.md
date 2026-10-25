@@ -30,8 +30,25 @@ bookcase 2, lamp 32, mirror 0. These were real nonzero diagnostics, not a clean 
 `prepare-anatomy-runtime.mjs` generates project-owned production modules from hash-verified
 pinned sources under `.generated/anatomy/`. Install, build, test and audit hooks regenerate them.
 The MIT licence and supporting files are retained. All **171 pinned skill hashes** still match.
-The original toolkit files are unchanged, and a regression checks that the generated diagnostic
-body and failure thresholds are identical to the pinned audit (only imports differ).
+The original toolkit files are unchanged. The diagnostic body uses the production renderer and
+an exact raster sample cache, described below. A source guard reverses only the cache substitutions
+and imports, then verifies that all remaining diagnostic logic and thresholds match the pin.
+
+## Exact audit cache
+
+The full raster continuity check repeatedly computes the same deterministic integer sample
+bucket for each pixel. `scripts/raster-buckets.mjs` caches those integer results in rows, bounded
+at 16 MiB plus 8 KiB of prefix metadata. Outside the cache bounds it executes the original
+calculation. Original jitter arithmetic, edge samples, raster resolution, sample counts and
+failure thresholds are unchanged. This helper is only used by offline diagnostics, not the app.
+
+Independent differential checks covered 48 raster fixtures with cold and warm replay: all
+8,081,730 tested tone/owner bytes matched the uncached version exactly, including winding holes,
+overlap, 4×/16× raster scales and cache boundaries. The row cache also matched 37,170 direct
+bucket values and handled invalid/out-of-range fallback. Representative warm bedside raster
+cases ran 2.9–3.8× faster. The completed uncached lamp audit is retained as the full-run control. The complete cached lamp
+audit matched that entire report after excluding only elapsed time: zero warnings, 800 halving
+checks and 79,148 measurements. Permanent tests cover the same raster and prefix cases.
 
 ## Lamp continuity investigation
 
@@ -48,9 +65,30 @@ largest switched projected area was approximately 0.002266 px², below the uncha
 The complete lamp story audit now samples at 60 fps. Geometry and playback were not slowed to
 avoid diagnostics, and no failure threshold was relaxed.
 
+## Extended ordering, collision and depth results
+
+All seven presets completed `order,rigid,swept,posed,routes,coverage,depth` with exit code 0.
+The formerly recorded **51 order-change warnings are now zero**. All enabled diagnostic
+categories are zero, including collisions, forced ordering and depth failures.
+
+| Preset | Order states | Posed states | Overlapping depth pairs |
+|---|---:|---:|---:|
+| Bedside cabinet | 1,076 | 1,132 | 12,055 |
+| Entry console | 980 | 1,122 | 5,105 |
+| Writing desk | 1,130 | 1,132 | 10,777 |
+| Coffee table | 1,020 | 1,122 | 5,995 |
+| Open bookcase | 934 | 1,122 | 5,095 |
+| Floor lamp | 3,058 | 2,922 | 3,593 |
+| Standing mirror | 942 | 1,122 | 5,177 |
+| Total | 9,140 | 9,674 | 47,797 |
+
+Depth sampling covered 336 states. Continuity is recorded separately below; the scoped pass
+alone does not claim that remaining check is complete. Raw reports are committed under
+`evidence/animation-fix/`.
+
 ## Validation
 
-- **63 Node tests passed**, including all preserved room/cabinet tests, seven unchanged-threshold
+- **65 Node tests passed**, including all preserved room/cabinet tests, seven unchanged-threshold
   ordering regressions, seven camera boundary checks, physical/render mapping checks and thin
   joinery contact checks. Parameter contracts compile all 112 min/max combinations.
 - Additional coffee ordering investigation: all 16 dimension-limit combinations × 361 angles
@@ -71,8 +109,22 @@ avoid diagnostics, and no failure threshold was relaxed.
   collisions or layout defects were observed in those captures.
 
 Final HTML SHA256: `5a86d2edfb67dd8c1c1a7b73eb060985c40f81318389494f807ca9c234001b27`.
-Extended audit completion and final export/performance evidence are pending below; this document
-must not be used to claim those pending checks passed.
+A clean `npm ci` followed by a rebuild reproduced that HTML byte-for-byte. ZIP contents and CRCs
+were checked; the ZIP includes both preserved studies and the MIT licence. The standalone HTML
+is 2,226,176 bytes (17.4% larger than the original library due to retained precision).
+
+A fresh video export passed cancellation, recording/download, state restoration and independent
+SVG rendering checks. FFprobe identified VP9 at 960 × 800, with the last frame at 35.775 seconds;
+FFmpeg decoded six frames. Representative connection/explosion frames and the independently
+rendered SVG were opened and inspected.
+
+A 120-frame desk sample, with heavy audit workers temporarily paused, measured **60.0 fps**
+at 1440 px (95th-percentile render work 3.0 ms), and **27.8 fps** at 390 px with Chromium's
+4× CPU slowdown (95th-percentile render work 9.4 ms). Offscreen pause/resume and render-mode
+clock suppression passed. This is a measured sample, not a universal frame-rate guarantee.
+
+Remaining full continuity completion is pending; this document must not be used to claim that
+pending check passed.
 
 ## Reproduce
 

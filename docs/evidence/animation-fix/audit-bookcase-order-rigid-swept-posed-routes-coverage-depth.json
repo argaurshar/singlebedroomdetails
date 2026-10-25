@@ -1,0 +1,170 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 138,
+      "tightest": 0,
+      "orderStates": 934,
+      "changes": 56,
+      "posedStates": 1122,
+      "depthStates": 48,
+      "depthPairs": 5095,
+      "seconds": 382.214
+    },
+    "quick": false,
+    "skipped": [
+      "continuity"
+    ],
+    "changes": [
+      {
+        "family": "sweep",
+        "x": 219,
+        "count": 161,
+        "pairs": [
+          "bookcase.pin.1.1.-125 / bookcase.book.cover.lower.0",
+          "bookcase.pin.1.1.-125 / bookcase.book.pages.0",
+          "bookcase.pin.1.1.-125 / bookcase.book.cover.upper.0",
+          "bookcase.pin.1.1.-125 / bookcase.book.spine.0"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.300000000000001,
+        "count": 161,
+        "pairs": [
+          "bookcase.pin.1.1.-125 / bookcase.book.cover.lower.0",
+          "bookcase.pin.1.1.-125 / bookcase.book.pages.0",
+          "bookcase.pin.1.1.-125 / bookcase.book.cover.upper.0",
+          "bookcase.pin.1.1.-125 / bookcase.book.spine.0"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 157,
+        "pairs": [
+          "bookcase.pin.4.-1.125 / bookcase.book.cover.lower.0",
+          "bookcase.pin.4.-1.125 / bookcase.book.pages.0",
+          "bookcase.pin.4.-1.125 / bookcase.book.cover.upper.0",
+          "bookcase.pin.4.-1.125 / bookcase.book.spine.0"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 3.6,
+        "count": 157,
+        "pairs": [
+          "bookcase.pin.4.-1.125 / bookcase.book.cover.lower.0",
+          "bookcase.pin.4.-1.125 / bookcase.book.pages.0",
+          "bookcase.pin.4.-1.125 / bookcase.book.cover.upper.0",
+          "bookcase.pin.4.-1.125 / bookcase.book.spine.0"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 150,
+        "count": 101,
+        "pairs": [
+          "bookcase.pin.1.-1.125 / bookcase.pin.2.-1.-125",
+          "bookcase.pin.2.-1.125 / bookcase.pin.3.-1.-125",
+          "bookcase.pin.3.-1.125 / bookcase.pin.4.-1.-125",
+          "bookcase.side.1 / bookcase.pin.1.-1.-125"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 4.5,
+        "count": 101,
+        "pairs": [
+          "bookcase.pin.1.-1.125 / bookcase.pin.2.-1.-125",
+          "bookcase.pin.2.-1.125 / bookcase.pin.3.-1.-125",
+          "bookcase.pin.3.-1.125 / bookcase.pin.4.-1.-125",
+          "bookcase.side.1 / bookcase.pin.1.-1.-125"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 94,
+        "pairs": [
+          "bookcase.plinth / bookcase.side.1",
+          "bookcase.plinth / bookcase.back",
+          "bookcase.plinth / bookcase.pin.1.1.-125",
+          "bookcase.plinth / bookcase.pin.1.1.125"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 7,
+        "count": 94,
+        "pairs": [
+          "bookcase.plinth / bookcase.side.1",
+          "bookcase.plinth / bookcase.back",
+          "bookcase.plinth / bookcase.pin.1.1.-125",
+          "bookcase.plinth / bookcase.pin.1.1.125"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 330,
+        "count": 66,
+        "pairs": [
+          "bookcase.pin.1.1.-125 / bookcase.pin.1.1.125",
+          "bookcase.pin.1.1.-125 / bookcase.pin.2.1.125",
+          "bookcase.pin.1.1.-125 / bookcase.pin.3.1.125",
+          "bookcase.pin.1.1.-125 / bookcase.pin.4.1.125"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 7.2,
+        "count": 66,
+        "pairs": [
+          "bookcase.pin.1.1.-125 / bookcase.pin.1.1.125",
+          "bookcase.pin.1.1.-125 / bookcase.pin.2.1.125",
+          "bookcase.pin.1.1.-125 / bookcase.pin.3.1.125",
+          "bookcase.pin.1.1.-125 / bookcase.pin.4.1.125"
+        ]
+      }
+    ]
+  }
+}

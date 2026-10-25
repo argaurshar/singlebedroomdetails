@@ -58,6 +58,8 @@ checks use system Chromium and local HTTP; the managed local-file policy remains
 pre-hooks also run it, so deleting `.generated/` is safe. It verifies the pinned toolkit hashes,
 creates the project renderer/build modules with consistent coordinate precision and stricter
 overlap retention, and copies the licence. No additional dependency or network fetch is needed.
-The generated diagnostic module retains its upstream body and failure thresholds. Original
+The generated diagnostic module retains its upstream checks and failure thresholds. A bounded
+16 MiB cache reuses exact integer raster sample buckets during offline audits; it changes neither
+sampling coverage nor edge arithmetic, and is covered by byte-exact differential regressions. Original
 cabinet and bedroom builds continue using their original runtime. Detailed rationale and
 validation are in `ANIMATION_FIX_QA.md`.

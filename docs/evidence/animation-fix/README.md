@@ -14,3 +14,8 @@ See ../../ANIMATION_FIX_QA.md for scope, methodology, results and limitations.
 Both contact sheets and all twelve full-page captures were opened and visually inspected.
 Individual local captures and the fresh video remain in `.test-artifacts/`; the test scripts
 regenerate them. The committed images are representative evidence, not a substitute for the app.
+
+
+Extended ordering/collision/depth reports and their summary cover all seven presets.
+`audit-cache-*` records exact cached/uncached comparisons and the measured CPU benefit.
+`performance.json` records the idle browser sample and offscreen/render-mode checks.

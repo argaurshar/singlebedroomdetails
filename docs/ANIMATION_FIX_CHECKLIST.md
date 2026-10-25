@@ -16,7 +16,9 @@ Baseline: bedside 8, console 0, desk 5, coffee 4, bookcase 2, lamp 32, mirror 0 
 Prior full continuity audit was interrupted; it must not be counted as passed.
 
 
-Checkpoint: 63 Node tests, 10 main browser groups and five targeted camera browser groups pass.
+Checkpoint: 65 Node tests, 10 main browser groups and five targeted camera browser groups pass.
 The final lamp continuity audit is clean (800 convergence checks). Six other full continuity
-checks and the seven-preset depth/collision audit are running. They remain pending, not passed.
+checks are running. All seven scoped ordering/collision/depth audits pass with zero warnings.
+Full continuity remains pending, not passed. The exact raster cache passed both byte-level
+regressions and complete lamp-report equivalence; remaining runs use that verified cache.
 The fresh HTML and ZIP reproduce exactly after a clean install. Export validation passed.

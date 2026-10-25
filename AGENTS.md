@@ -109,8 +109,10 @@ Keep the original room/cabinet source and evidence. Do not deploy this branch or
 `npm ci`, `npm test` and `npm run build` regenerate the project-owned Anatomy runtime
 under `.generated/anatomy/` using `scripts/prepare-anatomy-runtime.mjs`. It verifies the
 pinned source hashes before applying production precision/order fixes and copies the MIT
-licence. Keep the original skill files unchanged. The generated audit has the exact upstream
-body and thresholds; only its imports select the production renderer. See animation QA for
+licence. Keep the original skill files unchanged. The generated audit retains the upstream
+checks and thresholds; it uses the production renderer and caches exact integer raster samples.
+A source guard reverses only those cache substitutions to compare the remaining body, and
+byte-exact differential tests compare cached/uncached raster results. See animation QA for
 why the lamp story uses 60 fps audit sampling. Do not label scoped or quick checks a full pass.
 Coffee-table legs have two render solids each but remain one physical part per leg. Camera
 framing, selection, schedules and drawings must preserve those logical identities.

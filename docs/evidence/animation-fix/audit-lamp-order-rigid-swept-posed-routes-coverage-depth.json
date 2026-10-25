@@ -1,0 +1,170 @@
+{
+  "audit": {
+    "clearance": [],
+    "apart": [],
+    "flight": [],
+    "crowding": [],
+    "cover": [],
+    "terminals": [],
+    "loose": [],
+    "folds": [],
+    "self": [],
+    "wobble": [],
+    "seats": [],
+    "supports": {
+      "loose": [],
+      "hanging": [],
+      "sunk": []
+    },
+    "depth": {
+      "problems": [],
+      "passing": [],
+      "missing": []
+    }
+  },
+  "orbit": {
+    "separation": [],
+    "unseparated": [],
+    "cycles": [],
+    "forced": [],
+    "swaps": [],
+    "layers": [],
+    "rigid": [],
+    "swept": [],
+    "posed": [],
+    "folds": [],
+    "self": [],
+    "crowding": [],
+    "endon": [],
+    "coverage": [],
+    "depth": [],
+    "continuity": [],
+    "notes": [],
+    "stats": {
+      "planes": 351,
+      "tightest": -2.6645352591003757e-15,
+      "orderStates": 3058,
+      "changes": 218,
+      "posedStates": 2922,
+      "depthStates": 48,
+      "depthPairs": 3593,
+      "seconds": 207.601
+    },
+    "quick": false,
+    "skipped": [
+      "continuity"
+    ],
+    "changes": [
+      {
+        "family": "sweep",
+        "x": 129,
+        "count": 95,
+        "pairs": [
+          "lamp.shade.fold.5 / lamp.shade.fold.12",
+          "lamp.shade.fold.5 / lamp.shade.fold.13",
+          "lamp.shade.fold.5 / lamp.shade.fold.14",
+          "lamp.shade.fold.5 / lamp.shade.fold.15"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 309,
+        "count": 95,
+        "pairs": [
+          "lamp.stem.2 / lamp.shade.spider.1",
+          "lamp.stem.2 / lamp.shade.fold.0",
+          "lamp.stem.2 / lamp.shade.fold.1",
+          "lamp.stem.2 / lamp.shade.fold.2"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.933333333333334,
+        "count": 93,
+        "pairs": [
+          "lamp.stem.2 / lamp.shade.spider.1",
+          "lamp.stem.2 / lamp.shade.fold.0",
+          "lamp.stem.2 / lamp.shade.fold.1",
+          "lamp.stem.2 / lamp.shade.fold.2"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 3.5666666666666664,
+        "count": 83,
+        "pairs": [
+          "lamp.shade.fold.5 / lamp.shade.fold.12",
+          "lamp.shade.fold.5 / lamp.shade.fold.13",
+          "lamp.shade.fold.5 / lamp.shade.fold.14",
+          "lamp.shade.fold.5 / lamp.shade.fold.15"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 63,
+        "count": 30,
+        "pairs": [
+          "lamp.shade.fold.9 / lamp.shade.fold.10",
+          "lamp.shade.fold.9 / lamp.shade.fold.11",
+          "lamp.shade.fold.9 / lamp.shade.fold.12",
+          "lamp.shade.fold.9 / lamp.shade.fold.13"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 93,
+        "count": 28,
+        "pairs": [
+          "lamp.stem.2 / lamp.shade.spider.-1",
+          "lamp.stem.2 / lamp.shade.fold.7",
+          "lamp.upper.rod / lamp.shade.fold.19",
+          "lamp.finial / lamp.shade.fold.19"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 243,
+        "count": 28,
+        "pairs": [
+          "lamp.shade.fold.21 / lamp.shade.fold.22",
+          "lamp.shade.fold.21 / lamp.shade.fold.23",
+          "lamp.shade.fold.0 / lamp.shade.fold.21",
+          "lamp.shade.fold.1 / lamp.shade.fold.21"
+        ]
+      },
+      {
+        "family": "story",
+        "x": 6.4,
+        "count": 28,
+        "pairs": [
+          "lamp.shade.fold.21 / lamp.shade.fold.22",
+          "lamp.shade.fold.21 / lamp.shade.fold.23",
+          "lamp.shade.fold.0 / lamp.shade.fold.21",
+          "lamp.shade.fold.1 / lamp.shade.fold.21"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 108,
+        "count": 27,
+        "pairs": [
+          "lamp.shade.fold.6 / lamp.shade.fold.7",
+          "lamp.shade.fold.6 / lamp.shade.fold.8",
+          "lamp.shade.fold.6 / lamp.shade.fold.9",
+          "lamp.shade.fold.6 / lamp.shade.fold.10"
+        ]
+      },
+      {
+        "family": "sweep",
+        "x": 288,
+        "count": 27,
+        "pairs": [
+          "lamp.shade.fold.18 / lamp.shade.fold.19",
+          "lamp.shade.fold.18 / lamp.shade.fold.20",
+          "lamp.shade.fold.18 / lamp.shade.fold.21",
+          "lamp.shade.fold.18 / lamp.shade.fold.22"
+        ]
+      }
+    ]
+  }
+}
