@@ -40,3 +40,13 @@ The Node build and Python test commands use existing tools. Vendored skills trav
 no refetch is necessary. Future machines missing browser-test packages can use a writable virtual
 environment and install the versions listed above with normal package integrity/TLS verification.
 Live processes do not persist across cloud snapshots. Start servers only when required for testing.
+
+
+## Preset library addendum (2026-10-25)
+
+The library adds pinned build-only `esbuild@0.25.12`; run `npm ci` before `npm run build`.
+The lockfile and GitHub Pages workflow include this step. All app assets, geometry data and the
+local dimension-builder worker are inlined into `dist/library.html` and `dist/index.html`.
+No separate REA server or native analysis engine is needed for this source implementation.
+Run `npm run test:library` plus the export/performance scripts listed in the README. Browser
+checks use system Chromium and local HTTP; the managed local-file policy remains unchanged.

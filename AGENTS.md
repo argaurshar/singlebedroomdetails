@@ -7,9 +7,11 @@ Read `docs/PHASE_CHECKLIST.md` and `docs/SETUP.md` for current decisions and evi
 
 The user has authorized implementation, testing, standalone packaging and hosting configuration.
 The first version is merged. The user subsequently rejected the room animation and explicitly
-authorized narrowing to one furniture item. Current branch: `feat/bedside-cabinet`. Read
+authorized narrowing to one furniture item. The cabinet is merged. The user subsequently authorized a furniture/decor preset library on
+`feat/preset-library`. Read `docs/LIBRARY_PLAN.md` and `docs/LIBRARY_QA.md` for current scope,
+verification and outstanding limits. Read
 `docs/CABINET_DIRECTION.md` and `docs/CABINET_QA.md` for the cabinet contract and current evidence.
-Preserve the bedroom source and `dist/bedroom.html`; the cabinet is the new hosting entry.
+Preserve the bedroom source and `dist/bedroom.html`; preserve `dist/cabinet.html` too. The new library becomes the hosting entry after review.
 Commit coherent changes and prepare a reviewable PR. Do not treat old room QA as cabinet evidence.
 GitHub Pages hosting is now authorized and configured via `.github/workflows/pages.yml`.
 Do not merge the PR automatically. Deploy only from `main` through the Pages workflow.
@@ -86,3 +88,14 @@ geometry/contact and turning diagnostics; `-- --quick` is an iteration aid, not 
 the final build. The 69 solids are driven by `src/cabinet/model.mjs`; presentation transforms
 never alter physical dimensions. Capture mode canonicalizes depth tie order before each seek.
 Do not edit the pinned toolkit to bypass diagnostics. Keep all supporting files and licences.
+
+## Preset library
+
+Seven original demonstration objects live in `src/library/`. One active SVG study at a time.
+Run `npm ci`, `npm run build`, `npm test`, and `npm run test:library` (Python Playwright with
+system Chromium). `npm run audit:library` runs per-preset Anatomy audits and writes evidence
+under `.test-artifacts/library/`. Do not confuse a quick audit or sampled depth test with a full
+orbit audit. Millimetres drive solids, measurements, drawings and exported schedules; the
+library origin is the object centre in XY at finished floor Z=0. Dimension rebuilds use a local
+bundled Web Worker. Keep its esbuild dependency pinned and install it in CI before building.
+Keep the original room/cabinet source and evidence. Do not deploy this branch or merge main.
